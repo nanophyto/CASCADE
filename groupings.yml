@@ -1,0 +1,994 @@
+---
+## synonyms used in study: ##
+
+undefined:
+  alt: 
+    - COCCOLITHOPHORES
+    - COCCOLITHOPHORID
+    - 'Coccosphaerales (Subgroup: coccolithophore)'
+    - coccolith sp.
+    - mixed coccolithophorids
+    - Coccolithophoridae 
+    - undefined other
+    - Other coccolithophores
+undefined holo:
+  alt:
+    - holococcolithophores
+    - Coccolithaceae HOLs #could merge w/ pelagicus HOL and leptoporus HOL
+    - Syracolithus sp.
+    - Syracolithus spp.
+    - Holococcolithophora -flat type
+    - 'Coccosphaerales (Stage: holococcolithophorid Size: 10um)'
+    - 'Coccosphaerales (Stage: holococcolithophorid Size: small)'
+    - 'Coccosphaerales (Stage: holococcolithophorid)'
+    - Corisphaera spp.
+undefined hetero:
+  alt: 
+    - P. vandelii + R. xiphos
+    - 'Coccosphaerales (Stage: heterococcolithophorid Size: small)'
+    - Cyclococcolithus spp.
+
+
+Canistrolithus valliformis:
+  alt:
+    - Canistrolithus valliformis
+Acanthoica biscayensis:
+  alt:
+    - Acanthoica biscayensis
+Acanthoica maxima:
+  alt:
+    - Acanthoica maxima
+Algirosphaera cucullata:
+  alt:
+    - Algirosphaera cucullata
+Alisphaera gaudii COMB:
+  alt:
+    - Alisphaera gaudii COMB
+Acanthoica quattrospina COMB:
+  alt:
+    - Acanthoica quattrospina COMB
+Alisphaera gaudii POL:
+  alt:
+    - Alisphaera gaudii POL
+Alisphaera unicornis COMB:
+  alt:
+    - Alisphaera unicornis COMB
+Balaniger virgulosa:
+  alt:
+    - Balaniger virgulosa
+Braarudosphaera bigelowii:
+  alt:
+    - Braarudosphaera bigelowii
+Calyptrosphaera sphaeroidea HOL:
+  alt:
+    - Calyptrosphaera sphaeroidea HOL
+Ceratolithus cristatus CER:
+  alt:
+    - Ceratolithus cristatus CER
+Ceratolithus nishidae CER:
+  alt:
+    - Ceratolithus nishidae CER
+Chrysotila carterae:
+  alt:
+    - Chrysotila carterae
+Chrysotila roscoffensis:
+  alt:
+    - Chrysotila roscoffensis
+Coronosphaera mediterranea COMB:
+  alt:
+    - Coronosphaera mediterranea COMB
+Cyrtosphaera cidaris:
+  alt:
+    - Cyrtosphaera cidaris
+Flosculosphaera calceolariopsis:
+  alt:
+    - Flosculosphaera calceolariopsis
+Formonsella pyramidosa:
+  alt:
+    - Formonsella pyramidosa
+Gliscolithus amitakareniae:
+  alt:
+    - Gliscolithus amitakareniae
+Hayaster perplexus:
+  alt:
+    - Hayaster perplexus
+Helicosphaera hyalina:
+  alt:
+    - Helicosphaera hyalina
+Helicosphaera pavimentum:
+  alt:
+    - Helicosphaera pavimentum
+Helicosphaera wallichii:
+  alt:
+    - Helicosphaera wallichii
+Hughesius youngii:
+  alt:
+    - Hughesius youngii
+Hymenomonas roseola:
+  alt:
+    - Hymenomonas roseola
+Ochrosphaera neapolitana:
+  alt:
+    - Ochrosphaera neapolitana
+Picarola margalefii:
+  alt:
+    - Picarola margalefii
+Placorhombus ziveriae:
+  alt:
+    - Placorhombus ziveriae
+Helladosphaera pienaarii:
+  alt:
+    - Helladosphaera pienaarii
+Helladosphaera vavilovii:
+  alt:
+    - Helladosphaera vavilovii
+
+
+undefined Homozygosphaera:
+  alt:
+    - Homozygosphaera spp.
+
+undefined Acanthoica:
+  alt: 
+    - Acanthoica spp.
+Calyptrosphaera type:
+  alt:
+    - Calyptrolithina divergens
+    - Calyptrosphaera cialdii
+    - Calyptrosphaera heimdalae
+    - Calyptrosphaera sphaeroidea
+    - Calyptrosphaera spp.
+    - Syracosphaera halldalii HOL
+undefined  Canistrolithus:
+  alt:
+  - Canistrolithus spp.
+undefined Syracosphaera:
+  alt:
+    - Syracosphaera sp.
+    - Syracosphaera spp.
+    - Syracosphaera spp. [#/l].1
+    - S. halldalii [#/l] (Syracosphaera halldalii + Syr...)
+    - Coronosphaera
+undefined Palusphaera:
+  alt: 
+    - Palusphaera sp.
+    - Palusphaera spp.
+undefined Gephyrocapsa:
+  alt:
+    - Gephyrocapsa spp.
+    - Reticulofenestra spp.
+undefined Umbellosphaera:
+    alt:
+    - Umbellosphaera spp.
+undefined Umbilicosphaera:
+    alt:
+    - Umbilicosphaera spp.
+undefined Algirosphaera:
+    alt:
+    - Algirosphaera spp.
+undefined Alisphaera:
+    alt:
+    - Alisphaera spp.
+undefined Ceratolithus:
+    alt:
+    - Ceratolithus spp.
+undefined Ericiolus:
+    alt:
+    - Ericiolus spp.
+    - Ericiolus sp.
+undefined Helicosphaera:
+    alt:
+    - Helicosphaera spp.
+undefined Hymenomonas:
+    alt:
+    - Hymenomonas spp.
+undefined Jomonlithus:
+    alt:
+    - Jomonlithus spp.
+undefined Michaelsarsia:
+    alt:
+    - Michaelsarsia spp.
+undefined Oolithotus:
+    alt:
+    - Oolithotus spp.
+undefined Rhabdosphaera:
+    alt:
+    - Rhabdosphaera spp.
+undefined Scyphosphaera:
+    alt:
+    - Scyphosphaera spp.
+undefined Turrisphaera:
+    alt:
+    - Turrisphaera spp.
+undefined Wigwamma:
+    alt:
+    - Wigwamma spp.
+
+
+Pappamonas type:
+  note: all spp in the dataset
+  alt:
+    - Pappomonas borealis
+    - Pappomonas flabellifera
+    - Pappomonas sp.
+    - Pappomonas sp. Type 3
+    - Pappomonas sp. Type 4
+    - Pappomonas sp. Type 5
+    - Pappomonas spp.
+
+undefined Papposphaera:
+  alt:
+    - Papposphaera arctica
+    - Papposphaera sagittifera
+    - Papposphaera sp.  Type 2
+    - Papposphaera sp.  Type 4
+    - Papposphaera sp. Type 1
+    - Papposphaera spp.
+    - Papposphaera thomsenii
+  note: excludes Papposphaera lepida
+
+
+Scyphosphaera apsteinii HOL:
+  alt: 
+    - Syracolithus schilleri
+
+undefined Polycrater:
+  alt:
+    - Polycrater sp.
+    - Polycrater spp.
+
+Pontosphaera type:
+  alt:
+    - Pontosphaera discopora
+    - Pontosphaera japonica
+    - Pontosphaera multipora
+    - Pontosphaera spp.
+    - Pontosphaera syracusana
+    - Pontosphaera syracusana Lohmann
+
+undefined Syracolithus:
+  alt:
+    - Syracolithus sp.
+    - Syracolithus spp.
+    - Syracolithus bicorium
+
+Acanthoica quattrospina:
+  alt:
+    - Acanthoica acanthos
+    - Acanthoica quattrospina
+  ref:
+    - Young & Bown (2014)
+
+#top contributors:
+Calcidiscus leptoporus:
+  alt:
+    - Calcidiscus leptoporus s.l. 
+    - Calcidiscus leptoporus large 
+    - Calcidiscus leptoporus intermediate 
+    - Calcidiscus leptoporus small
+    - Cyclococcolithina leptoporus
+    - Cyclococcolithina leptoporus var.A 
+    - Cyclococcolithina leptoporus var.B 
+    - Cyclococcolithina leptoporus var.C
+    - Calcidiscus leptoporus var. A
+    - Calcidiscus quadriperforatus
+    - Calcidiscus leptopora
+    - Calcidiscus leptoporus (MURRA
+
+Coccolithus pelagicus:
+  alt:
+    - Cocoliths sp.A #?
+    - Cocolithus sp.A #?
+    - Cocoliths pelagicus
+    - Cyclolihus sp. #?
+    - Cyclolithus sp. #?
+    - Coccolithus spp. #?
+
+undefined Cyrtosphaera:
+    alt:
+    - Cyrtosphaera spp.
+
+Emiliania huxleyi:
+  alt:
+    - Emiliania huxleyi Types A and C
+    - Emiliania huxleyi Type A
+    - Emiliania huxleyi Type C
+    - Emiliania huxleyi malformed specimens
+    - Emiliania huxleyi var. corona
+    - Emiliana huxleyi
+
+
+Umbellosphaera irregularis:
+  alt:
+    - Umbellosphaera irregularis s.l.
+    - Umbellosphaera irregularis s.s.
+    - Umbellosphaera irregularis Type 0
+
+Umbellosphaera tenuis:
+  alt:
+    - Umbellosphaera tenuis s.l.
+    - Umbellosphaera tenuis Type I
+    - Umbellosphaera tenuis Type III
+    - Umbellosphaera tenuis Types IV
+  parents: 
+    - Umbellosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+#other:
+undefined Calciopappus:
+  alt:
+    - Calciopappus spp.
+    - Calciopappus caudatus
+    - Calciopappus rigidus
+    - Calciopappus sp. curved
+    - Calciopappus sp.A
+
+
+Solisphaera type:
+  alt:
+    - Solisphaera spp.
+    - Solisphaera helianthiformis
+  parents: 
+    - Heterococcolithophores
+    - Cocco oth
+
+undefined Calciosolenia:
+  alt:
+    - Calciosoleniaceae spp.
+    - Calciosolenia spp.
+  parents: 
+    - Heterococcolithophores
+    - Cocco oth
+Alisphaera unicornis type:
+  alt:
+    - Alisphaera unicornis
+    - Alisphaera bidentata
+    - Alisphaera pinnigera
+  parents: 
+    - Alisphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Alisphaera extenta type:
+  alt:
+    - Alisphaera extenta
+    - Alisphaera gaudii
+  parents: 
+    - Alisphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Alisphaera capulata type:
+  alt:
+    - Alisphaera capulata
+    - Alisphaera ordinata
+    - Alisphaera quadrilatera
+  parents: 
+    - Alisphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+undefined Ophiaster:
+  alt:
+    - Ophiaster sp.
+    - Ophiaster spp.
+  parents: 
+    - Heterococcolithophores
+    - Cocco oth
+Rhabdosphaera clavigera:
+  alt:
+    - Rhabdosphaera clavigera
+  parents: 
+    - Rhabdosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Algirosphaera robusta:
+  alt:
+    - Algirosphaera robusta
+    - Algirosphaera robsta
+  parents: 
+    - Algirosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Gephyrocapsa parvula:
+  alt:
+    - Reticulofenestra parvula
+  parents: 
+    - Gephyrocapsa spp.
+    - Heterococcolithophores
+    - Cocco oth
+
+Gephyrocapsa oceanica:
+  alt:
+    - Gephyrocapsa oceanica
+  parents: 
+    - Gephyrocapsa spp.
+    - Heterococcolithophores
+    - Cocco oth
+Gephyrocapsa ericsonii:
+  alt:
+    - Gephyrocapsa ericsonii
+    - Gephyrocapsa crassipons
+  parents: 
+    - Gephyrocapsa spp.
+    - Heterococcolithophores
+    - Cocco oth
+Discosphaera tubifera:
+  alt:
+    - Discosphaera tubifera
+    - Discosphaera  tubifer
+  parents: 
+    - Discosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+
+Florisphaera profunda:
+  alt:
+    - Florisphaera profunda
+  parents: 
+    - Florisphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Umbilicosphaera sibogae:
+  alt:
+    - Umbilicosphaera sibogae
+    - Umbilicosphaera sibogae (Weber-van-Bosse) Gaarder
+  parents: 
+    - Umbilicosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Calciosolenia brasiliensis:
+  alt:
+    - Calciosolenia brasiliensis
+  parents: 
+    - Calciosolenia spp.
+    - Heterococcolithophores
+    - Cocco oth
+Rhabdosphaera xiphos:
+  alt:
+    - Rhabdosphaera xiphos
+  parents: 
+    - Rhabdosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Palusphaera vandelii:
+  alt:
+    - Palusphaera vandelii
+  parents: 
+    - Palusphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Oolithotus antillarum:
+  alt:
+    - Oolithotus antillarum
+  parents: 
+    - Oolithotus spp.
+    - Heterococcolithophores
+    - Cocco oth
+Gephyrocapsa muellerae:
+  alt:
+    - Gephyrocapsa muellerae
+  parents: 
+    - Gephyrocapsa spp.
+    - Heterococcolithophores
+    - Cocco oth
+
+
+Syracosphaera mediterranea:
+  alt:
+    - Coronosphaera mediterranea
+    - Coronosphaera maxima
+    - Coronosphaera spp.
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Ophiaster hydroideus:
+  alt:
+    - Ophiaster hydroideus
+    - Ophiaster hydroideuss
+    - Ohiaster hydroideus
+  parents: 
+    - Ophiaster spp.
+    - Heterococcolithophores
+    - Cocco oth
+Helicosphaera carteri:
+  alt:
+    - Helicosphaera carteri
+    - Helicosphaera carterii
+  parents: 
+    - Helicosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Michaelsarsia elegans:
+  alt:
+    - Michaelsarsia elegans
+  parents: 
+    - Michaelsarsia spp.
+    - Heterococcolithophores
+    - Cocco oth
+Umbilicosphaera hulburtiana:
+  alt:
+    - Umbilicosphaera hulburtiana
+  parents: 
+    - Umbilicosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Calciosolenia murrayi:
+  alt: 
+    - Calciosolenia murrayi
+    - Calciosolenia murrayi 
+  parents: 
+    - Calciosolenia spp.
+    - Heterococcolithophores
+    - Cocco oth
+Gladiolithus flabellatus:
+  alt:
+    - Gladiolithus flabellatus
+  parents: 
+    - Gladiolithus spp.
+    - Heterococcolithophores
+    - Cocco oth
+Oolithotus fragilis:
+  alt:
+    - Oolithotus fragilis
+  parents: 
+    - Oolithotusa spp.
+    - Heterococcolithophores
+    - Cocco oth
+Michaelsarsia adriaticus:
+  alt:
+    - Michaelsarsia adriaticus
+  parents: 
+    - Michaelsarsia spp.
+    - Heterococcolithophores
+    - Cocco oth
+Alisphaera unicornis POL:
+  alt:
+    - Alisphaera unicornis POL
+  parents:
+    - Alisphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Umbilicosphaera foliosa:
+  alt: 
+    - Umbilicosphaera foliosa
+  parents: 
+    - Umbilicosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Ceratolithus cristatus:
+  alt: 
+    - Ceratolithus cristatus
+  parents:
+    - Ceratolithus spp.
+    - Heterococcolithophores
+    - Cocco oth
+Cyrtosphaera aculeata:
+  alt:
+    - Cyrtosphaera aculeata
+  parents:
+    - Cyrtosphaera spp. 
+    - Heterococcolithophores
+    - Cocco oth
+Acanthoica acanthifera:
+  alt: 
+    - Acanthoica acanthifera
+  parents:
+    - Acanthoica spp. 
+    - Heterococcolithophores
+    - Cocco oth
+Gephyrocapsa ornata:
+  alt:
+    - Gephyrocapsa ornata
+  parents:
+    - Gephyrocapsa spp. 
+    - Heterococcolithophores
+    - Cocco oth
+#Syracosphaera:
+
+
+
+#should histrica and pulchra be grouped? Only a few PIC:POC measurements of each... but also different sizes
+Syracosphaera histrica:
+  alt:
+    - Syracosphaera histrica
+  parents:
+    - Syracosphaera spp. 
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera pulchra:
+  alt:
+    - Syracosphaera pulchra
+    - Syracosphaera cf. pulchra
+  parents:
+    - Syracosphaera spp. 
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera prolongata type:
+  alt:
+    - Syracosphaera pirus
+    - Syracosphaera prolongata type 1 
+    - Syracosphaera prolongata type 2
+    - Syracosphaera prolongata
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera noroitica type:
+  alt:
+    - Syracosphaera noroitica
+    - Syracosphaera florida
+    - Syracosphaera type G
+    - Syracosphaera type A
+    - Syracosphaera castellata
+    - Syracosphaera winteri
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera dilatata type:
+  alt:
+    - Syracosphaera arethusae
+    - Syracosphaera dilata
+    - Syracosphaera type D
+    - Syracosphaera corolla
+    - Syracosphaera azureaplaneta
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera molischii type:
+  alt:
+    - Syracosphaera molischii
+    - Syracosphaera epigrosa
+    - Syracosphaera marginaporata
+    - Syracosphaera ossa
+    - Syracosphaera epigrosa
+    - Syracosphaera hastata
+    - Caneosphaera molischii
+    - Caneosphaera molischii and similar
+
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera halldalli type:
+  alt:
+    - Syracosphaera halldallii
+    - Syracosphaera protrudens
+    - Syracosphaera halldalii type
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera nodosa type:
+  alt:
+    - Syracosphaera leptolepsis
+    - Syracosphaera nana
+    - Syracosphaera nodosa
+    - Syracosphaera serrata
+    - Syracosphaera aff nana
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera anthos type:
+  alt: 
+    - Syracosphaera anthos
+    - Syracosphaera kareniae
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera rotula type:
+  alt:
+    - Syracosphaera rotula
+    - Syracosphaera exigua
+    - Syracosphaera ampliora
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera bannockii type:
+  alt:
+    - Syracosphaera bannockii
+    - Syracosphaera orbiculus
+    - Syracosphaera delicata
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera borealis type:
+  alt:
+    - Syracosphaera borealis
+    - Syracosphaera strigilis
+    - Syracosphaera pemmadiscus
+    - Syracosphaera andruleitii
+    - Syracosphaera exigua
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera laminated type:
+  alt:
+    - Syracosphaera reniformis
+    - Syracosphaera squamosa
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Syracosphaera lamina type:
+  alt:
+    - Syracosphaera aurisinae
+    - Syracosphaera tumularis
+    - Syracosphaera sp. cf. tumularis 1
+    - Syracosphaera sp. cf. tumularis 2
+    - Syracosphaera gaarderae
+    - Syracosphaera rhombica
+    - Calciosolenia bimurata
+  parents: 
+    - Syracosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+
+
+
+
+
+Papposphaera lepida:
+  alt:
+    - Papposphaera lepida
+  parents: 
+    - Papposphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+Calyptrosphaera heimdalae:
+  alt:
+    - Calyptrosphaera heimdalae
+    - Calyptrosphaera heimdaliae
+  parents: 
+    - Calyptrosphaera spp.
+    - Heterococcolithophores
+    - Cocco oth
+#Holo's
+Helicosphaera HOL type:
+  alt:
+    - Helicosphaera HOL catilliferus type
+    - Helicosphaera HOL confusus type
+    - Helicosphaera HOL ponticuliferus type
+    - Helicosphaera pavimentum HOL
+    - Helicosphaera carteri HOL
+    - Helicosphaera wallichii HOL
+  parents: 
+    - Helicosphaera spp.
+    - Holococcolithophores
+    - Cocco oth
+Holococcolithophora -flat type:
+  alt:
+    - Holococcolithophora cialdii
+    - Holococcolithophora dentata
+    - Calyptrosphaera dentata
+  parents: 
+    - Holococcolithophora spp.
+    - Holococcolithophores
+    - Cocco oth
+Syracosphaera aurisinae HOL type:
+  alt:
+    - Syracosphaera aurisinae HOL
+    - Syracosphaera gaarderae HOL
+    - Syracosphaera isselii HOL
+    - Syrcosphaera magnaghii HOL
+    - Syracosphaera aurisinae HOL type sp.
+    - Poricalyptra isselii
+    - Poricalyptra aurisinae
+    - Poricalyptra magnaghii
+
+
+  parents: 
+    - Holococcolithophores
+    - Cocco oth
+Syracosphaera mediterranea HOL type:
+  alt:
+    - Calyptrolithina multipora
+    - Syracosphaera histrica HOL
+    - Syracosphaera mediterranea HOL gracillima type
+    - Syracosphaera mediterranea HOL hellenica type
+    - Syracosphaera mediterranea HOL marisrubri type
+    - Syracosphaera mediterranea HOL wettsteinii type
+    - Syracosphaera mediterranea HOL
+    - Homozygosphaera vercellii 
+    - Homozygosphaera vercelli
+    - Coronosphaera mediterranea HOL
+  parents: 
+    - Holococcolithophores
+    - Cocco oth
+Zygosphaera type:
+  alt:
+    - Syracosphaera bannockii HOL
+    - Zygosphaera amoena
+    - Zygosphaera marsilii
+    - Zygosphaera sp.
+    - Zygosphaera spp.
+  parents: 
+    - Holococcolithophores
+    - Cocco oth
+Sphaerocalyptra type:
+  alt:
+    - Sphaerocalyptra quadridentata
+    - Sphaerocalyptra adenensis
+    - Sphaerocalyptra dermitzakii
+    - Sphaerocalyptra youngii
+    - Sphaerocalyptra sp. 1
+    - Sphaerocalyptra sp. 2
+    - Sphaerocalyptra sp. 3
+    - Sphaerocalyptra sp. 4
+    - Sphaerocalyptra sp. 5
+    - Sphaerocalyptra sp. 6
+    - Sphaerocalyptra sp. Y
+    - Sphaerocalyptra sp.
+    - Sphaerocalyptra spp.
+    - Algirosphaera robusta HOL
+    - Acanthoica bidentula
+    - Calyptrosphaera quadridentata
+  parents: 
+    - Holococcolithophores
+    - Cocco oth
+fried egg monomorphic:
+  alt:
+    - Acanthoica quattrospina HOL
+    - Holococcolithophora kastriensis
+    - sp. aff. quattrospina HOL
+  parents: 
+    - Holococcolithophores
+    - Cocco oth
+flat dimorphic:
+  alt:
+    - Syracosphaera nana HOL
+    - Syracosphaera strigilis HOL
+  parents: 
+    - Holococcolithophores
+    - Cocco oth
+
+Coccolithus pelagicus HOL:
+  alt:
+    - Coccolithus pelagicus subsp. braarudii HOL
+    - Coccolithus pelagicus subsp. pelagicus HOL
+    - Coccolithus pelagicus HOL
+    - Syracolithus quadriperforatus
+  parents: 
+    - Holococcolithophores
+    - Cocco oth
+
+
+Calcidiscus leptoporus HOL:
+  alt:
+    - Calcidiscus leptoporus subsp. leptoporus HOL
+    - Calcidiscus leptoporus HOL
+  parents: 
+    - Holococcolithophores
+    - Cocco oth
+
+
+Corisphaera gracilis:
+  alt:
+    - Corisphaera gracilis
+  parents: 
+    - Holococcolithophores
+    - Cocco oth
+Corisphaera tyrrheniensis:
+  alt:
+    - Corisphaera tyrrheniensis
+  parents: 
+    - Holococcolithophores
+    - Cocco oth
+Helladosphaera cornifera:
+  alt:
+    - Helladosphaera cornifera
+  parents: 
+    - Holococcolithophores
+    - Cocco oth
+
+undefined Helladosphaera:
+  alt:
+    - Helladosphaera sp.
+    - Helladosphaera spp.
+
+Anthosphaera type:
+  alt:
+    - Syracosphaera HOL (Anthosphaera type)
+    - 'Anthosphaera SP.' 
+    - undefined 'Anthosphaera
+
+undefined Crystallolithus:
+  alt:
+    - Crystallolithus spp.'
+    - Crystallolithus spp.
+
+Pseudowigwamma scenozonion:
+  alt:
+    - Pseudowigwamma scenozonions
+Tetralithoides quadrilaminata:
+  alt:
+    - Tetralithoides quadrilaminata
+Syracosphaera anthos HOL:
+  alt:
+    - Syracosphaera anthos HOL
+
+Ophiaster formosus:
+  alt:
+    - Ophiaster formosus
+Wigwamma triradiata:
+  alt:
+    - Wigwamma triradiata
+Syracosphaera orbiculus HOL:
+  alt:
+    - Syracosphaera orbiculus HOL
+Ophiaster reductus:
+  alt:
+    - Ophiaster reductus
+Syracosphaera strigilis COMB:
+  alt:
+    - Syracosphaera strigilis COMB
+Syracosphaera pulchra HOL:
+  alt:
+    - Syracosphaera pulchra HOL
+Ophiaster minimus:
+  alt:
+    - Ophiaster minimus
+Turrilithus latericioides:
+  alt:
+    - Turrilithus latericioides
+Rhabdosphaera xiphos COMB:
+  alt:
+    - Rhabdosphaera xiphos COMB
+Calicasphaera diconstricta:
+  alt:
+    - Calicasphaera diconstricta
+Poritectolithus maximus:
+  alt:
+    - Poritectolithus maximus
+Calicasphaera concava:
+  alt:
+    - Calicasphaera concava
+Hymenomonas lacuna:
+  alt:
+    - Hymenomonas lacuna
+Scyphosphaera apsteinii:
+  alt:
+    - Scyphosphaera apstenii
+    - Scyphosphaera apsteinii
+Reticulofenestra sessilis:
+  alt:
+    - Scyphosphaera apstenii
+Syracosphaera pulchra COMB:
+  alt:
+    - Syracosphaera pulchra COMB
+Syracosphaera arethusae HOL:
+  alt:
+    - Syracosphaera arethusae HOL
+Umbilicosphaera anulus:
+  alt:
+    - Umbilicosphaera anulus
+Homozygosphaera spinosa:
+  alt:
+    - Homozygosphaera spinosa
+Tergestiella adriatica:
+  alt:
+    - Tergestiella adriatica
+Poritectolithus poritectum:
+  alt:
+    - Poritectolithus poritectum
+Syracosphaera arethusae COMB:
+  alt:
+    - Syracosphaera arethusae COMB
+Syracosphaera bannockii COMB:
+  alt:
+    - Syracosphaera bannockii COMB
+Wigwamma antarctica:
+  alt:
+    - Wigwamma antarctica
+Calicasphaera blokii:
+  alt:
+    - Calicasphaera blokii
+
+Homozygosphaera triarcha:
+  alt:
+  - Homozygosphaera triarcha
