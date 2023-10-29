@@ -1,24 +1,1666 @@
+- Syracosphaera pulchra HOL:
+    alternate_phase: Syracosphaera pulchra
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera histrica HOL:
+    alternate_phase: Syracosphaera histrica
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera arethusae HOL:
+    alternate_phase: Syracosphaera arethusae
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera anthos HOL:
+    alternate_phase: Syracosphaera anthos
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera molischii HOL:
+    alternate_phase: Syracosphaera molischii
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera bannockii HOL:
+    alternate_phase: Syracosphaera bannockii
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera mediterranea HOL wettsteinii type:
+    alternate_phase: Syracosphaera mediterranea
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera strigilis HOL:
+    alternate_phase: Syracosphaera strigilis
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera aurisinae HOL:
+    alternate_phase: Syracosphaera aurisinae
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera periperforata HOL:
+    alternate_phase: Syracosphaera periperforata
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera magnaghii HOL:
+    alternate_phase: Syracosphaera magnaghii
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera mediterranea HOL gracillima type:
+    alternate_phase: Syracosphaera mediterranea
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera isselii HOL:
+    alternate_phase: Syracosphaera isselii
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera mediterranea HOL marisrubri type:
+    alternate_phase: Syracosphaera mediterranea
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera gaarderae HOL:
+    alternate_phase: Syracosphaera gaarderae
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera pulchra:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera molischii:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera mediterranea:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera ossa:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera histrica:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera anthos:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera nodosa:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera prolongata:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera corolla:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera halldalli:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera neapolitana:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera marginiporata:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera protrudens:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera rotula:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera hastata:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera dilatata:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera orbiculus:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera epigrosa:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera bannockii:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera arethusae:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera tumularis:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: 15.7
+        sheward: 15.7
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera ampliora:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera gaarderae:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera noroitica:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera exigua:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera squamosa:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera borealis:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera reniformis:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Syracosphaera aurisinae:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Alisphaera unicornis POL:
+    alternate_phase: Alisphaera unicornis
+    family: Alisphaeraceae
+    genera: Alisphaera
+    phase: POL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Alisphaera unicornis:
+    alternate_phase: None
+    family: Alisphaeraceae
+    genera: Alisphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Alisphaera gaudii:
+    alternate_phase: None
+    family: Alisphaeraceae
+    genera: Alisphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Alisphaera extenta:
+    alternate_phase: None
+    family: Alisphaeraceae
+    genera: Alisphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Alisphaera pinnigera:
+    alternate_phase: None
+    family: Alisphaeraceae
+    genera: Alisphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Calcidiscus leptoporus HOL:
+    alternate_phase: Calcidiscus leptoporus
+    family: Calcidiscaceae
+    genera: Calcidiscus
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Calcidiscus leptoporus:
+    alternate_phase: None
+    family: Calcidiscaceae
+    genera: Calcidiscus
+    phase: HET
+    size:
+      mean:
+        obrien: 10.325
+        sheward: 10.325
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Helicosphaera pavimentum HOL:
+    alternate_phase: Helicosphaera pavimentum
+    family: Helicosphaeraceae
+    genera: Helicosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Helicosphaera HOL ponticuliferus type:
+    alternate_phase: Helicosphaera wallichii
+    family: Helicosphaeraceae
+    genera: Helicosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Helicosphaera HOL catilliferus type:
+    alternate_phase: Helicosphaera carteri
+    family: Helicosphaeraceae
+    genera: Helicosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Helicosphaera carteri:
+    alternate_phase: None
+    family: Helicosphaeraceae
+    genera: Helicosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Helicosphaera pavimentum:
+    alternate_phase: None
+    family: Helicosphaeraceae
+    genera: Helicosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Helicosphaera wallichii:
+    alternate_phase: None
+    family: Helicosphaeraceae
+    genera: Helicosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Helicosphaera hyalina:
+    alternate_phase: None
+    family: Helicosphaeraceae
+    genera: Helicosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Calyptrosphaera sphaeroidea HOL:
+    alternate_phase: Calyptrosphaera sphaeroide
+    family: Undefined
+    genera: Calyptrosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Calyptrosphaera heimdalae:
+    alternate_phase: Cyrtosphaera aculeata
+    family: Undefined
+    genera: Calyptrosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Ceratolithus cristatus CER:
+    alternate_phase: Ceratolithus cristatus
+    family: Ceratolithaceae
+    genera: Ceratolithus
+    phase: CER
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Ceratolithus cristatus:
+    alternate_phase: None
+    family: Ceratolithaceae
+    genera: Ceratolithus
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Coccolithus pelagicus HOL:
+    alternate_phase: Coccolithus pelagicus
+    family: Coccolithaceae
+    genera: Coccolithus
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Coccolithus pelagicus:
+    alternate_phase: None
+    family: Coccolithaceae
+    genera: Coccolithus
+    phase: HET
+    size:
+      mean:
+        obrien: 14.1
+        sheward: 14.1
+        villiot: 1936.1
+      std:
+        obrien: null
+        sheward: null
+        villiot: 23.2
+- Calyptrolithina multipora:
+    alternate_phase: unknown
+    family: Undefined
+    genera: Calyptrolithina
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Calyptrolithina divergens:
+    alternate_phase: Syracosphaera halldalii
+    family: Undefined
+    genera: Calyptrolithina
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Calicasphaera diconstricta:
+    alternate_phase: unknown
+    family: Undefined
+    genera: Calicasphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Zygosphaera marsilii:
+    alternate_phase: unknown
+    family: Undefined
+    genera: Zygosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Zygosphaera amoena:
+    alternate_phase: unknown
+    family: Undefined
+    genera: Zygosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Corisphaera tyrrheniensis:
+    alternate_phase: unknown
+    family: Undefined
+    genera: Corisphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Corisphaera gracilis:
+    alternate_phase: Rhabdosphaera xiphos
+    family: Undefined
+    genera: Corisphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Homozygosphaera triarcha:
+    alternate_phase: unknown
+    family: Undefined
+    genera: Homozygosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Homozygosphaera spinosa:
+    alternate_phase: unknown
+    family: Undefined
+    genera: Homozygosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Sphaerocalyptra quadridentata:
+    alternate_phase: '[''Algirosphaera robusta'', ''Rhabdosphaera clavigera'']'
+    family: Undefined
+    genera: Sphaerocalyptra
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Helladosphaera cornifera:
+    alternate_phase: '[''Syracosphaera nodosa'', ''Syracosphaera noroitica'']'
+    family: Undefined
+    genera: Helladosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Helladosphaera pienaarii:
+    alternate_phase: unknown
+    family: Undefined
+    genera: Helladosphaera
+    phase: HOL
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
 - Emiliania huxleyi:
+    alternate_phase: None
     family: Noelaerhabdaceae
     genera: Emiliania
+    phase: HET
     size:
       mean:
         obrien: 3.5
         sheward: 3.5
-        villiot: 40.72352891976194
+        villiot: 40.75680778782548
       std:
         obrien: null
         sheward: null
-        villiot: 7.6116639234625945
-- Emiliania huxleyi:
-    family: Noelaerhabdaceae
-    genera: Emiliania
+        villiot: 7.642523514728324
+- Umbellosphaera irregularis:
+    alternate_phase: None
+    family: Umbellosphaeraceae
+    genera: Umbellosphaera
+    phase: HET
     size:
       mean:
-        obrien: 3.5
-        sheward: 3.5
-        villiot: 40.72352891976194
+        obrien: 6.3
+        sheward: 6.3
+        villiot: null
       std:
         obrien: null
         sheward: null
-        villiot: 7.6116639234625945
+        villiot: null
+- Umbellosphaera tenuis:
+    alternate_phase: None
+    family: Umbellosphaeraceae
+    genera: Umbellosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: 5.7
+        sheward: 5.7
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Rhabdosphaera clavigera:
+    alternate_phase: None
+    family: Rhabdosphaeraceae
+    genera: Rhabdosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: 6.3
+        sheward: 6.3
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Rhabdosphaera xiphos:
+    alternate_phase: None
+    family: Rhabdosphaeraceae
+    genera: Rhabdosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Discosphaera tubifera:
+    alternate_phase: None
+    family: Rhabdosphaeraceae
+    genera: Discosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: 4.7
+        sheward: 4.7
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Gephyrocapsa ericsonii:
+    alternate_phase: None
+    family: Noelaerhabdaceae
+    genera: Gephyrocapsa
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Gephyrocapsa oceanica:
+    alternate_phase: None
+    family: Noelaerhabdaceae
+    genera: Gephyrocapsa
+    phase: HET
+    size:
+      mean:
+        obrien: 5.0
+        sheward: 5.0
+        villiot: 234.6
+      std:
+        obrien: null
+        sheward: null
+        villiot: 3.9
+- Gephyrocapsa muellerae:
+    alternate_phase: None
+    family: Noelaerhabdaceae
+    genera: Gephyrocapsa
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: 65.0
+      std:
+        obrien: null
+        sheward: null
+        villiot: 3.7
+- Gephyrocapsa ornata:
+    alternate_phase: None
+    family: Noelaerhabdaceae
+    genera: Gephyrocapsa
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Gephyrocapsa parvula:
+    alternate_phase: None
+    family: Noelaerhabdaceae
+    genera: Gephyrocapsa
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: 14.4
+      std:
+        obrien: null
+        sheward: null
+        villiot: 1.4
+- Algirosphaera robusta:
+    alternate_phase: None
+    family: Rhabdosphaeraceae
+    genera: Algirosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: 5.29
+        sheward: 5.29
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Acanthoica quattrospina:
+    alternate_phase: None
+    family: Rhabdosphaeraceae
+    genera: Acanthoica
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Acanthoica acanthifera:
+    alternate_phase: None
+    family: Rhabdosphaeraceae
+    genera: Acanthoica
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Umbilicosphaera sibogae:
+    alternate_phase: None
+    family: Calcidiscaceae
+    genera: Umbilicosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: 18.5
+        sheward: 18.5
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Umbilicosphaera hulburtiana:
+    alternate_phase: None
+    family: Calcidiscaceae
+    genera: Umbilicosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Umbilicosphaera anulus:
+    alternate_phase: None
+    family: Calcidiscaceae
+    genera: Umbilicosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Umbilicosphaera foliosa:
+    alternate_phase: None
+    family: Calcidiscaceae
+    genera: Umbilicosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: 9.1
+        sheward: 9.1
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Calciosolenia brasiliensis:
+    alternate_phase: None
+    family: Calciosolinaceae
+    genera: Calciosolenia
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Calciosolenia murrayi:
+    alternate_phase: None
+    family: Calciosolinaceae
+    genera: Calciosolenia
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Florisphaera profunda:
+    alternate_phase: None
+    family: Nannolith
+    genera: Florisphaera
+    phase: HET
+    size:
+      mean:
+        obrien: 3.9
+        sheward: 3.9
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Ophiaster hydroideus:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Ophiaster
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Ophiaster formosus:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Ophiaster
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Palusphaera vandelii:
+    alternate_phase: None
+    family: Rhabdosphaeraceae
+    genera: Palusphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Oolithotus antillarum:
+    alternate_phase: None
+    family: Calcidiscaceae
+    genera: Oolithotus
+    phase: HET
+    size:
+      mean:
+        obrien: 4.7
+        sheward: 4.7
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Oolithotus fragilis:
+    alternate_phase: None
+    family: Calcidiscaceae
+    genera: Oolithotus
+    phase: HET
+    size:
+      mean:
+        obrien: 13.8
+        sheward: 13.8
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Michaelsarsia elegans:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Michaelsarsia
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Michaelsarsia adriaticus:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Michaelsarsia
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Gladiolithus flabellatus:
+    alternate_phase: None
+    family: Undefined
+    genera: Gladiolithus
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Cyrtosphaera aculeata:
+    alternate_phase: None
+    family: Rhabdosphaeraceae
+    genera: Cyrtosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Calciopappus caudatus:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Calciopappus
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Calciopappus rigidus:
+    alternate_phase: None
+    family: Syracosphaeraceae
+    genera: Calciopappus
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Papposphaera lepida:
+    alternate_phase: None
+    family: Papposphaeraceae
+    genera: Papposphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Scyphosphaera apsteinii:
+    alternate_phase: None
+    family: Pontosphaeraceae
+    genera: Scyphosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Reticulofenestra sessilis:
+    alternate_phase: None
+    family: Noelaerhabdaceae
+    genera: Reticulofenestra
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Picarola margalefii:
+    alternate_phase: None
+    family: Papposphaeraceae
+    genera: Picarola
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Wigwamma antarctica:
+    alternate_phase: None
+    family: Papposphaeraceae
+    genera: Wigwamma
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Pontosphaera syracusana:
+    alternate_phase: None
+    family: Pontosphaeraceae
+    genera: Pontosphaera
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Gliscolithus amitakareniae:
+    alternate_phase: None
+    family: Undefined
+    genera: Gliscolithus
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Pappomonas type 3:
+    alternate_phase: None
+    family: Papposphaeraceae
+    genera: Pappomonas
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Pappomonas type 5:
+    alternate_phase: None
+    family: Papposphaeraceae
+    genera: Pappomonas
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- Hayaster perplexus:
+    alternate_phase: None
+    family: Calcidiscaceae
+    genera: Hayaster
+    phase: HET
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null
+- null:
+    alternate_phase: null
+    family: null
+    genera: null
+    phase: null
+    size:
+      mean:
+        obrien: null
+        sheward: null
+        villiot: null
+      std:
+        obrien: null
+        sheward: null
+        villiot: null

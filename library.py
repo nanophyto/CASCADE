@@ -4,6 +4,7 @@ import sys
 from collections import namedtuple
 from yaml import load, Loader
 import yaml
+import math 
 
 def def_grouping():
 
@@ -25,8 +26,9 @@ def def_grouping():
     df = pd.DataFrame.from_dict(inverse, orient='index')
     df = df.rename_axis("genera").reset_index()
     df = df.rename(columns={0: "family"})
-
+    print(df)
     d = pd.merge(d, df, on='genera', how="outer")
+    d = d.where(pd.notnull(d), None)
 
     library = list(d.itertuples(name='species', index=False))
 
@@ -34,6 +36,7 @@ def def_grouping():
 
 groups = def_grouping()
 
+species_list = groups.species
 
 
 def import_villiot2021():    
@@ -137,7 +140,9 @@ def import_sheward2024():
                                             
 def def_sizes(d, species):
 
-    d = d[d['species']==species].iloc[0]
+    d = d[d['species']==species]
+
+    print(d)
 
     try:
         d_mean = d['mean']
@@ -151,6 +156,9 @@ def def_sizes(d, species):
     return(d_mean, d_std)
 
 
+print(groups['species'])
+
+
 def create_namedtuple(groups, villiot2021, obrien2013, species):
 
     mean_values = namedtuple('mean', 'villiot2021 obrien2013 sheward2024')
@@ -158,71 +166,85 @@ def create_namedtuple(groups, villiot2021, obrien2013, species):
 
     sizes = namedtuple('size', ['mean', 'std'])
 
-    library = namedtuple('library', ['species', 'genera', 'family', 'size'])
+    library = namedtuple('library', ['species', 'genera', 
+            'family', 'phase', 'alternate_phase', 'size'])
 
-    groups = groups[groups['species']==species].iloc[0]
-    
-    genera = groups['genera']
-    family = groups['family']
+    groups = groups[groups['species']==species]
 
     villiot_mean, villiot_std  = def_sizes(villiot2021, species)
     obrien_mean, obrien_std  = def_sizes(obrien2013, species)
     sheward_mean, sheward_std  = def_sizes(obrien2013, species)
 
-
-    ntpl = library(species, genera, family, 
-                    sizes(
-                        mean_values(villiot_mean, obrien_mean, sheward_mean), 
-                        std_values(villiot_std, obrien_std, sheward_std)))
-
+    ntpl = library(
+        groups['species'], 
+        groups['genera'], 
+        groups['family'],  
+        groups['phase'], 
+        groups['alternate_phase'],
+        sizes(
+            mean_values(
+                villiot_mean, 
+                obrien_mean, 
+                sheward_mean), 
+            std_values(
+                villiot_std, 
+                obrien_std, 
+                sheward_std)
+            )
+        )
 
     return(ntpl)
 
-ehux = create_namedtuple(groups, villiot2021, obrien2013, "Emiliania huxleyi")
+library = []
 
-print(ehux.size.mean.obrien2013)
-print(ehux.species)
-print(ehux.family)
-print(ehux.genera)
+for i in range(len(species_list)):
+    library.append(create_namedtuple(groups, villiot2021, obrien2013, species_list[i]))
 
-library = [ehux, ehux]
-
-def convert(a):
+def convert_float(a):
     try:
         b = float(a)
     except:
         b = None
     return(b)
 
+def convert_str(a):
+    try:
+        b = str(a.iloc[0])
+    except:
+        b = None
+    return(b)
 
 def export_yml(library, path):
-    
+
     spp_list = []
 
     for i in range(len(library)):
         ntpl = library[i]
-        species = ntpl.species
-
-        spp_list.append({
-            species: {
-                'genera': ntpl.genera,
-                'family': ntpl.family,
+        name = convert_str(ntpl.species)
+        print(name)
+        species =  {name: {
+                'genera': convert_str(ntpl.genera),
+                'family': convert_str(ntpl.family),
+                'phase': convert_str(ntpl.phase),
+                'alternate_phase': convert_str(ntpl.alternate_phase),
                 'size':{
                     'mean':{
-                        'obrien': convert(ntpl.size.mean.obrien2013),
-                        'villiot':convert(ntpl.size.mean.villiot2021),
-                        'sheward':convert(ntpl.size.mean.sheward2024)
+                        'obrien': convert_float(ntpl.size.mean.obrien2013),
+                        'villiot':convert_float(ntpl.size.mean.villiot2021),
+                        'sheward':convert_float(ntpl.size.mean.sheward2024)
                     },
                     'std':{
-                        'obrien':convert(ntpl.size.std.obrien2013),
-                        'villiot':convert(ntpl.size.std.villiot2021),
-                        'sheward':convert(ntpl.size.std.sheward2024)
+                        'obrien':convert_float(ntpl.size.std.obrien2013),
+                        'villiot':convert_float(ntpl.size.std.villiot2021),
+                        'sheward':convert_float(ntpl.size.std.sheward2024)
                     }
                 }
-        }})
+            }
+        }
+        spp_list.append(species)
 
     with open(path, 'w') as outfile:
-        yaml.dump(spp_list, outfile, default_flow_style=False)
+        yaml.dump(spp_list, outfile)
 
     print("exported yml to: " + str(path))
 
