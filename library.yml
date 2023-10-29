@@ -1,0 +1,24 @@
+- Emiliania huxleyi:
+    family: Noelaerhabdaceae
+    genera: Emiliania
+    size:
+      mean:
+        obrien: 3.5
+        sheward: 3.5
+        villiot: 40.72352891976194
+      std:
+        obrien: null
+        sheward: null
+        villiot: 7.6116639234625945
+- Emiliania huxleyi:
+    family: Noelaerhabdaceae
+    genera: Emiliania
+    size:
+      mean:
+        obrien: 3.5
+        sheward: 3.5
+        villiot: 40.72352891976194
+      std:
+        obrien: null
+        sheward: null
+        villiot: 7.6116639234625945

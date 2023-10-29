@@ -3,14 +3,14 @@ import numpy as np
 import sys
 from collections import namedtuple
 from yaml import load, Loader
-
+import yaml
 
 def def_grouping():
 
-    with open('/home/phyto/CoccoData/phases.yml', 'r') as f:
+    with open('/home/phyto/CoccoData/classification/phases.yml', 'r') as f:
         phases = load(f, Loader=Loader)
 
-    with open('/home/phyto/CoccoData/family.yml', 'r') as f:
+    with open('/home/phyto/CoccoData/classification/family.yml', 'r') as f:
         families = load(f, Loader=Loader)
 
     d = pd.DataFrame.from_dict(phases, orient='index')
@@ -37,7 +37,7 @@ groups = def_grouping()
 
 
 def import_villiot2021():    
-    villiot_size = pd.read_csv("/home/phyto/CoccoData/viliot2021_cell_diameters.csv")
+    villiot_size = pd.read_csv("/home/phyto/CoccoData/sizes/viliot2021_cell_diameters.csv")
 
     #resample ehux
     RCC1731 = np.random.normal(villiot_size[villiot_size["strain"]=="RCC1731"]['mean'], villiot_size[villiot_size["strain"]=="RCC1731"]['std'], 10000)
@@ -76,11 +76,11 @@ villiot2021 = import_villiot2021()
 def import_obrien2013():
     
     #read obrien size data
-    obrien_size = pd.read_csv("/home/phyto/CoccoData/obrien_cell_diameters.csv")
+    obrien_size = pd.read_csv("/home/phyto/CoccoData/sizes/obrien_cell_diameters.csv")
     #apply synonyms
     obrien_size['species'] = obrien_size['species'].str.strip()
 
-    with open('/home/phyto/CoccoData/groupings.yml', 'r') as f:
+    with open('/home/phyto/CoccoData/classification/synonyms.yml', 'r') as f:
         groupings = load(f, Loader=Loader)
 
     species = obrien_size['species']
@@ -180,10 +180,54 @@ def create_namedtuple(groups, villiot2021, obrien2013, species):
 
 ehux = create_namedtuple(groups, villiot2021, obrien2013, "Emiliania huxleyi")
 
-print(ehux.size.mean)
+print(ehux.size.mean.obrien2013)
 print(ehux.species)
 print(ehux.family)
 print(ehux.genera)
+
+library = [ehux, ehux]
+
+def convert(a):
+    try:
+        b = float(a)
+    except:
+        b = None
+    return(b)
+
+
+def export_yml(library, path):
+    
+    spp_list = []
+
+    for i in range(len(library)):
+        ntpl = library[i]
+        species = ntpl.species
+
+        spp_list.append({
+            species: {
+                'genera': ntpl.genera,
+                'family': ntpl.family,
+                'size':{
+                    'mean':{
+                        'obrien': convert(ntpl.size.mean.obrien2013),
+                        'villiot':convert(ntpl.size.mean.villiot2021),
+                        'sheward':convert(ntpl.size.mean.sheward2024)
+                    },
+                    'std':{
+                        'obrien':convert(ntpl.size.std.obrien2013),
+                        'villiot':convert(ntpl.size.std.villiot2021),
+                        'sheward':convert(ntpl.size.std.sheward2024)
+                    }
+                }
+        }})
+
+    with open(path, 'w') as outfile:
+        yaml.dump(spp_list, outfile, default_flow_style=False)
+
+    print("exported yml to: " + str(path))
+
+
+export_yml(library, '/home/phyto/CoccoData/library.yml')
 
 
 
