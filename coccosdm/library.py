@@ -230,13 +230,13 @@ def export_yml(library, path):
                 'size':{
                     'mean':{
                         'obrien': convert_float(ntpl.size.mean.obrien2013),
-                        'villiot':convert_float(ntpl.size.mean.villiot2021),
-                        'sheward':convert_float(ntpl.size.mean.sheward2024)
+                        'villiot': convert_float(ntpl.size.mean.villiot2021),
+                        'sheward': convert_float(ntpl.size.mean.sheward2024)
                     },
                     'std':{
-                        'obrien':convert_float(ntpl.size.std.obrien2013),
-                        'villiot':convert_float(ntpl.size.std.villiot2021),
-                        'sheward':convert_float(ntpl.size.std.sheward2024)
+                        'obrien': convert_float(ntpl.size.std.obrien2013),
+                        'villiot': convert_float(ntpl.size.std.villiot2021),
+                        'sheward': convert_float(ntpl.size.std.sheward2024)
                     }
                 }
             }
