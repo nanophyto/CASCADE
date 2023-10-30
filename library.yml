@@ -9,7 +9,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 2287.9500000000003
+        mean: 2288.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -39,7 +39,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 1049.89
+        mean: 1050.0
         method: literature morphometrics
         std: null
 - Syracosphaera arethusae HOL:
@@ -53,7 +53,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 454.9
+        mean: 455.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -75,7 +75,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 1250.55
+        mean: 1251.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -83,7 +83,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 425.25
+        mean: 425.0
         method: literature morphometrics
         std: null
 - Syracosphaera molischii HOL:
@@ -97,7 +97,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 38.02
+        mean: 38.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -105,7 +105,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 82.45
+        mean: 82.0
         method: literature morphometrics
         std: null
 - Syracosphaera bannockii HOL:
@@ -119,7 +119,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 64.53
+        mean: 65.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -127,7 +127,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 145.12
+        mean: 145.0
         method: literature morphometrics
         std: null
 - Syracosphaera mediterranea HOL wettsteinii type:
@@ -141,7 +141,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 260.4533333333333
+        mean: 260.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -149,7 +149,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 91.95
+        mean: 92.0
         method: literature morphometrics
         std: null
 - Syracosphaera strigilis HOL:
@@ -163,7 +163,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 114.8
+        mean: 115.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -171,7 +171,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 42.8
+        mean: 43.0
         method: literature morphometrics
         std: null
 - Syracosphaera aurisinae HOL:
@@ -185,7 +185,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 284.24666666666667
+        mean: 284.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -193,7 +193,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 150.53
+        mean: 151.0
         method: literature morphometrics
         std: null
 - Syracosphaera periperforata HOL:
@@ -215,7 +215,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 77.51
+        mean: 78.0
         method: literature morphometrics
         std: null
 - Syracosphaera magnaghii HOL:
@@ -237,7 +237,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 82.45
+        mean: 82.0
         method: literature morphometrics
         std: null
 - Syracosphaera mediterranea HOL gracillima type:
@@ -251,7 +251,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 452.89
+        mean: 453.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -281,7 +281,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 582.92
+        mean: 583.0
         method: literature morphometrics
         std: null
 - Syracosphaera mediterranea HOL marisrubri type:
@@ -339,7 +339,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 1302.46
+        mean: 1302.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -347,7 +347,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 16.52
+        mean: 17.0
         method: literature morphometrics
         std: null
 - Syracosphaera molischii:
@@ -361,7 +361,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 130.17000000000002
+        mean: 130.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -369,7 +369,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 212.61
+        mean: 213.0
         method: literature morphometrics
         std: null
 - Syracosphaera mediterranea:
@@ -383,7 +383,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 452.33
+        mean: 452.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -391,7 +391,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 6153.650000000001
+        mean: 6154.0
         method: literature morphometrics
         std: null
 - Syracosphaera ossa:
@@ -405,7 +405,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 136.7215
+        mean: 137.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -413,7 +413,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 86.64
+        mean: 87.0
         method: literature morphometrics
         std: null
 - Syracosphaera histrica:
@@ -435,7 +435,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 1596.26
+        mean: 1596.0
         method: literature morphometrics
         std: null
 - Syracosphaera anthos:
@@ -449,7 +449,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 332.59666666666664
+        mean: 333.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -457,7 +457,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 485.3
+        mean: 485.0
         method: literature morphometrics
         std: null
 - Syracosphaera nodosa:
@@ -471,7 +471,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 266.55100000000004
+        mean: 267.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -479,7 +479,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 97.48
+        mean: 97.0
         method: literature morphometrics
         std: null
 - Syracosphaera prolongata:
@@ -493,7 +493,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 933.6409677419355
+        mean: 934.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -501,7 +501,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 23.23
+        mean: 23.0
         method: literature morphometrics
         std: null
 - Syracosphaera corolla:
@@ -523,7 +523,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 432.12
+        mean: 432.0
         method: literature morphometrics
         std: null
 - Syracosphaera halldalli:
@@ -537,7 +537,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 207.09620689655173
+        mean: 207.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -545,7 +545,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 796.33
+        mean: 796.0
         method: literature morphometrics
         std: null
 - Syracosphaera neapolitana:
@@ -559,7 +559,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 151.8
+        mean: 152.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -567,7 +567,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 75.77
+        mean: 76.0
         method: literature morphometrics
         std: null
 - Syracosphaera marginiporata:
@@ -589,7 +589,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 124.19
+        mean: 124.0
         method: literature morphometrics
         std: null
 - Syracosphaera protrudens:
@@ -611,7 +611,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 441.87
+        mean: 442.0
         method: literature morphometrics
         std: null
 - Syracosphaera rotula:
@@ -625,7 +625,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 170.53333333333333
+        mean: 171.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -633,7 +633,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 63.51
+        mean: 64.0
         method: literature morphometrics
         std: null
 - Syracosphaera hastata:
@@ -647,7 +647,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 120.47
+        mean: 120.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -655,7 +655,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 115.95
+        mean: 116.0
         method: literature morphometrics
         std: null
 - Syracosphaera dilatata:
@@ -669,7 +669,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 1208.31
+        mean: 1208.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -677,7 +677,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 199.53
+        mean: 200.0
         method: literature morphometrics
         std: null
 - Syracosphaera orbiculus:
@@ -691,7 +691,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 119.58500000000001
+        mean: 120.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -699,7 +699,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 212.17
+        mean: 212.0
         method: literature morphometrics
         std: null
 - Syracosphaera epigrosa:
@@ -721,7 +721,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 572.15
+        mean: 572.0
         method: literature morphometrics
         std: null
 - Syracosphaera bannockii:
@@ -735,7 +735,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 467.64285714285717
+        mean: 468.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -743,7 +743,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 457.48
+        mean: 457.0
         method: literature morphometrics
         std: null
 - Syracosphaera arethusae:
@@ -765,7 +765,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 207.06
+        mean: 207.0
         method: literature morphometrics
         std: null
 - Syracosphaera tumularis:
@@ -775,7 +775,7 @@
     phase: HET
     size:
       obrien2013:
-        mean: 2026.2712364964273
+        mean: 2026.0
         method: light microscopy
         std: null
       sheward2024:
@@ -787,7 +787,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 2026.27
+        mean: 2026.0
         method: literature morphometrics
         std: null
 - Syracosphaera ampliora:
@@ -809,7 +809,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 248.47
+        mean: 248.0
         method: literature morphometrics
         std: null
 - Syracosphaera gaarderae:
@@ -831,7 +831,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 322.69
+        mean: 323.0
         method: literature morphometrics
         std: null
 - Syracosphaera noroitica:
@@ -845,7 +845,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 161.85750000000002
+        mean: 162.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -853,7 +853,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 796.33
+        mean: 796.0
         method: literature morphometrics
         std: null
 - Syracosphaera exigua:
@@ -875,7 +875,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 394.57
+        mean: 395.0
         method: literature morphometrics
         std: null
 - Syracosphaera squamosa:
@@ -919,7 +919,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 217.38
+        mean: 217.0
         method: literature morphometrics
         std: null
 - Syracosphaera reniformis:
@@ -977,7 +977,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 1521.8600000000001
+        mean: 1522.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -985,7 +985,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 1467.76
+        mean: 1468.0
         method: literature morphometrics
         std: null
 - Alisphaera unicornis:
@@ -1007,7 +1007,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 595.8
+        mean: 596.0
         method: literature morphometrics
         std: null
 - Alisphaera gaudii:
@@ -1029,7 +1029,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 166.82
+        mean: 167.0
         method: literature morphometrics
         std: null
 - Alisphaera extenta:
@@ -1051,7 +1051,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 189.79
+        mean: 190.0
         method: literature morphometrics
         std: null
 - Alisphaera pinnigera:
@@ -1073,7 +1073,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 485.3
+        mean: 485.0
         method: literature morphometrics
         std: null
 - Calcidiscus leptoporus HOL:
@@ -1095,7 +1095,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 858.1
+        mean: 858.0
         method: literature morphometrics
         std: null
 - Calcidiscus leptoporus:
@@ -1105,11 +1105,11 @@
     phase: HET
     size:
       obrien2013:
-        mean: 576.3267840035286
+        mean: 576.0
         method: light microscopy
         std: null
       sheward2024:
-        mean: 853.734
+        mean: 854.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1117,7 +1117,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 597.51
+        mean: 598.0
         method: literature morphometrics
         std: null
 - Helicosphaera pavimentum HOL:
@@ -1161,7 +1161,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 248.47
+        mean: 248.0
         method: literature morphometrics
         std: null
 - Helicosphaera HOL catilliferus type:
@@ -1175,7 +1175,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 317.79
+        mean: 318.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1197,7 +1197,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 704.54
+        mean: 705.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1205,7 +1205,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 189.79
+        mean: 190.0
         method: literature morphometrics
         std: null
 - Helicosphaera pavimentum:
@@ -1227,7 +1227,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 755.5
+        mean: 756.0
         method: literature morphometrics
         std: null
 - Helicosphaera wallichii:
@@ -1241,7 +1241,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 742.38
+        mean: 742.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1249,7 +1249,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 33.76
+        mean: 34.0
         method: literature morphometrics
         std: null
 - Helicosphaera hyalina:
@@ -1263,7 +1263,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 785.2950000000001
+        mean: 785.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1271,7 +1271,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 753.5
+        mean: 754.0
         method: literature morphometrics
         std: null
 - Calyptrosphaera sphaeroidea HOL:
@@ -1315,7 +1315,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 143.79
+        mean: 144.0
         method: literature morphometrics
         std: null
 - Ceratolithus cristatus CER:
@@ -1329,7 +1329,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 82.22
+        mean: 82.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1381,7 +1381,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 817.28
+        mean: 817.0
         method: literature morphometrics
         std: null
 - Coccolithus pelagicus:
@@ -1391,7 +1391,7 @@
     phase: HET
     size:
       obrien2013:
-        mean: 1467.7630833314388
+        mean: 1468.0
         method: light microscopy
         std: null
       sheward2024:
@@ -1399,11 +1399,11 @@
         method: AMT morphometrics
         std: null
       villiot2021a:
-        mean: 1936.1
+        mean: 1936.0
         method: light microscopy
-        std: 23.2
+        std: 23.0
       villiot2021b:
-        mean: 1467.76
+        mean: 1468.0
         method: literature morphometrics
         std: null
 - Calyptrolithina multipora:
@@ -1417,7 +1417,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 1223.56
+        mean: 1224.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1425,7 +1425,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 1653.06
+        mean: 1653.0
         method: literature morphometrics
         std: null
 - Calyptrolithina divergens:
@@ -1447,7 +1447,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 69.05
+        mean: 69.0
         method: literature morphometrics
         std: null
 - Calicasphaera diconstricta:
@@ -1469,7 +1469,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 179.59
+        mean: 180.0
         method: literature morphometrics
         std: null
 - Zygosphaera marsilii:
@@ -1505,7 +1505,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 50.512499999999996
+        mean: 51.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1513,7 +1513,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 60.1
+        mean: 60.0
         method: literature morphometrics
         std: null
 - Corisphaera tyrrheniensis:
@@ -1527,7 +1527,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 113.05199999999999
+        mean: 113.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1535,7 +1535,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 127.83
+        mean: 128.0
         method: literature morphometrics
         std: null
 - Corisphaera gracilis:
@@ -1549,7 +1549,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 154.595
+        mean: 155.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1557,7 +1557,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 154.68
+        mean: 155.0
         method: literature morphometrics
         std: null
 - Homozygosphaera triarcha:
@@ -1579,7 +1579,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 81.54
+        mean: 82.0
         method: literature morphometrics
         std: null
 - Homozygosphaera spinosa:
@@ -1601,7 +1601,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 31.06
+        mean: 31.0
         method: literature morphometrics
         std: null
 - Sphaerocalyptra quadridentata:
@@ -1623,7 +1623,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 4.19
+        mean: 4.0
         method: literature morphometrics
         std: null
 - Helladosphaera cornifera:
@@ -1637,7 +1637,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 162.15692307692308
+        mean: 162.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1645,7 +1645,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 71.94
+        mean: 72.0
         method: literature morphometrics
         std: null
 - Helladosphaera pienaarii:
@@ -1677,19 +1677,19 @@
     phase: HET
     size:
       obrien2013:
-        mean: 22.44929750377706
+        mean: 22.0
         method: light microscopy
         std: null
       sheward2024:
-        mean: 86.0789591078067
+        mean: 86.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
-        mean: 40.74674197954421
+        mean: 41.0
         method: light microscopy
-        std: 7.629993305726646
+        std: 8.0
       villiot2021b:
-        mean: 47.71
+        mean: 48.0
         method: literature morphometrics
         std: null
 - Umbellosphaera irregularis:
@@ -1699,11 +1699,11 @@
     phase: HET
     size:
       obrien2013:
-        mean: 130.92430304202782
+        mean: 131.0
         method: light microscopy
         std: null
       sheward2024:
-        mean: 139.6527894736842
+        mean: 140.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1711,7 +1711,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 199.53
+        mean: 200.0
         method: literature morphometrics
         std: null
 - Umbellosphaera tenuis:
@@ -1721,11 +1721,11 @@
     phase: HET
     size:
       obrien2013:
-        mean: 96.96682804937576
+        mean: 97.0
         method: light microscopy
         std: null
       sheward2024:
-        mean: 155.52308943089432
+        mean: 156.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1733,7 +1733,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 321.56
+        mean: 322.0
         method: literature morphometrics
         std: null
 - Rhabdosphaera clavigera:
@@ -1743,11 +1743,11 @@
     phase: HET
     size:
       obrien2013:
-        mean: 130.92430304202782
+        mean: 131.0
         method: light microscopy
         std: null
       sheward2024:
-        mean: 81.84890410958904
+        mean: 82.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1755,7 +1755,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 130.92
+        mean: 131.0
         method: literature morphometrics
         std: null
 - Rhabdosphaera xiphos:
@@ -1769,7 +1769,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 425.8972727272727
+        mean: 426.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1777,7 +1777,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 169.77
+        mean: 170.0
         method: literature morphometrics
         std: null
 - Discosphaera tubifera:
@@ -1787,11 +1787,11 @@
     phase: HET
     size:
       obrien2013:
-        mean: 54.36159567894218
+        mean: 54.0
         method: light microscopy
         std: null
       sheward2024:
-        mean: 203.968
+        mean: 204.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1799,7 +1799,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 107.54
+        mean: 108.0
         method: literature morphometrics
         std: null
 - Gephyrocapsa ericsonii:
@@ -1813,7 +1813,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 6.409545454545454
+        mean: 6.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1821,7 +1821,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 10.08
+        mean: 10.0
         method: literature morphometrics
         std: null
 - Gephyrocapsa oceanica:
@@ -1831,7 +1831,7 @@
     phase: HET
     size:
       obrien2013:
-        mean: 65.44984694978736
+        mean: 65.0
         method: light microscopy
         std: null
       sheward2024:
@@ -1839,11 +1839,11 @@
         method: AMT morphometrics
         std: null
       villiot2021a:
-        mean: 234.6
+        mean: 235.0
         method: light microscopy
-        std: 3.9
+        std: 4.0
       villiot2021b:
-        mean: 57.91
+        mean: 58.0
         method: literature morphometrics
         std: null
 - Gephyrocapsa muellerae:
@@ -1863,9 +1863,9 @@
       villiot2021a:
         mean: 65.0
         method: light microscopy
-        std: 3.7
+        std: 4.0
       villiot2021b:
-        mean: 40.76
+        mean: 41.0
         method: literature morphometrics
         std: null
 - Gephyrocapsa ornata:
@@ -1879,7 +1879,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 7.89
+        mean: 8.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1887,7 +1887,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 18.14
+        mean: 18.0
         method: literature morphometrics
         std: null
 - Gephyrocapsa parvula:
@@ -1905,11 +1905,11 @@
         method: AMT morphometrics
         std: null
       villiot2021a:
-        mean: 14.4
+        mean: 14.0
         method: light microscopy
-        std: 1.4
+        std: 1.0
       villiot2021b:
-        mean: 19.33
+        mean: 19.0
         method: literature morphometrics
         std: null
 - Algirosphaera robusta:
@@ -1919,11 +1919,11 @@
     phase: HET
     size:
       obrien2013:
-        mean: 77.51141022500568
+        mean: 78.0
         method: light microscopy
         std: null
       sheward2024:
-        mean: 28.935
+        mean: 29.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1931,7 +1931,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 77.51
+        mean: 78.0
         method: literature morphometrics
         std: null
 - Acanthoica quattrospina:
@@ -1945,7 +1945,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 133.47333333333333
+        mean: 133.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1953,7 +1953,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 95.44
+        mean: 95.0
         method: literature morphometrics
         std: null
 - Acanthoica acanthifera:
@@ -1967,7 +1967,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 149.87
+        mean: 150.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1985,11 +1985,11 @@
     phase: HET
     size:
       obrien2013:
-        mean: 3315.231097547579
+        mean: 3315.0
         method: light microscopy
         std: null
       sheward2024:
-        mean: 2326.065
+        mean: 2326.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1997,7 +1997,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 7420.7
+        mean: 7421.0
         method: literature morphometrics
         std: null
 - Umbilicosphaera hulburtiana:
@@ -2011,7 +2011,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 361.645744680851
+        mean: 362.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -2019,7 +2019,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 167.56
+        mean: 168.0
         method: literature morphometrics
         std: null
 - Umbilicosphaera anulus:
@@ -2041,7 +2041,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 2226.09
+        mean: 2226.0
         method: literature morphometrics
         std: null
 - Umbilicosphaera foliosa:
@@ -2051,7 +2051,7 @@
     phase: HET
     size:
       obrien2013:
-        mean: 394.5688529263856
+        mean: 395.0
         method: light microscopy
         std: null
       sheward2024:
@@ -2085,7 +2085,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 461.8
+        mean: 462.0
         method: literature morphometrics
         std: null
 - Calciosolenia murrayi:
@@ -2099,7 +2099,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 305.08
+        mean: 305.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -2107,21 +2107,21 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 66.64
+        mean: 67.0
         method: literature morphometrics
         std: null
 - Florisphaera profunda:
     alternate_phase: None
-    family: Nannolith
+    family: Undefined
     genera: Florisphaera
     phase: HET
     size:
       obrien2013:
-        mean: 31.059355769715484
+        mean: 31.0
         method: light microscopy
         std: null
       sheward2024:
-        mean: 77.075
+        mean: 77.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -2129,7 +2129,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 33.51
+        mean: 34.0
         method: literature morphometrics
         std: null
 - Ophiaster hydroideus:
@@ -2195,7 +2195,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 7238.23
+        mean: 7238.0
         method: literature morphometrics
         std: null
 - Oolithotus antillarum:
@@ -2205,11 +2205,11 @@
     phase: HET
     size:
       obrien2013:
-        mean: 54.36159567894218
+        mean: 54.0
         method: light microscopy
         std: null
       sheward2024:
-        mean: 140.28
+        mean: 140.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -2217,7 +2217,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 229.85
+        mean: 230.0
         method: literature morphometrics
         std: null
 - Oolithotus fragilis:
@@ -2227,7 +2227,7 @@
     phase: HET
     size:
       obrien2013:
-        mean: 1376.0552813841728
+        mean: 1376.0
         method: light microscopy
         std: null
       sheward2024:
@@ -2239,7 +2239,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 1376.06
+        mean: 1376.0
         method: literature morphometrics
         std: null
 - Michaelsarsia elegans:
@@ -2253,7 +2253,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 1738.28
+        mean: 1738.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -2261,7 +2261,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 179.59
+        mean: 180.0
         method: literature morphometrics
         std: null
 - Michaelsarsia adriaticus:
@@ -2283,7 +2283,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 893.52
+        mean: 894.0
         method: literature morphometrics
         std: null
 - Gladiolithus flabellatus:
@@ -2305,7 +2305,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 136.62
+        mean: 137.0
         method: literature morphometrics
         std: null
 - Cyrtosphaera aculeata:
@@ -2319,7 +2319,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 281.67
+        mean: 282.0
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -2327,7 +2327,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 124.105
+        mean: 124.0
         method: literature morphometrics
         std: null
 - Calciopappus caudatus:
@@ -2371,7 +2371,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 65.45
+        mean: 65.0
         method: literature morphometrics
         std: null
 - Papposphaera lepida:
@@ -2393,7 +2393,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 99.54
+        mean: 100.0
         method: literature morphometrics
         std: null
 - Scyphosphaera apsteinii:
@@ -2415,7 +2415,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 4510.87
+        mean: 4511.0
         method: literature morphometrics
         std: null
 - Reticulofenestra sessilis:
@@ -2459,7 +2459,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 36.88
+        mean: 37.0
         method: literature morphometrics
         std: null
 - Wigwamma antarctica:
@@ -2503,7 +2503,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 2854.54
+        mean: 2855.0
         method: literature morphometrics
         std: null
 - Gliscolithus amitakareniae:
@@ -2525,7 +2525,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 249.43
+        mean: 249.0
         method: literature morphometrics
         std: null
 - Pappomonas type 3:
@@ -2547,7 +2547,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 410.38
+        mean: 410.0
         method: literature morphometrics
         std: null
 - Pappomonas type 5:
@@ -2591,7 +2591,7 @@
         method: light microscopy
         std: null
       villiot2021b:
-        mean: 38792.39
+        mean: 38792.0
         method: literature morphometrics
         std: null
 - null:

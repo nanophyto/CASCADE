@@ -86,7 +86,8 @@ def import_villiot2021():
     d = d[d["species"]!="Calcidiscus leptoporus"]
 
     d = pd.concat([d, ehux, leptoporus])
-    
+    d['mean'] = np.round(d['mean'])
+    d['std'] = np.round(d['std'])
     villiot2021 = d[['species', 'mean', 'std']]
 
     return(villiot2021)
@@ -102,7 +103,7 @@ def import_villiot2021b():
     #read obrien size data
     d = rename_synonyms(d)
     d = d.rename(columns={'cell volume': "mean"})
-
+    d['mean'] = np.round(d['mean'])
     return(d)
 
 villiot2021b = import_villiot2021b()
@@ -118,7 +119,7 @@ def import_obrien2013():
 
     d = d.rename(columns={'diameter': "mean"})
     d['mean'] = 1/6*math.pi*(d['mean']**3)
-
+    d['mean'] = np.round(d['mean'])
     return(d)
 
 obrien2013 = import_obrien2013()
@@ -147,7 +148,8 @@ def import_sheward2024():
     d_std = d_std.rename(columns={'PIC pg C': "PIC_std",
                                             'Estimated cell volume': "std"})
 
-
+    d_std['std'] = np.round(d_std['std'])
+    d_mean['mean'] = np.round(d_mean['mean'])
     d = pd.concat([d_mean[['species', 'mean']], d_std['std'] ], axis=1)
 
     return(d)
