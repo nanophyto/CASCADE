@@ -39,23 +39,43 @@ groups = def_grouping()
 species_list = groups.species
 
 
+
+def rename_synonyms(d, index='species'):
+    d['species'] = d['species'].str.strip()
+
+    with open('/home/phyto/CoccoData/classification/synonyms.yml', 'r') as f:
+        groupings = load(f, Loader=Loader)
+
+    species = d['species']
+    synonym_dict = {species:k
+        for k, v in groupings.items()
+        for species in v['alt']}
+
+    d = d.replace(synonym_dict)
+
+    #take mean for duplicate entries
+    d = d.groupby(index).mean().reset_index()    
+
+    return(d)
+
 def import_villiot2021():    
-    villiot_size = pd.read_csv("/home/phyto/CoccoData/sizes/viliot2021_cell_diameters.csv")
+    d = pd.read_csv("/home/phyto/CoccoData/sizes/viliot2021_cell_diameters.csv")
+    d = rename_synonyms(d, ['species', 'strain'])
 
     #resample ehux
-    RCC1731 = np.random.normal(villiot_size[villiot_size["strain"]=="RCC1731"]['mean'], villiot_size[villiot_size["strain"]=="RCC1731"]['std'], 10000)
-    RCC1128 = np.random.normal(villiot_size[villiot_size["strain"]=="RCC1228"]['mean'], villiot_size[villiot_size["strain"]=="RCC1228"]['std'], 10000)
+    RCC1731 = np.random.normal(d[d["strain"]=="RCC1731"]['mean'], d[d["strain"]=="RCC1731"]['std'], 10000)
+    RCC1128 = np.random.normal(d[d["strain"]=="RCC1228"]['mean'], d[d["strain"]=="RCC1228"]['std'], 10000)
     
     ehux = {'species': ["Emiliania huxleyi"],
                 'mean': [np.mean([RCC1128, RCC1731])],
                 'std': [np.std([RCC1128, RCC1731])],
                 'strain': ['NA']}
     ehux = pd.DataFrame(ehux)
-    villiot_size = villiot_size[villiot_size["species"]!="Emiliania huxleyi"]
+    d = d[d["species"]!="Emiliania huxleyi"]
     
     #resample leptoporus
-    RCC1130 = np.random.normal(villiot_size[villiot_size["strain"]=="RCC1130"]['mean'], villiot_size[villiot_size["strain"]=="RCC1130"]['std'], 10000)
-    RCC1135 = np.random.normal(villiot_size[villiot_size["strain"]=="RCC1135"]['mean'], villiot_size[villiot_size["strain"]=="RCC1135"]['std'], 10000)
+    RCC1130 = np.random.normal(d[d["strain"]=="RCC1130"]['mean'], d[d["strain"]=="RCC1130"]['std'], 10000)
+    RCC1135 = np.random.normal(d[d["strain"]=="RCC1135"]['mean'], d[d["strain"]=="RCC1135"]['std'], 10000)
     
     leptoporus = {'species': ["Coccolithus leptoporus"],
                 'mean': [np.mean([RCC1130, RCC1135])],
@@ -63,11 +83,11 @@ def import_villiot2021():
                 'strain':['NA']}
     leptoporus = pd.DataFrame(leptoporus)
 
-    villiot_size = villiot_size[villiot_size["species"]!="Calcidiscus leptoporus"]
+    d = d[d["species"]!="Calcidiscus leptoporus"]
 
-    villiot_size = pd.concat([villiot_size, ehux, leptoporus])
-
-    villiot2021 = villiot_size[['species', 'mean', 'std']]
+    d = pd.concat([d, ehux, leptoporus])
+    
+    villiot2021 = d[['species', 'mean', 'std']]
 
     return(villiot2021)
 
@@ -76,34 +96,30 @@ villiot2021 = import_villiot2021()
 
 
 
+def import_villiot2021b():
+    d = pd.read_csv("/home/phyto/CoccoData/sizes/villiot2021_literature_morphometric_volume.csv")
+
+    #read obrien size data
+    d = rename_synonyms(d)
+    d = d.rename(columns={'cell volume': "mean"})
+
+    return(d)
+
+villiot2021b = import_villiot2021b()
+
+
+
 def import_obrien2013():
+    d = pd.read_csv("/home/phyto/CoccoData/sizes/obrien_cell_diameters.csv")
     
     #read obrien size data
-    obrien_size = pd.read_csv("/home/phyto/CoccoData/sizes/obrien_cell_diameters.csv")
     #apply synonyms
-    obrien_size['species'] = obrien_size['species'].str.strip()
+    d = rename_synonyms(d)
 
-    with open('/home/phyto/CoccoData/classification/synonyms.yml', 'r') as f:
-        groupings = load(f, Loader=Loader)
+    d = d.rename(columns={'diameter': "mean"})
+    d['mean'] = 1/6*math.pi*(d['mean']**3)
 
-    species = obrien_size['species']
-    dict = {species:k
-        for k, v in groupings.items()
-        for species in v['alt']}
-
-    obrien_size = obrien_size.replace(dict)
-
-    df = obrien_size.rename(columns={'diameter': "mean"})
-
-    #take mean for duplicate entries
-    df = df.groupby('species').mean().reset_index()    
-
-    ##########
-    # STILL NEED TO ESTIMATE VOLUME FROM DIAMETER
-    ##########
-
-    #merge size data
-    return(df)
+    return(d)
 
 obrien2013 = import_obrien2013()
 
@@ -111,30 +127,31 @@ obrien2013 = import_obrien2013()
 def import_sheward2024():
 
     #read sheward size data
-    sheward2024 = pd.read_csv("/home/phyto/CoccoData/sheward2024.csv")
-    sheward2024['Species'] = sheward2024['Species'].str.strip()
-    sheward2024['Genus'] = sheward2024['Genus'].str.strip()
-    sheward2024['species'] = sheward2024['Genus'] + " " + sheward2024['Species'] 
+    d = pd.read_csv("/home/phyto/CoccoData/sizes/sheward2024_volumes.csv")
+    d['Species'] = d['Species'].str.strip()
+    d['Genus'] = d['Genus'].str.strip()
+    d['species'] = d['Genus'] + " " + d['Species'] 
 
-    species = sheward2024['species']
-    dict = {species:k
-        for k, v in groupings.items()
-        for species in v['alt']}
+    d = d[['species', 'Estimated cell volume', 'PIC pg C']]
 
-    sheward2024 = sheward2024.replace(dict)
+    d = rename_synonyms(d)
 
-    sheward2024 = sheward2024[['species', 'Estimated cell volume', 'PIC pg C']]
 
-    sheward2024_mean = sheward2024.groupby(by="species").mean()
+    d_mean = d.groupby(by="species").mean()
 
-    sheward2024_std = sheward2024.groupby(by="species").std()
+    d_std = d.groupby(by="species").std()
 
-    sheward2024_mean = sheward2024_mean.rename(columns={'PIC pg C': "PIC_mean",
-                                            'Estimated cell volume': "size_mean_sheward2024"})
+    d_mean = d_mean.rename(columns={'PIC pg C': "PIC_mean",
+                                            'Estimated cell volume': "mean"}).reset_index()
 
-    sheward2024_std = sheward2024_std.rename(columns={'PIC pg C': "PIC_std",
-                                            'Estimated cell volume': "size_std_sheward2024"})
+    d_std = d_std.rename(columns={'PIC pg C': "PIC_std",
+                                            'Estimated cell volume': "std"})
 
+
+    d = pd.concat([d_mean[['species', 'mean']], d_std['std'] ], axis=1)
+
+    return(d)
+sheward2024 = import_sheward2024()
 
 
                                             
@@ -159,21 +176,25 @@ def def_sizes(d, species):
 print(groups['species'])
 
 
-def create_namedtuple(groups, villiot2021, obrien2013, species):
+def create_namedtuple(groups, species):
 
-    mean_values = namedtuple('mean', 'villiot2021 obrien2013 sheward2024')
-    std_values = namedtuple('std', 'villiot2021 obrien2013 sheward2024')
+    obrien2013_values = namedtuple('obrien2013', 'mean std method')
+    sheward2024_values = namedtuple('sheward2024', 'mean std method')
+    villiot2021a_values = namedtuple('villiot2021a', 'mean std method')
+    villiot2021b_values = namedtuple('villiot2021b', 'mean std method')
 
-    sizes = namedtuple('size', ['mean', 'std'])
+    sizes = namedtuple('size', ['obrien2013', 'sheward2024',
+                                'villiot2021a', 'villiot2021b'])
 
     library = namedtuple('library', ['species', 'genera', 
             'family', 'phase', 'alternate_phase', 'size'])
 
     groups = groups[groups['species']==species]
 
-    villiot_mean, villiot_std  = def_sizes(villiot2021, species)
-    obrien_mean, obrien_std  = def_sizes(obrien2013, species)
-    sheward_mean, sheward_std  = def_sizes(obrien2013, species)
+    obrien2013_mean, obrien2013_std  = def_sizes(obrien2013, species)
+    sheward2024_mean, sheward2024_std  = def_sizes(sheward2024, species)
+    villiot2021a_mean, villiot2021a_std  = def_sizes(villiot2021, species)
+    villiot2021b_mean, villiot2021b_std = def_sizes(villiot2021b, species)
 
     ntpl = library(
         groups['species'], 
@@ -182,23 +203,36 @@ def create_namedtuple(groups, villiot2021, obrien2013, species):
         groups['phase'], 
         groups['alternate_phase'],
         sizes(
-            mean_values(
-                villiot_mean, 
-                obrien_mean, 
-                sheward_mean), 
-            std_values(
-                villiot_std, 
-                obrien_std, 
-                sheward_std)
-            )
+            obrien2013_values(
+                obrien2013_mean, 
+                obrien2013_std,
+                "light microscopy"
+            ),
+            sheward2024_values(
+                sheward2024_mean, 
+                sheward2024_std,
+                "AMT morphometrics"
+            ),
+            villiot2021a_values(
+                villiot2021a_mean, 
+                villiot2021a_std,
+                "light microscopy"
+            ),
+            villiot2021b_values(
+                villiot2021b_mean, 
+                villiot2021b_std,
+                "literature morphometrics"
+            ),
+
         )
+    )
 
     return(ntpl)
 
 library = []
 
 for i in range(len(species_list)):
-    library.append(create_namedtuple(groups, villiot2021, obrien2013, species_list[i]))
+    library.append(create_namedtuple(groups, species_list[i]))
 
 def convert_float(a):
     try:
@@ -220,6 +254,7 @@ def export_yml(library, path):
 
     for i in range(len(library)):
         ntpl = library[i]
+        print(ntpl.species)
         name = convert_str(ntpl.species)
         print(name)
         species =  {name: {
@@ -228,23 +263,33 @@ def export_yml(library, path):
                 'phase': convert_str(ntpl.phase),
                 'alternate_phase': convert_str(ntpl.alternate_phase),
                 'size':{
-                    'mean':{
-                        'obrien': convert_float(ntpl.size.mean.obrien2013),
-                        'villiot': convert_float(ntpl.size.mean.villiot2021),
-                        'sheward': convert_float(ntpl.size.mean.sheward2024)
-                    },
-                    'std':{
-                        'obrien': convert_float(ntpl.size.std.obrien2013),
-                        'villiot': convert_float(ntpl.size.std.villiot2021),
-                        'sheward': convert_float(ntpl.size.std.sheward2024)
+                    'obrien2013':{
+                        'mean': convert_float(ntpl.size.obrien2013.mean),
+                        'std': convert_float(ntpl.size.obrien2013.std),
+                        'method': ntpl.size.obrien2013.method
+                        },
+                    'villiot2021a':{
+                        'mean': convert_float(ntpl.size.villiot2021a.mean),
+                        'std': convert_float(ntpl.size.villiot2021a.std),
+                        'method': ntpl.size.villiot2021a.method
+                        },
+                    'villiot2021b':{
+                        'mean': convert_float(ntpl.size.villiot2021b.mean),
+                        'std': convert_float(ntpl.size.villiot2021b.std),
+                        'method': ntpl.size.villiot2021b.method
+                        },                
+                    'sheward2024':{
+                        'mean': convert_float(ntpl.size.sheward2024.mean),
+                        'std': convert_float(ntpl.size.sheward2024.std),
+                        'method': ntpl.size.sheward2024.method
+                        }
                     }
                 }
             }
-        }
         spp_list.append(species)
 
     with open(path, 'w') as outfile:
-        yaml.dump(spp_list, outfile)
+        yaml.dump(spp_list, outfile, default_flow_style=False)
 
     print("exported yml to: " + str(path))
 

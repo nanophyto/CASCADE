@@ -4,1663 +4,2615 @@
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 2287.9500000000003
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Syracosphaera histrica HOL:
     alternate_phase: Syracosphaera histrica
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: .nan
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 1049.89
+        method: literature morphometrics
+        std: null
 - Syracosphaera arethusae HOL:
     alternate_phase: Syracosphaera arethusae
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 454.9
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Syracosphaera anthos HOL:
     alternate_phase: Syracosphaera anthos
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 1250.55
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 425.25
+        method: literature morphometrics
+        std: null
 - Syracosphaera molischii HOL:
     alternate_phase: Syracosphaera molischii
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 38.02
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 82.45
+        method: literature morphometrics
+        std: null
 - Syracosphaera bannockii HOL:
     alternate_phase: Syracosphaera bannockii
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 64.53
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 145.12
+        method: literature morphometrics
+        std: null
 - Syracosphaera mediterranea HOL wettsteinii type:
     alternate_phase: Syracosphaera mediterranea
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 260.4533333333333
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 91.95
+        method: literature morphometrics
+        std: null
 - Syracosphaera strigilis HOL:
     alternate_phase: Syracosphaera strigilis
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 114.8
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 42.8
+        method: literature morphometrics
+        std: null
 - Syracosphaera aurisinae HOL:
     alternate_phase: Syracosphaera aurisinae
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 284.24666666666667
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 150.53
+        method: literature morphometrics
+        std: null
 - Syracosphaera periperforata HOL:
     alternate_phase: Syracosphaera periperforata
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 77.51
+        method: literature morphometrics
+        std: null
 - Syracosphaera magnaghii HOL:
     alternate_phase: Syracosphaera magnaghii
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 82.45
+        method: literature morphometrics
+        std: null
 - Syracosphaera mediterranea HOL gracillima type:
     alternate_phase: Syracosphaera mediterranea
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 452.89
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Syracosphaera isselii HOL:
     alternate_phase: Syracosphaera isselii
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 582.92
+        method: literature morphometrics
+        std: null
 - Syracosphaera mediterranea HOL marisrubri type:
     alternate_phase: Syracosphaera mediterranea
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Syracosphaera gaarderae HOL:
     alternate_phase: Syracosphaera gaarderae
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Syracosphaera pulchra:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 1302.46
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 16.52
+        method: literature morphometrics
+        std: null
 - Syracosphaera molischii:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 130.17000000000002
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 212.61
+        method: literature morphometrics
+        std: null
 - Syracosphaera mediterranea:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 452.33
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 6153.650000000001
+        method: literature morphometrics
+        std: null
 - Syracosphaera ossa:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 136.7215
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 86.64
+        method: literature morphometrics
+        std: null
 - Syracosphaera histrica:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 1596.26
+        method: literature morphometrics
+        std: null
 - Syracosphaera anthos:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 332.59666666666664
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 485.3
+        method: literature morphometrics
+        std: null
 - Syracosphaera nodosa:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 266.55100000000004
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 97.48
+        method: literature morphometrics
+        std: null
 - Syracosphaera prolongata:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 933.6409677419355
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 23.23
+        method: literature morphometrics
+        std: null
 - Syracosphaera corolla:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 432.12
+        method: literature morphometrics
+        std: null
 - Syracosphaera halldalli:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 207.09620689655173
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 796.33
+        method: literature morphometrics
+        std: null
 - Syracosphaera neapolitana:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 151.8
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 75.77
+        method: literature morphometrics
+        std: null
 - Syracosphaera marginiporata:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 124.19
+        method: literature morphometrics
+        std: null
 - Syracosphaera protrudens:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 441.87
+        method: literature morphometrics
+        std: null
 - Syracosphaera rotula:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 170.53333333333333
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 63.51
+        method: literature morphometrics
+        std: null
 - Syracosphaera hastata:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 120.47
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 115.95
+        method: literature morphometrics
+        std: null
 - Syracosphaera dilatata:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 1208.31
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 199.53
+        method: literature morphometrics
+        std: null
 - Syracosphaera orbiculus:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 119.58500000000001
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 212.17
+        method: literature morphometrics
+        std: null
 - Syracosphaera epigrosa:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 572.15
+        method: literature morphometrics
+        std: null
 - Syracosphaera bannockii:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 467.64285714285717
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 457.48
+        method: literature morphometrics
+        std: null
 - Syracosphaera arethusae:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 207.06
+        method: literature morphometrics
+        std: null
 - Syracosphaera tumularis:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: 15.7
-        sheward: 15.7
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: 2026.2712364964273
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 2026.27
+        method: literature morphometrics
+        std: null
 - Syracosphaera ampliora:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 248.47
+        method: literature morphometrics
+        std: null
 - Syracosphaera gaarderae:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 322.69
+        method: literature morphometrics
+        std: null
 - Syracosphaera noroitica:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 161.85750000000002
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 796.33
+        method: literature morphometrics
+        std: null
 - Syracosphaera exigua:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 394.57
+        method: literature morphometrics
+        std: null
 - Syracosphaera squamosa:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Syracosphaera borealis:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 217.38
+        method: literature morphometrics
+        std: null
 - Syracosphaera reniformis:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Syracosphaera aurisinae:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Syracosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Alisphaera unicornis POL:
     alternate_phase: Alisphaera unicornis
     family: Alisphaeraceae
     genera: Alisphaera
     phase: POL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 1521.8600000000001
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 1467.76
+        method: literature morphometrics
+        std: null
 - Alisphaera unicornis:
     alternate_phase: None
     family: Alisphaeraceae
     genera: Alisphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 595.8
+        method: literature morphometrics
+        std: null
 - Alisphaera gaudii:
     alternate_phase: None
     family: Alisphaeraceae
     genera: Alisphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 166.82
+        method: literature morphometrics
+        std: null
 - Alisphaera extenta:
     alternate_phase: None
     family: Alisphaeraceae
     genera: Alisphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 189.79
+        method: literature morphometrics
+        std: null
 - Alisphaera pinnigera:
     alternate_phase: None
     family: Alisphaeraceae
     genera: Alisphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 485.3
+        method: literature morphometrics
+        std: null
 - Calcidiscus leptoporus HOL:
     alternate_phase: Calcidiscus leptoporus
     family: Calcidiscaceae
     genera: Calcidiscus
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 858.1
+        method: literature morphometrics
+        std: null
 - Calcidiscus leptoporus:
     alternate_phase: None
     family: Calcidiscaceae
     genera: Calcidiscus
     phase: HET
     size:
-      mean:
-        obrien: 10.325
-        sheward: 10.325
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: 576.3267840035286
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 853.734
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 597.51
+        method: literature morphometrics
+        std: null
 - Helicosphaera pavimentum HOL:
     alternate_phase: Helicosphaera pavimentum
     family: Helicosphaeraceae
     genera: Helicosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Helicosphaera HOL ponticuliferus type:
     alternate_phase: Helicosphaera wallichii
     family: Helicosphaeraceae
     genera: Helicosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 248.47
+        method: literature morphometrics
+        std: null
 - Helicosphaera HOL catilliferus type:
     alternate_phase: Helicosphaera carteri
     family: Helicosphaeraceae
     genera: Helicosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 317.79
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Helicosphaera carteri:
     alternate_phase: None
     family: Helicosphaeraceae
     genera: Helicosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 704.54
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 189.79
+        method: literature morphometrics
+        std: null
 - Helicosphaera pavimentum:
     alternate_phase: None
     family: Helicosphaeraceae
     genera: Helicosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 369.0
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 755.5
+        method: literature morphometrics
+        std: null
 - Helicosphaera wallichii:
     alternate_phase: None
     family: Helicosphaeraceae
     genera: Helicosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 742.38
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 33.76
+        method: literature morphometrics
+        std: null
 - Helicosphaera hyalina:
     alternate_phase: None
     family: Helicosphaeraceae
     genera: Helicosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 785.2950000000001
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 753.5
+        method: literature morphometrics
+        std: null
 - Calyptrosphaera sphaeroidea HOL:
     alternate_phase: Calyptrosphaera sphaeroide
     family: Undefined
     genera: Calyptrosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Calyptrosphaera heimdalae:
     alternate_phase: Cyrtosphaera aculeata
     family: Undefined
     genera: Calyptrosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 143.79
+        method: literature morphometrics
+        std: null
 - Ceratolithus cristatus CER:
     alternate_phase: Ceratolithus cristatus
     family: Ceratolithaceae
     genera: Ceratolithus
     phase: CER
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 82.22
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Ceratolithus cristatus:
     alternate_phase: None
     family: Ceratolithaceae
     genera: Ceratolithus
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Coccolithus pelagicus HOL:
     alternate_phase: Coccolithus pelagicus
     family: Coccolithaceae
     genera: Coccolithus
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 817.28
+        method: literature morphometrics
+        std: null
 - Coccolithus pelagicus:
     alternate_phase: None
     family: Coccolithaceae
     genera: Coccolithus
     phase: HET
     size:
-      mean:
-        obrien: 14.1
-        sheward: 14.1
-        villiot: 1936.1
-      std:
-        obrien: null
-        sheward: null
-        villiot: 23.2
+      obrien2013:
+        mean: 1467.7630833314388
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: 1936.1
+        method: light microscopy
+        std: 23.2
+      villiot2021b:
+        mean: 1467.76
+        method: literature morphometrics
+        std: null
 - Calyptrolithina multipora:
     alternate_phase: unknown
     family: Undefined
     genera: Calyptrolithina
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 1223.56
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 1653.06
+        method: literature morphometrics
+        std: null
 - Calyptrolithina divergens:
     alternate_phase: Syracosphaera halldalii
     family: Undefined
     genera: Calyptrolithina
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 69.05
+        method: literature morphometrics
+        std: null
 - Calicasphaera diconstricta:
     alternate_phase: unknown
     family: Undefined
     genera: Calicasphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 179.59
+        method: literature morphometrics
+        std: null
 - Zygosphaera marsilii:
     alternate_phase: unknown
     family: Undefined
     genera: Zygosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Zygosphaera amoena:
     alternate_phase: unknown
     family: Undefined
     genera: Zygosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 50.512499999999996
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 60.1
+        method: literature morphometrics
+        std: null
 - Corisphaera tyrrheniensis:
     alternate_phase: unknown
     family: Undefined
     genera: Corisphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 113.05199999999999
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 127.83
+        method: literature morphometrics
+        std: null
 - Corisphaera gracilis:
     alternate_phase: Rhabdosphaera xiphos
     family: Undefined
     genera: Corisphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 154.595
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 154.68
+        method: literature morphometrics
+        std: null
 - Homozygosphaera triarcha:
     alternate_phase: unknown
     family: Undefined
     genera: Homozygosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 81.54
+        method: literature morphometrics
+        std: null
 - Homozygosphaera spinosa:
     alternate_phase: unknown
     family: Undefined
     genera: Homozygosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: .nan
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 31.06
+        method: literature morphometrics
+        std: null
 - Sphaerocalyptra quadridentata:
     alternate_phase: '[''Algirosphaera robusta'', ''Rhabdosphaera clavigera'']'
     family: Undefined
     genera: Sphaerocalyptra
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 4.19
+        method: literature morphometrics
+        std: null
 - Helladosphaera cornifera:
     alternate_phase: '[''Syracosphaera nodosa'', ''Syracosphaera noroitica'']'
     family: Undefined
     genera: Helladosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 162.15692307692308
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 71.94
+        method: literature morphometrics
+        std: null
 - Helladosphaera pienaarii:
     alternate_phase: unknown
     family: Undefined
     genera: Helladosphaera
     phase: HOL
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Emiliania huxleyi:
     alternate_phase: None
     family: Noelaerhabdaceae
     genera: Emiliania
     phase: HET
     size:
-      mean:
-        obrien: 3.5
-        sheward: 3.5
-        villiot: 40.75680778782548
-      std:
-        obrien: null
-        sheward: null
-        villiot: 7.642523514728324
+      obrien2013:
+        mean: 22.44929750377706
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 86.0789591078067
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: 40.74674197954421
+        method: light microscopy
+        std: 7.629993305726646
+      villiot2021b:
+        mean: 47.71
+        method: literature morphometrics
+        std: null
 - Umbellosphaera irregularis:
     alternate_phase: None
     family: Umbellosphaeraceae
     genera: Umbellosphaera
     phase: HET
     size:
-      mean:
-        obrien: 6.3
-        sheward: 6.3
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: 130.92430304202782
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 139.6527894736842
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 199.53
+        method: literature morphometrics
+        std: null
 - Umbellosphaera tenuis:
     alternate_phase: None
     family: Umbellosphaeraceae
     genera: Umbellosphaera
     phase: HET
     size:
-      mean:
-        obrien: 5.7
-        sheward: 5.7
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: 96.96682804937576
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 155.52308943089432
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 321.56
+        method: literature morphometrics
+        std: null
 - Rhabdosphaera clavigera:
     alternate_phase: None
     family: Rhabdosphaeraceae
     genera: Rhabdosphaera
     phase: HET
     size:
-      mean:
-        obrien: 6.3
-        sheward: 6.3
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: 130.92430304202782
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 81.84890410958904
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 130.92
+        method: literature morphometrics
+        std: null
 - Rhabdosphaera xiphos:
     alternate_phase: None
     family: Rhabdosphaeraceae
     genera: Rhabdosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 425.8972727272727
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 169.77
+        method: literature morphometrics
+        std: null
 - Discosphaera tubifera:
     alternate_phase: None
     family: Rhabdosphaeraceae
     genera: Discosphaera
     phase: HET
     size:
-      mean:
-        obrien: 4.7
-        sheward: 4.7
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: 54.36159567894218
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 203.968
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 107.54
+        method: literature morphometrics
+        std: null
 - Gephyrocapsa ericsonii:
     alternate_phase: None
     family: Noelaerhabdaceae
     genera: Gephyrocapsa
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 6.409545454545454
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 10.08
+        method: literature morphometrics
+        std: null
 - Gephyrocapsa oceanica:
     alternate_phase: None
     family: Noelaerhabdaceae
     genera: Gephyrocapsa
     phase: HET
     size:
-      mean:
-        obrien: 5.0
-        sheward: 5.0
-        villiot: 234.6
-      std:
-        obrien: null
-        sheward: null
-        villiot: 3.9
+      obrien2013:
+        mean: 65.44984694978736
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: 234.6
+        method: light microscopy
+        std: 3.9
+      villiot2021b:
+        mean: 57.91
+        method: literature morphometrics
+        std: null
 - Gephyrocapsa muellerae:
     alternate_phase: None
     family: Noelaerhabdaceae
     genera: Gephyrocapsa
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: 65.0
-      std:
-        obrien: null
-        sheward: null
-        villiot: 3.7
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: 65.0
+        method: light microscopy
+        std: 3.7
+      villiot2021b:
+        mean: 40.76
+        method: literature morphometrics
+        std: null
 - Gephyrocapsa ornata:
     alternate_phase: None
     family: Noelaerhabdaceae
     genera: Gephyrocapsa
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 7.89
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 18.14
+        method: literature morphometrics
+        std: null
 - Gephyrocapsa parvula:
     alternate_phase: None
     family: Noelaerhabdaceae
     genera: Gephyrocapsa
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: 14.4
-      std:
-        obrien: null
-        sheward: null
-        villiot: 1.4
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: 14.4
+        method: light microscopy
+        std: 1.4
+      villiot2021b:
+        mean: 19.33
+        method: literature morphometrics
+        std: null
 - Algirosphaera robusta:
     alternate_phase: None
     family: Rhabdosphaeraceae
     genera: Algirosphaera
     phase: HET
     size:
-      mean:
-        obrien: 5.29
-        sheward: 5.29
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: 77.51141022500568
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 28.935
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 77.51
+        method: literature morphometrics
+        std: null
 - Acanthoica quattrospina:
     alternate_phase: None
     family: Rhabdosphaeraceae
     genera: Acanthoica
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 133.47333333333333
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 95.44
+        method: literature morphometrics
+        std: null
 - Acanthoica acanthifera:
     alternate_phase: None
     family: Rhabdosphaeraceae
     genera: Acanthoica
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 149.87
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Umbilicosphaera sibogae:
     alternate_phase: None
     family: Calcidiscaceae
     genera: Umbilicosphaera
     phase: HET
     size:
-      mean:
-        obrien: 18.5
-        sheward: 18.5
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: 3315.231097547579
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 2326.065
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 7420.7
+        method: literature morphometrics
+        std: null
 - Umbilicosphaera hulburtiana:
     alternate_phase: None
     family: Calcidiscaceae
     genera: Umbilicosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 361.645744680851
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 167.56
+        method: literature morphometrics
+        std: null
 - Umbilicosphaera anulus:
     alternate_phase: None
     family: Calcidiscaceae
     genera: Umbilicosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 2226.09
+        method: literature morphometrics
+        std: null
 - Umbilicosphaera foliosa:
     alternate_phase: None
     family: Calcidiscaceae
     genera: Umbilicosphaera
     phase: HET
     size:
-      mean:
-        obrien: 9.1
-        sheward: 9.1
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: 394.5688529263856
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Calciosolenia brasiliensis:
     alternate_phase: None
     family: Calciosolinaceae
     genera: Calciosolenia
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 461.8
+        method: literature morphometrics
+        std: null
 - Calciosolenia murrayi:
     alternate_phase: None
     family: Calciosolinaceae
     genera: Calciosolenia
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 305.08
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 66.64
+        method: literature morphometrics
+        std: null
 - Florisphaera profunda:
     alternate_phase: None
     family: Nannolith
     genera: Florisphaera
     phase: HET
     size:
-      mean:
-        obrien: 3.9
-        sheward: 3.9
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: 31.059355769715484
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 77.075
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 33.51
+        method: literature morphometrics
+        std: null
 - Ophiaster hydroideus:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Ophiaster
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Ophiaster formosus:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Ophiaster
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Palusphaera vandelii:
     alternate_phase: None
     family: Rhabdosphaeraceae
     genera: Palusphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: .nan
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 7238.23
+        method: literature morphometrics
+        std: null
 - Oolithotus antillarum:
     alternate_phase: None
     family: Calcidiscaceae
     genera: Oolithotus
     phase: HET
     size:
-      mean:
-        obrien: 4.7
-        sheward: 4.7
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: 54.36159567894218
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 140.28
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 229.85
+        method: literature morphometrics
+        std: null
 - Oolithotus fragilis:
     alternate_phase: None
     family: Calcidiscaceae
     genera: Oolithotus
     phase: HET
     size:
-      mean:
-        obrien: 13.8
-        sheward: 13.8
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: 1376.0552813841728
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 1376.06
+        method: literature morphometrics
+        std: null
 - Michaelsarsia elegans:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Michaelsarsia
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 1738.28
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 179.59
+        method: literature morphometrics
+        std: null
 - Michaelsarsia adriaticus:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Michaelsarsia
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 893.52
+        method: literature morphometrics
+        std: null
 - Gladiolithus flabellatus:
     alternate_phase: None
     family: Undefined
     genera: Gladiolithus
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 136.62
+        method: literature morphometrics
+        std: null
 - Cyrtosphaera aculeata:
     alternate_phase: None
     family: Rhabdosphaeraceae
     genera: Cyrtosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: 281.67
+        method: AMT morphometrics
+        std: .nan
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 124.105
+        method: literature morphometrics
+        std: null
 - Calciopappus caudatus:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Calciopappus
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Calciopappus rigidus:
     alternate_phase: None
     family: Syracosphaeraceae
     genera: Calciopappus
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 65.45
+        method: literature morphometrics
+        std: null
 - Papposphaera lepida:
     alternate_phase: None
     family: Papposphaeraceae
     genera: Papposphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 99.54
+        method: literature morphometrics
+        std: null
 - Scyphosphaera apsteinii:
     alternate_phase: None
     family: Pontosphaeraceae
     genera: Scyphosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 4510.87
+        method: literature morphometrics
+        std: null
 - Reticulofenestra sessilis:
     alternate_phase: None
     family: Noelaerhabdaceae
     genera: Reticulofenestra
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Picarola margalefii:
     alternate_phase: None
     family: Papposphaeraceae
     genera: Picarola
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 36.88
+        method: literature morphometrics
+        std: null
 - Wigwamma antarctica:
     alternate_phase: None
     family: Papposphaeraceae
     genera: Wigwamma
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Pontosphaera syracusana:
     alternate_phase: None
     family: Pontosphaeraceae
     genera: Pontosphaera
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 2854.54
+        method: literature morphometrics
+        std: null
 - Gliscolithus amitakareniae:
     alternate_phase: None
     family: Undefined
     genera: Gliscolithus
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 249.43
+        method: literature morphometrics
+        std: null
 - Pappomonas type 3:
     alternate_phase: None
     family: Papposphaeraceae
     genera: Pappomonas
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 410.38
+        method: literature morphometrics
+        std: null
 - Pappomonas type 5:
     alternate_phase: None
     family: Papposphaeraceae
     genera: Pappomonas
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
 - Hayaster perplexus:
     alternate_phase: None
     family: Calcidiscaceae
     genera: Hayaster
     phase: HET
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: 38792.39
+        method: literature morphometrics
+        std: null
 - null:
     alternate_phase: null
     family: null
     genera: null
     phase: null
     size:
-      mean:
-        obrien: null
-        sheward: null
-        villiot: null
-      std:
-        obrien: null
-        sheward: null
-        villiot: null
+      obrien2013:
+        mean: null
+        method: light microscopy
+        std: null
+      sheward2024:
+        mean: null
+        method: AMT morphometrics
+        std: null
+      villiot2021a:
+        mean: null
+        method: light microscopy
+        std: null
+      villiot2021b:
+        mean: null
+        method: literature morphometrics
+        std: null
