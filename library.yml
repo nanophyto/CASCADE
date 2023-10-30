@@ -9,9 +9,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 2288.0
+        mean: 2287.9500000000003
         method: AMT morphometrics
-        std: .nan
+        std: 654.4318205894331
       villiot2021a:
         mean: null
         method: light microscopy
@@ -53,7 +53,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 455.0
+        mean: 454.9
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -75,9 +75,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 1251.0
+        mean: 1250.55
         method: AMT morphometrics
-        std: .nan
+        std: 464.555013103938
       villiot2021a:
         mean: null
         method: light microscopy
@@ -97,7 +97,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 38.0
+        mean: 38.02
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -119,9 +119,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 65.0
+        mean: 64.53
         method: AMT morphometrics
-        std: .nan
+        std: 13.994970525156534
       villiot2021a:
         mean: null
         method: light microscopy
@@ -141,9 +141,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 260.0
+        mean: 260.4533333333333
         method: AMT morphometrics
-        std: .nan
+        std: 5.363584000771656
       villiot2021a:
         mean: null
         method: light microscopy
@@ -163,7 +163,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 115.0
+        mean: 114.8
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -185,9 +185,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 284.0
+        mean: 284.24666666666667
         method: AMT morphometrics
-        std: .nan
+        std: 103.60829326522725
       villiot2021a:
         mean: null
         method: light microscopy
@@ -251,7 +251,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 453.0
+        mean: 452.89
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -339,9 +339,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 1302.0
+        mean: 1302.46
         method: AMT morphometrics
-        std: .nan
+        std: 633.2897367714087
       villiot2021a:
         mean: null
         method: light microscopy
@@ -361,9 +361,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 130.0
+        mean: 130.17000000000002
         method: AMT morphometrics
-        std: .nan
+        std: 98.61035589069178
       villiot2021a:
         mean: null
         method: light microscopy
@@ -383,7 +383,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 452.0
+        mean: 452.33
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -405,9 +405,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 137.0
+        mean: 136.7215
         method: AMT morphometrics
-        std: .nan
+        std: 83.47527489433149
       villiot2021a:
         mean: null
         method: light microscopy
@@ -449,9 +449,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 333.0
+        mean: 332.59666666666664
         method: AMT morphometrics
-        std: .nan
+        std: 194.37651512807128
       villiot2021a:
         mean: null
         method: light microscopy
@@ -471,9 +471,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 267.0
+        mean: 266.55100000000004
         method: AMT morphometrics
-        std: .nan
+        std: 241.50909205107234
       villiot2021a:
         mean: null
         method: light microscopy
@@ -493,9 +493,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 934.0
+        mean: 933.6409677419355
         method: AMT morphometrics
-        std: .nan
+        std: 2075.5472683533453
       villiot2021a:
         mean: null
         method: light microscopy
@@ -537,9 +537,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 207.0
+        mean: 207.09620689655173
         method: AMT morphometrics
-        std: .nan
+        std: 218.40247755681636
       villiot2021a:
         mean: null
         method: light microscopy
@@ -559,9 +559,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 152.0
+        mean: 151.8
         method: AMT morphometrics
-        std: .nan
+        std: 88.147931342715
       villiot2021a:
         mean: null
         method: light microscopy
@@ -625,9 +625,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 171.0
+        mean: 170.53333333333333
         method: AMT morphometrics
-        std: .nan
+        std: 65.55119856519278
       villiot2021a:
         mean: null
         method: light microscopy
@@ -647,9 +647,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 120.0
+        mean: 120.47
         method: AMT morphometrics
-        std: .nan
+        std: 53.74725842529361
       villiot2021a:
         mean: null
         method: light microscopy
@@ -669,7 +669,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 1208.0
+        mean: 1208.31
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -691,9 +691,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 120.0
+        mean: 119.58500000000001
         method: AMT morphometrics
-        std: .nan
+        std: 110.66928232350656
       villiot2021a:
         mean: null
         method: light microscopy
@@ -735,9 +735,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 468.0
+        mean: 467.64285714285717
         method: AMT morphometrics
-        std: .nan
+        std: 295.29344838167816
       villiot2021a:
         mean: null
         method: light microscopy
@@ -845,9 +845,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 162.0
+        mean: 161.85750000000002
         method: AMT morphometrics
-        std: .nan
+        std: 223.32513578860755
       villiot2021a:
         mean: null
         method: light microscopy
@@ -977,9 +977,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 1522.0
+        mean: 1521.8600000000001
         method: AMT morphometrics
-        std: .nan
+        std: 162.91740238538037
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1109,9 +1109,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 854.0
+        mean: 853.734
         method: AMT morphometrics
-        std: .nan
+        std: 267.2907317344002
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1175,9 +1175,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 318.0
+        mean: 317.79
         method: AMT morphometrics
-        std: .nan
+        std: 199.4504452238701
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1197,7 +1197,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 705.0
+        mean: 704.54
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1241,7 +1241,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 742.0
+        mean: 742.38
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1263,9 +1263,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 785.0
+        mean: 785.2950000000001
         method: AMT morphometrics
-        std: .nan
+        std: 271.08352670348677
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1329,9 +1329,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 82.0
+        mean: 82.22
         method: AMT morphometrics
-        std: .nan
+        std: 0.0
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1417,9 +1417,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 1224.0
+        mean: 1223.56
         method: AMT morphometrics
-        std: .nan
+        std: 0.0
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1505,9 +1505,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 51.0
+        mean: 50.512499999999996
         method: AMT morphometrics
-        std: .nan
+        std: 18.696622466816475
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1527,9 +1527,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 113.0
+        mean: 113.05199999999999
         method: AMT morphometrics
-        std: .nan
+        std: 36.93580942361733
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1549,9 +1549,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 155.0
+        mean: 154.595
         method: AMT morphometrics
-        std: .nan
+        std: 59.109897507383096
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1637,9 +1637,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 162.0
+        mean: 162.15692307692308
         method: AMT morphometrics
-        std: .nan
+        std: 154.19380837032202
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1681,9 +1681,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 86.0
+        mean: 86.0789591078067
         method: AMT morphometrics
-        std: .nan
+        std: 109.68575231475056
       villiot2021a:
         mean: 41.0
         method: light microscopy
@@ -1703,9 +1703,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 140.0
+        mean: 139.6527894736842
         method: AMT morphometrics
-        std: .nan
+        std: 137.57389916837172
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1725,9 +1725,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 156.0
+        mean: 155.52308943089432
         method: AMT morphometrics
-        std: .nan
+        std: 101.19021628766485
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1747,9 +1747,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 82.0
+        mean: 81.84890410958904
         method: AMT morphometrics
-        std: .nan
+        std: 48.93096010825534
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1769,9 +1769,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 426.0
+        mean: 425.8972727272727
         method: AMT morphometrics
-        std: .nan
+        std: 157.9476694888839
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1791,9 +1791,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 204.0
+        mean: 203.968
         method: AMT morphometrics
-        std: .nan
+        std: 424.60660427717033
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1813,9 +1813,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 6.0
+        mean: 6.409545454545454
         method: AMT morphometrics
-        std: .nan
+        std: 3.848383058441839
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1879,7 +1879,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 8.0
+        mean: 7.89
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1923,9 +1923,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 29.0
+        mean: 28.935
         method: AMT morphometrics
-        std: .nan
+        std: 7.176510294007804
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1945,9 +1945,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 133.0
+        mean: 133.47333333333333
         method: AMT morphometrics
-        std: .nan
+        std: 47.83527879055056
       villiot2021a:
         mean: null
         method: light microscopy
@@ -1967,7 +1967,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 150.0
+        mean: 149.87
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -1989,9 +1989,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 2326.0
+        mean: 2326.065
         method: AMT morphometrics
-        std: .nan
+        std: 1233.4417137627538
       villiot2021a:
         mean: null
         method: light microscopy
@@ -2011,9 +2011,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 362.0
+        mean: 361.645744680851
         method: AMT morphometrics
-        std: .nan
+        std: 137.66221188655447
       villiot2021a:
         mean: null
         method: light microscopy
@@ -2099,7 +2099,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 305.0
+        mean: 305.08
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -2121,9 +2121,9 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 77.0
+        mean: 77.075
         method: AMT morphometrics
-        std: .nan
+        std: 11.407063601120136
       villiot2021a:
         mean: null
         method: light microscopy
@@ -2209,7 +2209,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 140.0
+        mean: 140.28
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -2253,7 +2253,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 1738.0
+        mean: 1738.28
         method: AMT morphometrics
         std: .nan
       villiot2021a:
@@ -2319,7 +2319,7 @@
         method: light microscopy
         std: null
       sheward2024:
-        mean: 282.0
+        mean: 281.67
         method: AMT morphometrics
         std: .nan
       villiot2021a:

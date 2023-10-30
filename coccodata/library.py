@@ -26,7 +26,6 @@ def def_grouping():
     df = pd.DataFrame.from_dict(inverse, orient='index')
     df = df.rename_axis("genera").reset_index()
     df = df.rename(columns={0: "family"})
-    print(df)
     d = pd.merge(d, df, on='genera', how="outer")
     d = d.where(pd.notnull(d), None)
 
@@ -40,7 +39,7 @@ species_list = groups.species
 
 
 
-def rename_synonyms(d, index='species'):
+def rename_synonyms(d, index='species', remove_duplicate=True):
     d['species'] = d['species'].str.strip()
 
     with open('/home/phyto/CoccoData/classification/synonyms.yml', 'r') as f:
@@ -54,7 +53,8 @@ def rename_synonyms(d, index='species'):
     d = d.replace(synonym_dict)
 
     #take mean for duplicate entries
-    d = d.groupby(index).mean().reset_index()    
+    if remove_duplicate == True: 
+        d = d.groupby(index).mean().reset_index()    
 
     return(d)
 
@@ -135,24 +135,15 @@ def import_sheward2024():
 
     d = d[['species', 'Estimated cell volume', 'PIC pg C']]
 
-    d = rename_synonyms(d)
+    d = rename_synonyms(d, remove_duplicate=False)
 
 
-    d_mean = d.groupby(by="species").mean()
+    d = d.groupby(by="species").agg(["mean", "std"]).reset_index()
+    d['std'] = d['Estimated cell volume']['std']
+    d['mean'] = d['Estimated cell volume']['mean']
+    sheward2024 = d[['species', 'std', 'mean']]
 
-    d_std = d.groupby(by="species").std()
-
-    d_mean = d_mean.rename(columns={'PIC pg C': "PIC_mean",
-                                            'Estimated cell volume': "mean"}).reset_index()
-
-    d_std = d_std.rename(columns={'PIC pg C': "PIC_std",
-                                            'Estimated cell volume': "std"})
-
-    d_std['std'] = np.round(d_std['std'])
-    d_mean['mean'] = np.round(d_mean['mean'])
-    d = pd.concat([d_mean[['species', 'mean']], d_std['std'] ], axis=1)
-
-    return(d)
+    return(sheward2024)
 sheward2024 = import_sheward2024()
 
 
@@ -160,8 +151,6 @@ sheward2024 = import_sheward2024()
 def def_sizes(d, species):
 
     d = d[d['species']==species]
-
-    print(d)
 
     try:
         d_mean = d['mean']
@@ -175,7 +164,6 @@ def def_sizes(d, species):
     return(d_mean, d_std)
 
 
-print(groups['species'])
 
 
 def create_namedtuple(groups, species):
@@ -256,9 +244,7 @@ def export_yml(library, path):
 
     for i in range(len(library)):
         ntpl = library[i]
-        print(ntpl.species)
         name = convert_str(ntpl.species)
-        print(name)
         species =  {name: {
                 'genera': convert_str(ntpl.genera),
                 'family': convert_str(ntpl.family),
@@ -299,6 +285,19 @@ def export_yml(library, path):
 export_yml(library, '/home/phyto/CoccoData/library.yml')
 
 
+
+def find_undefined_spp(library):
+    for i in range(len(library)):
+        ntpl = library[i]
+
+        if ((convert_float(ntpl.size.obrien2013.mean) ==None) and 
+        (convert_float(ntpl.size.villiot2021a.mean)==None) and 
+        (convert_float(ntpl.size.villiot2021b.mean)==None) and 
+        (convert_float(ntpl.size.sheward2024.mean)==None)):
+            print(ntpl.species)
+
+
+find_undefined_spp(library)
 
 print("fin")
 
