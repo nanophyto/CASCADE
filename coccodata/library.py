@@ -58,7 +58,7 @@ def rename_synonyms(d, index='species', remove_duplicate=True):
 
     return(d)
 
-def import_villiot2021():    
+def import_villiot2021a():    
     d = pd.read_csv("/home/phyto/CoccoData/sizes/viliot2021_cell_diameters.csv")
     d = rename_synonyms(d, ['species', 'strain'])
 
@@ -92,15 +92,13 @@ def import_villiot2021():
 
     return(villiot2021)
 
-villiot2021 = import_villiot2021()
+villiot2021a = import_villiot2021a()
 
 
 
 
 def import_villiot2021b():
     d = pd.read_csv("/home/phyto/CoccoData/sizes/villiot2021_literature_morphometric_volume.csv")
-
-    #read obrien size data
     d = rename_synonyms(d)
     d = d.rename(columns={'cell volume': "mean"})
     d['mean'] = np.round(d['mean'])
@@ -110,7 +108,7 @@ villiot2021b = import_villiot2021b()
 
 
 
-def import_obrien2013():
+def import_obrien2013a():
     d = pd.read_csv("/home/phyto/CoccoData/sizes/obrien_cell_diameters.csv")
     
     #read obrien size data
@@ -118,17 +116,42 @@ def import_obrien2013():
     d = rename_synonyms(d)
 
     d = d.rename(columns={'diameter': "mean"})
-    d['mean'] = 1/6*math.pi*(d['mean']**3)
+    d['mean'] = (1/6)*math.pi*(d['mean']**3)
     d['mean'] = np.round(d['mean'])
+    d['reference'] = 'obrien2013a'
     return(d)
 
-obrien2013 = import_obrien2013()
+obrien2013a = import_obrien2013a()
 
+
+
+def import_obrien2013b():
+    d = pd.read_csv("/home/phyto/CoccoData/sizes/obrien2013_coccosphere_size.csv")
+    #read obrien size data
+    #apply synonyms
+    d = rename_synonyms(d)
+
+    d['std'] = (d['max']-d['min'])/4
+
+
+    return(d[['species', 'std', 'mean']])
+
+obrien2013b = import_obrien2013b()
+
+
+
+def import_devries2024():
+    d = pd.read_csv("/home/phyto/CoccoData/sizes/devries2024_volumes.csv")
+    return(d[['species', 'mean', 'std']])
+
+devries2024 = import_devries2024()
 
 def import_sheward2024():
 
     #read sheward size data
     d = pd.read_csv("/home/phyto/CoccoData/sizes/sheward2024_volumes.csv")
+
+    d = d[d['Spheres Y/N?']!="Flattened"]
     d['Species'] = d['Species'].str.strip()
     d['Genus'] = d['Genus'].str.strip()
     d['species'] = d['Genus'] + " " + d['Species'] 
@@ -139,52 +162,44 @@ def import_sheward2024():
 
 
     d = d.groupby(by="species").agg(["mean", "std"]).reset_index()
-    d['std'] = d['Estimated cell volume']['std']
-    d['mean'] = d['Estimated cell volume']['mean']
+    d['std'] = np.round(d['Estimated cell volume']['std'], 1)
+    d['mean'] = np.round(d['Estimated cell volume']['mean'], 1)
     sheward2024 = d[['species', 'std', 'mean']]
 
     return(sheward2024)
 sheward2024 = import_sheward2024()
 
 
-                                            
-def def_sizes(d, species):
-
-    d = d[d['species']==species]
-
-    try:
-        d_mean = d['mean']
-    except:
-        d_mean = None
-    try:
-        d_std = d['std']
-    except:
-        d_std = None
-
-    return(d_mean, d_std)
-
-
+def def_sizes(data, species):
+    data = data[data['species'] == species]
+    d_mean = data.get('mean', None)
+    d_std = data.get('std', None)
+    return d_mean, d_std
 
 
 def create_namedtuple(groups, species):
 
-    obrien2013_values = namedtuple('obrien2013', 'mean std method')
+    obrien2013a_values = namedtuple('obrien2013a', 'mean std method')
+    obrien2013b_values = namedtuple('obrien2013b', 'mean std method')
     sheward2024_values = namedtuple('sheward2024', 'mean std method')
     villiot2021a_values = namedtuple('villiot2021a', 'mean std method')
     villiot2021b_values = namedtuple('villiot2021b', 'mean std method')
+    devries2024_values = namedtuple('devries2024', 'mean std method')
 
-    sizes = namedtuple('size', ['obrien2013', 'sheward2024',
-                                'villiot2021a', 'villiot2021b'])
+    sizes = namedtuple('size', ['obrien2013a', 'obrien2013b', 'sheward2024',
+                                'villiot2021a', 'villiot2021b', 'devries2024'])
 
     library = namedtuple('library', ['species', 'genera', 
             'family', 'phase', 'alternate_phase', 'size'])
 
     groups = groups[groups['species']==species]
 
-    obrien2013_mean, obrien2013_std  = def_sizes(obrien2013, species)
+    obrien2013a_mean, obrien2013a_std  = def_sizes(obrien2013a, species)
+    obrien2013b_mean, obrien2013b_std  = def_sizes(obrien2013b, species)
     sheward2024_mean, sheward2024_std  = def_sizes(sheward2024, species)
-    villiot2021a_mean, villiot2021a_std  = def_sizes(villiot2021, species)
+    villiot2021a_mean, villiot2021a_std  = def_sizes(villiot2021a, species)
     villiot2021b_mean, villiot2021b_std = def_sizes(villiot2021b, species)
+    devries2024_mean, devries2024_std = def_sizes(devries2024, species)
 
     ntpl = library(
         groups['species'], 
@@ -193,10 +208,15 @@ def create_namedtuple(groups, species):
         groups['phase'], 
         groups['alternate_phase'],
         sizes(
-            obrien2013_values(
-                obrien2013_mean, 
-                obrien2013_std,
+            obrien2013a_values(
+                obrien2013a_mean, 
+                obrien2013a_std,
                 "light microscopy"
+            ),
+            obrien2013b_values(
+                obrien2013b_mean, 
+                obrien2013b_std,
+                "literature coccospheres"
             ),
             sheward2024_values(
                 sheward2024_mean, 
@@ -213,7 +233,11 @@ def create_namedtuple(groups, species):
                 villiot2021b_std,
                 "literature morphometrics"
             ),
-
+            devries2024_values(
+                devries2024_mean, 
+                devries2024_std,
+                "literature morphometrics"
+            ),
         )
     )
 
@@ -251,10 +275,15 @@ def export_yml(library, path):
                 'phase': convert_str(ntpl.phase),
                 'alternate_phase': convert_str(ntpl.alternate_phase),
                 'size':{
-                    'obrien2013':{
-                        'mean': convert_float(ntpl.size.obrien2013.mean),
-                        'std': convert_float(ntpl.size.obrien2013.std),
-                        'method': ntpl.size.obrien2013.method
+                    'obrien2013a':{
+                        'mean': convert_float(ntpl.size.obrien2013a.mean),
+                        'std': convert_float(ntpl.size.obrien2013a.std),
+                        'method': ntpl.size.obrien2013a.method
+                        },
+                    'obrien2013b':{
+                        'mean': convert_float(ntpl.size.obrien2013b.mean),
+                        'std': convert_float(ntpl.size.obrien2013b.std),
+                        'method': ntpl.size.obrien2013b.method
                         },
                     'villiot2021a':{
                         'mean': convert_float(ntpl.size.villiot2021a.mean),
@@ -270,7 +299,13 @@ def export_yml(library, path):
                         'mean': convert_float(ntpl.size.sheward2024.mean),
                         'std': convert_float(ntpl.size.sheward2024.std),
                         'method': ntpl.size.sheward2024.method
+                        },
+                    'devries2024':{
+                        'mean': convert_float(ntpl.size.devries2024.mean),
+                        'std': convert_float(ntpl.size.devries2024.std),
+                        'method': ntpl.size.devries2024.method
                         }
+
                     }
                 }
             }
@@ -290,35 +325,16 @@ def find_undefined_spp(library):
     for i in range(len(library)):
         ntpl = library[i]
 
-        if ((convert_float(ntpl.size.obrien2013.mean) ==None) and 
-        (convert_float(ntpl.size.villiot2021a.mean)==None) and 
-        (convert_float(ntpl.size.villiot2021b.mean)==None) and 
-        (convert_float(ntpl.size.sheward2024.mean)==None)):
-            print(ntpl.species)
+        if (
+            (convert_float(ntpl.size.obrien2013a.mean) ==None) and 
+            (convert_float(ntpl.size.obrien2013b.mean) ==None) and 
+            (convert_float(ntpl.size.villiot2021a.mean)==None) and 
+            (convert_float(ntpl.size.villiot2021b.mean)==None) and 
+            (convert_float(ntpl.size.devries2024.mean)==None) and 
+            (convert_float(ntpl.size.sheward2024.mean)==None) ):
+                print(str(ntpl.species))
 
 
 find_undefined_spp(library)
 
 print("fin")
-
-
-
-# #check which HET species have undefined volumes:
-# volume_check = d[d['phase']=="HET"]
-# volume_check['sum'] = volume_check[['size_mean_sheward2024', 
-#                                     'size_mean_obrien2013']].mean(axis=1)
-# test = volume_check[['sum', 'species']] 
-# print(test[test.isna().any(axis=1)]['species'])
-
-
-# #check which HOL species have undefined volumes:
-# volume_check = d[d['phase']=="HOL"]
-# volume_check = volume_check[volume_check['2N']=="unknown"]
-
-# volume_check['sum'] = volume_check[['size_mean_sheward2024', 
-#                                     'size_mean_obrien2013']].mean(axis=1)
-# test = volume_check[['sum', 'species']] 
-# print(test[test.isna().any(axis=1)]['species'])
-
-
-# d.to_csv("/home/phyto/CoccoData/library.csv", index=False)
