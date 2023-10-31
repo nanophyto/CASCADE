@@ -34,9 +34,9 @@ def aurisinae():
     coccolith_thickness_mean = (coccolith_width_max+coccolith_width_min)/2
 
 
-    cell_length = np.random.normal(coccosphere_length_mean, coccosphere_length_sd, sample_n) - 2*np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n)
+    cell_length = np.clip(np.random.normal(coccosphere_length_mean, coccosphere_length_sd, sample_n), 0, None) - 2*np.clip(np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n), 0, None)
 
-    cell_width = np.random.normal(coccosphere_width_mean, coccosphere_width_sd, sample_n) - 2*np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n)
+    cell_width = np.clip(np.random.normal(coccosphere_width_mean, coccosphere_width_sd, sample_n), 0, None) - 2*np.clip(np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n), 0, None)
 
 
     cell_volume = volume_cone(cell_width, cell_length)
@@ -66,7 +66,7 @@ def formosus():
     coccolith_thickness_sd = (coccolith_thickness_max-coccolith_thickness_min)/4
     coccolith_thickness_mean = (coccolith_thickness_max+coccolith_thickness_min)/2
 
-    diameters = np.random.normal(coccosphere_mean, coccosphere_sd, sample_n) - 2*np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n)
+    diameters = np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None) - 2*np.clip(np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n), 0, None)
 
     volumes = volume_sphere(diameters)
 
@@ -91,7 +91,7 @@ def type_5():
     coccosphere_sd = (coccosphere_max-coccosphere_min)/4
     coccosphere_mean = (coccosphere_max+coccosphere_min)/2
 
-    diameters = np.random.normal(coccosphere_mean, coccosphere_sd, sample_n)
+    diameters =  np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None)
 
     volumes = volume_sphere(diameters)
     cell_mean = np.round(np.mean(volumes), 1)
@@ -116,7 +116,7 @@ def squamosa():
     coccolith_thickness_sd = (coccolith_thickness_max-coccolith_thickness_min)/4
     coccolith_thickness_mean = (coccolith_thickness_max+coccolith_thickness_min)/2
 
-    diameters = 5-2*np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n)
+    diameters = 5-(2*np.clip(np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n), 0, None))
 
     volumes = volume_sphere(diameters)
     cell_mean = np.round(np.mean(volumes), 1)
@@ -143,7 +143,7 @@ def reniformis():
     coccolith_thickness_sd = (coccolith_thickness_max-coccolith_thickness_min)/4
     coccolith_thickness_mean = (coccolith_thickness_max+coccolith_thickness_min)/2
 
-    diameters = np.random.normal(coccosphere_mean, coccosphere_sd, sample_n) - 2*np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n)
+    diameters = np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None) - 2*np.clip(np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n), 0, None)
 
 
     volumes = volume_sphere(diameters)
@@ -168,7 +168,7 @@ def sphaeroidea_hol():
     coccosphere_sd = (coccosphere_max-coccosphere_min)/4
     coccosphere_mean = (coccosphere_max+coccosphere_min)/2
 
-    diameters = np.random.normal(coccosphere_mean, coccosphere_sd, sample_n)
+    diameters = np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None)
 
     volumes = volume_sphere(diameters)*0.9
 
@@ -212,7 +212,7 @@ def pienaarii():
     coccolith_thickness_sd = (coccolith_thickness_max-coccolith_thickness_min)/4
     coccolith_thickness_mean = (coccolith_thickness_max+coccolith_thickness_min)/2
 
-    diameters = np.random.normal(coccosphere_mean, coccosphere_sd, sample_n) - 2*np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n)
+    diameters = np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None) - 2*np.clip(np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n), 0, None)
 
 
     volumes = volume_sphere(diameters)
