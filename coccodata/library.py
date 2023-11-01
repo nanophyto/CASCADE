@@ -6,7 +6,7 @@ from yaml import load, Loader
 import yaml
 import math 
 
-Study = namedtuple("Study", ['id', 'mean', 'sd', 'method', 'species'])
+Study = namedtuple("Study", ['id', 'mean', 'sd', 'method', 'species', 'genera', 'family', 'phase', 'alternate_phase'])
 
 
 
@@ -215,52 +215,70 @@ def def_sizes(d, study, species):
         d_std = None
     return d_mean, d_std, method
 
+def classification(groups, species):
+    groups = groups[groups['species']==species]
+    try:
+        genera = groups.get('genera', None).item()
+    except:
+        genera = None
+    try:
+        family = groups.get('family', None).item()
+    except:
+        family = None    
+    try:
+        phase = groups.get('phase', None).item()
+    except:
+        phase = None   
+    try:
+        alternate_phase = groups.get('alternate_phase', None).item()
+    except:
+        alternate_phase = None   
+
+    return genera, family, phase, alternate_phase
+
 
 def fill_namedtuple(groups, species_list):
+
 
     studies = []
     for id in ['obrien2013a', 'obrien2013b', 'sheward2024',
                 'villiot2021a', 'villiot2021b', 'devries2024']:
         for species in species_list: 
-            studies.append(Study(id, *def_sizes(d, id, species), species))
+            genera, family, phase, alternate_phase = classification(groups, species)
+
+            studies.append(Study(id, *def_sizes(d, id, species), species, genera, family, phase, alternate_phase))
 
     return(studies)
 
 library = fill_namedtuple(groups, species_list)
 
-
-# def export_yml(library, path):
-
-#     spp_list = []
-
-#     for i in range(len(species_list)):
-#         ntpl = library[i]
-#         name = ntpl.species
-#         species =  {name: {
-# #                'genera': ntpl.genera,
-# #                'family': ntpl.family,
-# #                'phase': ntpl.phase,
-# #                'alternate_phase': ntpl.alternate_phase,
-#                 'size' : {study.id:study._asdict() for study in species_list}
-#             }}
-#         spp_list.append(species)
-
-#     with open(path, 'w') as outfile:
-#         yaml.dump(spp_list, outfile, default_flow_style=False)
-
-#     print("exported yml to: " + str(path))
-
-# export_yml(library, '/home/phyto/CoccoData/library.yml')
-
-
-
-
 def export_yml(library, path):
 
     spp_list = []
 
-    for i in range(len(library)):
-        species = library[i]._asdict()
+    for i in range(len(species_list)):
+
+        name = species_list[i]
+        species_library =  [t for t in library  if t.species == name]
+
+        sizes = {study.id:study._asdict() for study in species_library }
+
+        for id in ['obrien2013a', 'obrien2013b', 'sheward2024',
+                        'villiot2021a', 'villiot2021b', 'devries2024']:
+            del sizes[id]['id']
+            del sizes[id]['species']
+            del sizes[id]['genera']
+            del sizes[id]['family']
+            del sizes[id]['phase']
+            del sizes[id]['alternate_phase']
+            
+        species =  {name: {
+                'genera': species_library[0].genera,
+                'family': species_library[0].family,
+               'phase': species_library[0].phase,
+                'alternate_phase': species_library[0].alternate_phase,
+                'size' : sizes
+            }}
         spp_list.append(species)
 
     with open(path, 'w') as outfile:
@@ -268,8 +286,26 @@ def export_yml(library, path):
 
     print("exported yml to: " + str(path))
 
-
 export_yml(library, '/home/phyto/CoccoData/library.yml')
+
+
+
+#quick and dirty export (might be easier to read?)
+# def export_yml(library, path):
+
+#     spp_list = []
+
+#     for i in range(len(library)):
+#         species = library[i]._asdict()
+#         spp_list.append(species)
+
+#     with open(path, 'w') as outfile:
+#         yaml.dump(spp_list, outfile, default_flow_style=False)
+
+#     print("exported yml to: " + str(path))
+
+
+# export_yml(library, '/home/phyto/CoccoData/library.yml')
 
 
 
