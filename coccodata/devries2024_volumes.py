@@ -230,6 +230,90 @@ def pienaarii():
     return(d)
 
 
+def cristatus():
+
+    coccosphere_min =  7 #obrien2013 and refs within
+    coccosphere_max = 18.9 #obrien2013 and refs within
+
+    coccolith_thickness_min = 0.2 #young1998
+    coccolith_thickness_max = 0.4 #young1998
+
+    coccosphere_sd = (coccosphere_max-coccosphere_min)/4
+    coccosphere_mean = (coccosphere_max+coccosphere_min)/2
+    coccolith_thickness_sd = (coccolith_thickness_max-coccolith_thickness_min)/4
+    coccolith_thickness_mean = (coccolith_thickness_max+coccolith_thickness_min)/2
+
+    diameters = np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None) - 2*np.clip(np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n), 0, None)
+
+
+    volumes = volume_sphere(diameters)
+    cell_mean = np.round(np.mean(volumes), 1)
+    cell_std = np.round(np.std(volumes), 1)
+
+    d = {'species':['Ceratolithus cristatus'], 
+        'mean': [cell_mean],
+        'std': [cell_std],
+        'shape':['sphere'],
+        'ref': ['obrien2013 and young1998']}
+
+    d = pd.DataFrame(d)
+
+    return(d)
+
+
+def hydroideus():
+
+    coccolith_thickness_min = 0.7 
+    coccolith_thickness_max = 0.9 
+
+    coccosphere_sd = 0
+    coccosphere_mean = 6
+    coccolith_thickness_sd = (coccolith_thickness_max-coccolith_thickness_min)/4
+    coccolith_thickness_mean = (coccolith_thickness_max+coccolith_thickness_min)/2
+
+    diameters = np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None) - 2*np.clip(np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n), 0, None)
+
+
+    volumes = volume_sphere(diameters)
+    cell_mean = np.round(np.mean(volumes), 1)
+    cell_std = np.round(np.std(volumes), 1)
+
+    d = {'species':['Ophiaster hydroideus'], 
+        'mean': [cell_mean],
+        'std': [cell_std],
+        'shape':['sphere'],
+        'ref': ['cros2002']}
+
+    d = pd.DataFrame(d)
+
+    return(d)
+
+def marsilii():
+ 
+    coccosphere_min = 6.5  
+    coccosphere_max = 8.5 
+
+    coccosphere_sd = (coccosphere_max-coccosphere_min)/4
+    coccosphere_mean = (coccosphere_max+coccosphere_min)/2
+    coccolith_thickness_sd = 0
+    coccolith_thickness_mean = 0.3
+
+    diameters = np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None) - 2*np.clip(np.random.normal(coccolith_thickness_mean, coccolith_thickness_sd, sample_n), 0, None)
+
+
+    volumes = volume_sphere(diameters)
+    cell_mean = np.round(np.mean(volumes), 1)
+    cell_std = np.round(np.std(volumes), 1)
+
+    d = {'species':['Zygosphaera marsilii'], 
+        'mean': [cell_mean],
+        'std': [cell_std],
+        'shape':['sphere'],
+        'ref': ['borsetti1976 and cros2002' ]}
+
+    d = pd.DataFrame(d)
+
+    return(d)   
 
 d_reniformis = reniformis()
 d_squamosa = squamosa()
@@ -239,9 +323,13 @@ d_aurisinae =  aurisinae()
 d_arctica = arctica()
 d_pienaarii = pienaarii()
 d_sphaeroidea_hol = sphaeroidea_hol()
+d_cristatus = cristatus()
+d_hydroideus = hydroideus()
+d_marsilii = marsilii()
 
 d = pd.concat([d_formosus, d_type5, d_aurisinae, d_sphaeroidea_hol,
-    d_reniformis, d_squamosa, d_arctica, d_pienaarii ])
+    d_reniformis, d_squamosa, d_arctica, d_pienaarii, d_cristatus, d_hydroideus,
+    d_marsilii ])
 
 d.to_csv("/home/phyto/CoccoData/sizes/devries2024_volumes.csv", index=False)
 
