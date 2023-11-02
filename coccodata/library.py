@@ -199,43 +199,34 @@ d = pd.concat([obrien2013a, obrien2013b, sheward2024,
                 villiot2021a, villiot2021b, devries2024])
 
 
-def def_sizes(d, study, species):
+def size_and_method(d, study, species):  
+
     d = d[(d['species'] == species) & (d['reference']==study)]
-    try:
-        method = d.get('method', None).item()
-    except:
-        method = None
-    try:
-        d_mean = d.get('mean', None).item()
-    except:
-        d_mean = None
-    try:
-        d_std = d.get('std', None).item()
-    except:
-        d_std = None
-    return d_mean, d_std, method
+
+    keys_to_extract = ['mean', 'std', 'method']
+    extracted_data = {}
+
+    for key in keys_to_extract:
+        try:
+            extracted_data[key] = d.get(key, None).item()
+        except:
+            extracted_data[key] = None
+
+    return extracted_data['mean'], extracted_data['std'], extracted_data['method']
 
 def classification(groups, species):
-    groups = groups[groups['species']==species]
-    try:
-        genera = groups.get('genera', None).item()
-    except:
-        genera = None
-    try:
-        family = groups.get('family', None).item()
-    except:
-        family = None    
-    try:
-        phase = groups.get('phase', None).item()
-    except:
-        phase = None   
-    try:
-        alternate_phase = groups.get('alternate_phase', None).item()
-    except:
-        alternate_phase = None   
+    
+    groups = groups[groups['species'] == species]
+    keys_to_extract = ['genera', 'family', 'phase', 'alternate_phase']
+    extracted_data = {}
 
-    return genera, family, phase, alternate_phase
+    for key in keys_to_extract:
+        try:
+            extracted_data[key] = groups.get(key, None).item()
+        except:
+            extracted_data[key] = None
 
+    return extracted_data['genera'], extracted_data['family'], extracted_data['phase'], extracted_data['alternate_phase']
 
 def fill_namedtuple(groups, species_list):
 
@@ -246,7 +237,7 @@ def fill_namedtuple(groups, species_list):
         for species in species_list: 
             genera, family, phase, alternate_phase = classification(groups, species)
 
-            studies.append(Study(id, *def_sizes(d, id, species), species, genera, family, phase, alternate_phase))
+            studies.append(Study(id, *size_and_method(d, id, species), species, genera, family, phase, alternate_phase))
 
     return(studies)
 
