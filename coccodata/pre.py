@@ -372,14 +372,14 @@ d = preprocess_data()
 d.rename(columns=lambda x: x.strip(), inplace=True)
 
 
-with open('/home/phyto/CoccoData/groupings.yml', 'r') as f:
+with open('/home/phyto/CoccoData/classification/synonyms.yml', 'r') as f:
     groupings = load(f, Loader=Loader)
 
 species = d.reset_index().drop(columns=['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method']).columns
 
 dict = {species:k
     for k, v in groupings.items()
-    for species in v['alt']}
+    for species in v}
 
 #df = d[species_observed]
 df = d.copy()
@@ -426,7 +426,7 @@ df.to_csv("/home/phyto/CoccoData/raw_observations.csv")
 d = pd.read_csv("/home/phyto/CoccoData/raw_observations.csv")
 
 
-with open('/home/phyto/CoccoData/groupings.yml', 'r') as f:
+with open('/home/phyto/CoccoData/classification/synonyms.yml', 'r') as f:
     groupings = load(f, Loader=Loader)
 
 
@@ -459,7 +459,7 @@ d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Month'])[species].agg('mean').
 
 dict = {species:k
     for k, v in groupings.items()
-    for species in v['alt']}
+    for species in v}
 
 df = (d.rename(columns=dict)
        .groupby(level=0, axis=1, dropna=False)).sum( min_count=1)
@@ -534,17 +534,17 @@ counts.to_csv("/home/phyto/CoccoData/final_species_observations.csv" )
 
 
 
-poly = gpd.read_file(PATH_TO_SHAPEFILE)
+# poly = gpd.read_file(PATH_TO_SHAPEFILE)
 
-for i in range(out.shape[0]):
-    for j in range(0, poly.shape[0]):
-        if poly['geometry'][j].contains(Point((out['Longitude'][i], out['Latitude'][i]))):
-            out.loc[i, 'FID'] = poly['ProvCode'][j]
+# for i in range(out.shape[0]):
+#     for j in range(0, poly.shape[0]):
+#         if poly['geometry'][j].contains(Point((out['Longitude'][i], out['Latitude'][i]))):
+#             out.loc[i, 'FID'] = poly['ProvCode'][j]
 
-out = out.dropna(subset=['din'])
+# out = out.dropna(subset=['din'])
 
 
-out = out.set_index(['Latitude', 'Longitude', 'Depth', 'Month'])
+# out = out.set_index(['Latitude', 'Longitude', 'Depth', 'Month'])
 
 
 
