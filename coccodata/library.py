@@ -39,8 +39,11 @@ def def_grouping():
 
 groups = def_grouping()
 
-species_list = groups.species.tolist()
 
+species = groups.species
+species = {x for x in species if x is not None}
+species_list = list(species)
+species_list.sort()
 
 
 def rename_synonyms(d, index='species', remove_duplicate=True):
@@ -246,6 +249,8 @@ library = fill_namedtuple(groups, species_list)
 def export_yml(library, path):
 
     spp_list = []
+    #sort species list alphabetically:
+
 
     for i in range(len(species_list)):
 
@@ -262,7 +267,10 @@ def export_yml(library, path):
             del sizes[id]['family']
             del sizes[id]['phase']
             del sizes[id]['alternate_phase']
-            
+        
+        #d = asdict(dc, dict_factory=lambda x: {k: v for (k, v) in x if v is not None})
+
+
         species =  {name: {
                 'genera': species_library[0].genera,
                 'family': species_library[0].family,
