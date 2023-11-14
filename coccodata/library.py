@@ -5,17 +5,16 @@ from collections import namedtuple
 from yaml import load, Loader
 import yaml
 import math 
+import glob, os
 
 Study = namedtuple("Study", ['id', 'mean', 'sd', 'method', 'species', 'genera', 'family', 'phase', 'alternate_phase'])
 
-
-
 def def_grouping():
 
-    with open('/home/phyto/CoccoData/classification/phases.yml', 'r') as f:
+    with open('/home/phyto/CoccoData/data/classification/phases.yml', 'r') as f:
         phases = load(f, Loader=Loader)
 
-    with open('/home/phyto/CoccoData/classification/family.yml', 'r') as f:
+    with open('/home/phyto/CoccoData/data/classification/family.yml', 'r') as f:
         families = load(f, Loader=Loader)
 
     d = pd.DataFrame.from_dict(phases, orient='index')
@@ -39,168 +38,22 @@ def def_grouping():
 
 groups = def_grouping()
 
-
 species = groups.species
 species = {x for x in species if x is not None}
 species_list = list(species)
 species_list.sort()
 
+def import_data(path):
 
-def rename_synonyms(d, index='species', remove_duplicate=True):
-    d['species'] = d['species'].str.strip()
+    all_files = glob.glob(os.path.join(path, "*.csv"))
 
-    with open('/home/phyto/CoccoData/classification/synonyms.yml', 'r') as f:
-        groupings = load(f, Loader=Loader)
-
-    species = d['species']
-    synonym_dict = {species:k
-        for k, v in groupings.items()
-        for species in v}
-
-    d = d.replace(synonym_dict)
-
-    #take mean for duplicate entries
-    if remove_duplicate == True: 
-        d = d.groupby(index).mean().reset_index()    
+    d = pd.concat((pd.read_csv(f) for f in all_files), ignore_index=True)
 
     return(d)
 
-def import_villiot2021a():    
-    d = pd.read_csv("/home/phyto/CoccoData/sizes/viliot2021_cell_diameters.csv")
-    d = rename_synonyms(d, ['species', 'strain'])
+d = import_data("/home/phyto/CoccoData/data/sizes/")
 
-    #resample ehux
-    RCC1731 = np.random.normal(d[d["strain"]=="RCC1731"]['mean'], d[d["strain"]=="RCC1731"]['std'], 10000)
-    RCC1128 = np.random.normal(d[d["strain"]=="RCC1228"]['mean'], d[d["strain"]=="RCC1228"]['std'], 10000)
-    
-    ehux = {'species': ["Emiliania huxleyi"],
-                'mean': [np.mean([RCC1128, RCC1731])],
-                'std': [np.std([RCC1128, RCC1731])],
-                'strain': ['NA']}
-    ehux = pd.DataFrame(ehux)
-    d = d[d["species"]!="Emiliania huxleyi"]
-    
-    #resample leptoporus
-    RCC1130 = np.random.normal(d[d["strain"]=="RCC1130"]['mean'], d[d["strain"]=="RCC1130"]['std'], 10000)
-    RCC1135 = np.random.normal(d[d["strain"]=="RCC1135"]['mean'], d[d["strain"]=="RCC1135"]['std'], 10000)
-    
-    leptoporus = {'species': ["Coccolithus leptoporus"],
-                'mean': [np.mean([RCC1130, RCC1135])],
-                'std': [np.std([RCC1130, RCC1135])],
-                'strain':['NA']}
-    leptoporus = pd.DataFrame(leptoporus)
-
-    d = d[d["species"]!="Calcidiscus leptoporus"]
-
-    d = pd.concat([d, ehux, leptoporus])
-    d['mean'] = np.round(d['mean'])
-    d['std'] = np.round(d['std'])
-    villiot2021 = d[['species', 'mean', 'std']]
-
-    villiot2021['reference'] = "villiot2021a"
-    villiot2021['method'] = 'light microscopy'
-
-    return(villiot2021)
-
-villiot2021a = import_villiot2021a()
-
-
-
-
-def import_villiot2021b():
-    d = pd.read_csv("/home/phyto/CoccoData/sizes/villiot2021_literature_morphometric_volume.csv")
-    d = rename_synonyms(d)
-    d = d.rename(columns={'cell volume': "mean"})
-    d['mean'] = np.round(d['mean'])
-
-    d['reference'] = "villiot2021b"
-    d['method'] = 'literature morphometrics'
-
-    return(d)
-
-villiot2021b = import_villiot2021b()
-
-
-
-def import_obrien2013a():
-    d = pd.read_csv("/home/phyto/CoccoData/sizes/obrien_cell_diameters.csv")
-    
-    #read obrien size data
-    #apply synonyms
-    d = rename_synonyms(d)
-
-    d = d.rename(columns={'diameter': "mean"})
-    d['mean'] = (1/6)*math.pi*(d['mean']**3)
-    d['mean'] = np.round(d['mean'])
-    d['reference'] = 'obrien2013a'
-    d['std'] = None
-    d['method'] = 'light microscopy'
-    return(d)
-
-obrien2013a = import_obrien2013a()
-
-
-
-def import_obrien2013b():
-    d = pd.read_csv("/home/phyto/CoccoData/sizes/obrien2013_coccosphere_size.csv")
-    #read obrien size data
-    #apply synonyms
-    d = rename_synonyms(d)
-
-    d['std'] = (d['max']-d['min'])/4
-    d = d[['species', 'std', 'mean']]
-    d['reference'] = "obrien2013b"
-    d['method'] = 'literature coccosphere'
-    return(d)
-
-obrien2013b = import_obrien2013b()
-
-
-
-def import_devries2024():
-    d = pd.read_csv("/home/phyto/CoccoData/sizes/devries2024_volumes.csv")
-    d = d[['species', 'mean', 'std']]
-    d['reference'] = 'devries2024'
-    d['method'] = 'literature morphometrics'
-
-    return(d)
-
-devries2024 = import_devries2024()
-
-def import_sheward2024():
-
-    #read sheward size data
-    d = pd.read_csv("/home/phyto/CoccoData/sizes/sheward2024_volumes.csv")
-
-    d = d[d['Spheres Y/N?']!="Flattened"]
-    d['Species'] = d['Species'].str.strip()
-    d['Genus'] = d['Genus'].str.strip()
-    d['species'] = d['Genus'] + " " + d['Species'] 
-
-    d = d[['species', 'Estimated cell volume', 'PIC pg C']]
-
-    d = rename_synonyms(d, remove_duplicate=False)
-
-
-    d = d.groupby(by="species").agg(["mean", "std"]).reset_index()
-    d['std'] = np.round(d['Estimated cell volume']['std'], 1)
-    d['mean'] = np.round(d['Estimated cell volume']['mean'], 1)
-    sheward2024 = d[['species', 'std', 'mean']]
-
-    #rename because column names are tuples for some reason??
-    sheward2024.columns = ['species', 'std', 'mean']
-
-    sheward2024['reference'] = 'sheward2024'
-    sheward2024['method'] = "AMT morphometrics"
-
-    return(sheward2024)
-
-sheward2024 = import_sheward2024()
-
-
-d = pd.concat([obrien2013a, obrien2013b, sheward2024,
-                villiot2021a, villiot2021b, devries2024])
-
+list_of_studies = d['reference'].unique()
 
 def size_and_method(d, study, species):  
 
@@ -233,13 +86,10 @@ def classification(groups, species):
 
 def fill_namedtuple(groups, species_list):
 
-
     studies = []
-    for id in ['obrien2013a', 'obrien2013b', 'sheward2024',
-                'villiot2021a', 'villiot2021b', 'devries2024']:
+    for id in list_of_studies:
         for species in species_list: 
             genera, family, phase, alternate_phase = classification(groups, species)
-
             studies.append(Study(id, *size_and_method(d, id, species), species, genera, family, phase, alternate_phase))
 
     return(studies)
@@ -259,8 +109,7 @@ def export_yml(library, path):
 
         sizes = {study.id:study._asdict() for study in species_library }
 
-        for id in ['obrien2013a', 'obrien2013b', 'sheward2024',
-                        'villiot2021a', 'villiot2021b', 'devries2024']:
+        for id in list_of_studies:
             del sizes[id]['id']
             del sizes[id]['species']
             del sizes[id]['genera']
