@@ -1,0 +1,61 @@
+/* DATA DESCRIPTION:
+Citation:	Díaz-Rosas, Francisco; Alves-de-Souza, Catharina; Alarcon, Emilio; Menschel, Eduardo; González, Humberto E; Torres, Rodrigo; von Dassow, Peter (2021): Abundances of coccolithophores found in southern Patagonia during the austral early-spring 2017. PANGAEA, https://doi.org/10.1594/PANGAEA.936509
+Abstract:	Physical and chemical parameters and associated coccolithophores species/Emiliania huxleyi morphotypes abundances and biovolume and co-occurring microplankton abundances recorded in southern Patagonia (~ 50-54 ºS) during the austral late-spring 2015 (at the end of november) and early-spring 2017 (at the end of september). Given the scarcity of data about coccolithophores in Patagonian waters and the impressive nearly a century spring-summer reports of Emiliania huxleyi blooms around the North Sea and Norwegian fjords system we want to observe what happens in this side of the planet. To do that, we collected seawater containing planktonic organisms at the surface and in some stations up to 75 m depth. Inverted microscopy along with SEM analyses were used to identify and quantify the planktonic items.
+Keyword(s):	Emiliania huxleyi; Emiliania huxleyi morphotypes; Patagonian fjords
+Supplement to:	Díaz-Rosas, Francisco; Alves-de-Souza, Catharina; Alarcon, Emilio; Menschel, Eduardo; González, Humberto E; Torres, Rodrigo; von Dassow, Peter (2021): Abundances and morphotypes of the coccolithophore Emiliania huxleyi in southern Patagonia compared to neighbouring oceans and Northern Hemisphere fjords. Biogeosciences, 18(19), 5465-5489, https://doi.org/10.5194/bg-18-5465-2021
+Further details:	Díaz-Rosas, Francisco; Alves-de-Souza, Catharina; Alarcon, Emilio; Menschel, Eduardo; González, Humberto; Torres, Rodrigo; von Dassow, Peter (accepted): Inverted microscopy image dataset -- Carbon biomass of microplankton assemblages in southern Patagonian fjords and channels. Zenodo, https://doi.org/10.5281/zenodo.5139161
+	Díaz-Rosas, Francisco; Alves-de-Souza, Catharina; Alarcon, Emilio; Menschel, Eduardo; González, Humberto; Torres, Rodrigo; von Dassow, Peter (accepted): Scanning electron microscopy image dataset -- Abundances and morphotypes of the coccolithophore Emiliania huxleyi in southern Patagonian fjords and channels. Zenodo, https://doi.org/10.5281/zenodo.4292020
+Funding:	Agencia Nacional de Investigación y Desarrollo (ANID), grant/award no. 1140385: Land-sea interaction effects on the local carbon cycle of the western patagonian archipelago interior sea (FONDECYT) (URI: hdl:10533/117679)
+	Agencia Nacional de Investigación y Desarrollo (ANID), grant/award no. 1141106: Effects on phytoplankton communities, the coccolithophore emiliania huxleyi, and interactions with iron and macro-nutrients (FONDECYT) (URI: hdl:10533/118037)
+Coverage:	MEDIAN LATITUDE: -51.815273 * MEDIAN LONGITUDE: -73.980445 * SOUTH-BOUND LATITUDE: -53.592500 * WEST-BOUND LONGITUDE: -75.363000 * NORTH-BOUND LATITUDE: -50.336800 * EAST-BOUND LONGITUDE: -72.300000
+	DATE/TIME START: 2017-09-22T10:20:00 * DATE/TIME END: 2017-09-26T14:50:00
+	MINIMUM DEPTH, water: 2 m * MAXIMUM DEPTH, water: 75 m
+Event(s):	FES-2017-22 (22) * LATITUDE: -53.592500 * LONGITUDE: -72.300000 * DATE/TIME: 2017-09-22T10:20:00 * LOCATION: South Pacific Ocean * CAMPAIGN: Forrest_early_spring-2017 (FES-2017) * BASIS: Forrest * METHOD/DEVICE: Acid-cleaned suction system attached to a towed fish
+	FES-2017-23 (23) * LATITUDE: -53.383300 * LONGITUDE: -72.932800 * DATE/TIME: 2017-09-22T14:05:00 * LOCATION: South Pacific Ocean * CAMPAIGN: Forrest_early_spring-2017 (FES-2017) * BASIS: Forrest * METHOD/DEVICE: Acid-cleaned suction system attached to a towed fish
+	FES-2017-24 (24) * LATITUDE: -53.142400 * LONGITUDE: -73.380700 * DATE/TIME: 2017-09-22T17:00:00 * LOCATION: South Pacific Ocean * CAMPAIGN: Forrest_early_spring-2017 (FES-2017) * BASIS: Forrest * METHOD/DEVICE: Acid-cleaned suction system attached to a towed fish
+	FES-2017-25 (25) * LATITUDE: -52.591300 * LONGITUDE: -73.648500 * DATE/TIME: 2017-09-23T00:02:00 * LOCATION: South Pacific Ocean * CAMPAIGN: Forrest_early_spring-2017 (FES-2017) * BASIS: Forrest * METHOD/DEVICE: Acid-cleaned suction system attached to a towed fish
+	FES-2017-26 (26) * LATITUDE: -52.124700 * LONGITUDE: -73.689900 * DATE/TIME: 2017-09-23T04:05:00 * LOCATION: South Pacific Ocean * CAMPAIGN: Forrest_early_spring-2017 (FES-2017) * BASIS: Forrest * METHOD/DEVICE: Acid-cleaned suction system attached to a towed fish
+	FES-2017-27 (27) * LATITUDE: -51.684000 * LONGITUDE: -73.950000 * DATE/TIME: 2017-09-23T08:22:00 * LOCATION: South Pacific Ocean * CAMPAIGN: Forrest_early_spring-2017 (FES-2017) * BASIS: Forrest * METHOD/DEVICE: Acid-cleaned suction system attached to a towed fish
+	FES-2017-28 (28) * LATITUDE: -51.463100 * LONGITUDE: -74.043500 * DATE/TIME: 2017-09-23T10:08:00 * LOCATION: South Pacific Ocean * CAMPAIGN: Forrest_early_spring-2017 (FES-2017) * BASIS: Forrest * METHOD/DEVICE: Acid-cleaned suction system attached to a towed fish
+	FES-2017-29 (29) * LATITUDE: -50.747900 * LONGITUDE: -74.489200 * DATE/TIME: 2017-09-23T16:45:00 * LOCATION: South Pacific Ocean * CAMPAIGN: Forrest_early_spring-2017 (FES-2017) * BASIS: Forrest * METHOD/DEVICE: Acid-cleaned suction system attached to a towed fish
+	FES-2017-30 (30) * LATITUDE: -50.336800 * LONGITUDE: -75.363000 * DATE/TIME: 2017-09-24T23:00:00 * LOCATION: South Pacific Ocean * CAMPAIGN: Forrest_early_spring-2017 (FES-2017) * BASIS: Forrest * METHOD/DEVICE: Acid-cleaned suction system attached to a towed fish
+	FES-2017-31 (31) * LATITUDE: -50.424300 * LONGITUDE: -75.001600 * DATE/TIME: 2017-09-26T14:45:00 * LOCATION: South Pacific Ocean * CAMPAIGN: Forrest_early_spring-2017 (FES-2017) * BASIS: Forrest * METHOD/DEVICE: Acid-cleaned suction system attached to a towed fish
+	FES-2017-32 (32) * LATITUDE: -50.477700 * LONGITUDE: -74.985700 * DATE/TIME: 2017-09-26T14:50:00 * LOCATION: South Pacific Ocean * CAMPAIGN: Forrest_early_spring-2017 (FES-2017) * BASIS: Forrest * METHOD/DEVICE: Acid-cleaned suction system attached to a towed fish
+Parameter(s):	Event label (Event) * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com)
+	Date/Time of event (Date/Time) * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com)
+	Latitude of event (Latitude) * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com)
+	Longitude of event (Longitude) * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com)
+	Station label (Station) * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com)
+	DEPTH, water [m] (Depth water) * GEOCODE * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com)
+	Emiliania huxleyi [#/l] (E. huxleyi) * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com) * METHOD/DEVICE: Scanning electron microscope (SEM) (URI: https://en.wikipedia.org/wiki/Scanning_electron_microscope)
+	Acanthoica quattrospina [#/l] (A. quattrospina) * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com) * METHOD/DEVICE: Scanning electron microscope (SEM) (URI: https://en.wikipedia.org/wiki/Scanning_electron_microscope)
+	Coronosphaera mediterranea [#/l] (C. mediterranea) * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com) * METHOD/DEVICE: Scanning electron microscope (SEM) (URI: https://en.wikipedia.org/wiki/Scanning_electron_microscope)
+	Gephyrocapsa muellerae [#/l] (G. muellerae) * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com) * METHOD/DEVICE: Scanning electron microscope (SEM) (URI: https://en.wikipedia.org/wiki/Scanning_electron_microscope)
+	Helicosphaera carteri [#/l] (H. carteri) * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com) * METHOD/DEVICE: Scanning electron microscope (SEM) (URI: https://en.wikipedia.org/wiki/Scanning_electron_microscope)
+	Calciosolenia murrayi [#/l] (C. murrayi) * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com) * METHOD/DEVICE: Scanning electron microscope (SEM) (URI: https://en.wikipedia.org/wiki/Scanning_electron_microscope)
+	Alisphaera unicornis [#/l] (A. unicornis) * PI: Díaz-Rosas, Francisco (https://orcid.org/0000-0003-1611-4232, amphioxus528@gmail.com) * METHOD/DEVICE: Scanning electron microscope (SEM) (URI: https://en.wikipedia.org/wiki/Scanning_electron_microscope)
+License:	Creative Commons Attribution 4.0 International (CC-BY-4.0)
+Status:	Curation Level: Enhanced curation (URI: https://wiki.pangaea.de/wiki/Curation_levels)
+Size:	160 data points
+*/
+Event	Date/Time	Latitude	Longitude	Station	Depth water [m]	E. huxleyi [#/l]	A. quattrospina [#/l]	C. mediterranea [#/l]	G. muellerae [#/l]	H. carteri [#/l]	C. murrayi [#/l]	A. unicornis [#/l]
+FES-2017-22	2017-09-22T10:20	-53.5925	-72.3000	St.22	2	51257	0	0	0	0	0	0
+FES-2017-23	2017-09-22T14:05	-53.3833	-72.9328	St.23	2	51552	0	0	0	0	0	0
+FES-2017-24	2017-09-22T17:00	-53.1424	-73.3807	St.24	2	62099	0	0	0	0	0	0
+FES-2017-25	2017-09-23T00:02	-52.5913	-73.6485	St.25	2	16948	0	0	0	0	0	0
+FES-2017-26	2017-09-23T04:05	-52.1247	-73.6899	St.26	2	90551	0	0	0	0	0	0
+FES-2017-27	2017-09-23T08:22	-51.6840	-73.9500	St.27	2	82742	0	0	0	0	0	0
+FES-2017-28	2017-09-23T10:08	-51.4631	-74.0435	St.28	2	23407	0	0	0	0	0	0
+FES-2017-29	2017-09-23T16:45	-50.7479	-74.4892	St.29	2	26512	0	0	0	0	0	0
+FES-2017-30	2017-09-24T23:00	-50.3368	-75.3630	St.30	2	38558	0	0	0	0	0	0
+FES-2017-30	2017-09-24T23:00	-50.3368	-75.3630	St.30	5	27924	0	0	0	0	0	0
+FES-2017-30	2017-09-24T23:00	-50.3368	-75.3630	St.30	10	37466	436	0	0	0	0	0
+FES-2017-30	2017-09-24T23:00	-50.3368	-75.3630	St.30	20	17862	0	0	0	0	0	0
+FES-2017-30	2017-09-24T23:00	-50.3368	-75.3630	St.30	50	13747	0	0	0	430	0	0
+FES-2017-30	2017-09-24T23:00	-50.3368	-75.3630	St.30	75	2062	0	0	1031	0	0	0
+FES-2017-31	2017-09-26T14:45	-50.4243	-75.0016	St.31	2	27965	0	0	0	0	0	0
+FES-2017-32	2017-09-26T14:50	-50.4777	-74.9857	St.32	5	34797	1289	0	0	0	0	0
+FES-2017-32	2017-09-26T14:50	-50.4777	-74.9857	St.32	10	28812	847	0	0	0	0	0
+FES-2017-32	2017-09-26T14:50	-50.4777	-74.9857	St.32	20	21186	1695	847	0	0	0	0
+FES-2017-32	2017-09-26T14:50	-50.4777	-74.9857	St.32	50	7406	0	436	0	0	436	0
+FES-2017-32	2017-09-26T14:50	-50.4777	-74.9857	St.32	75	7733	0	2148	859	0	0	430
