@@ -19,12 +19,16 @@
       sheward2024:
         mean: 149.9
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
         sd: null
       villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
         mean: null
         method: null
         sd: null
@@ -57,7 +61,11 @@
       villiot2021b:
         mean: 95.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Algirosphaera robusta:
     alternate_phase: null
     family: Rhabdosphaeraceae
@@ -71,7 +79,7 @@
       obrien2013a:
         mean: 78.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 161.0
         method: literature coccosphere
@@ -87,7 +95,11 @@
       villiot2021b:
         mean: 78.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 227.0
+        method: light microscopy
+        sd: 175.0
 - Alisphaera extenta:
     alternate_phase: null
     family: Alisphaeraceae
@@ -117,7 +129,11 @@
       villiot2021b:
         mean: 190.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Alisphaera gaudii:
     alternate_phase: null
     family: Alisphaeraceae
@@ -147,7 +163,11 @@
       villiot2021b:
         mean: 167.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Alisphaera pinnigera:
     alternate_phase: null
     family: Alisphaeraceae
@@ -177,7 +197,11 @@
       villiot2021b:
         mean: 485.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Alisphaera unicornis:
     alternate_phase: null
     family: Alisphaeraceae
@@ -207,7 +231,11 @@
       villiot2021b:
         mean: 596.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Alisphaera unicornis POL:
     alternate_phase: Alisphaera unicornis
     family: Alisphaeraceae
@@ -237,7 +265,11 @@
       villiot2021b:
         mean: 1468.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Calcidiscus leptoporus:
     alternate_phase: null
     family: Calcidiscaceae
@@ -251,7 +283,7 @@
       obrien2013a:
         mean: 576.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 364.5
         method: literature coccosphere
@@ -267,7 +299,11 @@
       villiot2021b:
         mean: 598.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Calcidiscus leptoporus HOL:
     alternate_phase: Calcidiscus leptoporus
     family: Calcidiscaceae
@@ -297,7 +333,11 @@
       villiot2021b:
         mean: 858.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Calciopappus caudatus:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -325,6 +365,10 @@
         method: null
         sd: null
       villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
         mean: null
         method: null
         sd: null
@@ -357,7 +401,11 @@
       villiot2021b:
         mean: 65.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Calciosolenia brasiliensis:
     alternate_phase: null
     family: Calciosolinaceae
@@ -387,7 +435,11 @@
       villiot2021b:
         mean: 462.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Calciosolenia murrayi:
     alternate_phase: null
     family: Calciosolinaceae
@@ -409,7 +461,7 @@
       sheward2024:
         mean: 305.1
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -417,7 +469,11 @@
       villiot2021b:
         mean: 67.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 190.6
+        method: light microscopy
+        sd: 102.5
 - Calicasphaera diconstricta:
     alternate_phase: unknown
     family: Undefined
@@ -447,7 +503,11 @@
       villiot2021b:
         mean: 180.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Calyptrolithina divergens:
     alternate_phase: Syracosphaera halldalii
     family: Undefined
@@ -477,7 +537,11 @@
       villiot2021b:
         mean: 69.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Calyptrolithina multipora:
     alternate_phase: unknown
     family: Undefined
@@ -507,7 +571,11 @@
       villiot2021b:
         mean: 1653.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 708.4
+        method: light microscopy
+        sd: 0.0
 - Calyptrosphaera heimdalae:
     alternate_phase: Cyrtosphaera aculeata
     family: Undefined
@@ -537,7 +605,11 @@
       villiot2021b:
         mean: 144.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Calyptrosphaera sphaeroidea HOL:
     alternate_phase: Calyptrosphaera sphaeroide
     family: Undefined
@@ -565,6 +637,10 @@
         method: null
         sd: null
       villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
         mean: null
         method: null
         sd: null
@@ -598,6 +674,10 @@
         mean: null
         method: null
         sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Ceratolithus cristatus CER:
     alternate_phase: Ceratolithus cristatus
     family: Ceratolithaceae
@@ -628,6 +708,10 @@
         mean: null
         method: null
         sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Coccolithus pelagicus:
     alternate_phase: null
     family: Coccolithaceae
@@ -641,7 +725,7 @@
       obrien2013a:
         mean: 1468.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 382.0
         method: literature coccosphere
@@ -653,11 +737,15 @@
       villiot2021a:
         mean: 1936.0
         method: light microscopy
-        sd: 23.0
+        sd: 0.0
       villiot2021b:
         mean: 1468.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 408.2
+        method: light microscopy
+        sd: 163.4
 - Coccolithus pelagicus HOL:
     alternate_phase: Coccolithus pelagicus
     family: Coccolithaceae
@@ -687,7 +775,11 @@
       villiot2021b:
         mean: 817.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Corisphaera gracilis:
     alternate_phase: Rhabdosphaera xiphos
     family: Undefined
@@ -717,7 +809,11 @@
       villiot2021b:
         mean: 155.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Corisphaera tyrrheniensis:
     alternate_phase: unknown
     family: Undefined
@@ -747,7 +843,11 @@
       villiot2021b:
         mean: 128.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Cyrtosphaera aculeata:
     alternate_phase: null
     family: Rhabdosphaeraceae
@@ -769,7 +869,7 @@
       sheward2024:
         mean: 281.7
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -777,7 +877,11 @@
       villiot2021b:
         mean: 124.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Discosphaera tubifera:
     alternate_phase: null
     family: Rhabdosphaeraceae
@@ -791,7 +895,7 @@
       obrien2013a:
         mean: 54.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 113.0
         method: literature coccosphere
@@ -807,7 +911,11 @@
       villiot2021b:
         mean: 108.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 61.6
+        method: light microscopy
+        sd: 24.8
 - Emiliania huxleyi:
     alternate_phase: null
     family: Noelaerhabdaceae
@@ -821,7 +929,7 @@
       obrien2013a:
         mean: 22.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 90.0
         method: literature coccosphere
@@ -833,11 +941,15 @@
       villiot2021a:
         mean: 41.0
         method: light microscopy
-        sd: 8.0
+        sd: 0.0
       villiot2021b:
         mean: 48.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Florisphaera profunda:
     alternate_phase: null
     family: Undefined
@@ -851,7 +963,7 @@
       obrien2013a:
         mean: 31.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 126.5
         method: literature coccosphere
@@ -867,7 +979,11 @@
       villiot2021b:
         mean: 34.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 50.1
+        method: light microscopy
+        sd: 37.6
 - Gephyrocapsa ericsonii:
     alternate_phase: null
     family: Noelaerhabdaceae
@@ -897,7 +1013,11 @@
       villiot2021b:
         mean: 10.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Gephyrocapsa muellerae:
     alternate_phase: null
     family: Noelaerhabdaceae
@@ -923,11 +1043,15 @@
       villiot2021a:
         mean: 65.0
         method: light microscopy
-        sd: 4.0
+        sd: 0.0
       villiot2021b:
         mean: 41.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 35.8
+        method: light microscopy
+        sd: 11.0
 - Gephyrocapsa oceanica:
     alternate_phase: null
     family: Noelaerhabdaceae
@@ -941,7 +1065,7 @@
       obrien2013a:
         mean: 65.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 113.0
         method: literature coccosphere
@@ -953,11 +1077,15 @@
       villiot2021a:
         mean: 235.0
         method: light microscopy
-        sd: 4.0
+        sd: 0.0
       villiot2021b:
         mean: 58.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 73.8
+        method: light microscopy
+        sd: 49.8
 - Gephyrocapsa ornata:
     alternate_phase: null
     family: Noelaerhabdaceae
@@ -979,7 +1107,7 @@
       sheward2024:
         mean: 7.9
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -987,7 +1115,11 @@
       villiot2021b:
         mean: 18.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Gephyrocapsa parvula:
     alternate_phase: null
     family: Noelaerhabdaceae
@@ -1013,11 +1145,15 @@
       villiot2021a:
         mean: 14.0
         method: light microscopy
-        sd: 1.0
+        sd: 0.0
       villiot2021b:
         mean: 19.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Gladiolithus flabellatus:
     alternate_phase: null
     family: Undefined
@@ -1047,7 +1183,11 @@
       villiot2021b:
         mean: 137.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 30.6
+        method: light microscopy
+        sd: 16.6
 - Gliscolithus amitakareniae:
     alternate_phase: null
     family: Undefined
@@ -1077,7 +1217,11 @@
       villiot2021b:
         mean: 249.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Hayaster perplexus:
     alternate_phase: null
     family: Calcidiscaceae
@@ -1107,7 +1251,11 @@
       villiot2021b:
         mean: 38792.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Helicosphaera HOL catilliferus type:
     alternate_phase: Helicosphaera carteri
     family: Helicosphaeraceae
@@ -1135,6 +1283,10 @@
         method: null
         sd: null
       villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
         mean: null
         method: null
         sd: null
@@ -1167,7 +1319,11 @@
       villiot2021b:
         mean: 248.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Helicosphaera carteri:
     alternate_phase: null
     family: Helicosphaeraceae
@@ -1189,7 +1345,7 @@
       sheward2024:
         mean: 704.5
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -1197,7 +1353,11 @@
       villiot2021b:
         mean: 190.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 1092.4
+        method: light microscopy
+        sd: 403.3
 - Helicosphaera hyalina:
     alternate_phase: null
     family: Helicosphaeraceae
@@ -1227,7 +1387,11 @@
       villiot2021b:
         mean: 754.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Helicosphaera pavimentum:
     alternate_phase: null
     family: Helicosphaeraceae
@@ -1249,7 +1413,7 @@
       sheward2024:
         mean: 369.0
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -1257,7 +1421,11 @@
       villiot2021b:
         mean: 756.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 394.8
+        method: light microscopy
+        sd: 159.3
 - Helicosphaera pavimentum HOL:
     alternate_phase: Helicosphaera pavimentum
     family: Helicosphaeraceae
@@ -1288,6 +1456,10 @@
         mean: null
         method: null
         sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Helicosphaera wallichii:
     alternate_phase: null
     family: Helicosphaeraceae
@@ -1309,7 +1481,7 @@
       sheward2024:
         mean: 742.4
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -1317,7 +1489,11 @@
       villiot2021b:
         mean: 34.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Helladosphaera cornifera:
     alternate_phase:
     - Syracosphaera nodosa
@@ -1349,7 +1525,11 @@
       villiot2021b:
         mean: 72.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Helladosphaera pienaarii:
     alternate_phase: unknown
     family: Undefined
@@ -1380,6 +1560,10 @@
         mean: null
         method: null
         sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Homozygosphaera spinosa:
     alternate_phase: unknown
     family: Undefined
@@ -1399,9 +1583,9 @@
         method: null
         sd: null
       sheward2024:
-        mean: .nan
+        mean: 0.0
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -1409,7 +1593,11 @@
       villiot2021b:
         mean: 31.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Homozygosphaera triarcha:
     alternate_phase: unknown
     family: Undefined
@@ -1439,7 +1627,11 @@
       villiot2021b:
         mean: 82.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Michaelsarsia adriaticus:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -1469,7 +1661,11 @@
       villiot2021b:
         mean: 894.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Michaelsarsia elegans:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -1491,7 +1687,7 @@
       sheward2024:
         mean: 1738.3
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -1499,7 +1695,11 @@
       villiot2021b:
         mean: 180.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 276.5
+        method: light microscopy
+        sd: 152.6
 - Oolithotus antillarum:
     alternate_phase: null
     family: Calcidiscaceae
@@ -1513,7 +1713,7 @@
       obrien2013a:
         mean: 54.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 172.0
         method: literature coccosphere
@@ -1529,7 +1729,11 @@
       villiot2021b:
         mean: 230.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 88.8
+        method: light microscopy
+        sd: 44.7
 - Oolithotus fragilis:
     alternate_phase: null
     family: Calcidiscaceae
@@ -1543,7 +1747,7 @@
       obrien2013a:
         mean: 1376.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 556.0
         method: literature coccosphere
@@ -1559,7 +1763,11 @@
       villiot2021b:
         mean: 1376.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 712.2
+        method: light microscopy
+        sd: 179.6
 - Ophiaster formosus:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -1587,6 +1795,10 @@
         method: null
         sd: null
       villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
         mean: null
         method: null
         sd: null
@@ -1620,6 +1832,10 @@
         mean: null
         method: null
         sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Palusphaera vandelii:
     alternate_phase: null
     family: Rhabdosphaeraceae
@@ -1639,9 +1855,9 @@
         method: literature coccosphere
         sd: 16.75
       sheward2024:
-        mean: .nan
+        mean: 0.0
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -1649,7 +1865,11 @@
       villiot2021b:
         mean: 7238.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Pappomonas type 3:
     alternate_phase: null
     family: Papposphaeraceae
@@ -1679,7 +1899,11 @@
       villiot2021b:
         mean: 410.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Pappomonas type 5:
     alternate_phase: null
     family: Papposphaeraceae
@@ -1707,6 +1931,10 @@
         method: null
         sd: null
       villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
         mean: null
         method: null
         sd: null
@@ -1739,7 +1967,11 @@
       villiot2021b:
         mean: 100.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Picarola margalefii:
     alternate_phase: null
     family: Papposphaeraceae
@@ -1769,7 +2001,11 @@
       villiot2021b:
         mean: 37.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Pontosphaera syracusana:
     alternate_phase: null
     family: Pontosphaeraceae
@@ -1799,7 +2035,11 @@
       villiot2021b:
         mean: 2855.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Reticulofenestra sessilis:
     alternate_phase: null
     family: Noelaerhabdaceae
@@ -1830,6 +2070,10 @@
         mean: null
         method: null
         sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Rhabdosphaera clavigera:
     alternate_phase: null
     family: Rhabdosphaeraceae
@@ -1843,7 +2087,7 @@
       obrien2013a:
         mean: 131.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 455.5
         method: literature coccosphere
@@ -1859,7 +2103,11 @@
       villiot2021b:
         mean: 131.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 467.4
+        method: light microscopy
+        sd: 160.0
 - Rhabdosphaera xiphos:
     alternate_phase: null
     family: Rhabdosphaeraceae
@@ -1889,7 +2137,11 @@
       villiot2021b:
         mean: 170.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Scyphosphaera apsteinii:
     alternate_phase: null
     family: Pontosphaeraceae
@@ -1919,7 +2171,11 @@
       villiot2021b:
         mean: 4511.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 3048.7
+        method: light microscopy
+        sd: 863.6
 - Sphaerocalyptra quadridentata:
     alternate_phase:
     - Algirosphaera robusta
@@ -1951,7 +2207,11 @@
       villiot2021b:
         mean: 4.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera ampliora:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -1981,7 +2241,11 @@
       villiot2021b:
         mean: 248.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera anthos:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2011,7 +2275,11 @@
       villiot2021b:
         mean: 485.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 236.2
+        method: light microscopy
+        sd: 95.6
 - Syracosphaera anthos HOL:
     alternate_phase: Syracosphaera anthos
     family: Syracosphaeraceae
@@ -2041,7 +2309,11 @@
       villiot2021b:
         mean: 425.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 204.8
+        method: light microscopy
+        sd: 91.9
 - Syracosphaera arethusae:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2071,7 +2343,11 @@
       villiot2021b:
         mean: 207.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera arethusae HOL:
     alternate_phase: Syracosphaera arethusae
     family: Syracosphaeraceae
@@ -2093,12 +2369,16 @@
       sheward2024:
         mean: 454.9
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
         sd: null
       villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
         mean: null
         method: null
         sd: null
@@ -2132,6 +2412,10 @@
         mean: null
         method: null
         sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera aurisinae HOL:
     alternate_phase: Syracosphaera aurisinae
     family: Syracosphaeraceae
@@ -2161,7 +2445,11 @@
       villiot2021b:
         mean: 151.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera bannockii:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2191,7 +2479,11 @@
       villiot2021b:
         mean: 457.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera bannockii HOL:
     alternate_phase: Syracosphaera bannockii
     family: Syracosphaeraceae
@@ -2221,7 +2513,11 @@
       villiot2021b:
         mean: 145.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera borealis:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2251,7 +2547,11 @@
       villiot2021b:
         mean: 217.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera corolla:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2281,7 +2581,11 @@
       villiot2021b:
         mean: 432.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera dilatata:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2311,7 +2615,11 @@
       villiot2021b:
         mean: 200.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera epigrosa:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2341,7 +2649,11 @@
       villiot2021b:
         mean: 572.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera exigua:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2371,7 +2683,11 @@
       villiot2021b:
         mean: 395.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera gaarderae:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2401,7 +2717,11 @@
       villiot2021b:
         mean: 323.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera gaarderae HOL:
     alternate_phase: Syracosphaera gaarderae
     family: Syracosphaeraceae
@@ -2429,6 +2749,10 @@
         method: null
         sd: null
       villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
         mean: null
         method: null
         sd: null
@@ -2461,7 +2785,11 @@
       villiot2021b:
         mean: 796.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera hastata:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2491,7 +2819,11 @@
       villiot2021b:
         mean: 116.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera histrica:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2521,7 +2853,11 @@
       villiot2021b:
         mean: 1596.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera histrica HOL:
     alternate_phase: Syracosphaera histrica
     family: Syracosphaeraceae
@@ -2541,9 +2877,9 @@
         method: literature coccosphere
         sd: 205.75
       sheward2024:
-        mean: .nan
+        mean: 0.0
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -2551,7 +2887,11 @@
       villiot2021b:
         mean: 1050.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera isselii HOL:
     alternate_phase: Syracosphaera isselii
     family: Syracosphaeraceae
@@ -2581,7 +2921,11 @@
       villiot2021b:
         mean: 583.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera magnaghii HOL:
     alternate_phase: Syracosphaera magnaghii
     family: Syracosphaeraceae
@@ -2611,7 +2955,11 @@
       villiot2021b:
         mean: 82.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera marginiporata:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2641,7 +2989,11 @@
       villiot2021b:
         mean: 124.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 89.2
+        method: light microscopy
+        sd: 0.0
 - Syracosphaera mediterranea:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2663,7 +3015,7 @@
       sheward2024:
         mean: 452.3
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -2671,7 +3023,11 @@
       villiot2021b:
         mean: 1048.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 1380.0
+        method: light microscopy
+        sd: 473.5
 - Syracosphaera mediterranea HOL gracillima type:
     alternate_phase: Syracosphaera mediterranea
     family: Syracosphaeraceae
@@ -2699,6 +3055,10 @@
         method: null
         sd: null
       villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
         mean: null
         method: null
         sd: null
@@ -2732,6 +3092,10 @@
         mean: null
         method: null
         sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera mediterranea HOL wettsteinii type:
     alternate_phase: Syracosphaera mediterranea
     family: Syracosphaeraceae
@@ -2761,7 +3125,11 @@
       villiot2021b:
         mean: 92.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 1159.6
+        method: light microscopy
+        sd: 713.7
 - Syracosphaera molischii:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2791,7 +3159,11 @@
       villiot2021b:
         mean: 213.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera molischii HOL:
     alternate_phase: Syracosphaera molischii
     family: Syracosphaeraceae
@@ -2813,7 +3185,7 @@
       sheward2024:
         mean: 38.0
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -2821,7 +3193,11 @@
       villiot2021b:
         mean: 82.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera neapolitana:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2851,7 +3227,11 @@
       villiot2021b:
         mean: 76.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera nodosa:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2881,7 +3261,11 @@
       villiot2021b:
         mean: 97.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera noroitica:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2911,7 +3295,11 @@
       villiot2021b:
         mean: 796.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera orbiculus:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2941,7 +3329,11 @@
       villiot2021b:
         mean: 212.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera ossa:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -2971,7 +3363,11 @@
       villiot2021b:
         mean: 87.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera periperforata HOL:
     alternate_phase: Syracosphaera periperforata
     family: Syracosphaeraceae
@@ -3001,7 +3397,11 @@
       villiot2021b:
         mean: 78.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera prolongata:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -3031,7 +3431,11 @@
       villiot2021b:
         mean: 23.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera protrudens:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -3061,7 +3465,11 @@
       villiot2021b:
         mean: 442.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera pulchra:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -3091,7 +3499,11 @@
       villiot2021b:
         mean: 17.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 1181.0
+        method: light microscopy
+        sd: 420.0
 - Syracosphaera pulchra HOL:
     alternate_phase: Syracosphaera pulchra
     family: Syracosphaeraceae
@@ -3119,6 +3531,10 @@
         method: null
         sd: null
       villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
         mean: null
         method: null
         sd: null
@@ -3152,6 +3568,10 @@
         mean: null
         method: null
         sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera rotula:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -3173,7 +3593,7 @@
       sheward2024:
         mean: 101.7
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -3181,7 +3601,11 @@
       villiot2021b:
         mean: 64.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera squamosa:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -3212,6 +3636,10 @@
         mean: null
         method: null
         sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera strigilis HOL:
     alternate_phase: Syracosphaera strigilis
     family: Syracosphaeraceae
@@ -3233,7 +3661,7 @@
       sheward2024:
         mean: 114.8
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -3241,7 +3669,11 @@
       villiot2021b:
         mean: 43.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera tumularis:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -3255,7 +3687,7 @@
       obrien2013a:
         mean: 2026.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 382.0
         method: literature coccosphere
@@ -3271,7 +3703,11 @@
       villiot2021b:
         mean: 2026.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 2185.1
+        method: light microscopy
+        sd: 0.0
 - Umbellosphaera irregularis:
     alternate_phase: null
     family: Umbellosphaeraceae
@@ -3285,7 +3721,7 @@
       obrien2013a:
         mean: 131.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 221.0
         method: literature coccosphere
@@ -3301,7 +3737,11 @@
       villiot2021b:
         mean: 200.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 85.1
+        method: light microscopy
+        sd: 37.2
 - Umbellosphaera tenuis:
     alternate_phase: null
     family: Umbellosphaeraceae
@@ -3315,7 +3755,7 @@
       obrien2013a:
         mean: 97.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 226.0
         method: literature coccosphere
@@ -3331,7 +3771,11 @@
       villiot2021b:
         mean: 322.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 93.7
+        method: light microscopy
+        sd: 52.0
 - Umbilicosphaera anulus:
     alternate_phase: null
     family: Calcidiscaceae
@@ -3361,7 +3805,11 @@
       villiot2021b:
         mean: 2226.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Umbilicosphaera foliosa:
     alternate_phase: null
     family: Calcidiscaceae
@@ -3375,7 +3823,7 @@
       obrien2013a:
         mean: 395.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 310.0
         method: literature coccosphere
@@ -3392,6 +3840,10 @@
         mean: null
         method: null
         sd: null
+      young2024:
+        mean: 172.3
+        method: light microscopy
+        sd: 50.5
 - Umbilicosphaera hulburtiana:
     alternate_phase: null
     family: Calcidiscaceae
@@ -3421,7 +3873,11 @@
       villiot2021b:
         mean: 168.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 206.9
+        method: light microscopy
+        sd: 88.7
 - Umbilicosphaera sibogae:
     alternate_phase: null
     family: Calcidiscaceae
@@ -3435,7 +3891,7 @@
       obrien2013a:
         mean: 3315.0
         method: light microscopy
-        sd: .nan
+        sd: 0.0
       obrien2013b:
         mean: 1931.0
         method: literature coccosphere
@@ -3451,7 +3907,11 @@
       villiot2021b:
         mean: 7421.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: 6370.6
+        method: light microscopy
+        sd: 0.0
 - Wigwamma antarctica:
     alternate_phase: null
     family: Papposphaeraceae
@@ -3461,7 +3921,7 @@
       devries2024:
         mean: 65.44984694978736
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
       obrien2013a:
         mean: null
         method: null
@@ -3479,6 +3939,10 @@
         method: null
         sd: null
       villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
         mean: null
         method: null
         sd: null
@@ -3503,7 +3967,7 @@
       sheward2024:
         mean: 50.4
         method: AMT morphometrics
-        sd: .nan
+        sd: 0.0
       villiot2021a:
         mean: null
         method: null
@@ -3511,7 +3975,11 @@
       villiot2021b:
         mean: 60.0
         method: literature morphometrics
-        sd: .nan
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Zygosphaera marsilii:
     alternate_phase: unknown
     family: Undefined
@@ -3539,6 +4007,10 @@
         method: null
         sd: null
       villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
         mean: null
         method: null
         sd: null

@@ -48,6 +48,7 @@ def import_data(path):
     all_files = glob.glob(os.path.join(path, "*.csv"))
 
     d = pd.concat((pd.read_csv(f) for f in all_files), ignore_index=True)
+    d = d.fillna(0)
 
     return(d)
 
@@ -59,7 +60,7 @@ def size_and_method(d, study, species):
 
     d = d[(d['species'] == species) & (d['reference']==study)]
 
-    keys_to_extract = ['mean', 'std', 'method']
+    keys_to_extract = ['mean', 'sd', 'method']
     extracted_data = {}
 
     for key in keys_to_extract:
@@ -67,8 +68,7 @@ def size_and_method(d, study, species):
             extracted_data[key] = d.get(key, None).item()
         except:
             extracted_data[key] = None
-
-    return extracted_data['mean'], extracted_data['std'], extracted_data['method']
+    return extracted_data['mean'], extracted_data['sd'], extracted_data['method']
 
 def classification(groups, species):
     
@@ -108,7 +108,6 @@ def export_yml(library, path):
         species_library =  [t for t in library  if t.species == name]
 
         sizes = {study.id:study._asdict() for study in species_library }
-
         for id in list_of_studies:
             del sizes[id]['id']
             del sizes[id]['species']
@@ -162,12 +161,12 @@ def find_undefined_spp(library):
         ntpl = library[i]
 
         if (
-            (convert_float(ntpl.size.obrien2013a.mean) ==None) and 
-            (convert_float(ntpl.size.obrien2013b.mean) ==None) and 
-            (convert_float(ntpl.size.villiot2021a.mean)==None) and 
-            (convert_float(ntpl.size.villiot2021b.mean)==None) and 
-            (convert_float(ntpl.size.devries2024.mean)==None) and 
-            (convert_float(ntpl.size.sheward2024.mean)==None) ):
+            (ntpl.size.obrien2013a.mean ==None) and 
+            (ntpl.size.obrien2013b.mean ==None) and 
+            (ntpl.size.villiot2021a.mean==None) and 
+            (ntpl.size.villiot2021b.mean==None) and 
+            (ntpl.size.devries2024.mean==None) and 
+            (ntpl.size.sheward2024.mean==None) ):
                 print(str(ntpl.species))
 
 
