@@ -24,6 +24,7 @@ def preprocess_data():
 
         d['Reference'] = 'Hagino2006'
         d['Date'] = date
+        d['Day'] = pd.DatetimeIndex(d['Date']).day
         d['Month'] = pd.DatetimeIndex(d['Date']).month
         d['Year'] = pd.DatetimeIndex(d['Date']).year
         d.drop(columns='Date', inplace=True)
@@ -31,7 +32,7 @@ def preprocess_data():
         d = d.replace('--',np.NaN)
 
         d['Method'] = "SEM"
-        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
         d.fillna(0, inplace=True)
 
         d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
@@ -71,9 +72,11 @@ def preprocess_data():
 
         d.loc[d["Reference"] == "Saavedra-Pellitero et al. (2014)", "Gephyrocapsa ericsonii"] = 0
 
-
+        d['Day'] = pd.DatetimeIndex(d['Date/Time']).day
         d['Month'] = pd.DatetimeIndex(d['Date/Time']).month
         d['Year'] = pd.DatetimeIndex(d['Date/Time']).year
+
+        
         d.drop(columns=['Date/Time',"Sample method"], inplace=True)
 
         d.rename(columns = {'Depth water [m]':'Depth'}, inplace = True)
@@ -86,7 +89,7 @@ def preprocess_data():
 
         d=d.replace({"Reference": short_refs})
 
-        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
         d.reset_index(inplace=True)
 
         for i in range(len(d['Reference'].unique())):
@@ -96,13 +99,40 @@ def preprocess_data():
 
 
     def clean_okada1973(): 
-        d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/abundances/Okada_corrected.csv")
+
+
+        d1 = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/abundances/okada/Okada1973.csv")
+        d2 = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/abundances/okada/Okada1973B.csv")
+        d3 = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/abundances/okada/traverse2.csv")
+        d4 = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/abundances/okada/traverse4.csv")
+        d5 = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/abundances/okada/traverse4_A.csv")
+        d6 = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/abundances/okada/traverse5.csv")
+        d7 = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/abundances/okada/traverse13.csv")
+
+        d = pd.concat([d1, d2, d3, d4, d5, d6, d7])
+
         d['Method'] = "SEM"
+        d['Reference'] = "Okada1973"
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.drop(['Temperature', 'station', 'Sample', 'Date'], axis = 1)
 
-        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
-        d = d.round()
+        def cell_per_litre(d):
 
-        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+            #find the number of cells counted:
+            total = d['Total'].values
+
+            d = d.drop(['Total'], axis = 1)
+            counts= d.sum(axis=1).values
+
+            #loop over each row and estimate the cells per liter by dividing by the number of counts and multiplying by the total:
+            
+            for x in range(0, d.shape[0]): #for each row:
+                for i in range(0, d.shape[1]): #for each column:
+                    d.iloc[x, i] = np.round((d.iloc[x, i]/counts[x]) * total[x])
+            return(d)
+
+        d = cell_per_litre(d)
+        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
         d.to_csv("/home/phyto/CoccoData/data/abundances/Okada1973.csv", index=False)
 
 
@@ -125,28 +155,24 @@ def preprocess_data():
     def clean_takahashi2000():
 
         d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/abundances/Takahashi_raw.csv")
-
-        counts =  d['counts']
-        total = d['total']
-        spp = d.drop(['Latitude', 'Longitude', 'Year', 'Depth', 'Month', 'counts', 'total'], axis = 1).reset_index(drop=True)
-
-
-        for x in range(0, spp.shape[0]):
-            for i in range(0, spp.shape[1]):
-                spp.iloc[x][i] = np.round((spp.iloc[x][i]/counts[i]) * total[i])
-
-
-        env = d[['Latitude', 'Longitude', 'Depth', 'Month', 'Year']]
-
-        d =pd.concat([spp, env], axis=1) 
-        d.fillna(0, inplace=True)
         d['Reference'] = "Takahashi2000"
-
         d['Method'] = "SEM"
+        d['Date/Time'] = pd.to_datetime(d['Date/Time'])
+        d['Day'] = pd.DatetimeIndex(d['Date/Time']).day
+        d['Month'] = pd.DatetimeIndex(d['Date/Time']).month
+        d['Year'] = pd.DatetimeIndex(d['Date/Time']).year
 
-        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        counts =  d['counts'].values
+        total = d['total'].values
 
-        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.drop(['counts', 'total', 'Date/Time'], axis = 1)
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+
+        for x in range(0, d.shape[0]): #for each row:
+            for i in range(0, d.shape[1]): #for each column:
+                d.iloc[x, i] = np.round((d.iloc[x, i]/counts[x]) * total[x])
+
+        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
         d.to_csv("/home/phyto/CoccoData/data/abundances/Takahashi2010.csv", index=False)
 
 
