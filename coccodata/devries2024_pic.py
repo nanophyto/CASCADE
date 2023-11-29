@@ -44,6 +44,8 @@ def estimate_flabellatus():
 
     d = pd.DataFrame(d)
 
+    return(d)
+
 d_flabellatus = estimate_flabellatus()
 d_pontosphaera = estimate_pontosphaera()
 
