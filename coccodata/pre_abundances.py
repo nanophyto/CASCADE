@@ -173,7 +173,7 @@ def preprocess_data():
     def clean_obrien2013():
 
 
-        with open('/home/phyto/CoccoData/references.yml', 'r') as f:
+        with open('/home/phyto/CoccoData/data/unprocessed/references/references_obrien.yml', 'r') as f:
             references = load(f, Loader=Loader)
 
         #reverse key-binding to: long-short
