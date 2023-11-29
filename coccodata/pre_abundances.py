@@ -43,8 +43,8 @@ def preprocess_data():
     def clean_devries2021(): 
 
 
-        with open('/home/phyto/CoccoData/data/classification/pangaea.yml', 'r') as f:
-            new_names = load(f, Loader=Loader)
+    #    with open('/home/phyto/CoccoData/data/classification/pangaea.yml', 'r') as f:
+    #        new_names = load(f, Loader=Loader)
 
 
         d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/abundances/deVries-etal_2020.csv")
@@ -57,7 +57,7 @@ def preprocess_data():
 
         #remove samples below 200m (9 samples)
         d = d[d.Depth <= 201] 
-
+        d.columns = d.columns.str.replace(' [#/l]', '')
 
         #Saavedra-Pellitero et al. (2014) samples:
         #weirdly lablled lon
@@ -66,11 +66,8 @@ def preprocess_data():
         d = d.replace(-182.85, 2.85)
         d = d.replace(-185.47, 5.47)
 
-
-        d.rename(columns=new_names, inplace=True)
-        d = d.groupby(by=d.columns, axis=1).sum()
-
-        d.loc[d["Reference"] == "Saavedra-Pellitero et al. (2014)", "Gephyrocapsa ericsonii"] = 0
+    #    d.rename(columns=new_names, inplace=True)
+    #    d = d.groupby(by=d.columns, axis=1).sum()
 
         d['Day'] = pd.DatetimeIndex(d['Date/Time']).day
         d['Month'] = pd.DatetimeIndex(d['Date/Time']).month
