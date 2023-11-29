@@ -835,9 +835,8 @@ undefined:
 - Unidentified coccolithophores small <10um
 - Coco sp2 (mediana cocos transparentes)
 undefined Acanthoica:
-  alt:
-  - Acanthoica spp.
-  - Acanthoica sp.
+- Acanthoica spp.
+- Acanthoica sp.
 undefined Algirosphaera:
 - Algirosphaera spp.
 undefined Alisphaera:
@@ -905,9 +904,8 @@ undefined Ophiaster:
 - Ophiaster sp.
 - Ophiaster
 undefined Palusphaera:
-  alt:
-  - Palusphaera sp.
-  - Palusphaera spp.
+- Palusphaera sp.
+- Palusphaera spp.
 undefined Pappamonas:
 - Pappomonas
 - Pappomonas sp.
