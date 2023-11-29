@@ -53,7 +53,7 @@ d = preprocess_data("/home/phyto/CoccoData/data/abundances/")
 d.rename(columns=lambda x: x.strip(), inplace=True)
 
 
-with open('/home/phyto/CoccoData/classification/synonyms.yml', 'r') as f:
+with open('/home/phyto/CoccoData/data/classification/synonyms.yml', 'r') as f:
     groupings = load(f, Loader=Loader)
 
 species = d.reset_index().drop(columns=['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method']).columns
@@ -70,47 +70,28 @@ df = (df.rename(columns=dict)
 
 df.reset_index(inplace=True)
 
-
-# df['Latitude'] = d['Latitude']
-# df['Longitude'] = d['Longitude']
-# df['Month'] = d['Month']
-# df['Depth'] = d['Depth']
-# df['Year'] = d['Year']
-# df['Reference'] = d['Reference']
-# df['Method'] = d['Method']
-
-
-depth_bins = np.linspace(-1, 300, 62).astype(np.int64) 
-depth_labels = np.linspace(0, 300, 61).astype(np.int64) 
-df = df[df["Depth"] >= 0]
-
-df['Depth'] = pd.cut(df['Depth'], bins=depth_bins, labels=depth_labels).astype(np.int64) 
-df['Latitude'] = df['Latitude'].astype(np.float64).round()
-df['Longitude'] = df['Longitude'].astype(np.float64).round()
 df = df.groupby(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method']).agg('mean')
-
 
 df = df.drop(columns=['Phaeocystis pouchetii'])
 
 counts =pd.DataFrame({'count': np.count_nonzero(df.fillna(0), axis=0), 'species': df.columns})
 counts.to_csv("/home/phyto/CoccoData/raw_species_observations.csv" )
 
-
 non_zero_spp = counts[counts['count']>0]['species']
-
 
 df = df[non_zero_spp]
 df.to_csv("/home/phyto/CoccoData/raw_observations.csv")
 
-
-
 d = pd.read_csv("/home/phyto/CoccoData/raw_observations.csv")
-
 
 with open('/home/phyto/CoccoData/classification/synonyms.yml', 'r') as f:
     groupings = load(f, Loader=Loader)
 
 
+depth_bins = np.linspace(-1, 300, 62).astype(np.int64) 
+depth_labels = np.linspace(0, 300, 61).astype(np.int64) 
+d = d[d["Depth"] >= 0]
+d['Depth'] = pd.cut(d['Depth'], bins=depth_bins, labels=depth_labels).astype(np.int64) 
 
 #define depth bins    
 bins = [-1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 

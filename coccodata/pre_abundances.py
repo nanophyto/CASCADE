@@ -35,7 +35,7 @@ def preprocess_data():
         d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
         d.fillna(0, inplace=True)
 
-        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
         d.to_csv("/home/phyto/CoccoData/data/abundances/Hagino2006.csv", index=False)
 
 
@@ -142,13 +142,13 @@ def preprocess_data():
         
         d['Month'] = pd.DatetimeIndex(d['Date']).month
         d['Year'] = pd.DatetimeIndex(d['Date']).year
+        d['Day'] = pd.DatetimeIndex(d['Date']).day
 
         d.drop(columns=['Date'], inplace=True)
         d['Method'] = "SEM"
 
-        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
-
-        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
         d.to_csv("/home/phyto/CoccoData/data/abundances/Cortes2001.csv", index=False)
 
 
@@ -172,7 +172,7 @@ def preprocess_data():
             for i in range(0, d.shape[1]): #for each column:
                 d.iloc[x, i] = np.round((d.iloc[x, i]/counts[x]) * total[x])
 
-        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
         d.to_csv("/home/phyto/CoccoData/data/abundances/Takahashi2010.csv", index=False)
 
 
@@ -184,15 +184,21 @@ def preprocess_data():
         d.rename(columns = {'Lon':'Longitude'}, inplace = True)
         d['Method'] = "LM"
 
+        d['Date'] = pd.to_datetime(d['Date'])
+        d['Day'] = pd.DatetimeIndex(d['Date']).day
+        d['Month'] = pd.DatetimeIndex(d['Date']).month
+        d['Year'] = pd.DatetimeIndex(d['Date']).year
+        d.drop(columns=['Date'], inplace=True)
+
         d = d[d['Latitude'].notna()]
         d = d[d['Longitude'].notna()]
         d = d[d['Depth'].notna()]
         d = d[d['Month'].notna()]
         d = d[d['Year'].notna()]
+        d = d[d['Day'].notna()]
 
-        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
-
-        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
         d.to_csv("/home/phyto/CoccoData/data/abundances/Sal2013.csv", index=False)
 
 
@@ -231,15 +237,14 @@ def preprocess_data():
         d.rename(columns = {'Instrument/Method':'Method'}, inplace = True)
 
 
-        d = d.pivot_table(index=['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'], columns=['Species/lowest classification'], values=['Cells/l'])
+        d = d.pivot_table(index=['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'], columns=['Species/lowest classification'], values=['Cells/l'])
         d.columns = d.columns.droplevel(0)
         d = d.reset_index().rename_axis(None, axis=1)
 
         #d.reset_index(inplace=True)
         d=d.replace({"Reference": references})
-        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
-
-        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
         d.to_csv("/home/phyto/CoccoData/data/abundances/OBrien2013.csv", index=False)
 
 
@@ -249,14 +254,14 @@ def preprocess_data():
 
         d['Month'] = pd.DatetimeIndex(d['Date']).month
         d['Year'] = pd.DatetimeIndex(d['Date']).year
+        d['Day'] = pd.DatetimeIndex(d['Date']).day
 
         d.drop(columns=['Date', 'Station'], inplace=True)
 
         d['Method'] = "LM"
 
-        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
-
-        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
         d.to_csv("/home/phyto/CoccoData/data/abundances/Estrada2016.csv", index=False)
 
 
@@ -266,14 +271,14 @@ def preprocess_data():
 
         d['Month'] = pd.DatetimeIndex(d['Date']).month
         d['Year'] = pd.DatetimeIndex(d['Date']).year
+        d['Day'] = pd.DatetimeIndex(d['Date']).year
 
         d.drop(columns=['Date'], inplace=True)
         d['Reference'] = "Baumann2000"
         d['Method'] = "SEM"
 
-        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
-
-        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
         d.to_csv("/home/phyto/CoccoData/data/abundances/Baumann2000.csv", index=False)
 
 
@@ -282,12 +287,13 @@ def preprocess_data():
 
         d['Month'] = pd.DatetimeIndex(d['Date']).month
         d['Year'] = pd.DatetimeIndex(d['Date']).year
+        d['Day'] = pd.DatetimeIndex(d['Date']).day
         d.drop(columns=['Date'], inplace=True)
         d['Method'] = "SEM"
 
-        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
 
-        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
         d.to_csv("/home/phyto/CoccoData/data/abundances/Kleijne1984.csv", index=False)
 
 
@@ -296,9 +302,9 @@ def preprocess_data():
         d['Method'] = "SEM"
         d['Reference'] = "Keuter2023"
 
-        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.set_index(['Latitude', 'Longitude', 'Depth','Day', 'Month', 'Year', 'Reference', 'Method'])
         d = d*1000
-        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
         d.to_csv("/home/phyto/CoccoData/data/abundances/Keuter2023.csv", index=False)
 
     
@@ -309,12 +315,13 @@ def preprocess_data():
 
         d['Month'] = pd.DatetimeIndex(d['Date']).month
         d['Year'] = pd.DatetimeIndex(d['Date']).year
+        d['Day'] = pd.DatetimeIndex(d['Date']).day
         d.drop(columns=['Date'], inplace=True)
 
-        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.set_index(['Latitude', 'Longitude', 'Depth','Day', 'Month', 'Year', 'Reference', 'Method'])
         d = d*1000
 
-        d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
         d.to_csv("/home/phyto/CoccoData/data/abundances/Keuter2022.csv", index=False)
     
     clean_estrada2016()
