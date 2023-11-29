@@ -9,7 +9,7 @@ import math
 def rename_synonyms(d, index='species', remove_duplicate=True):
     d['species'] = d['species'].str.strip()
 
-    with open('/home/phyto/CoccoData/classification/synonyms.yml', 'r') as f:
+    with open('/home/phyto/CoccoData/data/classification/synonyms.yml', 'r') as f:
         groupings = load(f, Loader=Loader)
 
     species = d['species']
@@ -26,7 +26,7 @@ def rename_synonyms(d, index='species', remove_duplicate=True):
     return(d)
 
 def pre_villiot2021a():    
-    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/viliot2021_cell_diameters.csv")
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/viliot2021_cell_diameters.csv")
     d = rename_synonyms(d, ['species', 'strain'])
 
     #resample ehux
@@ -60,7 +60,7 @@ def pre_villiot2021a():
     d.to_csv("/home/phyto/CoccoData/data/sizes/viliot2021a.csv", index=False)
 
 def pre_villiot2021b():
-    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/villiot2021_literature_morphometric_volume.csv")
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/villiot2021_literature_morphometric_volume.csv")
     d = rename_synonyms(d)
     d = d.rename(columns={'cell volume': "mean"})
     d['mean'] = np.round(d['mean'])
@@ -71,7 +71,7 @@ def pre_villiot2021b():
     d.to_csv("/home/phyto/CoccoData/data/sizes/viliot2021b.csv", index=False)
 
 def pre_obrien2013a():
-    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/obrien_cell_diameters.csv")
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/obrien_cell_diameters.csv")
     d = rename_synonyms(d)
     d = d.rename(columns={'diameter': "mean"})
     d['mean'] = (1/6)*math.pi*(d['mean']**3)
@@ -84,7 +84,7 @@ def pre_obrien2013a():
     return(d)
 
 def pre_obrien2013b():
-    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/obrien2013_coccosphere_size.csv")
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/obrien2013_coccosphere_size.csv")
     #read obrien size data
     #apply synonyms
     d = rename_synonyms(d)
@@ -96,7 +96,7 @@ def pre_obrien2013b():
     d.to_csv("/home/phyto/CoccoData/data/sizes/obrien2013b.csv", index=False)
 
 def pre_devries2024():
-    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/devries2024_volumes.csv")
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/devries2024_volumes.csv")
     d = d[['species', 'mean', 'std']]
     d['sd'] = d['std']
     d['reference'] = 'devries2024'
@@ -107,7 +107,7 @@ def pre_devries2024():
 def pre_sheward2024():
 
     #read sheward size data
-    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sheward2024_volumes.csv")
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/sheward2024_volumes.csv")
 
     d = d[d['Spheres Y/N?']!="Flattened"]
     d['Species'] = d['Species'].str.strip()
@@ -117,7 +117,6 @@ def pre_sheward2024():
     d = d[['species', 'Estimated cell volume', 'PIC pg C']]
 
     d = rename_synonyms(d, remove_duplicate=False)
-
 
     d = d.groupby(by="species").agg(["mean", "std"]).reset_index()
     d['sd'] = np.round(d['Estimated cell volume']['std'], 1)
@@ -133,6 +132,16 @@ def pre_sheward2024():
     d.to_csv("/home/phyto/CoccoData/data/sizes/sheward2024.csv", index=False)
 
 
+def pre_young2024():
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/young2024.csv")
+    d['mean'] = d['avg(volume)']
+    d['sd'] = d['stddev(volume)']
+    d['reference'] = 'young2024'
+    d['method'] = 'light microscopy'
+    d = d[['species', 'mean', 'sd', 'method', 'reference']] 
+    d.to_csv("/home/phyto/CoccoData/data/sizes/young2024.csv", index=False)
+
+
 
 pre_villiot2021a()
 pre_villiot2021b()
@@ -140,5 +149,5 @@ pre_obrien2013a()
 pre_obrien2013b()
 pre_devries2024()
 pre_sheward2024()
-
+pre_young2024()
 
