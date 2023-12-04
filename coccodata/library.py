@@ -4,172 +4,157 @@ import sys
 from collections import namedtuple
 from yaml import load, Loader
 import yaml
-import math 
+import math
 import glob, os
 
-Study = namedtuple("Study", ['id', 'mean', 'sd', 'method', 'species', 'genera', 'family', 'phase', 'alternate_phase'])
+class library:
 
-def def_grouping():
+    def __init__(self, phases, family, sizes):
+        self.phases_path = phases
+        self.family_path = family
+        self.sizes_path = sizes
+        self.Study = namedtuple("Study", ['id', 'mean', 'sd', 'method', 'species', 'genera', 'family', 'phase', 'alternate_phase'])
 
-    with open('/home/phyto/CoccoData/data/classification/phases.yml', 'r') as f:
-        phases = load(f, Loader=Loader)
 
-    with open('/home/phyto/CoccoData/data/classification/family.yml', 'r') as f:
-        families = load(f, Loader=Loader)
+        def def_grouping():
 
-    d = pd.DataFrame.from_dict(phases, orient='index')
-    d = d.rename_axis("species").reset_index()
-    d['genera'] = d['species'].str.split(" ").str[0]
+            with open(self.phases_path, 'r') as f:
+                phases = load(f, Loader=Loader)
 
-    inverse = {}
-    for k,v in families.items():
-        for x in v:
-            inverse.setdefault(x, []).append(k)
+            with open(self.family_path, 'r') as f:
+                families = load(f, Loader=Loader)
 
-    df = pd.DataFrame.from_dict(inverse, orient='index')
-    df = df.rename_axis("genera").reset_index()
-    df = df.rename(columns={0: "family"})
-    d = pd.merge(d, df, on='genera', how="outer")
-    d = d.where(pd.notnull(d), None)
+            d = pd.DataFrame.from_dict(phases, orient='index')
+            d = d.rename_axis("species").reset_index()
+            d['genera'] = d['species'].str.split(" ").str[0]
 
-    library = list(d.itertuples(name='species', index=False))
+            inverse = {}
+            for k,v in families.items():
+                for x in v:
+                    inverse.setdefault(x, []).append(k)
 
-    return(d)
+            df = pd.DataFrame.from_dict(inverse, orient='index')
+            df = df.rename_axis("genera").reset_index()
+            df = df.rename(columns={0: "family"})
+            d = pd.merge(d, df, on='genera', how="outer")
+            d = d.where(pd.notnull(d), None)
 
-groups = def_grouping()
+            library = list(d.itertuples(name='species', index=False))
 
-species = groups.species
-species = {x for x in species if x is not None}
-species_list = list(species)
-species_list.sort()
+            return(d)
 
-def import_data(path):
+        groups = def_grouping()
 
-    all_files = glob.glob(os.path.join(path, "*.csv"))
+        species = groups.species
+        species = {x for x in species if x is not None}
+        species_list = list(species)
+        species_list.sort()
+        self.species_list = species_list
 
-    d = pd.concat((pd.read_csv(f) for f in all_files), ignore_index=True)
-    d = d.fillna(0)
+        def import_data(path):
 
-    return(d)
+            all_files = glob.glob(os.path.join(path, "*.csv"))
 
-d = import_data("/home/phyto/CoccoData/data/sizes/")
+            d = pd.concat((pd.read_csv(f) for f in all_files), ignore_index=True)
+            d = d.fillna(0)
 
-list_of_studies = d['reference'].unique()
+            return(d)
 
-def size_and_method(d, study, species):  
+        d = import_data(self.sizes_path)
 
-    d = d[(d['species'] == species) & (d['reference']==study)]
+        self.list_of_studies = d['reference'].unique()
 
-    keys_to_extract = ['mean', 'sd', 'method']
-    extracted_data = {}
+        def size_and_method(d, study, species):
 
-    for key in keys_to_extract:
-        try:
-            extracted_data[key] = d.get(key, None).item()
-        except:
-            extracted_data[key] = None
-    return extracted_data['mean'], extracted_data['sd'], extracted_data['method']
+            d = d[(d['species'] == species) & (d['reference']==study)]
 
-def classification(groups, species):
+            keys_to_extract = ['mean', 'sd', 'method']
+            extracted_data = {}
+
+            for key in keys_to_extract:
+                try:
+                    extracted_data[key] = d.get(key, None).item()
+                except:
+                    extracted_data[key] = None
+            return extracted_data['mean'], extracted_data['sd'], extracted_data['method']
+
+        def classification(groups, species):
+
+            groups = groups[groups['species'] == species]
+            keys_to_extract = ['genera', 'family', 'phase', 'alternate_phase']
+            extracted_data = {}
+
+            for key in keys_to_extract:
+                try:
+                    extracted_data[key] = groups.get(key, None).item()
+                except:
+                    extracted_data[key] = None
+
+            return extracted_data['genera'], extracted_data['family'], extracted_data['phase'], extracted_data['alternate_phase']
+
+        def fill_namedtuple(groups, species_list):
+
+            studies = []
+            for id in self.list_of_studies:
+                for species in species_list:
+                    genera, family, phase, alternate_phase = classification(groups, species)
+                    studies.append(self.Study(id, *size_and_method(d, id, species), species, genera, family, phase, alternate_phase))
+
+            return(studies)
+
+        self.library = fill_namedtuple(groups, species_list)
     
-    groups = groups[groups['species'] == species]
-    keys_to_extract = ['genera', 'family', 'phase', 'alternate_phase']
-    extracted_data = {}
+    def return_ntpl(self):
+        return(self.library)
 
-    for key in keys_to_extract:
-        try:
-            extracted_data[key] = groups.get(key, None).item()
-        except:
-            extracted_data[key] = None
+    def return_species_list(self):
+        return(self.species_list)
+    
+    def export_yml(self, path):
+        spp_list = []
+        #sort species list alphabetically:
+        for i in range(len(self.species_list)):
 
-    return extracted_data['genera'], extracted_data['family'], extracted_data['phase'], extracted_data['alternate_phase']
+            name = self.species_list[i]
+            species_library =  [t for t in self.library  if t.species == name]
 
-def fill_namedtuple(groups, species_list):
+            sizes = {study.id:study._asdict() for study in species_library }
+            for id in self.list_of_studies:
+                del sizes[id]['id']
+                del sizes[id]['species']
+                del sizes[id]['genera']
+                del sizes[id]['family']
+                del sizes[id]['phase']
+                del sizes[id]['alternate_phase']
 
-    studies = []
-    for id in list_of_studies:
-        for species in species_list: 
-            genera, family, phase, alternate_phase = classification(groups, species)
-            studies.append(Study(id, *size_and_method(d, id, species), species, genera, family, phase, alternate_phase))
-
-    return(studies)
-
-library = fill_namedtuple(groups, species_list)
-
-def export_yml(library, path):
-
-    spp_list = []
-    #sort species list alphabetically:
+            #d = asdict(dc, dict_factory=lambda x: {k: v for (k, v) in x if v is not None})
 
 
-    for i in range(len(species_list)):
+            species =  {name: {
+                    'genera': species_library[0].genera,
+                    'family': species_library[0].family,
+                'phase': species_library[0].phase,
+                    'alternate_phase': species_library[0].alternate_phase,
+                    'size' : sizes
+                }}
+            spp_list.append(species)
 
-        name = species_list[i]
-        species_library =  [t for t in library  if t.species == name]
+        with open(path, 'w') as outfile:
+            yaml.dump(spp_list, outfile, default_flow_style=False)
 
-        sizes = {study.id:study._asdict() for study in species_library }
-        for id in list_of_studies:
-            del sizes[id]['id']
-            del sizes[id]['species']
-            del sizes[id]['genera']
-            del sizes[id]['family']
-            del sizes[id]['phase']
-            del sizes[id]['alternate_phase']
-        
-        #d = asdict(dc, dict_factory=lambda x: {k: v for (k, v) in x if v is not None})
-
-
-        species =  {name: {
-                'genera': species_library[0].genera,
-                'family': species_library[0].family,
-               'phase': species_library[0].phase,
-                'alternate_phase': species_library[0].alternate_phase,
-                'size' : sizes
-            }}
-        spp_list.append(species)
-
-    with open(path, 'w') as outfile:
-        yaml.dump(spp_list, outfile, default_flow_style=False)
-
-    print("exported yml to: " + str(path))
-
-export_yml(library, '/home/phyto/CoccoData/library.yml')
+        print("exported yml to: " + str(path))
 
 
 
-#quick and dirty export (might be easier to read?)
-# def export_yml(library, path):
-
-#     spp_list = []
-
+# def find_undefined_spp(library):
 #     for i in range(len(library)):
-#         species = library[i]._asdict()
-#         spp_list.append(species)
+#         ntpl = library[i]
+#         print(ntpl.mean)
 
-#     with open(path, 'w') as outfile:
-#         yaml.dump(spp_list, outfile, default_flow_style=False)
-
-#     print("exported yml to: " + str(path))
+#         if (all(ntpl.mean) is None):
+#                 print(str(ntpl.species))
 
 
-# export_yml(library, '/home/phyto/CoccoData/library.yml')
-
-
-
-def find_undefined_spp(library):
-    for i in range(len(library)):
-        ntpl = library[i]
-
-        if (
-            (ntpl.size.obrien2013a.mean ==None) and 
-            (ntpl.size.obrien2013b.mean ==None) and 
-            (ntpl.size.villiot2021a.mean==None) and 
-            (ntpl.size.villiot2021b.mean==None) and 
-            (ntpl.size.devries2024.mean==None) and 
-            (ntpl.size.sheward2024.mean==None) ):
-                print(str(ntpl.species))
-
-
-find_undefined_spp(library)
+# find_undefined_spp(library)
 
 print("fin")
