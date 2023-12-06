@@ -142,7 +142,6 @@ def pre_young2024():
     d.to_csv("/home/phyto/CoccoData/data/sizes/young2024.csv", index=False)
 
 
-
 pre_villiot2021a()
 pre_villiot2021b()
 pre_obrien2013a()
@@ -151,3 +150,15 @@ pre_devries2024()
 pre_sheward2024()
 pre_young2024()
 
+
+'''
+TO DO (with resampling):
+
+pre_fiorini2011()
+pre_gerecht2018()
+pre_mullin1966()
+pre_oviedo2014()
+pre_supraha2015()
+pre_verity1992()
+
+'''
