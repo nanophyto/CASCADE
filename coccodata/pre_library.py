@@ -194,7 +194,7 @@ def pre_oviedo2014():
     d = rename_synonyms(d)
     d = resample_size_d(d)
     d['reference'] = 'oviedo2014'
-    d['method'] = 'light microscopy'
+    d['method'] = 'coulter counter'
     d = d[['species', 'mean', 'sd', 'method', 'reference']] 
     d.to_csv("/home/phyto/CoccoData/data/sizes/oviedo2014.csv", index=False)
 
@@ -231,15 +231,3 @@ pre_mullin1966()
 pre_oviedo2014()
 pre_supraha2015()
 pre_verity1992()
-
-'''
-TO DO (with resampling):
-
-pre_fiorini2011()
-pre_gerecht2018()
-pre_mullin1966()
-pre_oviedo2014()
-pre_supraha2015()
-pre_verity1992()
-
-'''
