@@ -1,5 +1,5 @@
-Reference,Species,mean,sd
-Gerecht2018,Emiliania huxleyi,34,17.7
-Gerecht2018,Emiliania huxleyi,25,12.8
-Gerecht2018,Emiliania huxleyi,30,12.1
-Gerecht2018,Emiliania huxleyi,25,14.1
+species,mean,sd
+Emiliania huxleyi,34,17.7
+Emiliania huxleyi,25,12.8
+Emiliania huxleyi,30,12.1
+Emiliania huxleyi,25,14.1

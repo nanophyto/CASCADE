@@ -1,7 +1,7 @@
-Reference,Species,mean,sd,method
-Fiorini2011,Emiliania huxleyi,61,5,coulter counter
-Fiorini2011,Emiliania huxleyi,40,4,coulter counter
-Fiorini2011,Calcidiscus leptoporus,846,27,coulter counter
-Fiorini2011,Calcidiscus leptoporus,124,28,coulter counter
-Fiorini2011,Syracosphaera pulchra,577,23,coulter counter
-Fiorini2011,Syracosphaera pulchra,651,55,coulter counter
+species,mean,sd
+Emiliania huxleyi,61,5
+Emiliania huxleyi,40,4
+Calcidiscus leptoporus,846,27
+Calcidiscus leptoporus,124,28
+Syracosphaera pulchra,577,23
+Syracosphaera pulchra,651,55

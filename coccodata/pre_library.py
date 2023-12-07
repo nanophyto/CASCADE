@@ -162,7 +162,59 @@ def pre_gafar2019():
     d = d[['species', 'mean', 'sd', 'method', 'reference']] 
     d.to_csv("/home/phyto/CoccoData/data/sizes/gafar2019.csv", index=False)
 
+def pre_fiorini2011():
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/fiorini2011.csv")
+    d = rename_synonyms(d)
+    d = resample_size_d(d)
+    d['reference'] = 'fiorini2011'
+    d['method'] = 'coulter counter'
+    d = d[['species', 'mean', 'sd', 'method', 'reference']] 
+    d.to_csv("/home/phyto/CoccoData/data/sizes/fiorini2011.csv", index=False)
 
+def pre_gerecht2018():
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/gerecht2018.csv")
+    d = rename_synonyms(d)
+    d = resample_size_d(d)
+    d['reference'] = 'gerecht2018'
+    d['method'] = 'light microscopy'
+    d = d[['species', 'mean', 'sd', 'method', 'reference']] 
+    d.to_csv("/home/phyto/CoccoData/data/sizes/gerecht2018.csv", index=False)
+
+def pre_mullin1966():
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/mullin1966.csv")
+    d = rename_synonyms(d)
+    d = resample_size_d(d)
+    d['reference'] = 'mullin1966'
+    d['method'] = 'light microscopy'
+    d = d[['species', 'mean', 'sd', 'method', 'reference']] 
+    d.to_csv("/home/phyto/CoccoData/data/sizes/mullin1966.csv", index=False)
+
+def pre_oviedo2014():
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/oviedo2014.csv")
+    d = rename_synonyms(d)
+    d = resample_size_d(d)
+    d['reference'] = 'oviedo2014'
+    d['method'] = 'light microscopy'
+    d = d[['species', 'mean', 'sd', 'method', 'reference']] 
+    d.to_csv("/home/phyto/CoccoData/data/sizes/oviedo2014.csv", index=False)
+
+def pre_supraha2015():
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/supraha2015.csv")
+    d = rename_synonyms(d)
+    d = resample_size_d(d)
+    d['reference'] = 'supraha2015'
+    d['method'] = 'light microscopy'
+    d = d[['species', 'mean', 'sd', 'method', 'reference']] 
+    d.to_csv("/home/phyto/CoccoData/data/sizes/supraha2015.csv", index=False)
+
+def pre_verity1992():
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/verity1992.csv")
+    d = rename_synonyms(d)
+    d = resample_size_d(d)
+    d['reference'] = 'verity1992'
+    d['method'] = 'light microscopy'
+    d = d[['species', 'mean', 'sd', 'method', 'reference']] 
+    d.to_csv("/home/phyto/CoccoData/data/sizes/verity1992.csv", index=False)
 
 
 pre_villiot2021a()
@@ -173,6 +225,12 @@ pre_devries2024()
 pre_sheward2024()
 pre_young2024()
 pre_gafar2019()
+pre_fiorini2011()
+pre_gerecht2018()
+pre_mullin1966()
+pre_oviedo2014()
+pre_supraha2015()
+pre_verity1992()
 
 '''
 TO DO (with resampling):
