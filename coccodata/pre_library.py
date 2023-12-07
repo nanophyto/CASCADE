@@ -25,35 +25,45 @@ def rename_synonyms(d, index='species', remove_duplicate=True):
 
     return(d)
 
+def resample_size(d, species):
+    d = d[d["species"]==species]
+
+    size = []
+    for i in range(len(d)):
+        size_distribution = np.random.normal(d.iloc[i]['mean'], d.iloc[i]['sd'], 10000)
+        size.append(size_distribution)
+
+    print(size)
+
+    species_data = {'species': [species],
+                'mean': [np.mean(size)],
+                'sd': [np.std(size)]}
+    
+    species_data = pd.DataFrame(species_data)
+
+    return(species_data)
+
+d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/viliot2021_cell_diameters.csv")
+
+def resample_size_d(d):
+    species_list = d['species'].unique()
+
+    new_d = []
+
+    for i in range(len(species_list)):
+        size = resample_size(d, species_list[i])
+        new_d.append(size)
+
+    d = pd.concat(new_d)
+
+    return(d)
+
 def pre_villiot2021a():    
     d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/viliot2021_cell_diameters.csv")
     d = rename_synonyms(d, ['species', 'strain'])
+    d = d.rename(columns={'std': "sd"})
 
-    #resample ehux
-    RCC1731 = np.random.normal(d[d["strain"]=="RCC1731"]['mean'], d[d["strain"]=="RCC1731"]['std'], 10000)
-    RCC1128 = np.random.normal(d[d["strain"]=="RCC1228"]['mean'], d[d["strain"]=="RCC1228"]['std'], 10000)
-    
-    ehux = {'species': ["Emiliania huxleyi"],
-                'mean': [np.mean([RCC1128, RCC1731])],
-                'std': [np.std([RCC1128, RCC1731])],
-                'strain': ['NA']}
-    ehux = pd.DataFrame(ehux)
-    d = d[d["species"]!="Emiliania huxleyi"]
-    
-    #resample leptoporus
-    RCC1130 = np.random.normal(d[d["strain"]=="RCC1130"]['mean'], d[d["strain"]=="RCC1130"]['std'], 10000)
-    RCC1135 = np.random.normal(d[d["strain"]=="RCC1135"]['mean'], d[d["strain"]=="RCC1135"]['std'], 10000)
-    
-    leptoporus = {'species': ["Coccolithus leptoporus"],
-                'mean': [np.mean([RCC1130, RCC1135])],
-                'sd': [np.std([RCC1130, RCC1135])],
-                'strain':['NA']}
-    leptoporus = pd.DataFrame(leptoporus)
-    d = d[d["species"]!="Calcidiscus leptoporus"]
-    d = pd.concat([d, ehux, leptoporus])
-    d['mean'] = np.round(d['mean'])
-    d['sd'] = np.round(d['sd'])
-    d = d[['species', 'mean', 'sd']]
+    d = resample_size_d(d)
     d['reference'] = "villiot2021a"
     d['method'] = 'light microscopy'
     d = d[['species', 'mean', 'sd', 'method', 'reference']] 
@@ -142,14 +152,27 @@ def pre_young2024():
     d.to_csv("/home/phyto/CoccoData/data/sizes/young2024.csv", index=False)
 
 
+def pre_gafar2019():
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/gafar2019.csv")
+    d['mean'] = d['cell volume']
+    d = rename_synonyms(d)
+    d = resample_size_d(d)
+    d['reference'] = 'gafar2019'
+    d['method'] = 'light microscopy'
+    d = d[['species', 'mean', 'sd', 'method', 'reference']] 
+    d.to_csv("/home/phyto/CoccoData/data/sizes/gafar2019.csv", index=False)
+
+
+
+
 pre_villiot2021a()
 pre_villiot2021b()
 pre_obrien2013a()
-pre_obrien2013b()
+# pre_obrien2013b() #now excluded from dataset
 pre_devries2024()
 pre_sheward2024()
 pre_young2024()
-
+pre_gafar2019()
 
 '''
 TO DO (with resampling):
