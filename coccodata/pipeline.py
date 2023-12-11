@@ -5,8 +5,10 @@ from yaml import load, Loader
 import seaborn as sns
 import matplotlib.pyplot as plt
 import sys
+import pandas as pd
 sys.path.insert(0, '/home/phyto/CoccoData/coccodata/')
 from library import library
+from regression import regression_simulation
 n = 1000
 
 m = library('/home/phyto/CoccoData/data/classification/phases.yml',
@@ -17,8 +19,10 @@ m = library('/home/phyto/CoccoData/data/classification/phases.yml',
 ntpl = m.return_ntpl()
 #also return species list:
 species_list = m.return_species_list()
-name = species_list[1]
-#name = "Helicosphaera pavimentum HOL"
+#name = species_list[1]
+name = "Helicosphaera pavimentum HOL"
+#name = "Emiliania huxleyi"
+
 
 def check_HOL(ntpl, name):
     """
@@ -76,8 +80,33 @@ def resample_size(ntpl, spp_name):
 
     return(estimate)
 
-estimate = resample_size(ntpl, name)
-sns.histplot(x=estimate)
+size_simulation = resample_size(ntpl, name)
+sns.histplot(x=size_simulation)
+plt.show()
+
+
+def resample_POC(size_simulation):
+    poc_simulation = []
+    
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/poulton2024.csv")
+    Y_train = d['pg poc']
+    X_train = d['volume']
+
+    m = regression_simulation(X_train, size_simulation, Y_train)
+
+    poc_simulation = m.simulate_data()
+
+    return(poc_simulation)
+
+poc_simulation = resample_POC(size_simulation)
+ax = sns.histplot(x=poc_simulation)
+mean_poc = round(np.mean(poc_simulation), 2)
+sd_poc = round(np.std(poc_simulation), 2)
+cv_poc = sd_poc/mean_poc
+print(cv_poc)
+info = "mean: " + str(mean_poc)
+ax.text(0.98, 0.02, info)
+
 plt.show()
 
 
