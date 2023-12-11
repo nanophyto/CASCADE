@@ -65,7 +65,6 @@ def resample_size(ntpl, spp_name):
             for j in range(n):
                 size_estimate_n = np.random.normal(size_library[i].mean, sd_estimate[j], 1)
                 size_estimate.extend(size_estimate_n)
-            print("teehee")
 
         elif (size_library[i].mean is None) and (size_library[i].sd is None):
             size_estimate = []
@@ -78,9 +77,6 @@ def resample_size(ntpl, spp_name):
     return(estimate)
 
 estimate = resample_size(ntpl, name)
-fig1 = sns.kdeplot(x=estimate)
-fig2 = sns.kdeplot(x=estimate)
-fig3 = sns.kdeplot(x=estimate)
 sns.histplot(x=estimate)
 plt.show()
 
