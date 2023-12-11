@@ -35,25 +35,25 @@ def check_HOL(ntpl, name):
     else:
         return(None)
 
-def resample_size(ntpl, name):
+def resample_size(ntpl, spp_name):
 
-    if check_HOL(ntpl, name) !=None:
-        HET_name = check_HOL(ntpl, name)
-        species_library =  [t for t in ntpl  if t.species == HET_name]
+    if check_HOL(ntpl, spp_name) !=None:
+        HET_name = check_HOL(ntpl, spp_name)
+        size_library =  [t for t in ntpl  if t.species == HET_name]
         print(HET_name)
     else:
-        species_library =  [t for t in ntpl  if t.species == name]
+        size_library =  [t for t in ntpl  if t.species == spp_name]
 
     estimate = []
 
-    for i in range(len(species_library)):
+    for i in range(len(size_library)):
 
-        if (species_library[i].mean is not None) and (species_library[i].sd is None):
-            size_estimate = [species_library[i].mean]*n
-        elif (species_library[i].mean is None) and (species_library[i].sd is None):
+        if (size_library[i].mean is not None) and (size_library[i].sd is None):
+            size_estimate = [size_library[i].mean]*n
+        elif (size_library[i].mean is None) and (size_library[i].sd is None):
             size_estimate = []
         else:
-            size_estimate = np.random.normal(species_library[i].mean, species_library[i].sd, n)
+            size_estimate = np.random.normal(size_library[i].mean, size_library[i].sd, n)
         size_estimate = [x for x in size_estimate if x >= 0 ]
         estimate.extend(size_estimate)
 
