@@ -18,7 +18,7 @@ ntpl = m.return_ntpl()
 #also return species list:
 species_list = m.return_species_list()
 name = species_list[1]
-name = "Helicosphaera pavimentum HOL"
+#name = "Helicosphaera pavimentum HOL"
 
 def check_HOL(ntpl, name):
     """
@@ -35,6 +35,14 @@ def check_HOL(ntpl, name):
     else:
         return(None)
 
+def resample_sd(size_library):
+    #estimate mean SD across studies by bootstrapping
+    sd_library = np.array([ x.sd for x in size_library])
+    sd_library = sd_library[sd_library != np.array(None)]
+    sd_library = sd_library[sd_library > 0]
+    sd_estimate = np.random.choice(sd_library, n)
+    return(sd_estimate)
+    
 def resample_size(ntpl, spp_name):
 
     if check_HOL(ntpl, spp_name) !=None:
@@ -44,16 +52,26 @@ def resample_size(ntpl, spp_name):
     else:
         size_library =  [t for t in ntpl  if t.species == spp_name]
 
+    #simulate SDs for studies which do not have a SD:
+    sd_estimate = resample_sd(size_library)
+
+    #simulate size distributions for each study which has data: 
     estimate = []
 
     for i in range(len(size_library)):
 
-        if (size_library[i].mean is not None) and (size_library[i].sd is None):
-            size_estimate = [size_library[i].mean]*n
+        if (size_library[i].mean is not None) and ((size_library[i].sd is None) or (size_library[i].sd ==0)):
+            size_estimate = []
+            for j in range(n):
+                size_estimate_n = np.random.normal(size_library[i].mean, sd_estimate[j], 1)
+                size_estimate.extend(size_estimate_n)
+            print("teehee")
+
         elif (size_library[i].mean is None) and (size_library[i].sd is None):
             size_estimate = []
         else:
             size_estimate = np.random.normal(size_library[i].mean, size_library[i].sd, n)
+            print(size_library[i].id)
         size_estimate = [x for x in size_estimate if x >= 0 ]
         estimate.extend(size_estimate)
 
@@ -63,7 +81,7 @@ estimate = resample_size(ntpl, name)
 fig1 = sns.kdeplot(x=estimate)
 fig2 = sns.kdeplot(x=estimate)
 fig3 = sns.kdeplot(x=estimate)
-#sns.histplot(x=estimate)
+sns.histplot(x=estimate)
 plt.show()
 
 
