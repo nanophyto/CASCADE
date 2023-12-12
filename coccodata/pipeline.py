@@ -9,6 +9,7 @@ import pandas as pd
 sys.path.insert(0, '/home/phyto/CoccoData/coccodata/')
 from library import library
 from regression import regression_simulation
+from plotting import multipage_plots
 n = 1000
 
 m = library('/home/phyto/CoccoData/data/classification/phases.yml',
@@ -19,8 +20,8 @@ m = library('/home/phyto/CoccoData/data/classification/phases.yml',
 ntpl = m.return_ntpl()
 #also return species list:
 species_list = m.return_species_list()
-#name = species_list[1]
-name = "Helicosphaera pavimentum HOL"
+name = species_list[0]
+#name = "Helicosphaera pavimentum HOL"
 #name = "Emiliania huxleyi"
 
 
@@ -44,7 +45,10 @@ def resample_sd(size_library):
     sd_library = np.array([ x.sd for x in size_library])
     sd_library = sd_library[sd_library != np.array(None)]
     sd_library = sd_library[sd_library > 0]
-    sd_estimate = np.random.choice(sd_library, n)
+    if sd_library.any():
+        sd_estimate = np.random.choice(sd_library, n)
+    else:
+        sd_estimate = [0]*n
     return(sd_estimate)
     
 def resample_size(ntpl, spp_name):
@@ -80,11 +84,6 @@ def resample_size(ntpl, spp_name):
 
     return(estimate)
 
-size_simulation = resample_size(ntpl, name)
-sns.histplot(x=size_simulation)
-plt.show()
-
-
 def resample_POC(size_simulation):
     poc_simulation = []
     
@@ -98,153 +97,33 @@ def resample_POC(size_simulation):
 
     return(poc_simulation)
 
-poc_simulation = resample_POC(size_simulation)
-ax = sns.histplot(x=poc_simulation)
-mean_poc = round(np.mean(poc_simulation), 2)
-sd_poc = round(np.std(poc_simulation), 2)
-cv_poc = sd_poc/mean_poc
-print(cv_poc)
-info = "mean: " + str(mean_poc)
-ax.text(0.98, 0.02, info)
 
-plt.show()
+def bootstrap_measurements(species_name):
+
+    size_simulation = resample_size(ntpl, species_name)
+    poc_simulation = resample_POC(size_simulation)
+    diameter_simulation = (6*np.asarray(size_simulation)/np.pi)**(1/3)
 
 
-def grouper(iterable, n, fillvalue=None):
-    "Collect data into fixed-length chunks or blocks"
-    # grouper('ABCDEFG', 3, 'x') --> ABC DEF Gxx"
-    from itertools import zip_longest
-    args = [iter(iterable)] * n
-    return zip_longest(*args, fillvalue=fillvalue)
+    d_vol = pd.DataFrame({'species': species_name, 'value': size_simulation, 'variable':'volume'})
+    d_poc = pd.DataFrame({'species': species_name, 'value': poc_simulation, 'variable':'pg poc'})
+    d_dia = pd.DataFrame({'species': species_name, 'value': diameter_simulation, 'variable':'diameter'})
 
-import matplotlib.backends.backend_pdf
-pdf = matplotlib.backends.backend_pdf.PdfPages("output.pdf")
+    d = pd.concat([d_dia, d_vol, d_poc])
 
-import pandas as pd
-d = pd.DataFrame({'spp1':estimate, 'spp2': estimate})
-d = pd.melt(d, id_vars=['sp'], value_vars=['B'])
+    return(d)
 
+estimates = []
 
-N_plots_per_page = 9
-for cols in grouper(d['species'].unique(), N_plots_per_page):
-    g = sns.catplot(data=d, x='solution', y='score', col='subject', col_wrap=3, kind='point', col_order=cols)
-    pdf.savefig(g.fig)
-pdf.close()
+for i in range(len(species_list)): #
+    print(species_list[i])
+    estimates.append(bootstrap_measurements(species_list[i]))
 
-spp_list = []
+estimates = pd.concat(estimates)
 
-for i in range(len(species_list)):
-    name = species_list[i]
-    species_library =  [t for t in library  if t.species == name]
+#estimates.to_csv("/home/phyto/CoccoData/test.csv")
 
-# pipeline for size estinates:
-lab = [True, False]
-number_of_lab_studies = [1, 3]
-lab_std = [True, False]
-species = ["spp_a", "spp_b"]
+#estimates = pd.read_csv("/home/phyto/CoccoData/test.csv")
+multipage_plots(d=estimates, species_list=species_list, n_page=8, out_path='/home/phyto/multipage_pdf.pdf')
 
-hol = [True, False]
-alternative_phase = [None, "spp_a"]
-
-amt = [True, True]
-amt_std = [True, True]
-
-Nannotax = [True, True]
-
-for i in range(len(species)):
-
-    if lab[i]:
-        if number_of_lab_studies==1:
-            if lab_std ==True:
-                print("resample from study")
-            else:
-                print("use mean")
-        else:
-            print("nested resampling with mean or std")
-    
-    elif amt[i]:
-        if amt_std ==True:
-            print("resample from study")
-        else:
-            print("use mean")
-
-    elif (hol[i] & alternative_phase[i]!=None):
-        print("use alternative phase")
-
-    elif Nannotax[i]:
-        print("use NannoTax data")
-
-    else:
-        raise ValueError("size not defined for any method")
-
-
-
-"""
-
-Pipeline for POC:
-
-Loop through species and estimate POC based on size and allometric scaling.
-
-Both have uncertainties and are resampled
-
-"""
-
-sizes_dict = {"Coccolithus leptoporus": {
-            'mean': [10],
-            'std': [1]},
-            "Emiliania huxleyi": {
-            'mean': [10],
-            'std': [1]}
-}
-
-sample_n = 10000
-
-
-allometry: {
-    'a':{
-        'mean': [0.8],
-        'std': [0.1]},
-    'b':{
-        'mean': [0.3],
-        'std': [0.04]}
-}
-    
-POC_dict = dict()
-
-for i in range(len(species)):
-
-    sp = species[i]
-    sizes_list = np.random.normal(sizes_dict[sp]['mean'], sizes_dict[sp]['std'], sample_n)
-    a_list = np.random.normal(allometry['a']['mean'], allometry['a']['std'], sample_n)
-    b_list = np.random.normal(allometry['b']['mean'], allometry['b']['std'], sample_n)
-
-    POC_list = a_list*sizes_list**b_list
-
-    POC_mean = np.mean(POC_list)
-    POC_std = np.std(POC_list)
-
-    print("append new values to POC dictionary")
-
-
-"""
-
-Pipeline for PIC:
-
-
-Estimate PIC for species where availible
-
-Estimate PIC:POC for:
-    - HOL 
-    - Genera
-    - Families
-
-    
-Estimate PIC for each species by multiplying species POC
-with group PIC:POC.
-
-With the following order:
-    1. HOL
-    2. Genera
-    3. Family
-
-"""
+print("fin")
