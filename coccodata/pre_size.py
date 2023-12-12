@@ -6,24 +6,10 @@ from yaml import load, Loader
 import yaml
 import math 
 
-def rename_synonyms(d, index='species', remove_duplicate=True):
-    d['species'] = d['species'].str.strip()
 
-    with open('/home/phyto/CoccoData/data/classification/synonyms.yml', 'r') as f:
-        groupings = load(f, Loader=Loader)
+sys.path.insert(0, '/home/phyto/CoccoData/coccodata/')
+from functions import rename_synonyms
 
-    species = d['species']
-    synonym_dict = {species:k
-        for k, v in groupings.items()
-        for species in v}
-
-    d = d.replace(synonym_dict)
-
-    #take mean for duplicate entries
-    if remove_duplicate == True: 
-        d = d.groupby(index).mean().reset_index()    
-
-    return(d)
 
 def resample_size(d, species):
     d = d[d["species"]==species]
