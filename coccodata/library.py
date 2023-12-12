@@ -9,11 +9,12 @@ import glob, os
 
 class library:
 
-    def __init__(self, phases, family, sizes):
+    def __init__(self, phases, family, sizes, pic):
         self.phases_path = phases
         self.family_path = family
         self.sizes_path = sizes
-        self.Study = namedtuple("Study", ['id', 'mean', 'sd', 'method', 'species', 'genera', 'family', 'phase', 'alternate_phase'])
+        self.pic_path = pic
+        self.Study = namedtuple("Study", ['id', 'mean', 'sd', 'method', 'species', 'genera', 'family', 'phase', 'alternate_phase', 'measurement'])
 
 
         def def_grouping():
@@ -62,7 +63,11 @@ class library:
 
         d = import_data(self.sizes_path)
 
-        self.list_of_studies = d['reference'].unique()
+        d_pic = import_data(self.pic_path)
+
+        list_of_studies = np.concatenate([d['reference'].unique(), d_pic['reference'].unique()])
+
+        self.list_of_studies = np.unique(list_of_studies)
 
         def size_and_method(d, study, species):
 
@@ -77,6 +82,19 @@ class library:
                 except:
                     extracted_data[key] = None
             return extracted_data['mean'], extracted_data['sd'], extracted_data['method']
+
+
+        def extract_pic(d, study, species):
+            d = d[(d['species'] == species) & (d['reference']==study)]
+            keys_to_extract = ['mean', 'sd', 'method']
+            extracted_data = {}
+            for key in keys_to_extract:
+                try:
+                    extracted_data[key] = d.get(key, None).item()
+                except:
+                    extracted_data[key] = None
+            return extracted_data['mean'], extracted_data['sd'], extracted_data['method']
+
 
         def classification(groups, species):
 
@@ -98,7 +116,10 @@ class library:
             for id in self.list_of_studies:
                 for species in species_list:
                     genera, family, phase, alternate_phase = classification(groups, species)
-                    studies.append(self.Study(id, *size_and_method(d, id, species), species, genera, family, phase, alternate_phase))
+                    studies.append(self.Study(id, *size_and_method(d, id, species), species, genera, family, phase, alternate_phase, measurement="volume"))
+                for species in species_list:
+                    genera, family, phase, alternate_phase = classification(groups, species)
+                    studies.append(self.Study(id, *extract_pic(d_pic, id, species), species, genera, family, phase, alternate_phase, measurement="pic"))
 
             return(studies)
 
@@ -117,25 +138,49 @@ class library:
 
             name = self.species_list[i]
             species_library =  [t for t in self.library  if t.species == name]
+            species_library_size =  [t for t in self.library  if (t.species == name and
+                                                                  t.measurement == "volume")]
+            species_library_pic =  [t for t in self.library  if (t.species == name and
+                                                                  t.measurement == "pic")]
 
-            sizes = {study.id:study._asdict() for study in species_library }
+            sizes = {study.id:study._asdict() for study in species_library_size }
             for id in self.list_of_studies:
-                del sizes[id]['id']
-                del sizes[id]['species']
-                del sizes[id]['genera']
-                del sizes[id]['family']
-                del sizes[id]['phase']
-                del sizes[id]['alternate_phase']
+                try:
+                    del sizes[id]['id']
+                    del sizes[id]['species']
+                    del sizes[id]['genera']
+                    del sizes[id]['family']
+                    del sizes[id]['phase']
+                    del sizes[id]['alternate_phase']
+                    del sizes[id]['measurement']
+
+                except:
+                    None
+
 
             #d = asdict(dc, dict_factory=lambda x: {k: v for (k, v) in x if v is not None})
 
+            pic_values = {study.id:study._asdict() for study in species_library_pic }
+            for id in self.list_of_studies:
+                try:
+                    del pic_values[id]['id']
+                    del pic_values[id]['species']
+                    del pic_values[id]['genera']
+                    del pic_values[id]['family']
+                    del pic_values[id]['phase']
+                    del pic_values[id]['alternate_phase']
+                    del pic_values[id]['measurement']
+
+                except:
+                    None
 
             species =  {name: {
                     'genera': species_library[0].genera,
                     'family': species_library[0].family,
                 'phase': species_library[0].phase,
                     'alternate_phase': species_library[0].alternate_phase,
-                    'size' : sizes
+                    'size' : sizes,
+                    'pic' : pic_values
                 }}
             spp_list.append(species)
 
