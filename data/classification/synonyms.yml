@@ -161,16 +161,6 @@ Corisphaera tyrrheniensis:
 - C. tyrrheniensis
 - C. thyrreniensis
 - Corisphaera tyrrhensis HOL
-Coronosphaera mediterranea:
-- Syracosphaera pulchroides
-- Coronosphaera mediterranea
-- C. mediterranea
-Coronosphaera mediterranea COMB:
-- C. mediterranea (COMB)
-Coronosphaera mediterranea HOL:
-- Calyptrolithina wettsteinii
-- Calyptrolithophora gracillima
-- C. mediterranea (HOL)
 Cyrtosphaera aculeata:
 - Acanthoica aculeata
 - C. aculeata
@@ -627,6 +617,11 @@ Syracosphaera mediterranea:
 - Coronosphaera spp.
 - S. mediterranea
 - Coronosphaera binodata
+- Syracosphaera pulchroides
+- Coronosphaera mediterranea
+- C. mediterranea
+Syracosphaera mediterranea COMB:
+- C. mediterranea (COMB)
 Syracosphaera mediterranea HOL gracillima type:
 - Syracosphaera mediterranea HOL gracillima type
 - Coronosphaera mediterranea HOL gracillima type
@@ -648,6 +643,9 @@ Syracosphaera mediterranea HOL wettsteinii type:
 - Helicosphaera spp. (HOL dalmaticus type)
 - Syracolithus dalmaticus
 - Calyptrolithina wettsteinii
+- Syracosphaera mediterranea HOL wettsteinii type
+- Calyptrolithina wettsteinii
+- Calyptrolithophora gracillima
 Syracosphaera molischii:
 - S. molischii
 - Syracosphaera molischi
@@ -881,8 +879,6 @@ undefined Corisphaera:
 - Corisphaera
 - Corisphaera sp.
 - Corisphaera spp.
-undefined Coronosphaera:
-- Coronosphaera
 undefined Corymbellus:
 - Corymbellus
 undefined Crenalithus:
@@ -971,6 +967,10 @@ undefined Syracosphaera:
 - Syracosphaera sp.(petita rodona)
 - Syracosphaera spp..1
 - Syracosphaera spp.
+- Coronosphaera
+- Coronosphaera sp.
+- Coronosphaera spp.
+
 undefined Syracosphaera dilata type:
 - Syracosphaera dilatata or arethusae
 undefined Syracosphaera noroitica type:
@@ -980,6 +980,7 @@ undefined Syracosphaera lamina type:
 undefined Syracosphaera mediterranea HOL:
 - Syracosphaera mediterranea HOL
 - Coronosphaera mediterranea HOL
+- C. mediterranea (HOL)
 undefined Syracosphaera molischii type:
 - Syracosphaera molischii group
 - S. ossa-like
