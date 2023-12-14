@@ -8,9 +8,18 @@ Syracosphaera histrica HOL:
 Syracosphaera arethusae HOL:
   phase: HOL
   alternate_phase: Syracosphaera arethusae 
+Holococcolithophora dentata:
+  phase: HOL
+  alternate_phase: unknown
+Syracolithus sp. type A:
+  phase: HOL
+  alternate_phase: unknown
 Alisphaera unicornis POL:
   phase: POL
   alternate_phase: Alisphaera unicornis
+Poritectolithus maximus:
+  phase: HOL
+  alternate_phase: unknown
 Calcidiscus leptoporus HOL:
   phase: HOL
   alternate_phase: Calcidiscus leptoporus
@@ -41,9 +50,15 @@ Syracosphaera periperforata HOL:
 Syracosphaera magnaghii HOL:
   phase: HOL
   alternate_phase: Syracosphaera magnaghii 
+Sphaerocalyptra youngii:
+  phase: HOL
+  alternate_phase: unknown
+Helladosphaera vavilovii:
+  phase: HOL
+  alternate_phase: unknown
 Calyptrosphaera sphaeroidea HOL:
   phase: HOL
-  alternate_phase: Calyptrosphaera sphaeroide
+  alternate_phase: Calyptrosphaera sphaeroidea
 Ceratolithus cristatus CER:
   phase: CER
   alternate_phase: Ceratolithus cristatus
@@ -56,13 +71,28 @@ Syracosphaera isselii HOL:
 Coccolithus pelagicus HOL:
   phase: HOL
   alternate_phase: Coccolithus pelagicus 
+Poritectolithus poritectus:
+  phase: HOL
+  alternate_phase: unknown
 Syracosphaera mediterranea HOL marisrubri type:
   phase: HOL
   alternate_phase: Syracosphaera mediterranea
 Syracosphaera gaarderae HOL:
   phase: HOL
   alternate_phase: Syracosphaera gaarderae
+Sphaerocalyptra adenensis:
+  phase: HOL
+  alternate_phase: unknown
+Calicasphaera concava:
+  phase: HOL
+  alternate_phase: unknown
+Calicasphaera blokii:
+  phase: HOL
+  alternate_phase: unknown
 Calyptrolithina multipora:
+  phase: HOL
+  alternate_phase: unknown
+Flosculosphaera calceolariopsis:
   phase: HOL
   alternate_phase: unknown
 Calicasphaera diconstricta:
@@ -107,6 +137,11 @@ Helicosphaera HOL catilliferus type:
   ref:
   - Cros2002
   - Cros2000
+Gliscolithus amitakareniae:
+  phase: HOL
+  alternate_phase: Syracosphaera molischii type 3
+  ref: 
+  - Malinverno2008
 Corisphaera gracilis:
   phase: HOL
   alternate_phase: Rhabdosphaera xiphos
@@ -281,8 +316,6 @@ Wigwamma antarctica:
 Syracosphaera reniformis:
   phase: HET
 Pontosphaera syracusana:
-  phase: HET
-Gliscolithus amitakareniae:
   phase: HET
 Pappomonas type 3:
   phase: HET

@@ -50,8 +50,7 @@ Alisphaera unicornis POL:
 - A. unicornis (POL)
 - A. unicornis POL
 - Alisphaera unicormis POL
-Anthosphaera lafourcadii:
-- A. lafourcadii
+
 Anthosphaera periperforata:
 - A. periperforata
 Balaniger virgulosa:
@@ -121,7 +120,8 @@ Calyptrosphaera cialdii:
 - C. cialdii
 Calyptrosphaera dentata:
 - C. dentata
-Calyptrosphaera heimdalae:
+Calyptrosphaera heimdaliae:
+- Calyptrosphaera heimdalae
 - C. heimdalae
 - Homozygosphaera thorifera
 
@@ -228,7 +228,9 @@ Helicosphaera HOL catilliferus type:
 - Syracolithus catilliferus
 - Helicosphaera catilliferus HOL
 - Syracolithus catilliferus
-
+- Homozygosphaera sp.A
+- Homozygosphaera sp.B
+- Syracolithus catilliferus.1
 Helicosphaera HOL confusus type:
 - Helicosphaera HOL confusus type
 - Helicosphaera confusus type
@@ -272,8 +274,6 @@ Helicosphaera wallichii HOL:
 Helladosphaera cornifera:
 - H. cornifera (Including H. spinosa)
 - H. cornifera
-Helladosphaera fastigata:
-- Homozygosphaera sp.D
 Helladosphaera pienaarii:
 - H. pienaarii
 Helladosphaera vavilovii:
@@ -406,16 +406,12 @@ Pontosphaera multipora:
 Pontosphaera syracusana:
 - P. syracusana
 - Pontosphaera syracusana Lohmann
-Poricalyptra isselii:
-- P. isselii
-Poricalyptra magnaghii:
-- Helladosphaera fastigata
-- P. magnaghii
 Poritectolithus maximus:
 - P. maximus
-Poritectolithus poritectum:
+Poritectolithus poritectus:
 - P. poritectum (Poritectolithus cf. Poritectus)
 - P. poritectum
+- Poritectolithus poritectum
 Pseudowigwamma scenozonion:
 - P. scenozonion
 Reticulofenestra sessilis:
@@ -479,15 +475,11 @@ Sphaerocalyptra youngii:
 - S. youngii
 Syracolithus bicorium:
 - S. bicorium
-Syracolithus catilliferus:
-- Homozygosphaera sp.A
-- Homozygosphaera sp.B
-- Syracolithus catilliferus.1
 Syracolithus quadriperforatus:
 - S. quadriperforatus
 Syracolithus schilleri:
 - S. schilleri (Syracolithus cf. Schilleri)
-Syracolithus type A:
+Syracolithus sp. type A:
 - Syracolithus type A
 Syracosphaera ampliora:
 - S. ampliora
@@ -560,18 +552,19 @@ Syracosphaera gaarderae HOL:
 - S. gaarderae HOL
 Syracosphaera halldalii:
 - S. halldalii
-undefined Syracosphaera halldalii type:
-- S. halldalii (Syracosphaera halldalii + Syracosphaera protrudens)
-- S. halldalii (Syracosphaera halldalii + Syr...)
-Syracosphaera halldalii HOL:
-- S. halldalii (HOL)
-Syracosphaera halldalli:
 - Syracosphaera halldallii
-- Syracosphaera halldalii type
 - S. halldallii
 - S. halldalli
 - Syracosphaera halldalii
 - S. halldalii
+- Syracosphaera halldalli
+undefined Syracosphaera halldalii type:
+- S. halldalii (Syracosphaera halldalii + Syracosphaera protrudens)
+- S. halldalii (Syracosphaera halldalii + Syr...)
+- Syracosphaera halldalii type
+
+Syracosphaera halldalii HOL:
+- S. halldalii (HOL)
 Syracosphaera hastata:
 - S. hastata
 Syracosphaera histrica:
@@ -586,10 +579,13 @@ Syracosphaera isselii HOL:
 - Syracosphaera isselii HOL
 - Poricalyptra isselii
 - Helladosphaera pienaarii
+- Poricalyptra isselii
+- P. isselii
 Syracosphaera kareniae:
 - Syracosphaera kareniae
 Syracosphaera lafourcadii HOL:
 - Anthosphaera lafourcadii
+- A. lafourcadii
 Syracosphaera lamina:
 - S. lamina
 Syracosphaera leptolepsis:
@@ -600,6 +596,10 @@ Syracosphaera magnaghii HOL:
 - Syrcosphaera magnaghii HOL
 - Poricalyptra magnaghii
 - P. magnaghii
+- Poricalyptra magnaghii
+- Helladosphaera fastigata
+- P. magnaghii
+- Homozygosphaera sp.D
 Syracosphaera marginiporata:
 - Syracosphaera sp. H
 - Syracosphaera sp.H
@@ -646,6 +646,7 @@ Syracosphaera mediterranea HOL wettsteinii type:
 - Syracosphaera mediterranea HOL wettsteinii type
 - Calyptrolithina wettsteinii
 - Calyptrolithophora gracillima
+- Homozygosphaera vercelli
 Syracosphaera molischii:
 - S. molischii
 - Syracosphaera molischi
