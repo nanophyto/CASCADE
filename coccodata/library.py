@@ -9,7 +9,7 @@ import glob, os
 
 class library:
 
-    def __init__(self, phases, family, sizes, pic):
+    def __init__(self, phases, family, sizes, pic, species_list):
         self.phases_path = phases
         self.family_path = family
         self.sizes_path = sizes
@@ -45,11 +45,6 @@ class library:
             return(d)
 
         groups = def_grouping()
-
-        species = groups.species
-        species = {x for x in species if x is not None}
-        species_list = list(species)
-        species_list.sort()
         self.species_list = species_list
 
         def import_data(path):
@@ -130,6 +125,10 @@ class library:
 
     def return_species_list(self):
         return(self.species_list)
+    
+    def return_HOL_list(self):
+        species_library =  [t for t in self.library  if t.phase == "HOL"]
+        return([t.species for t in species_library])
     
     def export_yml(self, path):
         spp_list = []
