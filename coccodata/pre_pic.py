@@ -55,9 +55,45 @@ def pre_devries2024():
     d_pontosphaera = estimate_pontosphaera()
 
     d = pd.concat([d_flabellatus, d_pontosphaera])
+    d['reference'] = 'devries2024'
+    d['method'] = "literature morphometrics"
 
     d.to_csv("/home/phyto/CoccoData/data/pic/devries2024.csv", index=False)
 
+def pre_sheward2017():
+
+    def cell_pic(cn, cl, ks):
+        pic = (2.7*ks*cn*cl**3)
+        return(pic)
+
+    def estimate_quadriperforatus():
+        d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/pic/sheward2017_quadriperforatus.csv")
+        d['pic'] = cell_pic(d['CN'], d['CL'], 0.08)
+        return(d[['pic', 'species']])
+
+    def estimate_leptoporus():
+        d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/pic/sheward2017_leptoporus.csv")
+        d['pic'] = cell_pic(d['CN'], d['CL'], 0.08)
+        return(d[['pic', 'species']])
+
+    def estimate_carteri():
+        d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/pic/sheward2017_carteri.csv")
+        d['pic'] = cell_pic(d['CN'], d['CL'], 0.05)
+        return(d[['pic', 'species']])
+
+    d = pd.concat([estimate_quadriperforatus(), estimate_leptoporus(), estimate_carteri()])
+
+    d = d.groupby(by="species").agg(["mean", "std"]).reset_index()
+
+    d['sd'] = np.round(d['pic']['std'], 1)
+    d['mean'] = np.round(d['pic']['mean'], 1)
+    d = d[['species', 'sd', 'mean']]
+
+    d['reference'] = 'sheward2017'
+    d['method'] = "lab morphometrics"
+
+    d.dropna(inplace=True)
+    d.to_csv("/home/phyto/CoccoData/data/pic/sheward2017.csv", index=False)
 
 
 def pre_sheward2024():
@@ -88,8 +124,9 @@ def pre_sheward2024():
     d.to_csv("/home/phyto/CoccoData/data/pic/sheward2024.csv", index=False)
 
 
-pre_sheward2024()
-pre_devries2024()
+#pre_sheward2024()
+pre_sheward2017()
+#pre_devries2024()
 print("fin")
 
 
