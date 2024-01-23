@@ -2,6 +2,7 @@ Acanthoica acanthifera:
 - A. acanthifera
 Acanthoica acanthos:
 - A. acanthos
+- Anacanthoica acanthos
 Acanthoica biscayensis:
 - A. biscayensis
 Acanthoica maxima:
@@ -50,11 +51,13 @@ Alisphaera unicornis POL:
 - A. unicornis (POL)
 - A. unicornis POL
 - Alisphaera unicormis POL
-
+- Polycrater galapagensis
 Anthosphaera periperforata:
 - A. periperforata
 Balaniger virgulosa:
 - B. virgulosa
+Ceratolithus vidalii HET:
+- Ceratolithus vidalii HET
 Braarudosphaera bigelowii:
 - Brrarudosphaera bigerowi
 - B. bigelowii
@@ -67,6 +70,8 @@ Calcidiscus leptoporus:
 - Calcidiscus leptopora
 - Calcidiscus leptoporus intermediate
 - Calcidiscus quadriperforatus
+- Calcidiscus quadriperforatus HOL
+- Calcidiscus quardiperforatus HOL
 - Calcidiscus leptoporus quadriperforatus
 - C. leptoporus quadriperforatus
 - Cyclococcolithina leptoporus var.B
@@ -75,11 +80,9 @@ Calcidiscus leptoporus:
 - Cyclococcolithina leptoporus var.A
 - Calcidiscus leptoporus var. A
 - Calcidiscus leptoporus small
-
-
 undefined Calcidiscus:
 - Calcidiscus spp.
-
+- Calcidiscus sp.
 Calcidiscus leptoporus HOL:
 - Homozygosphaera quadriperforata
 - Syracolithus quadriperforatus
@@ -100,6 +103,7 @@ Calciosolenia brasiliensis:
 - C. brasiliensis
 Calciosolenia corselli:
 - Calciosolenia corselli
+- Calciosolenia corsellii
 Calciosolenia murrayi:
 - C. murrayi
 undefined Calciosoleniaceae:
@@ -114,8 +118,12 @@ Calicasphaera diconstricta:
 Calyptrolithina divergens:
 - Zygosphaera divergens
 - C. divergens
+- Syracosphaera halldalii HOL
+- S. halldalii (HOL)
 Calyptrolithina multipora:
 - C. multipora
+- Calytrolithina multipora
+- Calyptrolithophora multipora
 Calyptrosphaera cialdii:
 - C. cialdii
 Calyptrosphaera dentata:
@@ -124,7 +132,6 @@ Calyptrosphaera heimdaliae:
 - Calyptrosphaera heimdalae
 - C. heimdalae
 - Homozygosphaera thorifera
-
 Calyptrosphaera sphaeroidea:
 - C. sphaeroidea
 Calyptrosphaera sphaeroidea HOL:
@@ -137,6 +144,7 @@ Ceratolithus cristatus:
 - Neosphaera coccolithomorpha
 - C. cristatus
 - Ceratolithus cristatus HET nishidae type
+- Ceratolithus cristatus HET
 Ceratolithus cristatus CER:
 - C. cristatus (CER)
 - Ceratolithus cristatus CER cristatus type
@@ -144,13 +152,19 @@ Ceratolithus nishidae CER:
 - Ceratolithus nishidae CER
 undefined Ceratolithus:
 - Ceratolithus spp.
+- Ceratolithus spp
 Chrysotila carterae:
 - C. carterae
+- Pleurochrysis carterae var. carterae
+- Pleurochrysis carterae
+- Syracosphaera elongata
 Chrysotila roscoffensis:
 - C. roscoffensis
+- Pleurochrysis roscoffensis
 Coccolithus pelagicus:
 - Cocoliths pelagicus
 - C. pelagicus
+- Cocccolthus pelagicus
 Coccolithus pelagicus HOL:
 - C. pelagicus (HOL)
 Corisphaera gracilis:
@@ -161,9 +175,11 @@ Corisphaera tyrrheniensis:
 - C. tyrrheniensis
 - C. thyrreniensis
 - Corisphaera tyrrhensis HOL
+- Corisphaera tyrrheniensis HOL
 Cyrtosphaera aculeata:
 - Acanthoica aculeata
 - C. aculeata
+- Cyrtosphaera lecaliae
 Cyrtosphaera cidaris:
 - C. cidaris
 Discosphaera tubifera:
@@ -193,12 +209,14 @@ Flosculosphaera calceolariopsis:
 - F. calceolariopsis
 Formonsella pyramidosa:
 - F. pyramidosa
+- Pappomonas sp. Type 2
 Gephyrocapsa ericsonii:
 - Geophyrocapsa ericsonii
 - G. ericsonii
 - G.ericsonii
 - Geophyrocapsa sp. A
 - Geophyrocapsa sp.A
+- Gephyrocapsa ericosonii
 Gephyrocapsa muellerae:
 - G. muellerae
 Gephyrocapsa oceanica:
@@ -221,7 +239,9 @@ Gliscolithus amitakareniae:
 Hayaster perplexus:
 - H. perplexus
 - Hayaster perplex
+- Hayaster perplexa
 Helicosphaera HOL catilliferus type:
+- Heleicosphaera HOL catilliferus type
 - Helicosphaera HOL catilliferus type
 - H. HOL catilliferus type
 - Helicosphaera spp. (HOL catilliferus type)
@@ -231,36 +251,37 @@ Helicosphaera HOL catilliferus type:
 - Homozygosphaera sp.A
 - Homozygosphaera sp.B
 - Syracolithus catilliferus.1
+- Calyptrosphaera catillifera
 Helicosphaera HOL confusus type:
 - Helicosphaera HOL confusus type
 - Helicosphaera confusus type
 - Helicosphaera spp. (HOL confusus type)
 Helicosphaera HOL ponticuliferus type:
 - Helicosphaera HOL ponticuliferus type
-- Helicosphaera carteri HOL
 - H. HOL ponticuliferus type
 - Helicosphaera ponticuliferus HOL
 - Helicosphaera wallichii HOL
-- Helicosphaera carteri (holo)
+- H. wallichii (HOL)
+- Syracolithus ponticuliferus
 undefined Helicosphaera HOL type:
 - Helicosphaera spp. (HOL)
 - Helicosphaera spp.
 - Helicosphaera HOL type
+- Helicosphaera carteri HOL
+- H. carteri (HOL)
+- Helicosphaera carteri (holo)
 Helicosphaera carteri:
 - Helicopontosphaera kamptneri
 - Helicosphaera kamptneri
 - H. carteri
 - Helicosphaera carterii
-Helicosphaera carteri HOL:
-- Calyptrosphaera catillifera
-- H. carteri (HOL)
 Helicosphaera hyalina:
 - H. hyalina
 Helicosphaera pavimentum:
 - Helicopontosphaera sp.A
 - H. pavimentum
+- Helicosphaera parimentu
 - Helicosphaera parimentum
-
 Helicosphaera pavimentum HOL:
 - Homozygosphaera dalmatica
 - Homozygosphaera wettsteini
@@ -268,12 +289,10 @@ Helicosphaera pavimentum HOL:
 Helicosphaera wallichii:
 - H. wallichii
 - Helicosphera wallichi
-
-Helicosphaera wallichii HOL:
-- H. wallichii (HOL)
 Helladosphaera cornifera:
 - H. cornifera (Including H. spinosa)
 - H. cornifera
+- Helladosphaera cornifera HOL
 Helladosphaera pienaarii:
 - H. pienaarii
 Helladosphaera vavilovii:
@@ -289,7 +308,6 @@ Holococcolithophora kastriensis:
 Homozygosphaera spinosa:
 - H. spinosa
 - Homozygisphaera spinosa
-
 Homozygosphaera triarcha:
 - H. triarcha
 Homozygosphaera vercelli:
@@ -298,6 +316,7 @@ Hughesius youngii:
 - H. youngii
 Hymenomonas lacuna:
 - H. lacuna
+- Hymenomonas lacunae
 Hymenomonas roseola:
 - H. roseola
 Kataspinifera baumannii:
@@ -307,6 +326,7 @@ Michaelsarsia adriaticus:
 - Halopappus adriaticus
 - Michaelsarsia adriaticus (Halolappus)
 - M. adriaticus
+- Michaelsarsia adriatica
 Michaelsarsia elegans:
 - M. elegans
 Navilithus altivelum:
@@ -336,18 +356,24 @@ undefined Ophiaster:
 - Ophiaster spp.
 - Ophiaster sp.
 - Ophiaster
+- Ophiaster spp
 Palusphaera vandelii:
 - Palusphaera vandeli
 - P. vandelii
 - Palusphaera vandellii
 - P. vandelli
+Palusphaera probertii:
+- P. probertii
 Pappomonas borealis:
 - P. borealis
+- Papposphaera borealis
 Pappomonas flabellifera:
 - P. flabellifera
 undefined Pappomonas:
 - Pappomonas sp. (Including Papposphaera sp.)
-
+- Pappomonas
+- Pappomonas sp.
+- Pappomonas spp.
 Pappomonas sp. type 3:
 - Pappomonas sp. (Type 3)
 - Pappomonas type 3
@@ -366,11 +392,11 @@ undefined Papposphaera:
 - Papposphaera sp.
 Papposphaera arctica:
 - P. arctica
+- Papposhaera arctica
 Papposphaera lepida:
 - P. lepida
 Papposphaera sagittifera:
 - P. sagittifera
-
 Papposphaera sp. type 1:
 - Papposphaera sp. (Type 1)
 - Papposphaera type 1
@@ -379,6 +405,7 @@ Papposphaera sp. type 1:
 Papposphaera sp. type 2:
 - Papposphaera sp. (Type 2)
 - Papposphaera sp.  Type 2
+- Papposphaera sp. Type 2
 Papposphaera sp. type 3:
 - Papposphaera type 3
 Papposphaera sp. type 4:
@@ -386,7 +413,7 @@ Papposphaera sp. type 4:
 - Papposphaera type 4
 - Papposphaera sp.  Type 4
 - Papposphaera type 4
-
+- Papposphaera sp. Type 4
 Papposphaera thomsenii:
 - P. thomsenii
 Picarola margalefii:
@@ -429,6 +456,7 @@ Rhabdosphaera clavigera:
 - R. clavigera
 - R. clavigera stylifera
 - Rhabdosphaera clavigera var stylifera
+- Rhabdosphaera stylifera
 Rhabdosphaera xiphos:
 - R. xiphos
 Rhabdosphaera xiphos COMB:
@@ -437,6 +465,7 @@ Scyphosphaera apsteinii:
 - Scisphosphaera apsteinii
 - S. apsteinii
 - Scyphosphaera apstenii
+- Syracosphaera apsteinii
 Scyphosphaera apsteinii HOL:
 - S. apsteinii (HOL)
 Solisphaera emidasia:
@@ -458,10 +487,13 @@ Sphaerocalyptra quadridentata:
 - A. robusta (HOL)
 Sphaerocalyptra sp. 1:
 - Sphaerocalyptra sp. 1
+- Sphaerocalyptra sp.1
+- Sphaerocalyptra sp. (Sphaerocalyptra sp.1)
 Sphaerocalyptra sp. 2:
 - Sphaerocalyptra sp. 2
 Sphaerocalyptra sp. 3:
 - Sphaerocalyptra sp. 3
+- Sphaerocalyptra sp. (Sphaerocalyptra sp.3)
 Sphaerocalyptra sp. 4:
 - Sphaerocalyptra sp. 4
 Sphaerocalyptra sp. 5:
@@ -481,8 +513,11 @@ Syracolithus schilleri:
 - S. schilleri (Syracolithus cf. Schilleri)
 Syracolithus sp. type A:
 - Syracolithus type A
+- Syracolithus sp. (Syracolithus sp. A)
+- Syracolithus sp. A
 Syracosphaera ampliora:
 - S. ampliora
+- Syracosphaera ampilora
 Syracosphaera andruleitii:
 - Syracosphaera andruleitii
 - S. andruleitii
@@ -499,6 +534,7 @@ Syracosphaera arethusae:
 - Syracosphaera sp.D
 - S. arethusae
 - Syracosphaera sp. (Type D)
+- Syracosphaera didyma
 Syracosphaera arethusae COMB:
 - S. arethusae (COMB)
 Syracosphaera arethusae HOL:
@@ -510,6 +546,8 @@ Syracosphaera arethusae HOL:
 Syracosphaera aurisinae:
 - Helladosphaera aurisinae
 - S. aurisinae
+- Syracosphaera lamina
+- S. lamina
 Syracosphaera aurisinae HOL:
 - Syracosphaera aurisinae HOL
 - Poricalyptra aurisinae
@@ -517,6 +555,8 @@ Syracosphaera aurisinae HOL:
 - P. aurisinae
 undefined Syracosphaera aurisinae HOL type:
 - Syracosphaera aurisinae HOL type sp.
+undefined Syracosphaera lamina type:
+- undefined Syracosphaera lamina type
 Syracosphaera azureaplaneta:
 - Syracosphaera azureaplaneta
 Syracosphaera bannockii:
@@ -533,8 +573,6 @@ Syracosphaera castellata:
 - S. castellata
 Syracosphaera corolla:
 - S. corolla
-Syracosphaera delicata:
-- S. delicata
 Syracosphaera dilatata:
 - S. dilatata
 Syracosphaera epigrosa:
@@ -550,6 +588,7 @@ Syracosphaera gaarderae:
 Syracosphaera gaarderae HOL:
 - Syracosphaera gaarderae HOL
 - S. gaarderae HOL
+- Poricalyptra gaarderiae
 Syracosphaera halldalii:
 - S. halldalii
 - Syracosphaera halldallii
@@ -562,9 +601,6 @@ undefined Syracosphaera halldalii type:
 - S. halldalii (Syracosphaera halldalii + Syracosphaera protrudens)
 - S. halldalii (Syracosphaera halldalii + Syr...)
 - Syracosphaera halldalii type
-
-Syracosphaera halldalii HOL:
-- S. halldalii (HOL)
 Syracosphaera hastata:
 - S. hastata
 Syracosphaera histrica:
@@ -586,12 +622,11 @@ Syracosphaera kareniae:
 Syracosphaera lafourcadii HOL:
 - Anthosphaera lafourcadii
 - A. lafourcadii
-Syracosphaera lamina:
-- S. lamina
 Syracosphaera leptolepsis:
 - Syracosphaera leptolepsis
 - S. leptolepis
 - Syracosphaera sp. (Type L)
+- Syracosphaera leptolepis
 Syracosphaera magnaghii HOL:
 - Syrcosphaera magnaghii HOL
 - Poricalyptra magnaghii
@@ -620,6 +655,7 @@ Syracosphaera mediterranea:
 - Syracosphaera pulchroides
 - Coronosphaera mediterranea
 - C. mediterranea
+- Syracosphaera mediterranea HET
 Syracosphaera mediterranea COMB:
 - C. mediterranea (COMB)
 Syracosphaera mediterranea HOL gracillima type:
@@ -632,6 +668,7 @@ Syracosphaera mediterranea HOL hellenica type:
 - Coronosphaera mediterranea HOL hellenica type
 - S. mediterranea HOL hellenica
 - Zygosphaera hellenica
+- Coronosphaera mediterranea HOL hellenica
 Syracosphaera mediterranea HOL marisrubri type:
 - Syracosphaera mediterranea HOL marisrubri type
 - S. mediterranea HOL marisrubri
@@ -647,6 +684,7 @@ Syracosphaera mediterranea HOL wettsteinii type:
 - Calyptrolithina wettsteinii
 - Calyptrolithophora gracillima
 - Homozygosphaera vercelli
+- Coronosphaera mediterranea HOL wettsteinii
 Syracosphaera molischii:
 - S. molischii
 - Syracosphaera molischi
@@ -654,6 +692,7 @@ Syracosphaera molischii:
 Syracosphaera molischii HOL:
 - S. molischii (HOL)
 - S. molischii HOL
+- Anthosphaera fragaria
 Syracosphaera nana:
 - Syracosphaera sp.A
 - S. nana (Syracosphaera cf. Nana)
@@ -679,8 +718,11 @@ undefined Syracosphaera nodosa type:
 Syracosphaera noroitica:
 - S. noroitica (Syracosphaera cf. Noroitica)
 - S. noroitica
+- Syracosphaera norotica
 Syracosphaera orbiculus:
 - S. orbiculus
+- Syracosphaera delicata
+- S. delicata
 Syracosphaera orbiculus HOL:
 - S. delicata (HOL)
 Syracosphaera ossa:
@@ -707,23 +749,29 @@ Syracosphaera pulchra:
 - Syracosphaera pulchra HET
 - S. pulchra
 - Syracosphaera cf. pulchra
+- Syracosphaera puchra
+- Syracosphaea pulchra
 Syracosphaera pulchra COMB:
 - S. pulchra (COMB)
 Syracosphaera pulchra HOL:
 - Calyptrosphaera pirus
 - Zygosphaera sp.A
 - Calyptrosphaera oblonga
+- Syracosphaera pulchra HOL oblonga type
 - Syracosphaera pulchra oblonga type
+- Syracosphaera pulchra HOL oblonga
 - S. pulchra HOL
 - S. pulchra galea HOL
 - Syracosphaera pulchra  pirus type
+- Syracosphaera pulchra HOL pirus
 - S. pulchra (HOL)
 - Syracosphaera pulchra oblongata
 - Syracosphaera pulchra HOL pirus type
-
+- Syracosphaera pulchra HOL oblongata type
 Syracosphaera reniformis:
 - Syracosphaera sp.J
 - S. reniformis
+- Syaracosphaera reniformis
 Syracosphaera rhombica:
 - Syracosphaera rhombica
 - S. rhombica
@@ -811,6 +859,7 @@ Zygosphaera marsilii:
 sp. aff. quattrospina HOL:
 - sp. aff. quattrospina HOL
 undefined:
+- Unknown Unknown
 - COCCOLITHOPHORES
 - COCCOLITHOPHORID
 - 'Coccosphaerales (Subgroup: coccolithophore)'
@@ -845,21 +894,19 @@ undefined:
 undefined Acanthoica:
 - Acanthoica spp.
 - Acanthoica sp.
+- Acanthoica
 undefined Algirosphaera:
 - Algirosphaera spp.
 undefined Alisphaera:
 - Alisphaera
 - Alisphaera spp.
 - Alisphaera sp.
-
 undefined Anthosphaera:
 - Anthosphaera
 - Anthosphaera SP.
 - Anthosphaera spp.
 - Anthosphaera spp. (Type A)
 - Anthosphaera spp. (Type C)
-
-
 undefined Calciosolenia:
 - Calciosolenia spp.
 - Calciosolenia sp.
@@ -869,6 +916,7 @@ undefined Calyptrosphaera:
 - Calyptrosphaera spp.
 undefined Caneosphaera:
 - Caneosphaera
+- Canistrolithus sp.1 HET
 undefined Canistrolithus:
 - Canistrolithus spp.
 undefined Chiasmolithus:
@@ -889,6 +937,7 @@ undefined Crystallolithus:
 - Crystallolithus spp.
 undefined Cyrtosphaera:
 - Cyrtosphaera spp.
+- Cyrtosphaera sp.
 undefined Ericiolus:
 - Ericiolus spp.
 - Ericiolus sp.
@@ -896,7 +945,6 @@ undefined Ericiolus:
 undefined Florisphaera:
 - Florisphaera sp. with spur
 - Florisphaera sp.
-
 undefined Gephyrocapsa:
 - Gephyrocapsa
 - Gephyrocapsa spp.
@@ -904,30 +952,34 @@ undefined Gephyrocapsa:
 undefined Helicosphaera:
 - Helicosphaera sp.1suave
 - Helicosphaera sp.1
+- Helicosphaera sp.
 undefined Helladosphaera:
 - Helladosphaera
+- Helladosphaera sp.
 undefined Homozygosphaera:
 - Homozygosphaera sp.E
 - Homozygosphaera sp. E
 - Homozygosphaera spp.
+- Homozygosphaera sp.
 undefined Hymenomonas:
 - Hymenomonas spp.
 undefined Jomonlithus:
 - Jomonlithus spp.
+Algirosphaera meteora:
+- Algirosphaera meteora
+- A. meteora
 undefined Michaelsarsia:
 - Michaelsarsia spp.
+- Michaelsaria sp.
+- Michaelsarsia
 undefined Oolithotus:
 - Oolithotus spp.F
 - Oolithotus spp.
-
 undefined Palusphaera:
 - Palusphaera sp.
 - Palusphaera spp.
 - Palusphaera sp. (Palusphaera sp. 1)
-undefined Pappamonas:
-- Pappomonas
-- Pappomonas sp.
-- Pappomonas spp.
+- Palusphaera sp.1
 undefined Papposphaeracea:
 - Papposphaeracea spp.
 - Papposphaeracea
@@ -937,11 +989,16 @@ undefined Polycrater:
 - Polycrater sp.
 - Polycrater spp.
 - Canistrolithus spp. (POL)
-- Polycrater sp. (Ladle-like)
 - Alisphaera sp. POL
+- Alisphaera POL type
+- Alisphaera POL phase
+Polycrater sp. ladle-like:
+- Polycrater sp. (Ladle-like)
+- Polycrater sp. ladle like 
 undefined Pontosphaera:
 - Pontosphaera
 - Pontosphaera spp.
+- Pontosphaera sp
 undefined Reticulafenestra:
 - Reticulafenestra sp.
 undefined Rhabdosphaera:
@@ -955,12 +1012,12 @@ undefined Solisphaera:
 undefined Sphaerocalyptra:
 - Sphaerocalyptra sp.
 - Sphaerocalyptra spp.
-- Sphaerocalyptra sp. (Sphaerocalyptra sp.1)
-- Sphaerocalyptra sp. (Sphaerocalyptra sp.3)
+
+
 undefined Syracolithus:
 - Syracolithus sp.
 - Syracolithus spp.
-- Syracolithus sp. (Syracolithus sp. A)
+
 undefined Syracosphaera:
 - Syracosphaera sp.
 - Syracosphaera sechellis
@@ -971,13 +1028,10 @@ undefined Syracosphaera:
 - Coronosphaera
 - Coronosphaera sp.
 - Coronosphaera spp.
-
 undefined Syracosphaera dilata type:
 - Syracosphaera dilatata or arethusae
 undefined Syracosphaera noroitica type:
 - S. noroitica-type
-undefined Syracosphaera lamina type:
-- Syracosphaera lamina
 undefined Syracosphaera mediterranea HOL:
 - Syracosphaera mediterranea HOL
 - Coronosphaera mediterranea HOL
@@ -998,6 +1052,7 @@ undefined Umbellosphaera:
 - Umbellosphaera
 - Umbellosphaera spp.
 - Umbellosphaera spp. (Umbellocosphaera (?))
+- Umbellosphaera sp.
 undefined Umbilicosphaera:
 - Umbilicosphaera
 - Umbilicosphaera spp.
@@ -1022,3 +1077,5 @@ undefined holo:
 - holococcolithophores
 - 'Coccosphaerales (Stage: holococcolithophorid Size: 10um)'
 - 'Coccosphaerales (Stage: holococcolithophorid Size: small)'
+- Syracosphaera HOL
+- Poricalptra sp.
