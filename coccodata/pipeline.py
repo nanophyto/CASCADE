@@ -10,7 +10,6 @@ sys.path.insert(0, '/home/phyto/CoccoData/coccodata/')
 from library import library
 from regression import regression_simulation
 from plotting import multipage_plots
-from group import estimate_group_pic_poc
 
 n = 10000
 
@@ -31,15 +30,6 @@ ntpl = m.return_ntpl()
 ntpl_size =  [t for t in ntpl  if t.measurement == "volume"]
 ntpl_pic =  [t for t in ntpl  if t.measurement == "pic"]
 ntpl_poc =  [t for t in ntpl  if t.measurement == "poc"]
-
-
-#m.export_yml("/home/phyto/CoccoData/test.yml")
-#also return species list:
-species_list = m.return_species_list()
-name = species_list[0]
-#name = "Helicosphaera pavimentum HOL"
-#name = "Emiliania huxleyi"
-
 
 def check_HOL(ntpl, name):
     """
@@ -132,8 +122,6 @@ def resample_carbon_species(ntpl, spp_name, n, size_simulation, measurement):
 
     print("estimating " + measurement + " for spp " + spp_name)
 
-
-
     #simulate size distributions for each study which has data: 
     estimate = []
 
@@ -168,8 +156,7 @@ def resample_carbon_species(ntpl, spp_name, n, size_simulation, measurement):
 
 
 
-
-def bootstrap_measurements(species_name):
+def resample_measurements(species_name):
 
     size_simulation = resample_size(ntpl_size, species_name) 
     diameter_simulation = (6*np.asarray(size_simulation)/np.pi)**(1/3)
@@ -193,11 +180,11 @@ estimates = []
 
 for i in range(len(species_list)): #
      print(species_list[i])
-     estimates.append(bootstrap_measurements(species_list[i]))
+     estimates.append(resample_measurements(species_list[i]))
 
 # for i in range(8): #
 #    print(species_list[i])
-#    estimates.append(bootstrap_measurements(species_list[i]))
+#    estimates.append(resample_measurements(species_list[i]))
 
 estimates = pd.concat(estimates)
 estimates.to_csv("/home/phyto/CoccoData/cellular_dataset.csv", index=False)
