@@ -165,6 +165,8 @@ Coccolithus pelagicus:
 - Cocoliths pelagicus
 - C. pelagicus
 - Cocccolthus pelagicus
+- Cocccolthus pelagicus (braardii)
+- Coccolithus braarudii
 Coccolithus pelagicus HOL:
 - C. pelagicus (HOL)
 Corisphaera gracilis:
@@ -195,6 +197,7 @@ Emiliania huxleyi:
 - 'Emiliania huxleyi var. corona '
 - Emiliana huxleyi
 - E. huxleyi
+- huxleyi
 Florisphaera profunda:
 - Florispahera profunda var.A
 - Florispahera profunda var.B
@@ -219,11 +222,13 @@ Gephyrocapsa ericsonii:
 - Gephyrocapsa ericosonii
 Gephyrocapsa muellerae:
 - G. muellerae
+- Gephyrocapsa mullerae
 Gephyrocapsa oceanica:
 - Geophyrocapsa oceanica
 - Geophyrocapsa oceanica(deformed)
 - G. oceanica
 - G.oceanica
+- oceanica
 Gephyrocapsa ornata:
 - Geophyrocapsa sp.B
 - G. ornata
@@ -374,6 +379,7 @@ undefined Pappomonas:
 - Pappomonas
 - Pappomonas sp.
 - Pappomonas spp.
+- undefined Pappamonas
 Pappomonas sp. type 3:
 - Pappomonas sp. (Type 3)
 - Pappomonas type 3
@@ -732,6 +738,7 @@ Syracosphaera ossa:
 - S. ossa type 2
 - Syracosphaera  ossa type 2
 - S. ossa type 1
+- Syracosphaera ossa type
 Syracosphaera pemmadiscus:
 - Syracosphaera borealis
 Syracosphaera periperforata HOL:
