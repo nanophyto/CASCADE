@@ -6,16 +6,17 @@ from yaml import load, Loader
 import yaml
 import math
 import glob, os
+from functions import rename_synonyms
 
 class library:
 
-    def __init__(self, phases, family, sizes, pic, species_list):
+    def __init__(self, phases, family, sizes, pic, poc, species_list):
         self.phases_path = phases
         self.family_path = family
         self.sizes_path = sizes
         self.pic_path = pic
+        self.poc_path = poc
         self.Study = namedtuple("Study", ['id', 'mean', 'sd', 'method', 'species', 'genera', 'family', 'phase', 'alternate_phase', 'measurement'])
-
 
         def def_grouping():
 
@@ -54,11 +55,15 @@ class library:
             d = pd.concat((pd.read_csv(f) for f in all_files), ignore_index=True)
             d = d.fillna(0)
 
+            #rename synonyms and typos:
+            d = rename_synonyms(d, remove_duplicate=False)
+
             return(d)
 
         d = import_data(self.sizes_path)
 
         d_pic = import_data(self.pic_path)
+        d_poc = import_data(self.poc_path)
 
         list_of_studies = np.concatenate([d['reference'].unique(), d_pic['reference'].unique()])
 
@@ -79,7 +84,7 @@ class library:
             return extracted_data['mean'], extracted_data['sd'], extracted_data['method']
 
 
-        def extract_pic(d, study, species):
+        def extract_c(d, study, species):
             d = d[(d['species'] == species) & (d['reference']==study)]
             keys_to_extract = ['mean', 'sd', 'method']
             extracted_data = {}
@@ -89,7 +94,6 @@ class library:
                 except:
                     extracted_data[key] = None
             return extracted_data['mean'], extracted_data['sd'], extracted_data['method']
-
 
         def classification(groups, species):
 
@@ -114,7 +118,10 @@ class library:
                     studies.append(self.Study(id, *size_and_method(d, id, species), species, genera, family, phase, alternate_phase, measurement="volume"))
                 for species in species_list:
                     genera, family, phase, alternate_phase = classification(groups, species)
-                    studies.append(self.Study(id, *extract_pic(d_pic, id, species), species, genera, family, phase, alternate_phase, measurement="pic"))
+                    studies.append(self.Study(id, *extract_c(d_pic, id, species), species, genera, family, phase, alternate_phase, measurement="pic"))
+                for species in species_list:
+                    genera, family, phase, alternate_phase = classification(groups, species)
+                    studies.append(self.Study(id, *extract_c(d_poc, id, species), species, genera, family, phase, alternate_phase, measurement="poc"))
 
             return(studies)
 
@@ -141,7 +148,9 @@ class library:
                                                                   t.measurement == "volume")]
             species_library_pic =  [t for t in self.library  if (t.species == name and
                                                                   t.measurement == "pic")]
-
+            species_library_poc =  [t for t in self.library  if (t.species == name and
+                                                                  t.measurement == "poc")]
+            
             sizes = {study.id:study._asdict() for study in species_library_size }
             for id in self.list_of_studies:
                 try:
@@ -169,6 +178,21 @@ class library:
                     del pic_values[id]['phase']
                     del pic_values[id]['alternate_phase']
                     del pic_values[id]['measurement']
+
+                except:
+                    None
+
+
+            poc_values = {study.id:study._asdict() for study in species_library_poc }
+            for id in self.list_of_studies:
+                try:
+                    del poc_values[id]['id']
+                    del poc_values[id]['species']
+                    del poc_values[id]['genera']
+                    del poc_values[id]['family']
+                    del poc_values[id]['phase']
+                    del poc_values[id]['alternate_phase']
+                    del poc_values[id]['measurement']
 
                 except:
                     None
@@ -201,4 +225,4 @@ class library:
 
 # find_undefined_spp(library)
 
-print("fin")
+#print("fin")
