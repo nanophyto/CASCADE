@@ -55,6 +55,222 @@ def aurisinae():
     return(d)
 
 
+def caudatus():
+    coccosphere_length_min = 26
+    coccosphere_length_max = 36
+
+    coccosphere_width_min = 3.5
+    coccosphere_width_max = 4
+
+    coccolith_thickness = 1
+
+
+    coccosphere_length_sd = (coccosphere_length_max-coccosphere_length_min)/4
+    coccosphere_length_mean = (coccosphere_length_max+coccosphere_length_min)/2
+
+    coccosphere_width_sd = (coccosphere_width_max-coccosphere_width_min)/4
+    coccosphere_width_mean = (coccosphere_width_max+coccosphere_width_min)/2
+
+
+    cell_length = np.clip(np.random.normal(coccosphere_length_mean, coccosphere_length_sd, sample_n), 0, None) - 2*coccolith_thickness
+
+    cell_width = np.clip(np.random.normal(coccosphere_width_mean, coccosphere_width_sd, sample_n), 0, None) - 2*coccolith_thickness
+
+
+    cell_volume = volume_cone(cell_width, cell_length)
+
+    cell_mean = np.mean(cell_volume)
+    cell_std = np.std(cell_volume)
+
+
+    d = {'species':['Calciopappus caudatus'], 
+        'mean': [cell_mean],
+        'std': [cell_std],
+        'shape':['cone'],
+        'ref': ["gaarder1971"]}
+
+    d = pd.DataFrame(d)
+    return(d)
+
+
+
+
+def borealis():
+    coccosphere_min = 6.5 
+    coccosphere_max = 8.2
+    coccolith_thickness = 1
+
+    coccosphere_sd = (coccosphere_max-coccosphere_min)/4
+    coccosphere_mean = (coccosphere_max+coccosphere_min)/2
+
+    diameters = np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None) - 2*coccolith_thickness
+
+    volumes = volume_sphere(diameters)
+
+    cell_mean = np.round(np.mean(volumes), 1)
+    cell_std = np.round(np.std(volumes), 1)
+
+    d = {'species':['Syracosphaera borealis'], 
+        'mean': [cell_mean],
+        'std': [cell_std],
+        'shape':['sphere'],
+        'ref': ['okada1977']}
+
+    d = pd.DataFrame(d)
+
+    return(d)
+
+
+
+def adenensis():
+    coccosphere_min = 5.5 
+    coccosphere_max = 8.5
+    coccolith_thickness = 1
+
+    coccosphere_sd = (coccosphere_max-coccosphere_min)/4
+    coccosphere_mean = (coccosphere_max+coccosphere_min)/2
+
+    diameters = np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None) - 2*coccolith_thickness
+
+    volumes = volume_sphere(diameters)
+
+    cell_mean = np.round(np.mean(volumes), 1)
+    cell_std = np.round(np.std(volumes), 1)
+
+    d = {'species':['Sphaerocalyptra adenensis'], 
+        'mean': [cell_mean],
+        'std': [cell_std],
+        'shape':['sphere'],
+        'ref': ['cros2002']}
+
+    d = pd.DataFrame(d)
+
+    return(d)
+
+
+
+def blokii():
+    coccosphere = 6
+    coccolith_thickness = 1
+
+    diameters = coccosphere - 2*coccolith_thickness
+
+    volumes = volume_sphere(diameters)
+
+    cell_mean = np.round(np.mean(volumes), 1)
+
+    d = {'species':['Calicasphaera blokii'], 
+        'mean': [cell_mean],
+        'std': 0,
+        'shape':['sphere'],
+        'ref': ['cros2002']}
+
+    d = pd.DataFrame(d)
+
+    return(d)
+
+
+
+def concava():
+    coccosphere = 6
+    coccolith_thickness = 1.3
+
+    diameters = coccosphere - 2*coccolith_thickness
+
+    volumes = volume_sphere(diameters)
+
+    cell_mean = np.round(np.mean(volumes), 1)
+
+    d = {'species':['Calicasphaera concava'], 
+        'mean': [cell_mean],
+        'std': 0,
+        'shape':['sphere'],
+        'ref': ['cros2002']}
+
+    d = pd.DataFrame(d)
+
+    return(d)
+
+
+
+def gaudii_POL():
+    coccosphere_min = 5.6 
+    coccosphere_max = 10.6
+    coccolith_thickness = 1
+
+    coccosphere_sd = (coccosphere_max-coccosphere_min)/4
+    coccosphere_mean = (coccosphere_max+coccosphere_min)/2
+
+    diameters = np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None) - 2*coccolith_thickness
+
+    volumes = volume_sphere(diameters)
+
+    cell_mean = np.round(np.mean(volumes), 1)
+    cell_std = np.round(np.std(volumes), 1)
+
+    d = {'species':['Alisphaera gaudii POL'], 
+        'mean': [cell_mean],
+        'std': [cell_std],
+        'shape':['sphere'],
+        'ref': ['cros2002']}
+
+    d = pd.DataFrame(d)
+
+    return(d)
+
+
+
+def pienaarii():
+    coccosphere_min = 6 
+    coccosphere_max = 11
+    coccolith_thickness = 0.9
+
+    coccosphere_sd = (coccosphere_max-coccosphere_min)/4
+    coccosphere_mean = (coccosphere_max+coccosphere_min)/2
+
+    diameters = np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None) - 2*coccolith_thickness
+
+    volumes = volume_sphere(diameters)
+
+    cell_mean = np.round(np.mean(volumes), 1)
+    cell_std = np.round(np.std(volumes), 1)
+
+    d = {'species':['Helladosphaera pienaarii'], 
+        'mean': [cell_mean],
+        'std': [cell_std],
+        'shape':['sphere'],
+        'ref': ['norris1985, kleijne1991']}
+
+    d = pd.DataFrame(d)
+
+    return(d)
+
+
+def strigilis():
+    coccosphere_min = 6 
+    coccosphere_max = 9
+    coccolith_thickness = 1
+
+    coccosphere_sd = (coccosphere_max-coccosphere_min)/4
+    coccosphere_mean = (coccosphere_max+coccosphere_min)/2
+
+    diameters = np.clip(np.random.normal(coccosphere_mean, coccosphere_sd, sample_n), 0, None) - 2*coccolith_thickness
+
+    volumes = volume_sphere(diameters)
+
+    cell_mean = np.round(np.mean(volumes), 1)
+    cell_std = np.round(np.std(volumes), 1)
+
+    d = {'species':['Syracosphaera strigilis'], 
+        'mean': [cell_mean],
+        'std': [cell_std],
+        'shape':['sphere'],
+        'ref': ['cros2002']}
+
+    d = pd.DataFrame(d)
+
+
+
 def formosus():
     coccosphere_min = 4.5 
     coccosphere_max = 7.5
@@ -97,7 +313,7 @@ def type_5():
     cell_mean = np.round(np.mean(volumes), 1)
     cell_std = np.round(np.std(volumes), 1)
 
-    d = {'species':['Pappomonas type 5'], 
+    d = {'species':['Pappomonas sp. type 5'], 
         'mean': [cell_mean],
         'std': [cell_std],
         'shape':['sphere'],
@@ -126,7 +342,7 @@ def squamosa():
         'mean': [cell_mean],
         'std': [cell_std],
         'shape':['sphere'],
-        'ref': ['klijne2009']}
+        'ref': ['kleijne2009']}
 
     d = pd.DataFrame(d)
 
@@ -261,6 +477,8 @@ def cristatus():
     return(d)
 
 
+
+
 def hydroideus():
 
     coccolith_thickness_min = 0.7 
@@ -327,11 +545,23 @@ d_cristatus = cristatus()
 d_hydroideus = hydroideus()
 d_marsilii = marsilii()
 
+
+d_caudatus = caudatus()
+d_borealis = borealis()
+d_adenensis = adenensis()
+d_blokii = blokii()
+d_concava = concava()
+d_gaudii_POL = gaudii_POL()
+d_pienaarii = pienaarii()
+d_strigilis = strigilis()
+
+
 d = pd.concat([d_formosus, d_type5, d_aurisinae, d_sphaeroidea_hol,
     d_reniformis, d_squamosa, d_arctica, d_pienaarii, d_cristatus, d_hydroideus,
-    d_marsilii ])
+    d_marsilii, d_caudatus, d_borealis, d_adenensis, d_blokii, d_concava, d_gaudii_POL,
+    d_pienaarii, d_strigilis])
 
-d.to_csv("/home/phyto/CoccoData/sizes/devries2024_volumes.csv", index=False)
+d.to_csv("/home/phyto/CoccoData/data/sizes/devries2024_volumes.csv", index=False)
 
 print("fin")
 
