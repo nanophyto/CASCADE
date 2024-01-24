@@ -3,6 +3,9 @@ import numpy as np
 import sys
 from collections import namedtuple
 from yaml import load, Loader
+from joblib import Parallel, delayed
+np.random.seed(2)
+
 
 def rename_synonyms(d, index='species', remove_duplicate=True):
     d['species'] = d['species'].str.strip()
@@ -20,7 +23,15 @@ def rename_synonyms(d, index='species', remove_duplicate=True):
     if remove_duplicate == True: 
         d = d.groupby(index).mean().reset_index()    
 
+    try:
+        d = d[d['species']!='Thoracosphaera heimii']
+    except:
+        None
 
+    try:
+        d = d[d['species']!='Reticulofenestra sessilis']
+    except:
+        None
 
     #check if final species are in species library
     species_library = {v: k for k, v in synonym_dict.items()}
@@ -33,3 +44,16 @@ def rename_synonyms(d, index='species', remove_duplicate=True):
         raise ValueError("undefined species:" + str(set(species_observed).difference(species_library)))
 
     return(d)
+
+
+def bootstrap(df, K=1000):
+
+    def bayes_boot(df, estimator, seed=1):
+        np.random.seed(seed)
+        w = np.random.dirichlet(np.ones(len(df))*4, 1)[0]
+        result = estimator(df, weights=w)
+        return result
+
+    r = Parallel(n_jobs=8)(delayed(bayes_boot)(df, np.average, seed=i) for i in range(K))
+
+    return r
