@@ -8,6 +8,7 @@ from sklearn.metrics import r2_score
 from sklearn.preprocessing import OneHotEncoder
 from scipy import stats
 plt.rcParams.update({'font.size': 14})
+from functions import bootstrap
 
 
 class regression_simulation():
@@ -41,15 +42,17 @@ class regression_simulation():
     plt.show()
     
     """
-    def __init__(self, X_train, X_predict, Y_train):
+    def __init__(self, X, X_predict, Y):
 
         #Y_train = np.log10(Y_train)
         #X_train = np.log10(X_train)
+        
+        X_train = bootstrap(X)
+        Y_train = bootstrap(Y)
 
-        self.model = sm.GLM(Y_train, sm.add_constant(X_train), family=sm.families.Gamma(sm.families.links.identity())) # sm.OLS(Y, X)
+        self.model = sm.GLM(Y_train,  X_train, family=sm.families.Gamma(sm.families.links.identity())) # sm.OLS(Y, X)
         #self.model = sm.GLM(Y_train, X_train, family=sm.families.Gaussian()) # sm.OLS(Y, X)
-        print(X_train)
-
+        #print(X_train)
 
         self.results = self.model.fit()
         self.X_predict = X_predict
@@ -59,18 +62,18 @@ class regression_simulation():
     def regression_simulation_sample(self, X_predict_sample):
     
         gen = self.model.get_distribution(params = self.results.params, scale = self.results.scale, exog=X_predict_sample)
-        simulated_data = gen.rvs()
-        # simulated_data = simulated_data[simulated_data > 0] not needed for Gamma
-        simulated_sample = np.random.choice(simulated_data, 1)
+        simulated_data = np.atleast_1d(gen.rvs())
+        #simulated_data = simulated_data[simulated_data > 0] #not needed for Gamma
+        #simulated_sample = np.random.choice(simulated_data, 1)
 
-        return(simulated_sample)
+        return(simulated_data)
 
     def simulate_data(self):
 
         simulated_data = []
 
         for i in range(len(self.X_predict)):
-            simulated_data.extend(self.regression_simulation_sample(self.X_predict[i]))
+            simulated_data.extend(self.regression_simulation_sample(self.X_predict[i])) 
 
         return(simulated_data)
 
@@ -227,12 +230,17 @@ class regression_simulation():
         plt.tight_layout()
         plt.show()
 
-d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/poulton2024.csv")
-Y_train = d['pg poc']
-X_train = d['volume']
-X_predict = [100, 99, 98, 101, 102, 100]*1000
-m = regression_simulation(X_train, X_predict, Y_train)
-m.plot_fit_POC()
+# d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/poulton2024.csv")
+# Y_train = d['pg poc']
+# X_train = d['volume']
+# X_predict = np.random.normal(8, 2, 1000)
+# m = regression_simulation(X_train, X_predict, Y_train)
+# test1 = m.simulate_data()
+# sns.histplot(x=test1)
+# plt.show()
+# m.return_performance()
+
+# m.plot_fit_POC()
 
 
 
