@@ -42,14 +42,10 @@ class regression_simulation():
     plt.show()
     
     """
-    def __init__(self, X, X_predict, Y):
+    def __init__(self, X_train, X_predict, Y_train):
 
-        #Y_train = np.log10(Y_train)
-        #X_train = np.log10(X_train)
-        
-        X_train = bootstrap(X)
-        Y_train = bootstrap(Y)
-
+        X_train = bootstrap(X_train)
+        Y_train = bootstrap(Y_train)
         self.model = sm.GLM(Y_train,  X_train, family=sm.families.Gamma(sm.families.links.identity())) # sm.OLS(Y, X)
         #self.model = sm.GLM(Y_train, X_train, family=sm.families.Gaussian()) # sm.OLS(Y, X)
         #print(X_train)
@@ -65,7 +61,7 @@ class regression_simulation():
         simulated_data = np.atleast_1d(gen.rvs())
         #simulated_data = simulated_data[simulated_data > 0] #not needed for Gamma
         #simulated_sample = np.random.choice(simulated_data, 1)
-
+        #simulated_data = bootstrap(simulated_data)
         return(simulated_data)
 
     def simulate_data(self):
