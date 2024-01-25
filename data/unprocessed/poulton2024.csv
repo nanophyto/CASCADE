@@ -1,0 +1,48 @@
+Source,doi:,Species,Method: Cell Size,Method: Cell C,Strain RCC ID,diameter,diameter sd,volume,volume sd,mol poc,mol poc sd,pg poc,pg poc sd
+Villiot et al. (2021),10.1093/plankt/fbab038,Reticulofenestra parvula,"microscope (Poulton et al., 2010)","CHN: POC, TPN, PN, acid fumed",4036,3,0.1,14,1.4,0.17,0.02,2.04,0.24
+Villiot et al. (2021),10.1093/plankt/fbab038,Emiliania huxleyi,"microscope (Poulton et al., 2010)","CHN: POC, TPN, PN, acid fumed",1731,4,0.01,34,0,0.21,0.06,2.52,0.72
+Villiot et al. (2021),10.1093/plankt/fbab038,Emiliania huxleyi,"microscope (Poulton et al., 2010)","CHN: POC, TPN, PN, acid fumed",1228,4.51,0.1,48,3.4,0.45,0.27,5.4,3.24
+Villiot et al. (2021),10.1093/plankt/fbab038,Gephyrocapsa mullerae,"microscope (Poulton et al., 2010)","CHN: POC, TPN, PN, acid fumed",3370,5,0.1,65,3.7,0.39,0.05,4.68,0.6
+Villiot et al. (2021),10.1093/plankt/fbab038,Gephyrocapsa oceanica,"microscope (Poulton et al., 2010)","CHN: POC, TPN, PN, acid fumed",1314,7.7,0.01,235,3.9,1.29,0.1,15.48,1.2
+Villiot et al. (2021),10.1093/plankt/fbab038,Calcidiscus leptoporus,"microscope (Poulton et al., 2010)","CHN: POC, TPN, PN, acid fumed",1130,10.4,0.01,586,6.5,2.62,0.33,31.44,3.96
+Villiot et al. (2021),10.1093/plankt/fbab038,Syracosphaera pulchra,"microscope (Poulton et al., 2010)","CHN: POC, TPN, PN, acid fumed",1461,11.4,0.2,780,31.4,3.43,0.33,41.16,3.96
+Villiot et al. (2021),10.1093/plankt/fbab038,Calcidiscus leptoporus,"microscope (Poulton et al., 2010)","CHN: POC, TPN, PN, acid fumed",1135,13.3,0.1,1243,32,2.94,0.47,35.28,5.64
+Villiot et al. (2021),10.1093/plankt/fbab038,Coccolithus braarudii,"microscope (Poulton et al., 2010)","CHN: POC, TPN, PN, acid fumed",1198,15.5,0.1,1936,23.2,3.82,0.74,45.84,8.88
+Verity et al. (1992),10.4319/lo.1992.37.7.1434,Emiliania huxleyi,"DAPI microscopy, Image Analysis (no mention of whether cell size or coccosphere)",CHN: TPC? (no HCl),173 (BT6),4.9,0.8,62,10.1,1.81,0.08,21.72,0.96
+Verity et al. (1992),10.4319/lo.1992.37.7.1434,Pleurochrysis carterae,"DAPI microscopy, Image Analysis (no mention of whether cell size or coccosphere)",CHN: TPC? (no HCl),COCCOII,10.3,1.45,572,80.5,7.41,0.42,88.92,5.04
+Mullin et al (1966),10.4319/lo.1966.11.2.0307,Emiliania huxleyi,Microscopy/Coulter Counter,Wet Oxidation (POC),na,3.22,0.84,17,4.5,0.33,0.02,3.96,0.24
+Mullin et al (1966),10.4319/lo.1966.11.2.0307,Syracosphaera elongata,Microscopy/Coulter Counter,Wet Oxidation (POC),na,13.92,1.8,1413,182,19.22,2.96,230.64,35.52
+Gerecht et al. (2018),10.5194/bg-15-833-2018,Emiliania huxleyi,microscopy,CHN: TPC (inc. HCl),UIO265,4.03,2.07962099125364,34,17.7,1.1,0.08,13.2,0.96
+Gerecht et al. (2018),10.5194/bg-15-833-2018,Emiliania huxleyi,microscopy,CHN: TPC (inc. HCl),UIO265,3.61,1.87837398373984,25,12.8,1.3,0.1,15.6,1.2
+Gerecht et al. (2018),10.5194/bg-15-833-2018,Emiliania huxleyi,microscopy,CHN: TPC (inc. HCl),UIO265,3.84,1.56607407407407,30,12.1,0.7,0.06,8.4,0.72
+Gerecht et al. (2018),10.5194/bg-15-833-2018,Emiliania huxleyi,microscopy,CHN: TPC (inc. HCl),UIO265,3.62,2.06362348178138,25,14.1,0.7,0.03,8.4,0.36
+Gafar et al. (2019),10.1002/lol2.10105,Calcidiscus leptoporus,see  data source,see data source,multiple,12.6,2.4,1043,199,3.7,4,44.4,48
+Gafar et al. (2019),10.1002/lol2.10105,Cocccolthus pelagicus (braardii),see  data source,see data source,multiple,16,6.6,2145,891,28.9,54.9,346.8,658.8
+Gafar et al. (2019),10.1002/lol2.10105,Emiliania huxleyi,see  data source,see data source,multiple,4.8,0.4,58,5,0.9,1.9,10.8,22.8
+Gafar et al. (2019),10.1002/lol2.10105,Gephyrocapsa oceanica,see  data source,see data source,multiple,6.1,,119,,1.8,3.9,21.6,46.8
+Gafar et al. (2019),10.1002/lol2.10105,Syracosphaera apsteinii,see  data source,see data source,multiple,17.2,7.4,2678,1145,38.8,21.3,465.6,255.6
+Gafar et al. (2019),10.1002/lol2.10105,Calcidiscus leptoporus,see  data source,see data source,1168,19.7,,4003,,13.3,5.8,159.6,69.6
+Gafar et al. (2019),10.1002/lol2.10105,Calcidiscus leptoporus,see  data source,see data source,1141,13.3,,1232,,4.9,3.1,58.8,37.2
+Gafar et al. (2019),10.1002/lol2.10105,Calcidiscus leptoporus,see  data source,see data source,1130,12.1,,928,,4.8,0.5,57.6,6
+Gafar et al. (2019),10.1002/lol2.10105,Helicosphaera carteri,see  data source,see data source,1323,14.7,,1646,,12.6,3.2,151.2,38.4
+Gafar et al. (2019),10.1002/lol2.10105,Helicosphaera carteri,see  data source,see data source,1334,15.8,,2080,,16.5,4.4,198,52.8
+Gafar et al. (2019),10.1002/lol2.10105,C. carterae,see  data source,see data source,na,8.2,5.6,284,,16.4,23.7,196.8,284.4
+Gafar et al. (2019),10.1002/lol2.10105,Syracosphaera pulchra,see  data source,see data source,na,9.9,0.6,511,,10.9,2.7,130.8,32.4
+Supraha et al. (2015),10.1038/srep16499,Helicosphaera carteri,microscopy,CHN (inc. HCl),1323,11.45,0.5,785,36,10.3,2.6,123.6,31.2
+Supraha et al. (2015),10.1038/srep16499,Helicosphaera carteri,microscopy,CHN (inc. HCl),1334,13.36,1.7,1248,159,13.4,3.7,160.8,44.4
+Fiorini et al (2011),10.1111/j.1529-8817.2011.01080.x,Emiliania huxleyi,coulter counter,CHN (inc. HCl),AC472,4.88,0.4,61,5,1.3,0,15.6,0
+Fiorini et al (2011),10.1111/j.1529-8817.2011.01080.x,Emiliania huxleyi,coulter counter,CHN (inc. HCl),AC472,4.25,0.4,40,4,1.8,0.2,21.6,2.4
+Fiorini et al (2011),10.1111/j.1529-8817.2011.01080.x,Calcidiscus leptoporus,coulter counter,CHN (inc. HCl),AC370,11.74,0.4,846,27,6.8,0.8,81.6,9.6
+Fiorini et al (2011),10.1111/j.1529-8817.2011.01080.x,Calcidiscus leptoporus,coulter counter,CHN (inc. HCl),AC370,6.19,1.4,124,28,4.2,1.1,50.4,13.2
+Fiorini et al (2011),10.1111/j.1529-8817.2011.01080.x,Syracosphaera pulchra,coulter counter,CHN (inc. HCl),AC418,10.33,0.4,577,23,12,1.3,144,15.6
+Fiorini et al (2011),10.1111/j.1529-8817.2011.01080.x,Syracosphaera pulchra,coulter counter,CHN (inc. HCl),AC418,10.76,0.9,651,55,16.8,0,201.6,0
+Langer et al (2006),10.1029/2005GC001227,Calcidiscus leptoporus,microscopy,CHN (inc. HCl),AC365,14.7,,1663,,5.3,,63.6,0
+Langer et al (2006),10.1029/2005GC001227,Calcidiscus leptoporus,microscopy,CHN (inc. HCl),AC365,14.7,,1663,,5.5,,66,0
+Oviedo et al (2014),10.1016/j.jembe.2014.04.021,Emiliania huxleyi,coulter counter,CHN (inc. HCl),RCC1813,4.11,0.1,36,0.6,0.7,0,8.4,0
+Oviedo et al (2014),10.1016/j.jembe.2014.04.021,Emiliania huxleyi,coulter counter,CHN (inc. HCl),RCC1817,4.37,0.1,44,0.5,0.7,0,8.4,0
+Oviedo et al (2014),10.1016/j.jembe.2014.04.021,Emiliania huxleyi,coulter counter,CHN (inc. HCl),RCC1812,4.35,0.1,43,1.3,1,0,12,0
+Oviedo et al (2014),10.1016/j.jembe.2014.04.021,Emiliania huxleyi,coulter counter,CHN (inc. HCl),RCC1827,4.44,0.1,46,0.5,0.7,0,8.4,0
+Oviedo et al (2014),10.1016/j.jembe.2014.04.021,Emiliania huxleyi,coulter counter,CHN (inc. HCl),RCC1830,5.21,0.1,74,1.3,0.9,0,10.8,0
+Oviedo et al (2014),10.1016/j.jembe.2014.04.021,Emiliania huxleyi,coulter counter,CHN (inc. HCl),RCC1833,4.4,0.1,45,0.6,0.7,0,8.4,0
+Llewellyn & Gibb (2000),https://www.jstor.org/stable/24855680,Coccolithus pelagicus,Microscopy (Lugols),CHN (inc. HCl),PLY-182(CCAP),13.52,,1295,,19.2,,230.4,0
+Llewellyn & Gibb (2000),https://www.jstor.org/stable/24855680,Emiliania huxleyi,Microscopy (Lugols),CHN (inc. HCl),PLY-61/7/3,7.07,,185,,1.4,,16.8,0
