@@ -559,7 +559,7 @@ d_strigilis = strigilis()
 d = pd.concat([d_type5, d_aurisinae, d_sphaeroidea_hol,
     d_reniformis, d_squamosa, d_arctica, d_pienaarii, d_cristatus, d_hydroideus,
     d_marsilii, d_caudatus, d_borealis, d_adenensis, d_blokii, d_concava, d_gaudii_POL,
-    d_pienaarii, d_strigilis])
+    d_strigilis])
 
 #read observation counts:
 
@@ -571,10 +571,10 @@ d = pd.merge(d, counts, on="species")
 d = d[['species','mean', 'std', 'shape', 'ref',  'count']]
 d['std'] = d['std'].astype('float')
 
-d.rename(columns={"species": "Species", "mean": "Mean ESD", "std": "SD ESD", 
+d.rename(columns={"species": "Species", "mean": "ESD (mean)", "std": "ESD (SD)", 
                   "shape":"Cell shape", "ref": "Reference", "count":"Abundance obs."}, inplace=True)
 
-
+d = d.sort_values(by=['Species'])
 print(d.to_latex(index=False,
                   formatters={"name": str.upper},
                   float_format="{:.1f}".format,
