@@ -556,12 +556,33 @@ d_pienaarii = pienaarii()
 d_strigilis = strigilis()
 
 
-d = pd.concat([d_formosus, d_type5, d_aurisinae, d_sphaeroidea_hol,
+d = pd.concat([d_type5, d_aurisinae, d_sphaeroidea_hol,
     d_reniformis, d_squamosa, d_arctica, d_pienaarii, d_cristatus, d_hydroideus,
     d_marsilii, d_caudatus, d_borealis, d_adenensis, d_blokii, d_concava, d_gaudii_POL,
     d_pienaarii, d_strigilis])
 
-d.to_csv("/home/phyto/CoccoData/data/sizes/devries2024_volumes.csv", index=False)
+#read observation counts:
+
+counts = pd.read_csv("/home/phyto/CoccoData/data/species_list_full.csv")
+d.reset_index(inplace=True, drop=True)
+
+d = pd.merge(d, counts, on="species")
+
+d = d[['species','mean', 'std', 'shape', 'ref',  'count']]
+d['std'] = d['std'].astype('float')
+
+d.rename(columns={"species": "Species", "mean": "Mean ESD", "std": "SD ESD", 
+                  "shape":"Cell shape", "ref": "Reference", "count":"Abundance obs."}, inplace=True)
+
+
+print(d.to_latex(index=False,
+                  formatters={"name": str.upper},
+                  float_format="{:.1f}".format,
+)) 
+
+
+d['reference'] = 'devries2025'
+d.to_csv("/home/phyto/CoccoData/data/sizes/devries2024.csv", index=False)
 
 print("fin")
 
