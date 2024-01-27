@@ -79,18 +79,6 @@ def pre_obrien2013a():
     d.to_csv("/home/phyto/CoccoData/data/sizes/obrien2013a.csv", index=False)
     return(d)
 
-def pre_obrien2013b():
-    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/obrien2013_coccosphere_size.csv")
-    #read obrien size data
-    #apply synonyms
-    d = rename_synonyms(d)
-    d['sd'] = (d['max']-d['min'])/4
-    d = d[['species', 'sd', 'mean']]
-    d['reference'] = "obrien2013b"
-    d['method'] = 'literature coccosphere'
-    d = d[['species', 'mean', 'sd', 'method', 'reference']] 
-    d.to_csv("/home/phyto/CoccoData/data/sizes/obrien2013b.csv", index=False)
-
 def pre_devries2024():
     d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/sizes/devries2024_volumes.csv")
     d = d[['species', 'mean', 'std']]
