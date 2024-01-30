@@ -54,6 +54,7 @@ class regression_simulation:
             Y_train,
             np.log(X_train),
             family=sm.families.Gamma(link=sm.families.links.Log()),
+
         )
         # self.model = sm.GLM(Y_train, X_train, family=sm.families.Gaussian()) # sm.OLS(Y, X)
         # print(X_train)
@@ -141,14 +142,6 @@ class regression_simulation:
             promise = delayed(replicate)
             return np.row_stack(engine(promise(i) for i in range(n_replicates)))
 
-    def simulate_data(self):
-        simulated_data = []
-
-        for i in range(len(self.X_predict)):
-            simulated_data.extend(self.regression_simulation_sample(self.X_predict[i]))
-
-        return simulated_data
-
     def simulate_predictions(
         self,
         X_predict=None,
@@ -217,7 +210,7 @@ class regression_simulation:
             simulated_data = np.column_stack(
                 [self.results.model.family.predict(mu_vec) for mu_vec in mus.T]
             )
-        return simulated_data
+        return simulated_data #[simulated_data>0]
 
     def return_performance(self):
         print(self.results.summary())
@@ -241,25 +234,21 @@ class regression_simulation:
         )
         print("bias: " + str(bias))
 
-    def plot_fit_POC(self):
+    def plot_fit_POC(self, boot=False, n_replicates=1, figsize=(12, 8)):
         y = self.Y_train
         x = self.X_train
-        yhat = self.results.predict()
-        # log transform
-        y = np.log10(y)
-        yhat = np.log10(yhat)
-        x = np.log10(x)
 
-        fig, axs = plt.subplots(1, 2)
+        m = regression_simulation(x, x, y)
+        yhat = m.simulate_predictions(boot=boot, n_replicates=n_replicates).flatten()
+
+        fig, axs = plt.subplots(1, 2, figsize=figsize)
 
         axs[0].scatter(x, y)
         sns.regplot(x=x, y=y, order=1, ax=axs[0], ci=None, scatter=False)
 
-        axs[1].scatter(yhat, y)
-
-        line_fit = sm.OLS(y, sm.add_constant(yhat, prepend=True)).fit()
-        abline_plot(model_results=line_fit, ax=axs[1])
+        sns.regplot(x=yhat, y=y, order=1, ax=axs[1], ci=None)
         abline_plot(slope=1, intercept=0, ax=axs[1], color="black", linestyle="dashed")
+
 
         axs[0].set_title("Allometric scaling")
         axs[0].set_ylabel("Carbon content (pg C, log10)")
@@ -299,9 +288,11 @@ class regression_simulation:
         print("intercept: " + str(intercept))
         print("r_value: " + str(r_value))
 
-    def plot_fit_PIC(self):
+    def plot_fit_PIC(self, figsize=(8, 8)):
         y = self.Y_train
         x = self.X_train["Volume"]
+
+
         yhat = self.results.mu
         # log transform
         y = np.log10(y)
@@ -317,10 +308,10 @@ class regression_simulation:
         x_HET = x[self.X_train["Phase_HET"] == 1]
         x_HOL = x[self.X_train["Phase_HOL"] == 1]
 
-        HOL_line_fit = sm.OLS(y_HOL, sm.add_constant(yhat_HOL, prepend=True)).fit()
-        HET_line_fit = sm.OLS(y_HET, sm.add_constant(yhat_HET, prepend=True)).fit()
+        HOL_line_fit = sm.OLS(y_HOL, yhat_HOL).fit()
+        HET_line_fit = sm.OLS(y_HET, yhat_HET).fit()
 
-        fig, axs = plt.subplots(2, 2)
+        fig, axs = plt.subplots(2, 2, figsize=figsize)
 
         # scaling HET
         axs[0, 0].scatter(x_HET, y_HET, color="firebrick")
@@ -425,7 +416,7 @@ class regression_simulation:
 
 
 if __name__ == "__main__":
-    d = pd.read_csv("../data/unprocessed/poulton2024.csv")
+    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/poulton2024.csv")
     Y_train = d["pg poc"]
     X_train = d["volume"]
     X_predict = np.random.normal(8, 2, 1000)
@@ -507,6 +498,15 @@ if __name__ == "__main__":
     # m.plot_fit_POC()
 
 
+# d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/poulton2024.csv")
+# Y_train = d['pg poc']
+# X_train = d['volume']
+# X_predict = [100, 99, 98, 101, 102, 100]*1000
+# m = regression_simulation(X_train, X_predict, Y_train)
+# test1 = m.simulate_predictions()
+# sns.histplot(x=test1)
+# plt.show()
+
 # d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/rosie_size_pic.csv")
 # d = d.dropna()
 # d = d[d['PIC pg C'] >0]
@@ -526,4 +526,4 @@ if __name__ == "__main__":
 # m.plot_fit_PIC()
 
 
-print("fin")
+#print("fin")
