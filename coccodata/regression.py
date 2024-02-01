@@ -52,7 +52,7 @@ class regression_simulation:
         # regression coefficient example
         allometric_model = sm.GLM(
             Y_train,
-            np.log(X_train),
+            np.log(X_train+1),
             family=sm.families.Gamma(link=sm.families.links.Log()),
         )
         # self.model = sm.GLM(Y_train, X_train, family=sm.families.Gaussian()) # sm.OLS(Y, X)
@@ -60,11 +60,11 @@ class regression_simulation:
 
         self._fit_function = lambda y, x: (
             sm.GLM(
-                y, np.log(x), family=sm.families.Gamma(link=sm.families.links.Log())
+                y, np.log(x+1), family=sm.families.Gamma(link=sm.families.links.Log())
             ).fit()
         )
         self.results = allometric_model.fit()
-        self.X_predict = X_predict
+        self.X_predict = np.log(X_predict+1)
         self.X_train = X_train
         self.Y_train = Y_train
 
@@ -255,8 +255,6 @@ class regression_simulation:
         axs[1].set_title("Observed vs Predicted")
         axs[1].set_ylabel("Observed values (pg C, log10)")
         axs[1].set_xlabel("Predicted values (pg C, log10)")
-
-        axs[1].set_xlim(0, np.nanmax([y, yhat]))
 
         axs[0].text(
             0.05,
