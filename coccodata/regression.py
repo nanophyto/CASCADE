@@ -54,7 +54,6 @@ class regression_simulation:
             Y_train,
             np.log(X_train),
             family=sm.families.Gamma(link=sm.families.links.Log()),
-
         )
         # self.model = sm.GLM(Y_train, X_train, family=sm.families.Gaussian()) # sm.OLS(Y, X)
         # print(X_train)
@@ -206,11 +205,11 @@ class regression_simulation:
             params = self.simulate_regression_params(
                 n_replicates=n_replicates, boot=boot
             )
-            mus = X_predict @ params
+            lin_preds = X_predict @ params
             simulated_data = np.column_stack(
-                [self.results.model.family.predict(mu_vec) for mu_vec in mus.T]
+                [self.results.model.family.fitted(lin_pred) for lin_pred in lin_preds.T]
             )
-        return simulated_data #[simulated_data>0]
+        return simulated_data  # [simulated_data>0]
 
     def return_performance(self):
         print(self.results.summary())
@@ -248,7 +247,6 @@ class regression_simulation:
 
         sns.regplot(x=yhat, y=y, order=1, ax=axs[1], ci=None)
         abline_plot(slope=1, intercept=0, ax=axs[1], color="black", linestyle="dashed")
-
 
         axs[0].set_title("Allometric scaling")
         axs[0].set_ylabel("Carbon content (pg C, log10)")
@@ -291,7 +289,6 @@ class regression_simulation:
     def plot_fit_PIC(self, figsize=(8, 8)):
         y = self.Y_train
         x = self.X_train["Volume"]
-
 
         yhat = self.results.mu
         # log transform
@@ -416,7 +413,7 @@ class regression_simulation:
 
 
 if __name__ == "__main__":
-    d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/poulton2024.csv")
+    d = pd.read_csv("../data/unprocessed/poulton2024.csv")
     Y_train = d["pg poc"]
     X_train = d["volume"]
     X_predict = np.random.normal(8, 2, 1000)
@@ -526,4 +523,4 @@ if __name__ == "__main__":
 # m.plot_fit_PIC()
 
 
-#print("fin")
+# print("fin")
