@@ -47,20 +47,15 @@ class regression_simulation:
     """
 
     def __init__(self, X_train, X_predict, Y_train):
+        self.X_train = X_train
+        self.X_predict = X_predict
+        self.Y_train = Y_train
         allometric_model = sm.GLM(
-            Y_train,
-            np.log(X_train+1),
+            self.Y_train,
+            self.X_train,
             family=sm.families.Gamma(link=sm.families.links.Log()),
         )
-        self._fit_function = lambda y, x: (
-            sm.GLM(
-                y, np.log(x+1), family=sm.families.Gamma(link=sm.families.links.Log())
-            ).fit()
-        )
         self.results = allometric_model.fit()
-        self.X_predict = np.log(X_predict+1)
-        self.X_train = X_train
-        self.Y_train = Y_train
 
     def simulate_regression_params(self, boot=False, n_replicates=1000):
         """
@@ -129,7 +124,17 @@ class regression_simulation:
                 using the inputted data
                 """
                 data = df.sample(frac=1, replace=True)
-                return self._fit_function(data.y, np.exp(data.drop("y", axis=1))).params
+                Y_train_ = data["y"].values
+                X_train_ = data[self.results.model.data.cov_names]
+                return (
+                    sm.GLM(
+                        Y_train_,
+                        X_train_,
+                        family=sm.families.Gamma(link=sm.families.links.Log()),
+                    )
+                    .fit()
+                    .params
+                )
 
             engine = Parallel()
             promise = delayed(replicate)
@@ -204,7 +209,7 @@ class regression_simulation:
             params = self.simulate_regression_params(
                 n_replicates=n_replicates, boot=boot
             )
-#            lin_preds = X_predict @ params.T
+            #            lin_preds = X_predict @ params.T
 
             lin_preds = X_predict @ params.T
 
@@ -236,22 +241,28 @@ class regression_simulation:
         print("bias: " + str(bias))
 
     def plot_fit_POC(self, x, y, boot=False, n_replicates=1, figsize=(12, 8)):
-        #y = self.Y_train
-        #x = self.X_train
+        # y = self.Y_train
+        # x = self.X_train
 
         m = regression_simulation(x, x, y)
-        yhat = pd.DataFrame({'yhat': m.simulate_predictions(
-                                                    boot=boot, 
-                                                    n_replicates=n_replicates).flatten()})
+        yhat = pd.DataFrame(
+            {
+                "yhat": m.simulate_predictions(
+                    boot=boot, n_replicates=n_replicates
+                ).flatten()
+            }
+        )
 
         d = pd.concat([x, y, yhat], axis=1)
 
         fig, axs = plt.subplots(1, 2, figsize=figsize)
 
         axs[0].scatter(x, y)
-        sns.regplot(x=d['volume'], y=d['pg poc'], order=1, ax=axs[0], ci=None, scatter=False)
+        sns.regplot(
+            x=d["volume"], y=d["pg poc"], order=1, ax=axs[0], ci=None, scatter=False
+        )
 
-        sns.regplot(x=d['yhat'], y=d['pg poc'], order=1, ax=axs[1], ci=None)
+        sns.regplot(x=d["yhat"], y=d["pg poc"], order=1, ax=axs[1], ci=None)
         abline_plot(slope=1, intercept=0, ax=axs[1], color="black", linestyle="dashed")
 
         axs[0].set_title("Allometric scaling")
@@ -290,59 +301,57 @@ class regression_simulation:
         print("intercept: " + str(intercept))
         print("r_value: " + str(r_value))
 
-    def plot_fit_PIC(self, figsize=(8, 8), title=None, log_trans=True, boot=False, n_replicates=1):
+    def plot_fit_PIC(
+        self, figsize=(8, 8), title=None, log_trans=True, boot=False, n_replicates=1
+    ):
         y = self.Y_train
-        x = self.X_train #["Volume"]
+        x = self.X_train  # ["Volume"]
         m = regression_simulation(x, x, y)
-        yhat = pd.DataFrame({'yhat': m.simulate_predictions(
-                                                    boot=boot, 
-                                                    n_replicates=n_replicates).flatten()})
+        yhat = pd.DataFrame(
+            {
+                "yhat": m.simulate_predictions(
+                    boot=boot, n_replicates=n_replicates
+                ).flatten()
+            }
+        )
 
         d = pd.concat([x, y, yhat], axis=1)
         d.dropna(inplace=True)
-        #print(d)
+        # print(d)
 
         fig, axs = plt.subplots(2, 2, figsize=figsize)
 
         sns.scatterplot(
-            data = d[d['Phase_HET']==1],
-            x='Volume',
-            y='PIC pg C',
-            ax = axs[0,0]
+            data=d[d["Phase_HET"] == 1], x="Volume", y="PIC pg C", ax=axs[0, 0]
         )
 
         sns.scatterplot(
-            data = d[d['Phase_HET']==1],
-            y='PIC pg C',
-            x='yhat',
-            ax = axs[0,1]
+            data=d[d["Phase_HET"] == 1], y="PIC pg C", x="yhat", ax=axs[0, 1]
         )
 
         sns.scatterplot(
-            data = d[d['Phase_HOL']==1],
-            x='Volume',
-            y='PIC pg C',
-            ax = axs[1,0]
+            data=d[d["Phase_HOL"] == 1], x="Volume", y="PIC pg C", ax=axs[1, 0]
         )
 
         sns.scatterplot(
-            data = d[d['Phase_HOL']==1],
-            y='PIC pg C',
-            x='yhat',
-            ax = axs[1,1]
+            data=d[d["Phase_HOL"] == 1], y="PIC pg C", x="yhat", ax=axs[1, 1]
         )
-        axs[0,1].plot(d[d['Phase_HET']==1]['PIC pg C'], d[d['Phase_HET']==1]['PIC pg C'])
-        axs[1,1].plot(d[d['Phase_HOL']==1]['PIC pg C'], d[d['Phase_HOL']==1]['PIC pg C'])
+        axs[0, 1].plot(
+            d[d["Phase_HET"] == 1]["PIC pg C"], d[d["Phase_HET"] == 1]["PIC pg C"]
+        )
+        axs[1, 1].plot(
+            d[d["Phase_HOL"] == 1]["PIC pg C"], d[d["Phase_HOL"] == 1]["PIC pg C"]
+        )
 
-        if log_trans==True:
-            axs[0,0].set_yscale('log')
-            axs[0,0].set_xscale('log')
-            axs[0,1].set_yscale('log')
-            axs[0,1].set_xscale('log')
-            axs[1,0].set_yscale('log')
-            axs[1,0].set_xscale('log')
-            axs[1,1].set_yscale('log')
-            axs[1,1].set_xscale('log')
+        if log_trans == True:
+            axs[0, 0].set_yscale("log")
+            axs[0, 0].set_xscale("log")
+            axs[0, 1].set_yscale("log")
+            axs[0, 1].set_xscale("log")
+            axs[1, 0].set_yscale("log")
+            axs[1, 0].set_xscale("log")
+            axs[1, 1].set_yscale("log")
+            axs[1, 1].set_xscale("log")
 
         axs[0, 0].set_title("Scaling (diploid)")
         axs[0, 0].set_ylabel("C content (pg C)")
@@ -418,28 +427,25 @@ class regression_simulation:
 
 
 if __name__ == "__main__":
-
     test_POC = True
     test_PIC = True
     plot_PIC = True
 
-
     if test_POC == True:
         print("testing POC")
         #    d = pd.read_csv("../data/unprocessed/poulton2024.csv")
-        d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/poulton2024.csv")
-        Y_train = d['pg poc']
-        X_train = d['volume']
+        d = pd.read_csv("../data/unprocessed/poulton2024.csv")
+        Y_train = d["pg poc"]
+        X_train = np.log(d["volume"] + 1)
 
         def diameter_to_volume(d):
-            v = (1/6) * np.pi * d**3
-            return(v)
+            v = (1 / 6) * np.pi * d**3
+            return v
 
         v = diameter_to_volume(10)
-        X_predict = np.random.normal(v, v*0.2, 1000)
-        X_predict = X_predict[X_predict>0]
+        X_predict = np.random.normal(v, v * 0.2, 1000)
+        X_predict = np.log(X_predict[X_predict > 0] + 1)
         m = regression_simulation(X_train, X_predict, Y_train)
-
 
         poc = m.simulate_predictions(boot=True, n_replicates=1)
         median = np.percentile(poc, 50)
@@ -448,7 +454,6 @@ if __name__ == "__main__":
         print("expected value ~70")
         m.plot_fit_POC(X_train, Y_train, boot=True, n_replicates=1)
 
-
         poc = m.simulate_predictions(boot=False, n_replicates=1)
         median = np.percentile(poc, 50)
         print("boot = False:")
@@ -456,30 +461,35 @@ if __name__ == "__main__":
         print("expected value ~70")
         m.plot_fit_POC(X_train, Y_train, boot=False, n_replicates=1)
 
-
-    if test_PIC == True:        
+    if test_PIC == True:
         print("testing PIC")
 
-        #d = pd.read_csv("../data/unprocessed/rosie_size_pic.csv")
-        d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/rosie_size_pic.csv")
+        # d = pd.read_csv("../data/unprocessed/rosie_size_pic.csv")
+        d = pd.read_csv("../data/unprocessed/rosie_size_pic.csv")
         d = d.dropna()
-        d = d[d['PIC pg C'] >0]
-        d = d[d['Volume'] >0]
-        Y_train = d['PIC pg C']
+        d = d[d["PIC pg C"] > 0]
+        d = d[d["Volume"] > 0]
+        Y_train = d["PIC pg C"]
 
         def diameter_to_volume(d):
-            v = (1/6) * np.pi * d**3
-            return(v)
+            v = (1 / 6) * np.pi * d**3
+            return v
 
         v = diameter_to_volume(10)
-        
-        d = pd.get_dummies(d, columns=['Phase'], dtype=float)
-        X_train = d[['Volume', 'Phase_HET', 'Phase_HOL']].astype(float)
 
-        X_predict = pd.DataFrame({'Volume': np.random.normal(v, v*0.2, 1000), 
-                            'Phase_HET':[1]*1000, 
-                            'Phase_HOL':[0]*1000})
-        X_predict= X_predict[X_predict['Volume']>0]
+        d = pd.get_dummies(d, columns=["Phase"], dtype=float)
+        X_train = d[["Volume", "Phase_HET", "Phase_HOL"]].astype(float)
+        X_train["Volume"] = np.log(X_train.Volume + 1)
+
+        X_predict = pd.DataFrame(
+            {
+                "Volume": np.random.normal(v, v * 0.2, 1000),
+                "Phase_HET": [1] * 1000,
+                "Phase_HOL": [0] * 1000,
+            }
+        )
+        X_predict = X_predict[X_predict["Volume"] > 0]
+        X_predict["Volume"] = np.log(X_predict.Volume + 1)
 
         m = regression_simulation(X_train, X_predict, Y_train)
 
@@ -489,12 +499,12 @@ if __name__ == "__main__":
         print(median)
         print("expected value ~20")
         m.plot_fit_PIC(title="conditional", boot=False, n_replicates=1)
-        #m.return_performance()
+        # m.return_performance()
 
-        #m.return_performance()
-        #if plot_PIC == True:
+        # m.return_performance()
+        # if plot_PIC == True:
         #    sns.histplot(x=pic.flatten())
-        #plt.show()
+        # plt.show()
 
         m.plot_fit_PIC(title="boot", boot=True, n_replicates=1)
         pic = m.simulate_predictions(boot=True, n_replicates=1)
@@ -502,11 +512,7 @@ if __name__ == "__main__":
         print("boot = True:")
         print(median)
         print("expected value ~20")
-        #m.return_performance()
-
-
-
-
+        # m.return_performance()
 
     # d = pd.read_csv("../data/unprocessed/poulton2024.csv")
     # Y_train = d["pg poc"]
@@ -581,7 +587,6 @@ if __name__ == "__main__":
     # ax = sns.kdeplot(data=plot_data, hue="simulation_type", x="replicate")
     # ax.set_xscale("log")
     # plt.show()
-
 
 
 # d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/poulton2024.csv")
