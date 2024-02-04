@@ -1,0 +1,49 @@
+species,count(*),min(int_l),avg(int_l),max(int_l),stddev(int_l),min(volume),avg(volume),max(volume),stddev(volume),max/min l,max/min vol
+Florisphaera profunda,135,2.3,4.3,9.2,1.2,6.4,50.1,181.2,37.6,4.0,28
+Umbellosphaera tenuis,93,3.5,5.5,9.2,0.9,21.5,93.7,407.7,52.0,2.7,19
+Oolithotus antillarum,60,3.5,5.4,8.1,0.9,21.5,88.8,273.1,44.7,2.3,13
+Rhabdosphaera stylifera,50,3.1,5.3,6.9,1.0,15.9,86.8,172.0,42.9,2.2,11
+Helicosphaera pavimentum,49,6.9,10.0,13.8,1.3,119.5,394.8,955.6,159.3,2.0,8
+Discosphaera tubifera,47,3.5,4.8,5.8,0.7,21.5,61.6,104.3,24.8,1.7,5
+Algirosphaera robusta,41,3.5,7.1,12.1,2.2,47.7,227.0,933.7,175.0,3.5,20
+Helicosphaera carteri,35,9.8,14.6,26.5,3.1,351.2,1092.4,1834.7,403.3,2.7,5
+Syracosphaera mediterranea HOL wettsteinii type,35,9.2,12.6,18.4,2.5,407.7,1159.6,3261.8,713.7,2.0,8
+Umbellosphaera irregularis,34,3.5,5.3,6.9,0.8,21.5,85.1,172.0,37.2,2.0,8
+Acanthoica,33,2.3,6.6,9.2,1.7,6.4,113.3,407.7,90.9,4.0,64
+Calcidiscus sp.,29,6.9,10.3,12.7,1.5,172.0,610.8,1059.9,234.4,1.8,6
+Alisphaera sp.,27,6.3,7.7,10.4,1.1,115.9,242.3,580.5,105.5,1.7,5
+Umbilicosphaera hulburtiana,21,5.8,7.3,9.2,1.0,99.5,206.9,407.7,88.7,1.6,4
+Syracosphaera pulchra,20,9.5,15.7,26.5,3.9,585.2,1181.0,2293.4,420.0,2.8,4
+Gladiolithus flabellatus,18,2.6,4.8,8.1,1.3,9.2,30.6,59.7,16.6,3.1,6
+Thoracosphaera heimii,18,8.1,10.1,11.5,1.0,79.6,514.0,796.3,180.2,1.4,10
+Gephyrocapsa oceanica,16,3.6,5.0,6.9,1.1,23.7,73.8,172.0,49.8,1.9,7
+Syracosphaera anthos HOL,15,5.4,7.2,9.2,1.0,78.5,204.8,407.7,91.9,1.7,5
+Syracosphaera mediterranea HET,12,10.7,12.0,13.3,0.7,559.9,852.0,1416.7,288.1,1.2,3
+Michaelsarsia elegans,11,8.1,11.8,17.3,2.6,127.4,276.5,713.5,152.6,2.1,6
+Oolithotus fragilis,11,9.5,11.1,12.7,0.9,447.7,712.2,1059.9,179.6,1.3,2
+Syracosphaera anthos,10,5.8,7.7,9.2,1.2,99.5,236.2,407.7,95.6,1.6,4
+Rhabdosphaera clavigera,9,7.9,9.5,11.5,1.1,256.1,467.4,800.6,160.0,1.5,3
+Umbilicosphaera foliosa,9,5.8,6.8,8.1,0.7,99.5,172.3,273.1,50.5,1.4,3
+Syracosphaera mediterranea,7,11.5,13.6,16.1,1.6,796.3,1380.0,2185.1,473.5,1.4,3
+Coccolithus pelagicus,6,8.0,9.1,11.0,1.2,270.2,408.2,693.2,163.4,1.4,3
+Gephyrocapsa muellerae,4,3.5,4.0,4.5,0.4,22.4,35.8,47.8,11.0,1.3,2
+Braarudosphaera bigelowii,3,8.4,9.6,10.5,0.9,315.7,478.4,614.8,123.5,1.2,2
+Ceratolithus vidalii HET,3,4.6,5.2,5.8,0.5,51.0,76.5,99.5,19.9,1.3,2
+Heleicosphaera HOL catilliferus type,3,10.4,11.1,11.5,0.5,580.5,724.4,796.3,101.7,1.1,1
+Algirosphaera meteora,2,17.9,18.1,18.4,0.3,2983.4,3122.6,3261.8,139.2,1.0,1
+Calciosolenia murrayi,2,5.5,16.0,26.5,10.5,88.1,190.6,293.1,102.5,4.8,3
+Scyphosphaera apsteinii,2,16.1,17.8,19.6,1.7,2185.1,3048.7,3912.4,863.6,1.2,2
+Calcidiscus quadriperforatus HOL,1,10.8,10.8,10.8,0.0,655.7,655.7,655.7,0.0,1.0,1
+Calcidiscus quardiperforatus HOL,1,9.2,9.2,9.2,0.0,407.7,407.7,407.7,0.0,1.0,1
+Calyptrolithina multipora,1,11.1,11.1,11.1,0.0,708.4,708.4,708.4,0.0,1.0,1
+Calyptrolithophora multipora,1,11.5,11.5,11.5,0.0,796.3,796.3,796.3,0.0,1.0,1
+Ceratolithus cristatus HET,1,10.4,10.4,10.4,0.0,580.5,580.5,580.5,0.0,1.0,1
+Hayaster perplexa,1,23.0,23.0,23.0,0.0,6370.6,6370.6,6370.6,0.0,1.0,1
+Michaelsarsia adriatica,1,17.3,17.3,17.3,0.0,585.3,585.3,585.3,0.0,1.0,1
+Pontosphaera japonica,1,16.6,16.6,16.6,0.0,2394.8,2394.8,2394.8,0.0,1.0,1
+Pontosphaera sp,1,17.3,17.3,17.3,0.0,2687.6,2687.6,2687.6,0.0,1.0,1
+Syracosphaera lamina,1,17.3,17.3,17.3,0.0,1445.3,1445.3,1445.3,0.0,1.0,1
+Syracosphaera marginiporata,1,8.1,8.1,8.1,0.0,89.2,89.2,89.2,0.0,1.0,1
+Syracosphaera pulchra HOL oblonga type,1,16.1,16.1,16.1,0.0,1605.4,1605.4,1605.4,0.0,1.0,1
+Syracosphaera tumularis,1,16.1,16.1,16.1,0.0,2185.1,2185.1,2185.1,0.0,1.0,1
+Umbilicosphaera sibogae,1,23.0,23.0,23.0,0.0,6370.6,6370.6,6370.6,0.0,1.0,1
