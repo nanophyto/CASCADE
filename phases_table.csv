@@ -1,0 +1,148 @@
+species,phase,alternate_phase,reference,ref
+Acanthoica acanthifera,HET,,,
+Acanthoica acanthos,HET,,,
+Acanthoica quattrospina,HET,Acanthoica quattrospina HOL,,"['Cros2000', 'Cros2002', 'Supraha2014', 'triantaphyllou2015']"
+Acanthoica quattrospina HOL,HOL,Acanthoica quattrospina,,"['Cros2000', 'Cros2002', 'Supraha2014', 'triantaphyllou2015']"
+Algirosphaera robusta,HET,,,
+Alisphaera capulata,HET,,,
+Alisphaera extenta,HET,,,
+Alisphaera gaudii,HET,,,
+Alisphaera gaudii POL,POL,,,
+Alisphaera pinnigera,HET,,,
+Alisphaera unicornis,HET,Alisphaera unicornis POL,,'Supraha2018'
+Alisphaera unicornis POL,POL,Alisphaera unicornis,,'Supraha2018'
+Calcidiscus leptoporus,HET,Calcidiscus leptoporus HOL,,"Kleijne1991, Cortes2000, Renaud2001 Houdan2004, Geisen2002"
+Calcidiscus leptoporus HOL,HOL,Calcidiscus leptoporus,,"Kleijne1991, Cortes2000, Renaud2001 Houdan2004, Geisen2002"
+Calciopappus caudatus,HET,,,
+Calciopappus rigidus,HET,,,
+Calciosolenia brasiliensis,HET,,,
+Calciosolenia murrayi,HET,,,
+Calicasphaera blokii,HOL,,,
+Calicasphaera concava,HOL,,,
+Calicasphaera diconstricta,HOL,,,
+Calyptrolithina divergens,HOL,Syracosphaera halldalii,,Triantaphyllou2004
+Calyptrolithina multipora,HOL,,,
+Calyptrosphaera heimdaliae,HOL,Cyrtosphaera aculeata,,triantaphyllou2015
+Calyptrosphaera sphaeroidea HOL,HOL,Calyptrosphaera sphaeroidea,,Noël2004
+Ceratolithus cristatus CER,CER,Ceratolithus cristatus HET,,"Archontikis2020, Alcober1997, Young1998, Cros2000, Sprengel2000"
+Ceratolithus cristatus HET,HET,Ceratolithus cristatus CER,,"Archontikis2020, Alcober1997, Young1998, Cros2000, Sprengel2000"
+Coccolithus pelagicus,HET,Coccolithus pelagicus HOL,,"Geissen2002, Parke1960"
+Coccolithus pelagicus HOL,HOL,Coccolithus pelagicus,,"Geissen2002, Parke1960"
+Corisphaera gracilis,HOL,Rhabdosphaera xiphos,,"['Supraha2018', 'NannoTax3']"
+Corisphaera tyrrheniensis,HOL,,,
+Cyrtosphaera aculeata,HET,,,
+Discosphaera tubifera,HET,,,
+Emiliania huxleyi,HET,,,
+Florisphaera profunda,HET,,,
+Flosculosphaera calceolariopsis,HOL,,,
+Formonsella pyramidosa,HET,,,
+Gephyrocapsa ericsonii,HET,,,
+Gephyrocapsa muellerae,HET,,,
+Gephyrocapsa oceanica,HET,,,
+Gephyrocapsa ornata,HET,,,
+Gephyrocapsa parvula,HET,,,
+Gladiolithus flabellatus,HET,,,
+Gliscolithus amitakareniae,HOL,,,
+Hayaster perplexus,HET,,,
+Helicosphaera HOL catilliferus type,HOL,Helicosphaera carteri,,"['Cros2002', 'Cros2000']"
+Helicosphaera HOL confusus type,HOL,,,
+Helicosphaera HOL ponticuliferus type,HOL,Helicosphaera wallichii,,Couapel2009
+Helicosphaera carteri,HET,,,
+Helicosphaera hyalina,HET,,,
+Helicosphaera pavimentum,HET,,,
+Helicosphaera pavimentum HOL,HOL,Helicosphaera pavimentum,,
+Helicosphaera wallichii,HET,,,
+Helladosphaera cornifera,HOL,Syracosphaera nodosa,,Cros2000
+Helladosphaera cornifera,HOL,Syracosphaera noroitica,,Young2002
+Helladosphaera pienaarii,HOL,,,
+Helladosphaera vavilovii,HOL,,,
+Holococcolithophora dentata,HOL,,,
+Homozygosphaera spinosa,HOL,,,
+Homozygosphaera triarcha,HOL,,,
+Michaelsarsia adriaticus,HET,,,
+Michaelsarsia elegans,HET,,,
+Oolithotus antillarum,HET,,,
+Oolithotus fragilis,HET,,,
+Ophiaster formosus,HET,,,
+Ophiaster hydroideus,HET,,,
+Palusphaera vandelii,HET,,,
+Pappomonas sp. type 3,HET,,,
+Pappomonas sp. type 5,HET,,,
+Pappomonas type 3,HET,,,
+Pappomonas type 5,HET,,,
+Papposphaera lepida,HET,,,
+Picarola margalefii,HET,,,
+Pontosphaera syracusana,HET,,,
+Poritectolithus maximus,HOL,,,
+Poritectolithus poritectus,HOL,,,
+Reticulofenestra sessilis,HET,,,
+Rhabdosphaera clavigera,HET,,,
+Rhabdosphaera xiphos,HET,,,
+Scyphosphaera apsteinii,HET,,,
+Sphaerocalyptra adenensis,HOL,,,
+Sphaerocalyptra quadridentata,HOL,Algirosphaera robusta,,"'Kamptner1940', 'Triantaphyllou2003', 'Dimiza2008'"
+Sphaerocalyptra quadridentata,HOL,Rhabdosphaera clavigera,,'Cros2002'
+Sphaerocalyptra youngii,HOL,,,
+Syracolithus sp. type A,HOL,,,
+Syracosphaera ampliora,HET,,,
+Syracosphaera anthos,HET,Syracosphaera anthos HOL,,Cros2000
+Syracosphaera anthos HOL,HOL,Syracosphaera anthos,,Cros2000
+Syracosphaera arethusae,HET,Syracosphaera arethusae HOL,,"Cros2000, Triantaphyllou2015, Supraha2016"
+Syracosphaera arethusae HOL,HOL,Syracosphaera arethusae,,"Cros2000, Triantaphyllou2015, Supraha2016"
+Syracosphaera aurisinae,HET,Syracosphaera aurisinae HOL,,Keuter2021
+Syracosphaera aurisinae HOL,HOL,Syracosphaera aurisinae,,Keuter2021
+Syracosphaera bannockii,HET,Syracosphaera bannockii HOL,,"Cros2000, Daniels2014"
+Syracosphaera bannockii HOL,HOL,Syracosphaera bannockii,,"Cros2000, Daniels2014"
+Syracosphaera borealis,HET,,,
+Syracosphaera corolla,HET,,,
+Syracosphaera dilatata,HET,,,
+Syracosphaera epigrosa,HET,,,
+Syracosphaera exigua,HET,,,
+Syracosphaera gaarderae,HET,Syracosphaera gaarderae HOL,,Keuter2019
+Syracosphaera gaarderae HOL,HOL,Syracosphaera gaarderae,,Keuter2019
+Syracosphaera halldalli,HET,,,
+Syracosphaera hastata,HET,,,
+Syracosphaera histrica,HET,Syracosphaera histrica HOL,,"Cros2000, Triantaphyllou2014, Triantaphyllou2015"
+Syracosphaera histrica HOL,HOL,Syracosphaera histrica,,"Cros2000, Triantaphyllou2014, Triantaphyllou2015"
+Syracosphaera isselii HOL,HOL,,,
+Syracosphaera magnaghii HOL,HOL,,,
+Syracosphaera marginiporata,HET,,,
+Syracosphaera mediterranea,HET,Syracosphaera mediterranea HOL gracillima type,,"Cortes2002, Triantaphyllou2015"
+Syracosphaera mediterranea,HET,Syracosphaera mediterranea HOL marisrubri type,,Keuter2021
+Syracosphaera mediterranea,HET,Syracosphaera mediterranea HOL wettsteinii type,,"'Kamptner1940', Cros2000"
+Syracosphaera mediterranea HOL gracillima type,HOL,Syracosphaera mediterranea,,"Cortes2002, Triantaphyllou2015"
+Syracosphaera mediterranea HOL marisrubri type,HOL,Syracosphaera mediterranea,,Keuter2021
+Syracosphaera mediterranea HOL wettsteinii type,HOL,Syracosphaera mediterranea,,"'Kamptner1940', Cros2000"
+Syracosphaera molischii,HET,Syracosphaera molischii HOL,,"Cros2000, Triantaphyllou2016, Skejic2018"
+Syracosphaera molischii HOL,HOL,Syracosphaera molischii,,"Cros2000, Triantaphyllou2016, Skejic2018"
+Syracosphaera nana HOL,HOL,Syracosphaera nana,,"['Kleijne1991', 'Cros2000']"
+Syracosphaera neapolitana,HET,,,
+Syracosphaera nodosa,HET,,,
+Syracosphaera noroitica,HET,,,
+Syracosphaera orbiculus,HET,,,
+Syracosphaera ossa,HET,,,
+Syracosphaera periperforata HOL,HOL,Syracosphaera periperforata,,Archontikis2020
+Syracosphaera prolongata,HET,,,
+Syracosphaera protrudens,HET,,,
+Syracosphaera pulchra,HET,Syracosphaera pulchra HOL galea type,,Keuter2021
+Syracosphaera pulchra,HET,Syracosphaera pulchra HOL oblonga type,,"Cros2000, Geissen2002"
+Syracosphaera pulchra,HET,Syracosphaera pulchra HOL pirus type,,"lecal1961, Geissen2002, heimdal2000"
+Syracosphaera pulchra HOL galea type,HOL,Syracosphaera pulchra,,Keuter2021
+Syracosphaera pulchra HOL oblonga type,HOL,Syracosphaera pulchra,,"Cros2000, Geissen2002"
+Syracosphaera pulchra HOL pirus type,HOL,Syracosphaera pulchra,,"lecal1961, Geissen2002, heimdal2000"
+Syracosphaera reniformis,HET,,,
+Syracosphaera rotula,HET,,,
+Syracosphaera squamosa,HET,,,
+Syracosphaera strigilis,HET,Syracosphaera strigilis HOL,,"Supraha2015, Supraha2018"
+Syracosphaera strigilis HOL,HOL,Syracosphaera strigilis,,"Supraha2015, Supraha2018"
+Syracosphaera tumularis,HET,,,
+Turrilithus latericioides,HET,,,
+Umbellosphaera irregularis,HET,,,
+Umbellosphaera tenuis,HET,,,
+Umbilicosphaera anulus,HET,,,
+Umbilicosphaera foliosa,HET,,,
+Umbilicosphaera hulburtiana,HET,,,
+Umbilicosphaera sibogae,HET,,,
+Wigwamma antarctica,HET,,,
+Zygosphaera amoena,HOL,,,
+Zygosphaera marsilii,HOL,,,
