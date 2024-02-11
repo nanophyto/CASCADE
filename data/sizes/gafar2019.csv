@@ -1,9 +1,9 @@
-species,mean,sd,method,reference
-Calcidiscus leptoporus,1797.7703268950424,201.06677967697988,light microscopy,gafar2019
-Chrysotila carterae,,,light microscopy,gafar2019
-Cocccolthus pelagicus,2148.257572496954,883.481828632658,light microscopy,gafar2019
-Emiliania huxleyi,58.01335540473766,5.0114864867614894,light microscopy,gafar2019
-Gephyrocapsa oceanica,,,light microscopy,gafar2019
-Helicosphaera carteri,,,light microscopy,gafar2019
-Syracosphaera apsteinii,2686.9669256884495,1149.2994798291536,light microscopy,gafar2019
-Syracosphaera pulchra,,,light microscopy,gafar2019
+species,mean,sd,method,reference,n
+Calcidiscus leptoporus,1801.5,199.0,light microscopy,gafar2019,3
+Chrysotila carterae,284.0,,light microscopy,gafar2019,3
+Coccolithus pelagicus,2145.0,891.0,light microscopy,gafar2019,3
+Emiliania huxleyi,58.0,5.0,light microscopy,gafar2019,3
+Gephyrocapsa oceanica,119.0,,light microscopy,gafar2019,3
+Helicosphaera carteri,1863.0,,light microscopy,gafar2019,3
+Scyphosphaera apsteinii,2678.0,1145.0,light microscopy,gafar2019,3
+Syracosphaera pulchra,511.0,,light microscopy,gafar2019,3

@@ -1,3 +1,2 @@
-species,sd,mean,n,reference,method
-Coccolithus braarudii,2389.6,4443.3,330,sheward2014,lab morphometrics
-Coccolithus pelagicus,782.2,1728.6,180,sheward2014,lab morphometrics
+reference,method,species,mean,sd,n
+sheward2014,lab morphometrics,Coccolithus pelagicus,418.2,283.8,510

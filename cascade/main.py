@@ -3,7 +3,7 @@ import numpy as np
 import statsmodels.api as sm
 import seaborn as sns
 import matplotlib.pyplot as plt
-import warnings
+import glob, os, warnings
 from joblib import parallel_backend, Parallel, delayed
 from statsmodels.graphics.api import abline_plot
 from sklearn.metrics import r2_score, mean_squared_error
@@ -11,6 +11,9 @@ from scipy import stats
 from statsmodels.tools.tools import add_constant 
 plt.rcParams.update({"font.size": 14})
 from functions import rename_synonyms, bayes_bootstrap
+from yaml import load, Loader
+from collections import namedtuple
+
 
 
 class regression_simulation:
@@ -881,4 +884,161 @@ class pipeline:
             t = self.resample_measurements(species)
             t.to_csv(export_path, index=False)
 
+class merge_abundances():
 
+    def __init__(self, import_path, export_path):
+        self.export_path = export_path
+        all_files = glob.glob(os.path.join(import_path, "*.csv"))
+
+        d = pd.concat((pd.read_csv(f) for f in all_files), ignore_index=True)
+
+        d = d.replace({0:pd.NA})
+
+        d.reset_index(drop=False, inplace=True)
+
+        d['Month'] = d['Month'].astype('int64')
+        d['Year'] = d['Year'].astype('int64')
+
+        d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'], inplace=True)
+
+        d.rename(columns=lambda x: x.strip(), inplace=True)
+
+        with open('/home/phyto/CoccoData/data/classification/synonyms.yml', 'r') as f:
+            groupings = load(f, Loader=Loader)
+
+        species = d.reset_index().drop(columns=['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).columns
+
+        dict = {species:k
+            for k, v in groupings.items()
+            for species in v}
+        try:
+            d = d.drop(columns=['Phaeocystis pouchetii'])
+        except:
+            None
+        try:
+            d = d.drop(columns=['Thoracosphaera heimii'])
+        except:
+            None
+
+
+        d = d[d.sum(axis=1)>0]
+
+
+        d = (d.rename(columns=dict)
+            .groupby(level=0, axis=1, dropna=False)).sum( min_count=1).reset_index()
+
+        d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).agg('mean')
+
+        d = d.drop(columns=['index'])
+
+        #check if final species are in species library
+        species_library = {v: k for k, v in dict.items()}
+
+        species_observed = d.columns
+
+        if (set(species_observed).issubset(species_library)):
+            print("all species are defined")
+        else:
+            raise ValueError("undefined species:" + str(set(species_observed).difference(species_library)))
+
+        #drop any columns that contain "undefined"
+        d = d[d.columns.drop(list(d.filter(regex='undefined')))]
+
+        #drop any rows that sum to zero:
+        d = d[d.sum(axis=1)>0]
+        try: #make new dir if needed
+            os.makedirs(self.export_path)
+        except:
+            None
+
+
+        counts =pd.DataFrame({'count': np.count_nonzero(d.fillna(0), axis=0), 'species': d.columns})
+        counts = counts[counts['species']!="Reticulofenestra sessilis"]
+        filter = counts['species'].str.contains('undefined')
+        counts = counts[~filter]
+        counts = counts[counts['count']>0]
+
+        non_zero_spp = counts[counts['count']>0]['species']
+
+        d = d[non_zero_spp]
+
+        self.counts = counts
+        self.abundant = counts[counts['count']>=20]
+        self.rare = counts[counts['count']<20]
+
+        self.non_zero_spp = non_zero_spp
+
+        self.d = d
+
+
+    def export_obs_counts(self): 
+        self.counts.sort_values(by=["count"], ascending=False).to_csv(self.export_path + "counts.csv", index=False )
+        self.abundant.sort_values(by=["count"], ascending=False).to_csv(self.export_path + "abundant_species.csv", index=False )
+        self.rare.sort_values(by=["count"], ascending=False).to_csv(self.export_path + "rare_species.csv", index=False )
+
+
+    def export_ungridded_abundances(self):
+        df = self.d #[self.non_zero_spp]
+    
+        df.to_csv(self.export_path +"ungridded_observations.csv")
+        print("ungridded abundances exported to: " + self.export_path +"ungridded_observations.csv")
+
+    def gridding(self):
+        d = self.d[self.abundant['species']]
+        d = d.reset_index()
+        depth_bins = np.linspace(-1, 300, 62).astype(np.int64) 
+        depth_labels = np.linspace(0, 300, 61).astype(np.int64) 
+        d = d[d["Depth"] >= 0]
+        d = d[d["Depth"] <= 301]
+
+        d['Depth'] = pd.cut(d['Depth'], bins=depth_bins, labels=depth_labels).astype(np.int64) 
+
+        lat_bins = np.linspace(-90, 90, 181)
+        lat_labels = np.linspace(-89.5, 89.5, 180)
+        d['Latitude'] = pd.cut(d['Latitude'].astype(np.float64), bins=lat_bins, labels=lat_labels).astype(np.float64) 
+
+        lon_bins = np.linspace(-180, 180, 361)
+        lon_labels = np.linspace(-179.5, 179.5, 360)
+        d['Longitude'] = pd.cut(d['Longitude'].astype(np.float64), bins=lon_bins, labels=lon_labels).astype(np.float64) 
+
+        species = d.drop(columns=['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).columns
+
+        d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Month', 'Year'])[species].agg('mean').reset_index()
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year'])
+    
+        d = d.reset_index()
+
+        return(d)
+
+
+    def export_gridded_abundances(self):
+        d = self.gridding()
+
+        d.to_csv(self.export_path +"gridded_observations.csv")
+        
+        print("gridded abundances exported to: " + self.export_path +"gridded_observations.csv")
+
+
+
+    def print_stats(self):
+        df = self.d[self.non_zero_spp]
+        print("concatenated abundances: " +str(len(df)))
+
+        t = pd.melt(df)
+        t = t[t['value']>0]
+
+        print("concatenated observations: " +str(len(t)))
+
+
+
+        d = self.gridding()
+        print("gridded abundances: " +str(len(d)))
+
+
+        d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year'])
+        t = pd.melt(d)
+        t = t[t['value']>0]
+
+        print("gridded observations: " +str(len(t)))
+
+        

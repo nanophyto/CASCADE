@@ -1,49 +1,44 @@
-species,mean,sd,method,reference
-Florisphaera profunda,50.1,37.6,light microscopy,young2024
-Umbellosphaera tenuis,93.7,52.0,light microscopy,young2024
-Oolithotus antillarum,88.8,44.7,light microscopy,young2024
-Rhabdosphaera stylifera,86.8,42.9,light microscopy,young2024
-Helicosphaera pavimentum,394.8,159.3,light microscopy,young2024
-Discosphaera tubifera,61.6,24.8,light microscopy,young2024
-Algirosphaera robusta,227.0,175.0,light microscopy,young2024
-Helicosphaera carteri,1092.4,403.3,light microscopy,young2024
-Syracosphaera mediterranea HOL wettsteinii type,1159.6,713.7,light microscopy,young2024
-Umbellosphaera irregularis,85.1,37.2,light microscopy,young2024
-Acanthoica,113.3,90.9,light microscopy,young2024
-Calcidiscus sp.,610.8,234.4,light microscopy,young2024
-Alisphaera sp.,242.3,105.5,light microscopy,young2024
-Umbilicosphaera hulburtiana,206.9,88.7,light microscopy,young2024
-Syracosphaera pulchra,1181.0,420.0,light microscopy,young2024
-Gladiolithus flabellatus,30.6,16.6,light microscopy,young2024
-Thoracosphaera heimii,514.0,180.2,light microscopy,young2024
-Gephyrocapsa oceanica,73.8,49.8,light microscopy,young2024
-Syracosphaera anthos HOL,204.8,91.9,light microscopy,young2024
-Syracosphaera mediterranea HET,852.0,288.1,light microscopy,young2024
-Michaelsarsia elegans,276.5,152.6,light microscopy,young2024
-Oolithotus fragilis,712.2,179.6,light microscopy,young2024
-Syracosphaera anthos,236.2,95.6,light microscopy,young2024
-Rhabdosphaera clavigera,467.4,160.0,light microscopy,young2024
-Umbilicosphaera foliosa,172.3,50.5,light microscopy,young2024
-Syracosphaera mediterranea,1380.0,473.5,light microscopy,young2024
-Coccolithus pelagicus,408.2,163.4,light microscopy,young2024
-Gephyrocapsa muellerae,35.8,11.0,light microscopy,young2024
-Braarudosphaera bigelowii,478.4,123.5,light microscopy,young2024
-Ceratolithus vidalii HET,76.5,19.9,light microscopy,young2024
-Heleicosphaera HOL catilliferus type,724.4,101.7,light microscopy,young2024
-Algirosphaera meteora,3122.6,139.2,light microscopy,young2024
-Calciosolenia murrayi,190.6,102.5,light microscopy,young2024
-Scyphosphaera apsteinii,3048.7,863.6,light microscopy,young2024
-Calcidiscus quadriperforatus HOL,655.7,0.0,light microscopy,young2024
-Calcidiscus quardiperforatus HOL,407.7,0.0,light microscopy,young2024
-Calyptrolithina multipora,708.4,0.0,light microscopy,young2024
-Calyptrolithophora multipora,796.3,0.0,light microscopy,young2024
-Ceratolithus cristatus HET,580.5,0.0,light microscopy,young2024
-Hayaster perplexa,6370.6,0.0,light microscopy,young2024
-Michaelsarsia adriatica,585.3,0.0,light microscopy,young2024
-Pontosphaera japonica,2394.8,0.0,light microscopy,young2024
-Pontosphaera sp,2687.6,0.0,light microscopy,young2024
-Syracosphaera lamina,1445.3,0.0,light microscopy,young2024
-Syracosphaera marginiporata,89.2,0.0,light microscopy,young2024
-Syracosphaera pulchra HOL oblonga type,1605.4,0.0,light microscopy,young2024
-Syracosphaera tumularis,2185.1,0.0,light microscopy,young2024
-Umbilicosphaera sibogae,6370.6,0.0,light microscopy,young2024
+species,mean,sd,n,reference,method
+Algirosphaera meteora,3122.6,139.2,2.0,young2024,light microscopy
+Algirosphaera robusta,227.0,175.0,41.0,young2024,light microscopy
+Braarudosphaera bigelowii,478.4,123.5,3.0,young2024,light microscopy
+Calcidiscus leptoporus,531.7,0.0,1.0,young2024,light microscopy
+Calciosolenia murrayi,190.6,102.5,2.0,young2024,light microscopy
+Calyptrolithina multipora,752.3499999999999,0.0,1.0,young2024,light microscopy
+Ceratolithus cristatus HET,580.5,0.0,1.0,young2024,light microscopy
+Ceratolithus vidalii HET,76.5,19.9,3.0,young2024,light microscopy
+Coccolithus pelagicus,408.2,163.4,6.0,young2024,light microscopy
+Discosphaera tubifera,61.6,24.8,47.0,young2024,light microscopy
+Florisphaera profunda,50.1,37.6,135.0,young2024,light microscopy
+Gephyrocapsa muellerae,35.8,11.0,4.0,young2024,light microscopy
+Gephyrocapsa oceanica,73.8,49.8,16.0,young2024,light microscopy
+Gladiolithus flabellatus,30.6,16.6,18.0,young2024,light microscopy
+Hayaster perplexus,6370.6,0.0,1.0,young2024,light microscopy
+Helicosphaera HOL type,724.4,101.7,3.0,young2024,light microscopy
+Helicosphaera carteri,1092.4,403.3,35.0,young2024,light microscopy
+Helicosphaera pavimentum,394.8,159.3,49.0,young2024,light microscopy
+Michaelsarsia adriaticus,585.3,0.0,1.0,young2024,light microscopy
+Michaelsarsia elegans,276.5,152.6,11.0,young2024,light microscopy
+Oolithotus antillarum,88.8,44.7,60.0,young2024,light microscopy
+Oolithotus fragilis,712.2,179.6,11.0,young2024,light microscopy
+Pontosphaera japonica,2394.8,0.0,1.0,young2024,light microscopy
+Rhabdosphaera clavigera,277.09999999999997,101.45,29.5,young2024,light microscopy
+Scyphosphaera apsteinii,3048.7,863.6,2.0,young2024,light microscopy
+Syracosphaera anthos,236.2,95.6,10.0,young2024,light microscopy
+Syracosphaera anthos HOL,204.8,91.9,15.0,young2024,light microscopy
+Syracosphaera aurisinae,1445.3,0.0,1.0,young2024,light microscopy
+Syracosphaera marginiporata,89.2,0.0,1.0,young2024,light microscopy
+Syracosphaera mediterranea,1116.0,380.8,9.5,young2024,light microscopy
+Syracosphaera mediterranea HOL,1159.6,713.7,35.0,young2024,light microscopy
+Syracosphaera pulchra,1181.0,420.0,20.0,young2024,light microscopy
+Syracosphaera pulchra HOL,1605.4,0.0,1.0,young2024,light microscopy
+Syracosphaera tumularis,2185.1,0.0,1.0,young2024,light microscopy
+Umbellosphaera irregularis,85.1,37.2,34.0,young2024,light microscopy
+Umbellosphaera tenuis,93.7,52.0,93.0,young2024,light microscopy
+Umbilicosphaera foliosa,172.3,50.5,9.0,young2024,light microscopy
+Umbilicosphaera hulburtiana,206.9,88.7,21.0,young2024,light microscopy
+Umbilicosphaera sibogae,6370.6,0.0,1.0,young2024,light microscopy
+undefined Acanthoica,113.3,90.9,33.0,young2024,light microscopy
+undefined Alisphaera,242.3,105.5,27.0,young2024,light microscopy
+undefined Calcidiscus,610.8,234.4,29.0,young2024,light microscopy
+undefined Pontosphaera,2687.6,0.0,1.0,young2024,light microscopy

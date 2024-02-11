@@ -1,12 +1,20 @@
-species,mean,sd,method,reference
-Ophiaster formosus,51.9,25.3,literature morphometrics,devries2024
-Pappomonas type 5,144.2,16.5,literature morphometrics,devries2024
-Syracosphaera aurisinae,944.8312759028591,152.14196316775033,literature morphometrics,devries2024
-Calyptrosphaera sphaeroidea HOL,346.6,186.9,literature morphometrics,devries2024
-Syracosphaera reniformis,59.8,18.8,literature morphometrics,devries2024
-Syracosphaera squamosa,11.7,2.5,literature morphometrics,devries2024
-Wigwamma antarctica,65.44984694978736,,literature morphometrics,devries2024
-Helladosphaera pienaarii,189.4,99.7,literature morphometrics,devries2024
-Ceratolithus cristatus,1165.9,809.4,literature morphometrics,devries2024
-Ophiaster hydroideus,44.6,3.0,literature morphometrics,devries2024
-Zygosphaera marsilii,174.6,37.6,literature morphometrics,devries2024
+species,mean,sd,method,reference,n
+Alisphaera gaudii POL,133.40772100020658,0.0,literature morphometrics,devries2024,1
+Calciopappus caudatus,23.245953786540262,0.0,literature morphometrics,devries2024,1
+Calicasphaera blokii,33.510321638291124,0.0,literature morphometrics,devries2024,1
+Calicasphaera concava,20.579526276115534,0.0,literature morphometrics,devries2024,1
+Calyptrosphaera sphaeroidea HOL,186.74319070119137,0.0,literature morphometrics,devries2024,1
+Ceratolithus cristatus HET,1147.2769915104475,0.0,literature morphometrics,devries2024,1
+Helicosphaera HOL type,464.34113015324925,0.0,literature morphometrics,devries2024,1
+Ophiaster formosus,51.297452611961994,0.0,literature morphometrics,devries2024,1
+Ophiaster hydroideus,44.74027352250442,0.0,literature morphometrics,devries2024,1
+Pappomonas sp. type 5,48.42336351873221,0.0,literature morphometrics,devries2024,1
+Sphaerocalyptra adenensis,69.11514884376759,0.0,literature morphometrics,devries2024,1
+Syracosphaera aurisinae,948.5557088631483,0.0,literature morphometrics,devries2024,1
+Syracosphaera borealis,81.92086828688424,0.0,literature morphometrics,devries2024,1
+Syracosphaera isselii HOL,169.5908135726393,0.0,literature morphometrics,devries2024,1
+Syracosphaera reniformis,59.287319302356906,0.0,literature morphometrics,devries2024,1
+Syracosphaera squamosa,28.80308502505283,0.0,literature morphometrics,devries2024,1
+Syracosphaera strigilis,91.54488702485105,0.0,literature morphometrics,devries2024,1
+Wigwamma antarctica,65.44984694978736,,literature morphometrics,devries2024,1
+Zygosphaera marsilii,175.39533960998614,0.0,literature morphometrics,devries2024,1

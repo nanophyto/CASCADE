@@ -7,10 +7,13 @@ from joblib import Parallel, delayed
 np.random.seed(2)
 import math
 
-def rename_synonyms(d, verbose=0, index='species', remove_duplicate=True, take_sum = False, check_synonyms = True):
+def rename_synonyms(d, classification_path='../data/classification/synonyms.yml',
+                    verbose=0, index='species', 
+                    remove_duplicate=True, take_sum = False, 
+                    check_synonyms = True):
     d['species'] = d['species'].str.strip()
 
-    with open('/home/phyto/CoccoData/data/classification/synonyms.yml', 'r') as f:
+    with open(classification_path, 'r') as f:
         groupings = load(f, Loader=Loader)
 
     synonym_dict = {species:k

@@ -1,4 +1,3 @@
-species,sd,mean,n,reference,method
-Calcidiscus leptoporus,453.3,1299.9,1020,sheward2016,lab morphometrics
-Calcidiscus quadriperforatus,1065,3068.8,840,sheward2016,lab morphometrics
-Helicosphaera carteri,489.8,1552.7,990,sheward2016,lab morphometrics
+reference,method,species,mean,sd,n
+sheward2016,lab morphometrics,Calcidiscus leptoporus,251.9,142.0,1860
+sheward2016,lab morphometrics,Helicosphaera carteri,186.3,58.8,990

@@ -18,6 +18,9 @@ from pylab import *
 from matplotlib.backends.backend_pdf import PdfPages
 from main import library
 from functions import rename_synonyms, bayes_bootstrap
+from  matplotlib.ticker import FuncFormatter
+import matplotlib.gridspec as gridspec
+
 
 class LM_SEM_size:
     def __init__(self, d): 
@@ -136,60 +139,45 @@ class multipage_plots():
 
     def latlon_plots(self, species, ax=None, title=None, log_scale=False, add_colorbar=False):
 
-        #ax = plt.axes(projection=ccrs.PlateCarree())
         d = self.ds[self.ds[species]>0]
 
         d = d.groupby(['Latitude', 'Longitude'])[species].agg('mean').reset_index()
 
         ax.coastlines()
-        ax.add_feature(cart.feature.LAND, zorder=1, edgecolor='k', facecolor="gray")
-        ax.gridlines(draw_labels=True, zorder=1)
-        
+        ax.add_feature(cart.feature.LAND, zorder=-1,facecolor="gray")
+        ax.gridlines(draw_labels=True, zorder=-1)
+        ax.set_facecolor('grey')
 
         grid = sns.scatterplot(x=d['Longitude'], y=d['Latitude'], ax=ax, hue=np.log(d[species]), 
-                               palette='viridis', edgecolor = "none") # marker="$\circ$",  ec="face", alpha=0.5
+                               palette='viridis', edgecolor = "none", s=100, alpha=1, zorder=10) # marker="$\circ$",  ec="face", alpha=0.5
        
-        #sm = plt.cm.ScalarMappable(cmap="viridis")
         ax.get_legend().remove()    
-        #ax.figure.colorbar(sm)
-
-        # plt.scatter(, 
-        #             s=100,
-        #             alpha=0.75,
-        #             transform=ccrs.PlateCarree()) ## Important
-
         ax.set_ylim(-90, 90)
         ax.set_xlim(-180, 180)
 
-
-        #cax = fig.add_axes([ax.get_position().x1+0.01,ax.get_position().y0,0.02,ax.get_position().height])#
         if title==None:
             ax.set_title(species)
         else:
             ax.set_title(title)
 
-    def depthtime_plots(self, species, ax=None, title=None, log_scale=False, add_colorbar=False):
-
-        #ax = plt.axes(projection=ccrs.PlateCarree())
-        
+    def depthtime_plots(self, species, ax=None, title=None, log_scale=False, add_colorbar=False):        
+        sns.set_style("darkgrid", {"axes.facecolor": ".9"})
         d = self.ds[self.ds[species]>0]
-
         d = d.groupby(['Depth', 'months since winter solstice'])[species].agg('mean').reset_index()
 
-
-        grid = sns.scatterplot(x=d['months since winter solstice'], y=d['Depth'], palette='viridis', 
-                               hue=np.log10(d[species]), ax=ax, edgecolor = "none") #marker="$\circ$",  ec="face", 
+        grid = sns.scatterplot(x=d['months since winter solstice'].astype(int), 
+                               y=d['Depth'], palette='viridis', 
+                               hue=np.log10(d[species]), ax=ax, 
+                               edgecolor = "none") 
         sm = plt.cm.ScalarMappable(cmap="viridis")
+
         ax.get_legend().remove()
-        
-    
         ax.figure.colorbar(sm)
-
-
+        ax.set_facecolor('grey')
         ax.set_ylim(300, 0)
         ax.set_xlim(1, 12)
+        ax.xaxis.set_major_formatter(FuncFormatter(lambda x, _: int(x)))
 
-        #cax = fig.add_axes([ax.get_position().x1+0.01,ax.get_position().y0,0.02,ax.get_position().height])#
         if title==None:
             ax.set_title(species)
         else:
@@ -197,6 +185,9 @@ class multipage_plots():
 
 
     def sub_plots_ax(self, species):
+        gs = gridspec.GridSpec(6,3, width_ratios=[1,2,2], 
+                               height_ratios=[1, 1, 1, 1, 1, 1])
+
         cols = 3
         rows = len(species)
         plt.figure(figsize=(18, 28))
@@ -211,28 +202,25 @@ class multipage_plots():
             self.depthtime_plots(ax=ax3, species=species[j])
 
             try:
-                image = plt.imread("/home/phyto/CoccoData/data/sem/" + species[j] + ".jpeg")
+                image = plt.imread("/home/phyto/CASCADE/data/sem/" + species[j] + ".jpeg")
             except:
-                image = plt.imread("/home/phyto/SEM_eva/JRYSEM-287-07p.jpeg")
+                None
             ax1.imshow(image)  
             ax1.set_axis_off()
             ax2.axes.get_yaxis().set_visible(False)
 
-
             species_title =  str(species[j]) 
             ax1.title.set_text(species_title)
 
-            ax2_title = r'\textbf{Diameter (um)'
+            ax2_title = 'Latitude vs Longitude'
             ax2.title.set_text(ax2_title )
             
-            ax3_title = r'\textbf{Particulate Carbon (pg C)}'
+            ax3_title = 'Time vs Depth'
             ax3.title.set_text(ax3_title)
             
-
-        plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=None, hspace=1)
-    
-
-
+        plt.subplots_adjust(left=None, bottom=None, right=None, 
+                            top=None, wspace=0.5, hspace=1)
+        
     def export_pdf(self):
 
         n = self.n
@@ -242,7 +230,7 @@ class multipage_plots():
             for i in range(len(final)):
                 print(i)
                 self.sub_plots_ax(final[i])
-                pdf.savefig()
+                pdf.savefig(pad_inches=0.02, bbox_inches="tight")
                 plt.close()
 
         print("finished exporting pdf to: " + self.out_path)

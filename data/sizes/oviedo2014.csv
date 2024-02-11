@@ -1,2 +1,2 @@
-species,mean,sd,method,reference
-Emiliania huxleyi,47.9995536554379,0.7986569452155627,light microscopy,oviedo2014
+species,mean,sd,method,reference,n
+Emiliania huxleyi,48.0,0.7999999999999999,coulter counter,oviedo2014,3

@@ -1,94 +1,71 @@
-species,mean,sd,method,reference
-Acanthoica acanthifera,149.9,,AMT morphometrics,sheward2024
-Acanthoica acanthos,,,AMT morphometrics,sheward2024
-Acanthoica quattrospina,135.1,49.8,AMT morphometrics,sheward2024
-Algirosphaera robusta,28.9,7.2,AMT morphometrics,sheward2024
-Alisphaera POL phase,,,AMT morphometrics,sheward2024
-Alisphaera POL type,652.7,0.0,AMT morphometrics,sheward2024
-Alisphaera capulata,64.9,0.0,AMT morphometrics,sheward2024
-Alisphaera sp.,184.7,67.0,AMT morphometrics,sheward2024
-Calcidiscus leptoporus,853.7,267.3,AMT morphometrics,sheward2024
-Calciosolenia corsellii,830.7,,AMT morphometrics,sheward2024
-Calciosolenia murrayi,305.1,,AMT morphometrics,sheward2024
-Calytrolithina multipora,1223.6,0.0,AMT morphometrics,sheward2024
-Ceratolithus cristatus CER,82.2,0.0,AMT morphometrics,sheward2024
-Ceratolithus nishidae CER,,,AMT morphometrics,sheward2024
-Corisphaera gracilia,,,AMT morphometrics,sheward2024
-Corisphaera gracilis,146.2,56.1,AMT morphometrics,sheward2024
-Corisphaera tyrrheniensis,113.1,36.9,AMT morphometrics,sheward2024
-Corisphaera tyrrheniensis HOL,,,AMT morphometrics,sheward2024
-Corisphaera tyrrhensis HOL,,,AMT morphometrics,sheward2024
-Cyrtosphaera aculeata,281.7,,AMT morphometrics,sheward2024
-Discosphaera tubifera,204.0,424.6,AMT morphometrics,sheward2024
-Emiliania huxleyi,86.1,109.7,AMT morphometrics,sheward2024
-Florisphaera profunda,77.1,11.4,AMT morphometrics,sheward2024
-Gephyrocapsa ericosonii,9.1,8.2,AMT morphometrics,sheward2024
-Gephyrocapsa ericsonii,6.0,2.9,AMT morphometrics,sheward2024
-Gephyrocapsa ornata,7.9,,AMT morphometrics,sheward2024
-Gephyrocapsa sp.,13.4,10.6,AMT morphometrics,sheward2024
-Helicosphaera HOL catilliferus type,317.8,199.5,AMT morphometrics,sheward2024
-Helicosphaera carteri,704.5,,AMT morphometrics,sheward2024
-Helicosphaera hyalina,785.3,271.1,AMT morphometrics,sheward2024
-Helicosphaera parimentum,369.0,,AMT morphometrics,sheward2024
-Helicosphera wallichi,742.4,,AMT morphometrics,sheward2024
-Helladosphaera cornifera,110.6,73.2,AMT morphometrics,sheward2024
-Helladosphaera cornifera HOL,196.2,219.4,AMT morphometrics,sheward2024
-Helladosphaera sp.,195.1,,AMT morphometrics,sheward2024
-Homozygosphaera sp.,,,AMT morphometrics,sheward2024
-Homozygosphaera spinosa,,,AMT morphometrics,sheward2024
-Michaelsaria sp.,64.4,27.2,AMT morphometrics,sheward2024
-Michaelsarsia elegans,1738.3,,AMT morphometrics,sheward2024
-Palusphaera probertii,,,AMT morphometrics,sheward2024
-Palusphaera vandelii,,,AMT morphometrics,sheward2024
-Poricalptra sp.,,,AMT morphometrics,sheward2024
-Poritectolithus maximus,,,AMT morphometrics,sheward2024
-Rhabdosphaera clavigera,81.8,48.9,AMT morphometrics,sheward2024
-Rhabdosphaera xiphos,452.0,140.2,AMT morphometrics,sheward2024
-Syracosphaera HOL,32.2,11.3,AMT morphometrics,sheward2024
-Syracosphaera ampilora,313.5,224.0,AMT morphometrics,sheward2024
-Syracosphaera anthos,332.6,194.4,AMT morphometrics,sheward2024
-Syracosphaera anthos HOL,1250.6,464.6,AMT morphometrics,sheward2024
-Syracosphaera arethusae HOL,454.9,,AMT morphometrics,sheward2024
-Syracosphaera aurisinae HOL,284.2,103.6,AMT morphometrics,sheward2024
-Syracosphaera bannockii,467.6,295.3,AMT morphometrics,sheward2024
-Syracosphaera bannockii HOL,64.5,14.0,AMT morphometrics,sheward2024
-Syracosphaera castellata,613.7,693.1,AMT morphometrics,sheward2024
-Syracosphaera delicata,119.6,110.7,AMT morphometrics,sheward2024
-Syracosphaera halldalli,207.1,218.4,AMT morphometrics,sheward2024
-Syracosphaera hastata,120.5,53.7,AMT morphometrics,sheward2024
-Syracosphaera histrica HOL,,,AMT morphometrics,sheward2024
-Syracosphaera mediterranea,452.3,,AMT morphometrics,sheward2024
-Syracosphaera mediterranea HOL wettsteinii type,260.5,5.4,AMT morphometrics,sheward2024
-Syracosphaera molischii,130.2,98.6,AMT morphometrics,sheward2024
-Syracosphaera molischii HOL,38.0,,AMT morphometrics,sheward2024
-Syracosphaera neapolitana,151.8,88.1,AMT morphometrics,sheward2024
-Syracosphaera nodosa,266.6,241.5,AMT morphometrics,sheward2024
-Syracosphaera noroitica,209.1,263.4,AMT morphometrics,sheward2024
-Syracosphaera norotica,91.4,84.2,AMT morphometrics,sheward2024
-Syracosphaera ossa,139.1,85.0,AMT morphometrics,sheward2024
-Syracosphaera prolongata,933.6,2075.5,AMT morphometrics,sheward2024
-Syracosphaera puchra,936.8,0.0,AMT morphometrics,sheward2024
-Syracosphaera pulchra,2033.7,,AMT morphometrics,sheward2024
-Syracosphaera pulchra HOL oblonga type,2821.0,85.1,AMT morphometrics,sheward2024
-Syracosphaera pulchra HOL oblongata type,2705.0,,AMT morphometrics,sheward2024
-Syracosphaera pulchra HOL pirus type,2012.9,608.2,AMT morphometrics,sheward2024
-Syracosphaera pulchra oblongata,1354.9,,AMT morphometrics,sheward2024
-Syracosphaera rotula,101.7,,AMT morphometrics,sheward2024
-Syracosphaera strigilis HOL,114.8,,AMT morphometrics,sheward2024
-Umbellosphaera irregularis,139.7,137.6,AMT morphometrics,sheward2024
-Umbellosphaera sp.,94.9,,AMT morphometrics,sheward2024
-Umbellosphaera tenuis,155.1,101.5,AMT morphometrics,sheward2024
-Umbilicosphaera hulburtiana,361.6,137.7,AMT morphometrics,sheward2024
-Umbilicosphaera sibogae,2326.1,1233.4,AMT morphometrics,sheward2024
-Unknown Unknown,10.6,3.8,AMT morphometrics,sheward2024
-Unknown sp.,379.7,426.9,AMT morphometrics,sheward2024
-Unknown unknown,,,AMT morphometrics,sheward2024
-Zygosphaera amoena,50.4,,AMT morphometrics,sheward2024
-undefined Acanthoica,137.3,77.8,AMT morphometrics,sheward2024
-undefined Calciosolenia,400.9,450.2,AMT morphometrics,sheward2024
-undefined Corisphaera,300.3,390.8,AMT morphometrics,sheward2024
-undefined Ophiaster,178.2,141.4,AMT morphometrics,sheward2024
-undefined Palusphaera,497.4,0.0,AMT morphometrics,sheward2024
-undefined Papposphaera,,,AMT morphometrics,sheward2024
-undefined Syracosphaera,128.5,184.6,AMT morphometrics,sheward2024
-undefined Syracosphaera lamina type,169.7,,AMT morphometrics,sheward2024
+species,mean,sd,method,n,reference
+Acanthoica acanthifera,149.9,,AMT morphometrics,1,sheward2024
+Acanthoica quattrospina,135.1,49.8,AMT morphometrics,11,sheward2024
+Algirosphaera robusta,28.9,7.2,AMT morphometrics,4,sheward2024
+Alisphaera capulata,64.9,0.0,AMT morphometrics,2,sheward2024
+Calcidiscus leptoporus,853.7,267.3,AMT morphometrics,10,sheward2024
+Calciosolenia corselli,830.7,,AMT morphometrics,1,sheward2024
+Calciosolenia murrayi,305.1,,AMT morphometrics,1,sheward2024
+Calyptrolithina multipora,1223.6,0.0,AMT morphometrics,2,sheward2024
+Ceratolithus cristatus CER,82.2,0.0,AMT morphometrics,2,sheward2024
+Corisphaera gracilis,146.2,56.1,AMT morphometrics,9,sheward2024
+Corisphaera tyrrheniensis,113.1,36.9,AMT morphometrics,10,sheward2024
+Cyrtosphaera aculeata,281.7,,AMT morphometrics,1,sheward2024
+Discosphaera tubifera,204.0,424.6,AMT morphometrics,20,sheward2024
+Emiliania huxleyi,86.1,109.7,AMT morphometrics,269,sheward2024
+Florisphaera profunda,77.1,11.4,AMT morphometrics,4,sheward2024
+Gephyrocapsa ericsonii,6.4,3.8,AMT morphometrics,22,sheward2024
+Gephyrocapsa ornata,7.9,,AMT morphometrics,1,sheward2024
+Helicosphaera HOL type,317.8,199.5,AMT morphometrics,3,sheward2024
+Helicosphaera carteri,704.5,,AMT morphometrics,1,sheward2024
+Helicosphaera hyalina,785.3,271.1,AMT morphometrics,2,sheward2024
+Helicosphaera pavimentum,369.0,,AMT morphometrics,1,sheward2024
+Helicosphaera wallichii,742.4,,AMT morphometrics,1,sheward2024
+Helladosphaera cornifera,146.3,149.6,AMT morphometrics,12,sheward2024
+Michaelsarsia elegans,1738.3,,AMT morphometrics,1,sheward2024
+Rhabdosphaera clavigera,81.8,48.9,AMT morphometrics,73,sheward2024
+Rhabdosphaera xiphos,452.0,140.2,AMT morphometrics,20,sheward2024
+Syracosphaera ampliora,313.5,224.0,AMT morphometrics,4,sheward2024
+Syracosphaera anthos,332.6,194.4,AMT morphometrics,3,sheward2024
+Syracosphaera anthos HOL,1250.6,464.6,AMT morphometrics,2,sheward2024
+Syracosphaera arethusae HOL,454.9,,AMT morphometrics,1,sheward2024
+Syracosphaera aurisinae,169.7,,AMT morphometrics,1,sheward2024
+Syracosphaera aurisinae HOL,284.2,103.6,AMT morphometrics,3,sheward2024
+Syracosphaera bannockii,467.6,295.3,AMT morphometrics,7,sheward2024
+Syracosphaera bannockii HOL,64.5,14.0,AMT morphometrics,4,sheward2024
+Syracosphaera castellata,613.7,693.1,AMT morphometrics,4,sheward2024
+Syracosphaera halldalii,207.1,218.4,AMT morphometrics,29,sheward2024
+Syracosphaera hastata,120.5,53.7,AMT morphometrics,18,sheward2024
+Syracosphaera mediterranea,452.3,,AMT morphometrics,1,sheward2024
+Syracosphaera mediterranea HOL,260.5,5.4,AMT morphometrics,3,sheward2024
+Syracosphaera molischii,130.2,98.6,AMT morphometrics,10,sheward2024
+Syracosphaera molischii HOL,38.0,,AMT morphometrics,1,sheward2024
+Syracosphaera neapolitana,151.8,88.1,AMT morphometrics,2,sheward2024
+Syracosphaera nodosa,266.6,241.5,AMT morphometrics,10,sheward2024
+Syracosphaera noroitica,185.6,239.2,AMT morphometrics,10,sheward2024
+Syracosphaera orbiculus,119.6,110.7,AMT morphometrics,2,sheward2024
+Syracosphaera ossa,139.1,85.0,AMT morphometrics,19,sheward2024
+Syracosphaera prolongata,933.6,2075.5,AMT morphometrics,31,sheward2024
+Syracosphaera pulchra,1302.5,633.3,AMT morphometrics,3,sheward2024
+Syracosphaera pulchra HOL,2288.0,654.4,AMT morphometrics,6,sheward2024
+Syracosphaera rotula,101.7,,AMT morphometrics,1,sheward2024
+Syracosphaera strigilis HOL,114.8,,AMT morphometrics,1,sheward2024
+Umbellosphaera irregularis,139.7,137.6,AMT morphometrics,190,sheward2024
+Umbellosphaera tenuis,155.1,101.5,AMT morphometrics,122,sheward2024
+Umbilicosphaera hulburtiana,361.6,137.7,AMT morphometrics,47,sheward2024
+Umbilicosphaera sibogae,2326.1,1233.4,AMT morphometrics,2,sheward2024
+Zygosphaera amoena,50.4,,AMT morphometrics,1,sheward2024
+undefined,133.7,269.8,AMT morphometrics,6,sheward2024
+undefined Acanthoica,137.3,77.8,AMT morphometrics,3,sheward2024
+undefined Alisphaera,184.7,67.0,AMT morphometrics,3,sheward2024
+undefined Calciosolenia,400.9,450.2,AMT morphometrics,4,sheward2024
+undefined Corisphaera,300.3,390.8,AMT morphometrics,3,sheward2024
+undefined Gephyrocapsa,13.4,10.6,AMT morphometrics,3,sheward2024
+undefined Helladosphaera,195.1,,AMT morphometrics,1,sheward2024
+undefined Michaelsarsia,64.4,27.2,AMT morphometrics,4,sheward2024
+undefined Ophiaster,178.2,141.4,AMT morphometrics,12,sheward2024
+undefined Palusphaera,497.4,0.0,AMT morphometrics,96,sheward2024
+undefined Polycrater,652.7,0.0,AMT morphometrics,2,sheward2024
+undefined Syracosphaera,128.5,184.6,AMT morphometrics,47,sheward2024
+undefined Umbellosphaera,94.9,,AMT morphometrics,1,sheward2024
+undefined holo,32.2,11.3,AMT morphometrics,30,sheward2024
