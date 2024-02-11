@@ -1,12 +1,85 @@
-estrada1990: 'Estrada, M. and Delgado, M. 1990 Summer phytoplankton distributions in the Weddell Sea.  Polar Biology 10: 441 - 449'
-bathman1997: 'Bathmann, U. V., Scharek, R., Klaas, C., Dubischar, C. D. and Smetacek, V.  1997.  Spring development of phytoplankton biomass and composition in major water masses of the Atlantic sector of the Southern Ocean.  Deep-Sea Research II, 44: 51-67.'
-hoffman2006: 'Hoffmann, L. J., Peeken, I., Lochte, K., Assmy, P. and Veldhuis, M.  2006.  Different reactions of Southern Ocean phytoplankton size classes to iron fertilization.  Limnology and Oceanography, 51: 1217-1229.'
-chavez1991: 'Chavez, F.P., K.R. Buck, K.H. Coale, J.H. Martin, G.R. DiTullio, N.A. Welschmeyer, A.C. Jacobson and R.T. Barber. 1991. Growth rates, grazing, sinking, and iron limitation of equatorial Pacific phytoplankton. Limnol. Oceanogr. 36: 1816-1833.'
-ochoa2001: 'Ochoa, Noemí; Ruillon, Gabriela (2001): Variabilidad del Fitoplancton en la Bahía de Ancón, Lima, Perú, durante el niño 1997-98. El Niño en América Latina- Impactos Biológicos y Sociales2001, Consejo Nacional de Ciencia y Tecnología, Page 39-45'
-grados1996: 'Grados, Carmen; Flores, Georgina; Villanueva, Patricia; Chang, Flor; Ayón, Patricia (1996): Cuarta Operación MOPFEN 9508 Monitoreo Oceanográfico para la predicción del fenómeno El Niño - Lineas Paita y Punta Falsa. Informe Progresivo del Instituto del Mar del Perú (IMARPE), 35, 69 pp, hdl:10013/epic.28431.d001'
-estrada1991: 'Estrada, M. 1991 Phytoplankton assemblages across a new Mediterranean front: changes from winter mixing to spring stratification'
-weeks1989: 'Weeks, A. R., Fasham, M. J. R., Aiken, J., Harbour, D. S., Read, J. F. and Bellan , I. 1993, The spatial and temporal development of the spring bloom during the JGOFS North Atlantic Bloom Experiment, 1989.  Journal of the Marine Biological Association of the United Kingdon, 73: 253-282.'
-savidge1995: 'Savidge, G., Boyd, P. Pomroy, A., Harbour, D., Joint, I.  1995.  Phytoplankton production and biomass estimates in the northeast Atlantic Ocean, May-June 1990, Deep Sea Research Part I: Oceanographic Research Papers,  42(5) pp 599-617'
-harris1997: "Harris, R. P., Boyd, P., Harbour, D. S., Head, R. N., Pingree, R. D. and Pomroy, A. J. 1997, Physical, chemical and biological features of a cyclonic eddy in the region of 61°10'N 19°50'W in the North Atlantic. Deep Sea Research I 44: 1815-1839."
-fernandez1993: 'Fernandez, E., Boyd, P., Holligan, P.M. and Harbour, D.S. 1993, Production of organic and inorganic carbon within a large-scale coccolithophore bloom in the northeast Atlantic Ocean, Marine Ecology Progress Series 97: 271-285.'
-omex1997: 'OMEX-I Project Members (1997): Ocean Margin Exchange, OMEX-I project data set (1993-96). Natural Environmental Research Council, published by British Oceanographic Data Center, Bidston Observatory, Birkenhead, Merseyside (2 CD-ROM), hdl:10013/epic.28817.d001'
+'Widdicombe, Eloire, Harbour, Harris and Somerfield (2010) Long term phytoplankton community dynamics in the Western English Channel. JPR 32: 643-656.': widdicombe2010 
+'Estrada, 1991; Masó and PEPS, 1988 (environmental data)': estrada1991
+'Ajani, P., Lee, R., Pritchard, T. and Krogh, M. (2001).  Phytoplankton dynamics at a long-term coastal station off Sydney, Australia.  Journal of Coastal Research, 34: 60-73.': ajani2001 
+'Grados, Carmen; Flores, Georgina; Villanueva, Patricia; Chang, Flor; Ayón, Patricia (2007): Phytoplankton abundance at stations off Punta Falsa in August 1995, Piura, Peru. Instituto del Mar del Peru, doi:10.1594/PANGAEA.603267': grados2007
+'Grados, Carmen; Flores, Georgina; Villanueva, Patricia; Chang, Flor; Ayón, Patricia (2007): Phytoplankton abundance at stations off Paita in August 1995, Piura, Peru. Instituto del Mar del Peru, doi:10.1594/PANGAEA.603265': grados2007
+'Assmy, Philipp\xa0(2007):\xa0Phytoplankton abundance measured on water bottle samples at station PS65/424-3.\xa0Alfred Wegener Institute for Polar and Marine Research, Bremerhaven, doi:10.1594/PANGAEA.603388': assmy2007
+'Assmy, Philipp\xa0(2007):\xa0Phytoplankton abundance measured on water bottle samples at station PS65/514-2.\xa0Alfred Wegener Institute for Polar and Marine Research, Bremerhaven, doi:10.1594/PANGAEA.603393': assmy2007
+'Assmy, Philipp\xa0(2007):\xa0Phytoplankton abundance measured on water bottle samples at station PS65/570-4.\xa0Alfred Wegener Institute for Polar and Marine Research, Bremerhaven, doi:10.1594/PANGAEA.603398': assmy2007
+'Assmy, Philipp\xa0(2007):\xa0Phytoplankton abundance measured on water bottle samples at station PS65/587-1.\xa0Alfred Wegener Institute for Polar and Marine Research, Bremerhaven, doi:10.1594/PANGAEA.603400': assmy2007
+"NMFS-COPEPOD: 'Meteor Collection', http://www.st.nmfs.noaa.gov/plankton/data/meteor1929/index.html": meteor1929
+'http://www.obs-vlfr.fr/cd_rom_dmtt/other_main.htm': fiala2013
+'Karentz, D.  Unpublished Data': karentz2013
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 1992, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465179': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 1993, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465180': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 1994, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465181': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 1995, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465182': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 1996, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465183': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 1997, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465184': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 1998, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465185': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 1999, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465186': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 2000, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465187': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 2001, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465188': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 2002, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465189': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 2003, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465190': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 2004, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465191': ramos2006
+'Ramos, Elmer (2006): Phytoplankton abundance in surface water in 2005, Ancon, Peru. Universidad Nacional Mayor de San Marcos, doi:10.1594/PANGAEA.465192': ramos2006
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM1_18. doi:10.1594/PANGAEA.202662': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM1_20. doi:10.1594/PANGAEA.202663': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM1_25. doi:10.1594/PANGAEA.202664': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM1_27. doi:10.1594/PANGAEA.202665': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM1_30. doi:10.1594/PANGAEA.202666': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM2_155. doi:10.1594/PANGAEA.202667': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM2_157. doi:10.1594/PANGAEA.202668': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM2_160. doi:10.1594/PANGAEA.202669': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM2_161. doi:10.1594/PANGAEA.202670': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM2_162. doi:10.1594/PANGAEA.202671': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM3_399. doi:10.1594/PANGAEA.202672': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM3_402. doi:10.1594/PANGAEA.202673': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM3_405. doi:10.1594/PANGAEA.202674': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM3_406. doi:10.1594/PANGAEA.202675': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM3_407. doi:10.1594/PANGAEA.202676': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM4_607. doi:10.1594/PANGAEA.202677': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM4_609. doi:10.1594/PANGAEA.202678': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM4_612. doi:10.1594/PANGAEA.202679': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM4_613. doi:10.1594/PANGAEA.202680': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM4_615. doi:10.1594/PANGAEA.202681': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM5_731. doi:10.1594/PANGAEA.202682': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM5_733. doi:10.1594/PANGAEA.202683': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM5_736. doi:10.1594/PANGAEA.202684': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM5_738. doi:10.1594/PANGAEA.202685': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM5_739. doi:10.1594/PANGAEA.202686': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM6_886. doi:10.1594/PANGAEA.202687': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM6_888. doi:10.1594/PANGAEA.202688': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM6_891. doi:10.1594/PANGAEA.202689': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM6_892. doi:10.1594/PANGAEA.202690': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM6_894. doi:10.1594/PANGAEA.202691': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM7_1146. doi:10.1594/PANGAEA.202692': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM7_1148. doi:10.1594/PANGAEA.202693': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM7_1151. doi:10.1594/PANGAEA.202694': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM7_1153. doi:10.1594/PANGAEA.202695': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM7_1154. doi:10.1594/PANGAEA.202696': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM8_1275. doi:10.1594/PANGAEA.202697': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM8_1277. doi:10.1594/PANGAEA.202698': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM8_1280. doi:10.1594/PANGAEA.202699': wassman2004
+'OMEX-I Project Members; Wassmann, Paul (2004): Phytoplankton abundance measured on water bottle samples at station JM8_1281. doi:10.1594/PANGAEA.202700': wassman2004
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle SEPT-1999-K1. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle SEPT-1999-K2. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle SEPT-1999-K3. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle SEPT-1999-K4. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle SEPT-1999-K5. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle SEPT-1999-K6. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle SEPT-1999-K7. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle SEPT-1999-K8. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle APRIL-2000-K1. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle APRIL-2000-K2. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle APRIL-2000-K3. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle APRIL-2000-K4. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle APRIL-2000-K5. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Pagou, K.; Assimakopoulou, G. (2008): Abundance of microplankton from bottle APRIL-2000-K6. Hellenic Center of Marine Research, Institut of Oceanography, Greece': Pagou2008
+'Kopczynska et al. 2007  Polar Biology 31: 77-88.': Kopczynska2007
+'Assmy, Philipp (2007): Phytoplankton abundance measured on water bottle samples at station PS65/587-1. Alfred Wegener Institute for Polar and Marine Research, Bremerhaven, doi:10.1594/PANGAEA.603400': Assmy2007
+'Assmy, Philipp (2007): Phytoplankton abundance measured on water bottle samples at station PS65/570-4. Alfred Wegener Institute for Polar and Marine Research, Bremerhaven, doi:10.1594/PANGAEA.603398': Assmy2007
+'Assmy, Philipp (2007): Phytoplankton abundance measured on water bottle samples at station PS65/424-3. Alfred Wegener Institute for Polar and Marine Research, Bremerhaven, doi:10.1594/PANGAEA.603388': Assmy2007
+'Assmy, Philipp (2007): Phytoplankton abundance measured on water bottle samples at station PS65/514-2. Alfred Wegener Institute for Polar and Marine Research, Bremerhaven, doi:10.1594/PANGAEA.603393': Assmy2007
+'Marshall, HG 1968 Coccolithophores in the Northwest Sargasso Sea, Limnology and Oceanography 13 pp 370 - 376; http://jstor.org/stable/2833956': marshall1968

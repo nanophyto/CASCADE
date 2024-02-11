@@ -13,7 +13,7 @@ plt.rcParams.update({"font.size": 14})
 from functions import rename_synonyms, bayes_bootstrap
 from yaml import load, Loader
 from collections import namedtuple
-
+import yaml
 
 
 class regression_simulation:
@@ -614,9 +614,9 @@ class library:
 
 class pipeline:
 
-    def __init__(self, root= '/home/phyto/CoccoData/data/', n = 1000):
+    def __init__(self, root= '../CASCADE/data/', n = 1000):
 
-        d = pd.read_csv("/home/phyto/CoccoData/data/output/abundant_species.csv")
+        d = pd.read_csv(root + "output/abundant_species.csv")
         self.species_list = d['species']
 
         m = library(root + 'classification/phases.yml',
@@ -626,7 +626,7 @@ class pipeline:
                     root + "poc/",           
                     self.species_list)
         
-        m.export_yml("/home/phyto/CoccoData/library.yml")
+        m.export_yml(root + "/output/library.yml")
 
         #create a list of HOL species for future use:
         self.HOL_list = m.return_HOL_list()
@@ -927,6 +927,7 @@ class merge_abundances():
         d = (d.rename(columns=dict)
             .groupby(level=0, axis=1, dropna=False)).sum( min_count=1).reset_index()
 
+        self.references = d['Reference'].unique()
         d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).agg('mean')
 
         d = d.drop(columns=['index'])
@@ -1021,6 +1022,7 @@ class merge_abundances():
 
 
     def print_stats(self):
+
         df = self.d[self.non_zero_spp]
         print("concatenated abundances: " +str(len(df)))
 
@@ -1029,11 +1031,8 @@ class merge_abundances():
 
         print("concatenated observations: " +str(len(t)))
 
-
-
         d = self.gridding()
         print("gridded abundances: " +str(len(d)))
-
 
         d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year'])
         t = pd.melt(d)

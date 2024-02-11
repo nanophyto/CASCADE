@@ -98,6 +98,8 @@ def abundance_refs_table(path, tex=False):
 
     refs = d['Reference'].unique()
 
+    print("number of studies: " + str(len(refs)))
+
     table = []
 
     for i in range (0, len(refs)):

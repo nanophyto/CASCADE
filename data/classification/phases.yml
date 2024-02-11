@@ -1,7 +1,11 @@
 ---
-Syracosphaera pulchra HOL:
+Syracosphaera pulchra HOL galea type:
   phase: HOL
   alternate_phase: Syracosphaera pulchra 
+Syracosphaera pulchra HOL oblonga type:
+  phase: HOL
+  alternate_phase: Syracosphaera pulchra 
+
 Syracosphaera histrica HOL:
   phase: HOL
   alternate_phase: Syracosphaera histrica 
@@ -26,9 +30,35 @@ Calcidiscus leptoporus HOL:
 Syracosphaera anthos HOL:
   phase: HOL
   alternate_phase: Syracosphaera anthos
+Acanthoica quattrospina HOL:
+  phase: HOL
+  alternate_phase: Acanthoica quattrospina
+Syracosphaera lafourcadii HOL:
+  phase: HOL
 Syracosphaera molischii HOL:
   phase: HOL
   alternate_phase: Syracosphaera molischii 
+Pappomonas sp. type 3:
+  phase: HOL
+Formonsella pyramidosa:
+  phase: HET
+Turrilithus latericioides:
+  phase: HET
+Syracosphaera strigilis:
+  phase: HET
+Helicosphaera HOL confusus type:
+  phase: HOL
+Alisphaera gaudii POL:
+  phase: POL
+Acanthoica acanthos:
+  phase: HET
+Syracosphaera nana HOL:
+  phase: HOL
+  alternate_phase: Syracosphaera nana
+Braarudosphaera bigelowii:
+  phase: NANO
+Pappomonas sp. type 5:
+  phase: HET
 Syracosphaera bannockii HOL:
   phase: HOL
   alternate_phase: Syracosphaera bannockii 
@@ -127,7 +157,7 @@ Helicosphaera HOL ponticuliferus type:
   phase: HOL
   alternate_phase:  Helicosphaera wallichii
   ref: Couapel2009
-Calyptrosphaera heimdalae:
+Calyptrosphaera heimdaliae:
   phase: HOL
   alternate_phase: Cyrtosphaera aculeata
   ref: Triantaphyllou2016
@@ -233,7 +263,7 @@ Syracosphaera halldalli:
   phase: HET
 Gladiolithus flabellatus:
   phase: HET
-Ceratolithus cristatus:
+Ceratolithus cristatus HET:
   phase: HET
 Ophiaster formosus:
   phase: HET

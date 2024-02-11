@@ -786,10 +786,6 @@ class pre_abundances():
         with open(self.yaml_path + 'references_obrien.yml', 'r') as f:
             references = load(f, Loader=Loader)
 
-        #reverse key-binding to: long-short
-        #references = {v: k for k, v in references.items()}
-
-
         d = pd.read_csv(self.import_path + "obrien2013.csv")
 
         d = d.replace(["Utermohl", 
