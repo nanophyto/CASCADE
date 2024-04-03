@@ -674,6 +674,36 @@ class pre_abundances():
             reference_to_export = d['Reference'].unique()[i]
             d[d.Reference==reference_to_export].to_csv(self.export_path + reference_to_export + ".csv", index=False)
 
+
+
+    def clean_johnson(self):
+        d = pd.read_csv(self.import_path + "johnson2023.csv")
+
+        with open(self.yaml_path + 'johnson2023.yml', 'r') as f:
+            references = load(f, Loader=Loader)
+
+        d=d.replace({"Reference": references})
+
+        d = d.replace(["Scanning electron microscope (SEM)",
+                    "SEM and LM",
+                    "Polarized light microscopy (PLM) + Scanning electron microscope (SEM)",   
+                ], "SEM")
+        
+        d = d.replace(["Light microscopy" 
+                ], "LM")
+        d.columns = [col.replace(' [#/l]', '') for col in d.columns]
+        print(d.head())
+        
+        d.drop(columns=['Date/Time'], inplace=True)
+        d.rename(columns = {'Sample method':'Method'}, inplace = True)
+        d.columns = [col.strip() for col in d.columns]
+
+        for i in range(len(d['Reference'].unique())):
+            reference_to_export = d['Reference'].unique()[i]
+            d[d.Reference==reference_to_export].to_csv(self.export_path + reference_to_export + ".csv", index=False)
+
+
+
     def clean_okada1973(self): 
 
         d1 = pd.read_csv(self.import_path + "okada/Okada1973.csv")
@@ -902,6 +932,7 @@ class pre_abundances():
     def preprocess_all(self):
         self.clean_estrada2016()
         self.clean_hagino200()
+        self.clean_johnson2023()
         self.clean_devries2021()
         self.clean_okada1973()
         self.clean_takahashi2000()
