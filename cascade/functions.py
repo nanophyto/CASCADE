@@ -7,6 +7,24 @@ from joblib import Parallel, delayed
 np.random.seed(2)
 import math
 
+def rename_synonyms_wide(d, classification_path='../data/classification/synonyms.yml'):
+    with open(classification_path, 'r') as f:
+        groupings = load(f, Loader=Loader)
+
+    synonym_dict = {species:k
+        for k, v in groupings.items()
+        for species in v}
+
+    # Function to replace column names based on synonym_dict
+    def replace_column_names(col):
+        return synonym_dict.get(col, col)
+
+    d = d.rename(columns=lambda x: replace_column_names(x))
+    
+    d = d.groupby(level=0, axis=1).sum()
+
+    return(d)
+
 def rename_synonyms(d, classification_path='../data/classification/synonyms.yml',
                     verbose=0, index='species', 
                     remove_duplicate=True, take_sum = False, 

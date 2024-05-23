@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from yaml import load, Loader
 import glob, os
-from functions import rename_synonyms, morphometric_size_estimate, volume_sphere
+from functions import rename_synonyms, rename_synonyms_wide, morphometric_size_estimate, volume_sphere
 import math 
 
 class pre_allometry():
@@ -595,11 +595,13 @@ class pre_abundances():
 
     def __init__(self, import_path = "../data/unprocessed/allometry/", 
                     export_path = "../data/allometry/",
-                    reference_path = "../data/references/"):
+                    reference_path = "../data/references/",
+                    classification_path = '../data/classification/synonyms.yml'):
         
         self.import_path = import_path
         self.export_path = export_path
         self.yaml_path = reference_path
+        self.classification_path = classification_path
 
     def clean_hagino200(self): 
         d = pd.read_csv(self.import_path + "Hagino2006.csv", 
@@ -633,6 +635,8 @@ class pre_abundances():
         d.fillna(0, inplace=True)
 
         d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        
+        d = rename_synonyms_wide(d, classification_path=self.classification_path)
         d.to_csv(self.export_path + "Hagino2006.csv", index=False)
 
 
@@ -676,7 +680,7 @@ class pre_abundances():
 
 
 
-    def clean_johnson(self):
+    def clean_johnson2023(self):
         d = pd.read_csv(self.import_path + "johnson2023.csv")
 
         with open(self.yaml_path + 'johnson2023.yml', 'r') as f:
@@ -691,9 +695,7 @@ class pre_abundances():
         
         d = d.replace(["Light microscopy" 
                 ], "LM")
-        d.columns = [col.replace(' [#/l]', '') for col in d.columns]
-        print(d.head())
-        
+        d.columns = [col.replace(' [#/l]', '') for col in d.columns]        
         d.drop(columns=['Date/Time'], inplace=True)
         d.rename(columns = {'Sample method':'Method'}, inplace = True)
         d.columns = [col.strip() for col in d.columns]
