@@ -7,7 +7,7 @@ from joblib import Parallel, delayed
 np.random.seed(2)
 import math
 
-def rename_synonyms_wide(d, classification_path='../data/classification/synonyms.yml'):
+def rename_synonyms_wide(d, classification_path='./data/classification/synonyms.yml'):
     with open(classification_path, 'r') as f:
         groupings = load(f, Loader=Loader)
 
@@ -25,7 +25,7 @@ def rename_synonyms_wide(d, classification_path='../data/classification/synonyms
 
     return(d)
 
-def rename_synonyms(d, classification_path='../data/classification/synonyms.yml',
+def rename_synonyms(d, classification_path='./data/classification/synonyms.yml',
                     verbose=0, index='species', 
                     remove_duplicate=True, take_sum = False, 
                     check_synonyms = True):

@@ -1,12 +1,5 @@
 import pandas as pd
 import numpy as np
-import sys
-import geopandas as gpd
-from shapely.geometry import Point # Point class
-from yaml import load, Loader
-import glob, os
-import pandas as pd
-import numpy as np
 from functions import ratio_bootstrap
 from math import log10, floor
 
@@ -63,7 +56,7 @@ class cellular_dataset_table:
         pic_poc_mean = self.round_sig_fig(pic_poc_mean, N=3)   
 
 
-        counts = pd.read_csv("/home/phyto/CoccoData/data/species_list_full.csv")
+        counts = pd.read_csv("./data/output/species_list_full.csv")
         n_samples = counts[counts['species']==species]['count']
 
         d = pd.DataFrame({'species': [species], 
