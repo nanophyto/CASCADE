@@ -1027,7 +1027,7 @@ class merge_abundances():
     def export_gridded_abundances(self):
         d = self.gridding()
 
-        d.to_csv(self.export_path +"gridded_observations.csv")
+        d.to_csv(self.export_path +"gridded_observations.csv", index=False)
         
         print("gridded abundances exported to: " + self.export_path +"gridded_observations.csv")
 
