@@ -11,6 +11,7 @@ class pre_allometry():
                  export_path = "../data/allometry/",
                  classification_path = "../data/classification/"):
         self.import_path = import_path
+        print(self.import_path)
         self.export_path = export_path
         self.classification_path = classification_path
 
@@ -593,11 +594,14 @@ class pre_pic():
 
 class pre_abundances():
 
-    def __init__(self, import_path = "../data/unprocessed/allometry/", 
+    def __init__(self, root,
+                    import_path = "../data/unprocessed/allometry/", 
                     export_path = "../data/allometry/",
                     reference_path = "../data/references/",
                     classification_path = '../data/classification/synonyms.yml'):
         
+        self.root = root
+        print(root)
         self.import_path = import_path
         self.export_path = export_path
         self.yaml_path = reference_path
@@ -666,7 +670,7 @@ class pre_abundances():
 
         d.insert(0, 'Method', 'SEM')
 
-        with open('/home/phyto/CoccoData/data/unprocessed/references/refs_devries.yml', 'r') as f:
+        with open(self.root + '/data/references/refs_devries.yml', 'r') as f:
             short_refs = load(f, Loader=Loader)
 
         d=d.replace({"Reference": short_refs})
