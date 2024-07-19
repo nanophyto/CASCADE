@@ -618,6 +618,7 @@ class pipeline:
 
         d = pd.read_csv(root + "output/abundant_species.csv")
         self.species_list = d['species']
+        self.root = root
 
         m = library(root + 'classification/phases.yml',
                     root + 'classification/family.yml',
@@ -727,7 +728,7 @@ class pipeline:
     def c_regression(self, name, measurement, X_predict):
         #function to estimate carbon based on size distribution
         if measurement == "pic":
-            d = pd.read_csv("/home/phyto/CoccoData/data/allometry/sheward2024.csv")
+            d = pd.read_csv(self.root + "/allometry/sheward2024.csv")
 
             phase = [t.phase for t in self.ntpl  if t.species == name][0]
 
@@ -758,7 +759,7 @@ class pipeline:
             c_simulation = r.simulate_predictions(X_predict_oh, boot=True, n_replicates=1)
 
         elif measurement == "poc":
-            d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/poulton2024.csv")
+            d = pd.read_csv(self.root + "/allometry/poulton2024.csv")
             Y_train = d['pg poc']
             X_train = d['volume']
 
@@ -886,13 +887,11 @@ class pipeline:
 
 class merge_abundances():
 
-    def __init__(self, import_path, export_path):
+    def __init__(self, import_path, export_path, synonym_path):
         self.export_path = export_path
         all_files = glob.glob(os.path.join(import_path, "*.csv"))
 
         d = pd.concat((pd.read_csv(f) for f in all_files), ignore_index=True)
-
-        d = d.replace({0:pd.NA})
 
         d.reset_index(drop=False, inplace=True)
 
@@ -901,12 +900,13 @@ class merge_abundances():
 
         d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'], inplace=True)
 
+        d = d.replace({0:pd.NA})
+
         d.rename(columns=lambda x: x.strip(), inplace=True)
 
-        with open('/home/phyto/CoccoData/data/classification/synonyms.yml', 'r') as f:
+        with open(synonym_path, 'r') as f:
             groupings = load(f, Loader=Loader)
 
-        species = d.reset_index().drop(columns=['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).columns
 
         dict = {species:k
             for k, v in groupings.items()
@@ -920,17 +920,28 @@ class merge_abundances():
         except:
             None
 
-
         d = d[d.sum(axis=1)>0]
-
 
         d = (d.rename(columns=dict)
             .groupby(level=0, axis=1, dropna=False)).sum( min_count=1).reset_index()
 
         self.references = d['Reference'].unique()
-        d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).agg('mean')
+
+        print(self.references)
+        #d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).agg('mean')
+        #d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).mean()
+
+        #species = d.drop(columns=['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).columns
+        #d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])[species].agg('mean') #.reset_index()
+        d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'], inplace=True)
+        print("groupby")
+        #print(d.reset_index()['Reference'].unique())
+
 
         d = d.drop(columns=['index'])
+
+        print("drop index")
+        #print(d.reset_index()['Reference'].unique())
 
         #check if final species are in species library
         species_library = {v: k for k, v in dict.items()}
@@ -945,13 +956,13 @@ class merge_abundances():
         #drop any columns that contain "undefined"
         d = d[d.columns.drop(list(d.filter(regex='undefined')))]
 
-        #drop any rows that sum to zero:
-        d = d[d.sum(axis=1)>0]
         try: #make new dir if needed
             os.makedirs(self.export_path)
         except:
             None
 
+        print("dropped columns that contained undefined")
+        #print(d.reset_index()['Reference'].unique())
 
         counts =pd.DataFrame({'count': np.count_nonzero(d.fillna(0), axis=0), 'species': d.columns})
         counts = counts[counts['species']!="Reticulofenestra sessilis"]
@@ -962,6 +973,7 @@ class merge_abundances():
         non_zero_spp = counts[counts['count']>0]['species']
 
         d = d[non_zero_spp]
+        #print(d['Reference'].unique())
 
         self.counts = counts
         self.abundant = counts[counts['count']>=20]
@@ -995,11 +1007,11 @@ class merge_abundances():
         d['Depth'] = pd.cut(d['Depth'], bins=depth_bins, labels=depth_labels).astype(np.int64) 
 
         lat_bins = np.linspace(-90, 90, 181)
-        lat_labels = np.linspace(-89.5, 89.5, 180)
+        lat_labels = np.linspace(-90, 89, 180)
         d['Latitude'] = pd.cut(d['Latitude'].astype(np.float64), bins=lat_bins, labels=lat_labels).astype(np.float64) 
 
         lon_bins = np.linspace(-180, 180, 361)
-        lon_labels = np.linspace(-179.5, 179.5, 360)
+        lon_labels = np.linspace(-180, 179, 360)
         d['Longitude'] = pd.cut(d['Longitude'].astype(np.float64), bins=lon_bins, labels=lon_labels).astype(np.float64) 
 
         species = d.drop(columns=['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).columns

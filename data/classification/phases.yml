@@ -65,9 +65,14 @@ Syracosphaera bannockii HOL:
 Syracosphaera mediterranea HOL wettsteinii type:
   phase: HOL
   alternate_phase: Syracosphaera mediterranea 
+Syracosphaera mediterranea HOL hellenica type:
+  phase: HOL
+  alternate_phase: Syracosphaera mediterranea 
 Syracosphaera strigilis HOL:
   phase: HOL
   alternate_phase: Syracosphaera strigilis
+Algirosphaera cucullata:
+  phase: HET
 Helicosphaera pavimentum HOL:
   phase: HOL
   alternate_phase: Helicosphaera pavimentum
@@ -80,6 +85,8 @@ Syracosphaera periperforata HOL:
 Syracosphaera magnaghii HOL:
   phase: HOL
   alternate_phase: Syracosphaera magnaghii 
+Sphaerocalyptra sp. 1:
+  phase: HET
 Sphaerocalyptra youngii:
   phase: HOL
   alternate_phase: unknown
