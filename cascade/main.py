@@ -4,11 +4,8 @@ import statsmodels.api as sm
 import seaborn as sns
 import matplotlib.pyplot as plt
 import glob, os, warnings
-from joblib import parallel_backend, Parallel, delayed
-from statsmodels.graphics.api import abline_plot
-from sklearn.metrics import r2_score, mean_squared_error
+from joblib import Parallel, delayed
 from scipy import stats
-from statsmodels.tools.tools import add_constant 
 plt.rcParams.update({"font.size": 14})
 from functions import rename_synonyms, bayes_bootstrap
 from yaml import load, Loader
@@ -855,9 +852,9 @@ class pipeline:
         pic_simulation = self.resample_carbon_species(species_name, size_simulation, "pic")
         poc_simulation = self.resample_carbon_species(species_name, size_simulation, "poc")
 
-        d_vol = pd.DataFrame({'species': species_name, 'value': size_simulation, 'variable':'volume'})
+        d_vol = pd.DataFrame({'species': species_name, 'value': size_simulation, 'variable':'volume (um3)'})
         d_poc = pd.DataFrame({'species': species_name, 'value': poc_simulation, 'variable':'pg poc'})
-        d_dia = pd.DataFrame({'species': species_name, 'value': diameter_simulation, 'variable':'diameter'})
+        d_dia = pd.DataFrame({'species': species_name, 'value': diameter_simulation, 'variable':'diameter (um)'})
         d_pic = pd.DataFrame({'species': species_name, 'value': pic_simulation, 'variable':'pg pic'})
 
         d = pd.concat([d_dia, d_vol, d_poc, d_pic])
@@ -993,8 +990,8 @@ class merge_abundances():
     def export_ungridded_abundances(self):
         df = self.d #[self.non_zero_spp]
     
-        df.to_csv(self.export_path +"ungridded_observations.csv")
-        print("ungridded abundances exported to: " + self.export_path +"ungridded_observations.csv")
+        df.to_csv(self.export_path +"ungridded_abundances.csv")
+        print("ungridded abundances exported to: " + self.export_path +"ungridded_abundances.csv")
 
     def gridding(self):
         d = self.d[self.abundant['species']]
@@ -1027,9 +1024,9 @@ class merge_abundances():
     def export_gridded_abundances(self):
         d = self.gridding()
 
-        d.to_csv(self.export_path +"gridded_observations.csv", index=False)
+        d.to_csv(self.export_path +"gridded_abundances.csv", index=False)
         
-        print("gridded abundances exported to: " + self.export_path +"gridded_observations.csv")
+        print("gridded abundances exported to: " + self.export_path +"gridded_abundances.csv")
 
 
 

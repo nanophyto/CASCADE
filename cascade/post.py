@@ -2,7 +2,8 @@ import pandas as pd
 import numpy as np
 from functions import ratio_bootstrap
 from math import log10, floor
-
+from functions import rename_synonyms, bayes_bootstrap
+import glob, os
 
 class cellular_dataset_table:
     def __init__(self, d): 
@@ -92,9 +93,9 @@ class cellular_dataset_table:
         )) 
 
 
-class merge_all():
+class gridded_datasets():
 
-    def __init__(self, abundances_path, carbon_path):
+    def __init__(self, abundances_path, carbon_path, export_path):
 
         self.d = pd.read_csv(abundances_path)
         self.df = pd.read_csv(carbon_path)
@@ -102,14 +103,21 @@ class merge_all():
         #then merge with abundances
         species_list = self.d.drop(columns=['Latitude', 'Longitude', 'Depth', 'Month', 'Year']).columns
 
-        estimates = []
+        gridded_poc = []
+        gridded_pic = []
 
         for i in range(0, len(species_list)):
             print(species_list[i])
-            estimates.append(self.merge_abundance_c(species_list[i], variable = 'pg poc'))
-            estimates.append(self.merge_abundance_c(species_list[i], variable = 'pg pic'))
+            gridded_poc.append(self.merge_abundance_c(species_list[i], variable = 'pg poc'))
+            gridded_pic.append(self.merge_abundance_c(species_list[i], variable = 'pg pic'))
         
-        self.estimates = pd.concat(estimates)
+        gridded_poc = pd.concat(gridded_poc)
+        gridded_pic = pd.concat(gridded_pic)
+
+        gridded_poc.to_csv(export_path + "gridded_poc.csv", index=False)
+        gridded_pic.to_csv(export_path + "gridded_pic.csv", index=False)
+
+
 
     def merge_abundance_c(self, species, variable = 'pg poc'):
         df = self.df[self.df['species']==species]
@@ -134,7 +142,45 @@ class merge_all():
         t = t.sort_values(by=['month', 'year',  'depth', 'lat', 'lon'])
         return(d_poc)
 
-    def export_csv(self, export_path):
-        self.estimates.to_csv(export_path, index=False)
-        print("finished exporting to:")
 
+
+def split_resampled_cellular_dataset(data_path = "./data/output/cellular_dataset.csv", 
+                                     export_path = "./data/Zenodo/resampled_cellular_dataset/"):
+    d = pd.read_csv(data_path)
+    print(d)
+    diameter = d[d['variable']=='diameter (um)']
+    print(diameter)
+    volume = d[d['variable']=='volume (um3)']
+    pic = d[d['variable']=='pg pic']
+    poc = d[d['variable']=='pg poc']
+
+    pic.to_csv(export_path + "resampled_PIC.csv", index=False)
+    poc.to_csv(export_path + "resampled_POC.csv", index=False)
+    diameter.to_csv(export_path + "resampled_diameter.csv", index=False)
+    volume.to_csv(export_path + "resampled_volume.csv", index=False)
+
+
+def merge_literature_datasets(pic_path, poc_path, size_path, export_path):
+
+    def import_data(path):
+
+        all_files = glob.glob(os.path.join(path, "*.csv"))
+
+        d = pd.concat((pd.read_csv(f) for f in all_files), ignore_index=True)
+        d = d.fillna(0)
+
+        #rename synonyms and typos:
+        d = rename_synonyms(d, remove_duplicate=False, check_synonyms = True)
+
+        return(d)
+    
+    pic = import_data(pic_path)
+    poc = import_data(poc_path)
+    size = import_data(size_path)
+
+    pic.to_csv(export_path + "literature_PIC.csv", index=False)
+    poc.to_csv(export_path + "literature_POC.csv", index=False)
+    size.to_csv(export_path + "literature_size.csv", index=False)
+
+    print("finished merging literature datasets")
+    print("exported to: " + export_path)
