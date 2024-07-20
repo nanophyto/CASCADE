@@ -704,6 +704,8 @@ class pre_abundances():
         d.rename(columns = {'Sample method':'Method'}, inplace = True)
         d.columns = [col.strip() for col in d.columns]
 
+        d = d[d['Reference']!="Estrada1985"] #unpublished data (did not reach out for permission)
+
         for i in range(len(d['Reference'].unique())):
             reference_to_export = d['Reference'].unique()[i]
             d[d.Reference==reference_to_export].to_csv(self.export_path + reference_to_export + ".csv", index=False)
