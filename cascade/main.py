@@ -261,11 +261,32 @@ class regression_simulation:
         
         fig, axs = plt.subplots(1, 2, figsize=figsize)
 
-        sns.scatterplot(
-            x=d["x"], y=d["y"],  ax=axs[0])
 
+
+        #plotting axs[0]:
+        #points:
+        sns.scatterplot(x=d["x"], y=d["y"],  ax=axs[0])
+        #slope:
+        slope = self.results.params['volume']
+
+        # Define the line function
+        def line(x, slope, intercept):
+            return slope * x + intercept
+        # # Generate a range of x values for the line
+        x_range = np.linspace(min(d["x"]), max(d["x"]), 100)
+        y_range = line(x_range, slope, 0)
+        axs[0].plot(x_range, y_range, color='steelblue')
+
+
+        #plotting axs[1]
         sns.scatterplot(x=d["yhat"], y=d["y"], ax=axs[1])
-        axs[1].plot(d["y"], d["y"])
+        #fit log model for plotting:
+        model = sm.OLS(np.log(d['y']), np.log(d['yhat'])).fit()
+        slope = model.params[0]
+        axs[1].axline(slope=slope, xy1=[np.min(y), np.min(y)], color="blue")
+        #1:1 line
+        axs[1].axline(slope=1, xy1=[np.min(y), np.min(y)], color="black", linestyle="dashed")
+
 
         if log_trans == True:
             axs[0].set_yscale("log")
@@ -760,10 +781,11 @@ class pipeline:
             Y_train = d['pg poc']
             X_train = d['volume']
 
-            X_train = np.log(X_train)
-            X_predict = np.log(X_predict)
+            #X_train = np.log(X_train)
+            #X_predict = np.log(X_predict)
 
-            r = regression_simulation(X_train, Y_train)
+            #r = regression_simulation(X_train, Y_train)
+            r = regression_simulation(X_train, Y_train=Y_train, link= sm.families.links.Identity())
             c_simulation = r.simulate_predictions(X_predict, boot=True, n_replicates=1)
 
         else:
