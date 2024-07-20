@@ -20,7 +20,7 @@ class cellular_dataset_table:
 
         poc = df[df['variable']=='pg poc']['value']
         pic = df[df['variable']=='pg pic']['value']
-        size = df[df['variable']=='diameter']['value']
+        size = df[df['variable']=='diameter (um)']['value']
 
         size_ci_lo = np.percentile(size, 2.5)
         size_ci_up = np.percentile(size, 97.5)
@@ -57,7 +57,7 @@ class cellular_dataset_table:
         pic_poc_mean = self.round_sig_fig(pic_poc_mean, N=3)   
 
 
-        counts = pd.read_csv("./data/output/species_list_full.csv")
+        counts = pd.read_csv("./data/output/counts.csv")
         n_samples = counts[counts['species']==species]['count']
 
         d = pd.DataFrame({'species': [species], 

@@ -111,8 +111,15 @@ def diameter_to_volume(d):
 
 
 
-def abundance_refs_table(path, tex=False):
+def abundance_refs_table(path, tex=False, method=None):
     d = pd.read_csv(path)
+
+    if method=="SEM":
+        d = d[d['Method']=="SEM"]
+    elif method=="LM":
+        d = d[d['Method']=="LM"]
+    else:
+        None
 
     refs = d['Reference'].unique()
 
@@ -247,3 +254,20 @@ def morphometric_size_estimate(
     return(d)
 
 
+def months_since_winter_solstice_df(df):
+    """
+    replaces time dimension with months since winter solstice occurs
+
+    for Latitudes > 0, winter solstice is defined as December (12).
+    For Latitudes < 0, winter solstices is defined as June (6).
+ 
+    """
+    north = df[df['Latitude']>0]
+    north['months_since_winter_solstice'] = abs(np.where(north['Month'] <= 11, north['Month'], 0))
+
+    south = df[df['Latitude']<0]
+    south['months_since_winter_solstice'] = abs(np.where(south['Month'] < 6, south['Month'] + 6, south['Month']-6))
+
+    ds = pd.concat([north, south])
+
+    return(ds)

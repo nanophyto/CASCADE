@@ -303,21 +303,36 @@ class regression_simulation:
 
 
         axs[0].set_title("Allometric scaling")
-        axs[0].set_ylabel(ylab)
+        axs[0].set_ylabel("Carbon content (pg C, log10)")
         axs[0].set_xlabel("Cell size (um3, log10)")
 
         axs[1].set_title("Observed vs Predicted")
         axs[1].set_ylabel("Observed values (pg C, log10)")
         axs[1].set_xlabel("Predicted values (pg C, log10)")
 
-        fig.suptitle(title, size=24, weight="bold")
+        axs[0].text(
+            0.05,
+            0.95,
+            "a)",
+            transform=axs[0].transAxes,
+            fontsize=16,
+            fontweight="bold",
+            va="top",
+        )
+
+        axs[1].text(
+            0.05,
+            0.95,
+            "b)",
+            transform=axs[1].transAxes,
+            fontsize=16,
+            fontweight="bold",
+            va="top",
+        )
+
+        fig.suptitle(title, weight="bold")
 
         plt.show()
-
-        slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)
-        print("slope :" + str(slope))
-        print("intercept: " + str(intercept))
-        print("r_value: " + str(r_value))
 
 
 
@@ -338,7 +353,6 @@ class regression_simulation:
 
         d = pd.concat([x, y, yhat], axis=1)
         d.dropna(inplace=True)
-        print(d)
 
         fig, axs = plt.subplots(2, 2, figsize=figsize)
 
@@ -378,20 +392,20 @@ class regression_simulation:
         )
 
         axs[0, 0].set_title("Scaling (diploid)")
-        axs[0, 0].set_ylabel("C content (pg C)")
-        axs[0, 0].set_xlabel("Cell size (um3)")
+        axs[0, 0].set_ylabel("Carbon content (pg C, log10)")
+        axs[0, 0].set_xlabel("Cell size (um3, log10)")
 
         axs[0, 1].set_title("Fit (diploid)")
-        axs[0, 1].set_ylabel("Observed (pg C)")
-        axs[0, 1].set_xlabel("Predicted (pg C)")
+        axs[0, 1].set_ylabel("Observed values (pg C, log10)")
+        axs[0, 1].set_xlabel("Predicted values (pg C, log10)")
 
         axs[1, 0].set_title("Scaling (haploid)")
-        axs[1, 0].set_ylabel("C content (pg C)")
-        axs[1, 0].set_xlabel("Cell size (um3)")
+        axs[1, 0].set_ylabel("Carbon content (pg C, log10)")
+        axs[1, 0].set_xlabel("Cell size (um3, log10)")
 
         axs[1, 1].set_title("Fit (haploid)")
-        axs[1, 1].set_ylabel("Observed (pg C)")
-        axs[1, 1].set_xlabel("Predicted (pg C)")
+        axs[1, 1].set_ylabel("Observed values (pg C, log10)")
+        axs[1, 1].set_xlabel("Predicted values (pg C, log10)")
 
         axs[0, 1].set_xlim(0, 
                            np.max(d[d["phase_HET"] == 1]['pg pic']))
@@ -408,7 +422,7 @@ class regression_simulation:
         axs[0, 0].text(
             0.05,
             0.95,
-            "A)",
+            "a)",
             transform=axs[0, 0].transAxes,
             fontsize=16,
             fontweight="bold",
@@ -417,7 +431,7 @@ class regression_simulation:
         axs[0, 1].text(
             0.05,
             0.95,
-            "B)",
+            "b)",
             transform=axs[0, 1].transAxes,
             fontsize=16,
             fontweight="bold",
@@ -426,7 +440,7 @@ class regression_simulation:
         axs[1, 0].text(
             0.05,
             0.95,
-            "C)",
+            "c)",
             transform=axs[1, 0].transAxes,
             fontsize=16,
             fontweight="bold",
@@ -435,14 +449,14 @@ class regression_simulation:
         axs[1, 1].text(
             0.05,
             0.95,
-            "D)",
+            "d)",
             transform=axs[1, 1].transAxes,
             fontsize=16,
             fontweight="bold",
             va="top",
         )
 
-        fig.suptitle(title)
+        fig.suptitle(title, weight="bold")
         plt.tight_layout()
         plt.show()
 
