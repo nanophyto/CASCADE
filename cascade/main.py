@@ -261,38 +261,45 @@ class regression_simulation:
         
         fig, axs = plt.subplots(1, 2, figsize=figsize)
 
+        if log_trans == True:
+            d['x'] = np.log10(d['x'])
+            d['y'] = np.log10(d['y'])
+            d['yhat'] = np.log10(d['yhat'])
 
-
-        #plotting axs[0]:
-        #points:
-        sns.scatterplot(x=d["x"], y=d["y"],  ax=axs[0])
-        #slope:
-        slope = self.results.params['volume']
-
-        # Define the line function
-        def line(x, slope, intercept):
-            return slope * x + intercept
-        # # Generate a range of x values for the line
-        x_range = np.linspace(min(d["x"]), max(d["x"]), 100)
-        y_range = line(x_range, slope, 0)
-        axs[0].plot(x_range, y_range, color='steelblue')
-
-
-        #plotting axs[1]
-        sns.scatterplot(x=d["yhat"], y=d["y"], ax=axs[1])
-        #fit log model for plotting:
-        model = sm.OLS(np.log(d['y']), np.log(d['yhat'])).fit()
-        slope = model.params[0]
-        axs[1].axline(slope=slope, xy1=[np.min(y), np.min(y)], color="blue")
-        #1:1 line
+        sns.regplot(x=d["x"], y=d["y"],  ax=axs[0], ci=None)
+        sns.regplot(x=d["yhat"], y=d["y"], ax=axs[1], ci=None)
         axs[1].axline(slope=1, xy1=[np.min(y), np.min(y)], color="black", linestyle="dashed")
 
+        # #plotting axs[0]:
+        # #points:
+        # sns.scatterplot(x=d["x"], y=d["y"],  ax=axs[0])
+        # #slope:
+        # slope = self.results.params['volume']
 
-        if log_trans == True:
-            axs[0].set_yscale("log")
-            axs[0].set_xscale("log")
-            axs[1].set_yscale("log")
-            axs[1].set_xscale("log")
+        # # Define the line function
+        # def line(x, slope, intercept):
+        #     return slope * x + intercept
+        # # # Generate a range of x values for the line
+        # x_range = np.linspace(min(d["x"]), max(d["x"]), 100)
+        # y_range = line(x_range, slope, 0)
+        # axs[0].plot(x_range, y_range, color='steelblue')
+
+
+        # #plotting axs[1]
+        # sns.scatterplot(x=d["yhat"], y=d["y"], ax=axs[1])
+        # #fit log model for plotting:
+        # model = sm.OLS(np.log(d['y']), np.log(d['yhat'])).fit()
+        # slope = model.params[0]
+        # axs[1].axline(slope=slope, xy1=[np.min(y), np.min(y)], color="blue")
+        # #1:1 line
+        # axs[1].axline(slope=1, xy1=[np.min(y), np.min(y)], color="black", linestyle="dashed")
+
+
+        # if log_trans == True:
+        #     axs[0].set_yscale("log")
+        #     axs[0].set_xscale("log")
+        #     axs[1].set_yscale("log")
+        #     axs[1].set_xscale("log")
 
 
         axs[0].set_title("Allometric scaling")
