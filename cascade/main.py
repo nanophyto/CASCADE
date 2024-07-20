@@ -1013,7 +1013,7 @@ class merge_abundances():
         #print(d.reset_index()['Reference'].unique())
 
         counts =pd.DataFrame({'count': np.count_nonzero(d.fillna(0), axis=0), 'species': d.columns})
-        counts = counts[counts['species']!="Reticulofenestra sessilis"]
+        counts = counts[counts['species']!="Reticulofenestra sessilis HET"]
         filter = counts['species'].str.contains('undefined')
         counts = counts[~filter]
         counts = counts[counts['count']>0]

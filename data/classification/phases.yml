@@ -1,16 +1,16 @@
 ---
 Syracosphaera pulchra HOL galea type:
   phase: HOL
-  alternate_phase: Syracosphaera pulchra 
+  alternate_phase: Syracosphaera pulchra HET
 Syracosphaera pulchra HOL oblonga type:
   phase: HOL
-  alternate_phase: Syracosphaera pulchra 
+  alternate_phase: Syracosphaera pulchra HET 
 Syracosphaera histrica HOL:
   phase: HOL
-  alternate_phase: Syracosphaera histrica 
+  alternate_phase: Syracosphaera histrica HET 
 Syracosphaera arethusae HOL:
   phase: HOL
-  alternate_phase: Syracosphaera arethusae 
+  alternate_phase: Syracosphaera arethusae HET 
 Holococcolithophora dentata HOL:
   phase: HOL
   alternate_phase: unknown
@@ -19,24 +19,24 @@ Syracolithus sp. type A HOL:
   alternate_phase: unknown
 Alisphaera unicornis POL:
   phase: POL
-  alternate_phase: Alisphaera unicornis
+  alternate_phase: Alisphaera unicornis HET
 Poritectolithus maximus HOL:
   phase: HOL
   alternate_phase: unknown
 Calcidiscus leptoporus HOL:
   phase: HOL
-  alternate_phase: Calcidiscus leptoporus
+  alternate_phase: Calcidiscus leptoporus HET
 Syracosphaera anthos HOL:
   phase: HOL
-  alternate_phase: Syracosphaera anthos
+  alternate_phase: Syracosphaera anthos HET
 Acanthoica quattrospina HOL:
   phase: HOL
-  alternate_phase: Acanthoica quattrospina
+  alternate_phase: Acanthoica quattrospina HET
 Syracosphaera lafourcadii HOL:
   phase: HOL
 Syracosphaera molischii HOL:
   phase: HOL
-  alternate_phase: Syracosphaera molischii 
+  alternate_phase: Syracosphaera molischii HET 
 Pappomonas sp. type 3 HOL:
   phase: HOL
 Formonsella pyramidosa HET:
@@ -45,7 +45,7 @@ Turrilithus latericioides HET:
   phase: HET
 Syracosphaera strigilis HET:
   phase: HET
-Helicosphaera HOL confusus type HOL:
+Helicosphaera HOL confusus type:
   phase: HOL
 Alisphaera gaudii POL:
   phase: POL
@@ -53,38 +53,40 @@ Acanthoica acanthos HET:
   phase: HET
 Syracosphaera nana HOL:
   phase: HOL
-  alternate_phase: Syracosphaera nana
+  alternate_phase: Syracosphaera nana HET
 Braarudosphaera bigelowii NANO:
   phase: NANO
 Pappomonas sp. type 5 HET:
   phase: HET
 Syracosphaera bannockii HOL:
   phase: HOL
-  alternate_phase: Syracosphaera bannockii 
+  alternate_phase: Syracosphaera bannockii HET 
 Syracosphaera mediterranea HOL wettsteinii type:
   phase: HOL
-  alternate_phase: Syracosphaera mediterranea 
+  alternate_phase: Syracosphaera mediterranea HET 
 Syracosphaera mediterranea HOL hellenica type:
   phase: HOL
-  alternate_phase: Syracosphaera mediterranea 
+  alternate_phase: Syracosphaera mediterranea HET 
 Syracosphaera strigilis HOL:
   phase: HOL
-  alternate_phase: Syracosphaera strigilis
+  alternate_phase: Syracosphaera strigilis HET
 Algirosphaera cucullata HET:
   phase: HET
 Helicosphaera pavimentum HOL:
   phase: HOL
-  alternate_phase: Helicosphaera pavimentum
+  alternate_phase: Helicosphaera pavimentum HET
 Syracosphaera aurisinae HOL:
   phase: HOL
-  alternate_phase: Syracosphaera aurisinae 
+  alternate_phase: Syracosphaera aurisinae HET 
 Syracosphaera periperforata HOL:
   phase: HOL
-  alternate_phase: Syracosphaera periperforata
+  alternate_phase: Syracosphaera periperforata HET
 Syracosphaera magnaghii HOL:
   phase: HOL
-  alternate_phase: Syracosphaera magnaghii 
-Sphaerocalyptra sp. 1 HET:
+  alternate_phase: Syracosphaera magnaghii HET 
+Sphaerocalyptra sp. 1 HOL:
+  phase: HOL
+Pappomonas sp. type 3 HET:
   phase: HET
 Sphaerocalyptra youngii HOL:
   phase: HOL
@@ -94,28 +96,28 @@ Helladosphaera vavilovii HOL:
   alternate_phase: unknown
 Calyptrosphaera sphaeroidea HOL:
   phase: HOL
-  alternate_phase: Calyptrosphaera sphaeroidea
+  alternate_phase: Calyptrosphaera sphaeroidea HET
 Ceratolithus cristatus CER:
   phase: CER
-  alternate_phase: Ceratolithus cristatus
+  alternate_phase: Ceratolithus cristatus HET
 Syracosphaera mediterranea HOL gracillima type:
   phase: HOL
-  alternate_phase: Syracosphaera mediterranea
+  alternate_phase: Syracosphaera mediterranea HET
 Syracosphaera isselii HOL:
   phase: HOL
-  alternate_phase: Syracosphaera isselii 
+  alternate_phase: Syracosphaera isselii HET 
 Coccolithus pelagicus HOL:
   phase: HOL
-  alternate_phase: Coccolithus pelagicus 
+  alternate_phase: Coccolithus pelagicus HET 
 Poritectolithus poritectus HOL:
   phase: HOL
   alternate_phase: unknown
 Syracosphaera mediterranea HOL marisrubri type:
   phase: HOL
-  alternate_phase: Syracosphaera mediterranea
+  alternate_phase: Syracosphaera mediterranea HET
 Syracosphaera gaarderae HOL:
   phase: HOL
-  alternate_phase: Syracosphaera gaarderae
+  alternate_phase: Syracosphaera gaarderae HET
 Sphaerocalyptra adenensis HOL:
   phase: HOL
   alternate_phase: unknown
@@ -161,34 +163,34 @@ Sphaerocalyptra quadridentata HOL:
   - Cros2002
 Helicosphaera HOL ponticuliferus type:
   phase: HOL
-  alternate_phase:  Helicosphaera wallichii
+  alternate_phase:  Helicosphaera wallichii HET
   ref: Couapel2009
 Calyptrosphaera heimdaliae HOL:
   phase: HOL
-  alternate_phase: Cyrtosphaera aculeata
+  alternate_phase: Cyrtosphaera aculeata HET
   ref: Triantaphyllou2016
 Helicosphaera HOL catilliferus type:
   phase: HOL
-  alternate_phase:  Helicosphaera carteri 
+  alternate_phase:  Helicosphaera carteri HET 
   ref:
   - Cros2002
   - Cros2000
 Gliscolithus amitakareniae HOL:
   phase: HOL
-  alternate_phase: Syracosphaera molischii type 3
+  alternate_phase: Syracosphaera molischii type 3 HET
   ref: 
   - Malinverno2008
 Corisphaera gracilis HOL:
   phase: HOL
-  alternate_phase: Rhabdosphaera xiphos
+  alternate_phase: Rhabdosphaera xiphos HET
   ref: 
   - Supraha2018
   - NannoTax3
 Helladosphaera cornifera HOL:
   phase: HOL
   alternate_phase: 
-  - Syracosphaera nodosa
-  - Syracosphaera noroitica 
+  - Syracosphaera nodosa HET
+  - Syracosphaera noroitica HET 
   ref: 
   - Cros2000
   - Young2002
@@ -197,7 +199,7 @@ Helladosphaera pienaarii HOL:
   alternate_phase: unknown
 Calyptrolithina divergens HOL:
   phase: HOL
-  alternate_phase: Syracosphaera halldalii 
+  alternate_phase: Syracosphaera halldalii HET 
   ref: Triantaphyllou2004
 Emiliania huxleyi HET:
   phase: HET
