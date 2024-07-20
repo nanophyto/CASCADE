@@ -107,7 +107,7 @@ class gridded_datasets():
         gridded_pic = []
 
         for i in range(0, len(species_list)):
-            print(species_list[i])
+        #    print(species_list[i])
             gridded_poc.append(self.merge_abundance_c(species_list[i], variable = 'pg poc'))
             gridded_pic.append(self.merge_abundance_c(species_list[i], variable = 'pg pic'))
         
@@ -125,8 +125,10 @@ class gridded_datasets():
         poc = df[df['variable']==variable]['value']
 
         d_poc = pd.DataFrame({
-            "ci_95_lo" :  d[species].values*np.percentile(poc, 2.5), 
-            "ci_95_up" : d[species].values*np.percentile(poc, 97.5), 
+            "ci_95_lo" + " (" + variable + " L-1)" :  d[species].values*np.percentile(poc, 2.5), 
+            "ci_95_up" + " (" + variable + " L-1)"  : d[species].values*np.percentile(poc, 97.5), 
+            "ci_99_lo" + " (" + variable + " L-1)" :  d[species].values*np.percentile(poc, 0.5), 
+            "ci_99_up" + " (" + variable + " L-1)"  : d[species].values*np.percentile(poc, 99.5), 
             "med" : d[species].values*np.percentile(poc, 50),
             "species":[species]*len(d),
             "lat": d['Latitude'],
@@ -136,10 +138,6 @@ class gridded_datasets():
             "year": d['Year']
             })
 
-        t = pd.melt(d_poc, id_vars=['species', 'lat', 'lon', 'depth', 'month', 'year'], 
-                    value_vars=['ci_95_lo', 'ci_95_up', 'med'])
-
-        t = t.sort_values(by=['month', 'year',  'depth', 'lat', 'lon'])
         return(d_poc)
 
 
@@ -153,6 +151,9 @@ def split_resampled_cellular_dataset(data_path = "./data/output/cellular_dataset
     volume = d[d['variable']=='volume (um3)']
     pic = d[d['variable']=='pg pic']
     poc = d[d['variable']=='pg poc']
+
+    pic = pic.replace('pg pic', 'cellular carbon (pg pic)', regex=True)
+    poc = poc.replace('pg poc', 'cellular carbon (pg poc)', regex=True)
 
     pic.to_csv(export_path + "resampled_PIC.csv", index=False)
     poc.to_csv(export_path + "resampled_POC.csv", index=False)
