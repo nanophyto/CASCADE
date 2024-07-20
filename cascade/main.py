@@ -261,45 +261,45 @@ class regression_simulation:
         
         fig, axs = plt.subplots(1, 2, figsize=figsize)
 
-        if log_trans == True:
-            d['x'] = np.log10(d['x'])
-            d['y'] = np.log10(d['y'])
-            d['yhat'] = np.log10(d['yhat'])
+        # if log_trans == True:
+        #     d['x'] = np.log10(d['x'])
+        #     d['y'] = np.log10(d['y'])
+        #     d['yhat'] = np.log10(d['yhat'])
 
-        sns.regplot(x=d["x"], y=d["y"],  ax=axs[0], ci=None)
-        sns.regplot(x=d["yhat"], y=d["y"], ax=axs[1], ci=None)
-        axs[1].axline(slope=1, xy1=[np.min(y), np.min(y)], color="black", linestyle="dashed")
-
-        # #plotting axs[0]:
-        # #points:
-        # sns.scatterplot(x=d["x"], y=d["y"],  ax=axs[0])
-        # #slope:
-        # slope = self.results.params['volume']
-
-        # # Define the line function
-        # def line(x, slope, intercept):
-        #     return slope * x + intercept
-        # # # Generate a range of x values for the line
-        # x_range = np.linspace(min(d["x"]), max(d["x"]), 100)
-        # y_range = line(x_range, slope, 0)
-        # axs[0].plot(x_range, y_range, color='steelblue')
-
-
-        # #plotting axs[1]
-        # sns.scatterplot(x=d["yhat"], y=d["y"], ax=axs[1])
-        # #fit log model for plotting:
-        # model = sm.OLS(np.log(d['y']), np.log(d['yhat'])).fit()
-        # slope = model.params[0]
-        # axs[1].axline(slope=slope, xy1=[np.min(y), np.min(y)], color="blue")
-        # #1:1 line
+        # sns.regplot(x=d["x"], y=d["y"],  ax=axs[0], ci=None)
+        # sns.regplot(x=d["yhat"], y=d["y"], ax=axs[1], ci=None)
         # axs[1].axline(slope=1, xy1=[np.min(y), np.min(y)], color="black", linestyle="dashed")
 
+        #plotting axs[0]:
+        #points:
+        sns.scatterplot(x=d["x"], y=d["y"],  ax=axs[0])
+        #slope:
+        slope = self.results.params['volume']
 
-        # if log_trans == True:
-        #     axs[0].set_yscale("log")
-        #     axs[0].set_xscale("log")
-        #     axs[1].set_yscale("log")
-        #     axs[1].set_xscale("log")
+        # Define the line function
+        def line(x, slope, intercept):
+            return slope * x + intercept
+        # # Generate a range of x values for the line
+        x_range = np.linspace(min(d["x"]), max(d["x"]), 100)
+        y_range = line(x_range, slope, 0)
+        axs[0].plot(x_range, y_range, color='steelblue')
+
+
+        #plotting axs[1]
+        sns.scatterplot(x=d["yhat"], y=d["y"], ax=axs[1])
+        #fit log model for plotting:
+        model = sm.OLS(np.log(d['y']), np.log(d['yhat'])).fit()
+        slope = model.params[0]
+        axs[1].axline(slope=slope, xy1=[np.min(y), np.min(y)], color="blue")
+        #1:1 line
+        axs[1].axline(slope=1, xy1=[np.min(y), np.min(y)], color="black", linestyle="dashed")
+
+
+        if log_trans == True:
+            axs[0].set_yscale("log")
+            axs[0].set_xscale("log")
+            axs[1].set_yscale("log")
+            axs[1].set_xscale("log")
 
 
         axs[0].set_title("Allometric scaling")
@@ -315,7 +315,7 @@ class regression_simulation:
             0.95,
             "a)",
             transform=axs[0].transAxes,
-            fontsize=16,
+            fontsize=20,
             fontweight="bold",
             va="top",
         )
@@ -325,7 +325,7 @@ class regression_simulation:
             0.95,
             "b)",
             transform=axs[1].transAxes,
-            fontsize=16,
+            fontsize=20,
             fontweight="bold",
             va="top",
         )
@@ -364,32 +364,25 @@ class regression_simulation:
 
         sns.regplot(
             data=d[d["phase_HET"] == 1], x="volume", y="pg pic", ax=axs[0, 0], 
-            ci=None, line_kws={"color": "navy"}
+            ci=None, color="firebrick", line_kws={"color": "maroon"}
         )
         sns.regplot(
             data=d[d["phase_HET"] == 1], y="pg pic", x="yhat", ax=axs[0, 1], 
-            ci=None, line_kws={"color": "navy"}
+            ci=None, color="firebrick", line_kws={"color": "maroon"}
         )
 
         sns.regplot(
             data=d[d["phase_HOL"] == 1], x="volume", y="pg pic", ax=axs[1, 0], 
-            ci=None, color="firebrick"
+            ci=None, color="steelblue", line_kws={"color": "navy"}
         )
 
         sns.regplot(
             data=d[d["phase_HOL"] == 1], y="pg pic", x="yhat", ax=axs[1, 1], 
-            ci=None, color="firebrick"
+            ci=None, color="steelblue", line_kws={"color": "navy"}
         )
 
-
-        axs[0, 1].plot(
-            d[d["phase_HET"] == 1]["pg pic"], d[d["phase_HET"] == 1]["pg pic"],
-            color="black"#, linestyle="dotted"
-        )
-        axs[1, 1].plot(
-            d[d["phase_HET"] == 1]["pg pic"], d[d["phase_HET"] == 1]["pg pic"],
-            color="black"#, linestyle="dotted"
-        )
+        axs[0, 1].axline(slope=1, xy1=[0, 0], color="black", linestyle="dashed")
+        axs[1, 1].axline(slope=1, xy1=[0, 0], color="black", linestyle="dashed")
 
         axs[0, 0].set_title("Scaling (diploid)")
         axs[0, 0].set_ylabel("Carbon content (pg C, log10)")
@@ -424,7 +417,7 @@ class regression_simulation:
             0.95,
             "a)",
             transform=axs[0, 0].transAxes,
-            fontsize=16,
+            fontsize=20,
             fontweight="bold",
             va="top",
         )
@@ -433,7 +426,7 @@ class regression_simulation:
             0.95,
             "b)",
             transform=axs[0, 1].transAxes,
-            fontsize=16,
+            fontsize=20,
             fontweight="bold",
             va="top",
         )
@@ -442,7 +435,7 @@ class regression_simulation:
             0.95,
             "c)",
             transform=axs[1, 0].transAxes,
-            fontsize=16,
+            fontsize=20,
             fontweight="bold",
             va="top",
         )
@@ -451,7 +444,7 @@ class regression_simulation:
             0.95,
             "d)",
             transform=axs[1, 1].transAxes,
-            fontsize=16,
+            fontsize=20,
             fontweight="bold",
             va="top",
         )
