@@ -6,12 +6,9 @@ from statsmodels.graphics.api import abline_plot
 import cartopy.crs as ccrs
 import cartopy as cart
 from pylab import *
-from matplotlib.backends.backend_pdf import PdfPages
 from main import library
 from functions import rename_synonyms, bayes_bootstrap, months_since_winter_solstice_df
-from  matplotlib.ticker import FuncFormatter
-import matplotlib.gridspec as gridspec
-
+import matplotlib as mpl
 
 
 def LM_SEM_size_plot(d_path):
@@ -194,7 +191,7 @@ def depth_time_samples_plot(d):
     df = months_since_winter_solstice_df(d)
 
     # Bin the data
-    depth_bins = np.arange(0, 205, 25)  # Bins for depth (0, 25, 50, 75, 100)
+    depth_bins = np.arange(0, 305, 25)  # Bins for depth (0, 25, 50, 75, 100)
     month_bins = np.arange(0, 13, 1)  # Bins for months (0, 1, 2, ..., 12)
 
     # Bin the data
@@ -207,7 +204,8 @@ def depth_time_samples_plot(d):
     #df['months_since_winter_solstice'] = pd.cut(df['months_since_winter_solstice'], bins=month_bins, right=False, labels=[f'{month_bins[i]}-{month_bins[i+1]}' for i in range(len(month_bins)-1)])
     df['months_since_winter_solstice']  = df['months_since_winter_solstice'].astype(str)
 
-
+    cmap = mpl.cm.Blues(np.linspace(0,1,20))
+    darkened_blues = mpl.colors.ListedColormap(cmap[5:,:-1])
     # Create the joint plot
     g = sns.jointplot(
         x='months_since_winter_solstice',
@@ -217,7 +215,7 @@ def depth_time_samples_plot(d):
         #height=25,
         kind='hist',  # Use hist to get both 2D histogram and marginal histograms
         marginal_kws={'bins': month_bins, 'color': 'steelblue'},  # Bins for marginal histograms
-        cmap='Blues'  # Color map for the 2D histogram
+        cmap=darkened_blues  # Color map for the 2D histogram
     )
 
     # Add labels and title
