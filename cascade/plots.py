@@ -56,9 +56,8 @@ def LM_SEM_size_plot(d_path):
 
 
 
-def LM_SEM_size():
+def LM_SEM_size(log=True, figsize=(12, 12)):
 
-    n = 10000
     d = pd.read_csv("./data/output/counts.csv")
     species_list = d['species']
 
@@ -68,9 +67,6 @@ def LM_SEM_size():
                 "./data/pic/",
                 "./data/poc/",
                 species_list)
-
-    #create a list of HOL species for future use:
-    HOL_list = m.return_HOL_list()
 
     #return the named tuple so we can use it:
     ntpl = m.return_ntpl()
@@ -96,20 +92,47 @@ def LM_SEM_size():
     d['rSEM'] = d['sem']/(d['lm']+d['sem'])
 
 
+    d['ratio'] = d['sem']/d['lm']
+    d.reset_index(inplace=True)
+    d_copy = d.copy()
 
-    fig, ax = plt.subplots()
+    d1 = d_copy[d_copy['ratio']<=0.2]
+    d2 = d_copy[d_copy['ratio']>=5]
+    d_dropped = pd.concat([d1, d2])
 
-    d = d.dropna()
-    no_drop = len(d)
-    x = np.log(d['lm'])
-    y = np.log(d['sem'])
-    sns.scatterplot(x=x, y=y, ax=ax, color="firebrick", s=100)
+    d = d[d['ratio']>0.2]
+    d = d[d['ratio']<5]
+
+
+    if log==False:
+        x = d['lm']
+        y = d['sem']
+        x_dropped = d_dropped['lm']
+        y_dropped = d_dropped['sem']
+    else:
+        x = np.log10(d['lm'])
+        y = np.log10(d['sem'])
+        x_dropped = np.log10(d_dropped['lm'])
+        y_dropped = np.log10(d_dropped['sem'])
+
+
+    fig, ax = plt.subplots(figsize=figsize)
+
     abline_plot(slope=1, intercept=0, ax=ax, color='black', linestyle='dashed')
+    sns.scatterplot(x=x, y=y, ax=ax, s=100)
+    sns.scatterplot(x=x_dropped, y=y_dropped, ax=ax, s=100, color="red")
 
-    ax.set_xlim(2, np.nanmax([x*1.1, y*1.1]))
-    ax.set_ylim(2, np.nanmax([x*1.1, y*1.1]))
+    if log==False:
+        ax.set_xlim(0, np.nanmax([x, y])+100)
+        ax.set_ylim(0, np.nanmax([x, y])+100)
+    else:
+        ax.set_xlim(1.5, np.nanmax([x, y])+1)
+        ax.set_ylim(1.5, np.nanmax([x, y])+1)
+
+    fig.suptitle('Cell size estimates SEM vs LM', weight='bold')
 
     plt.show()
+
 
 
 class sd_simulations:
