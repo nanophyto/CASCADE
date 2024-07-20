@@ -1,7 +1,7 @@
 # CASCADE
 
 
-## Installing the dependecies (w/ conda):
+## Installing the dependencies (w/ conda):
 
 Install the dependencies in a new environment: 
 
