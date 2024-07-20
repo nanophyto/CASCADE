@@ -335,37 +335,40 @@ class regression_simulation:
 
         fig, axs = plt.subplots(2, 2, figsize=figsize)
 
-        sns.scatterplot(
-            data=d[d["phase_HET"] == 1], x="volume", y="pg pic", ax=axs[0, 0]
+        if log_trans == True:
+            d['volume'] = np.log10(d['volume'])
+            d['pg pic'] = np.log10(d['pg pic'])
+            d['yhat'] = np.log10(d['yhat'])
+
+
+        sns.regplot(
+            data=d[d["phase_HET"] == 1], x="volume", y="pg pic", ax=axs[0, 0], 
+            ci=None, line_kws={"color": "navy"}
+        )
+        sns.regplot(
+            data=d[d["phase_HET"] == 1], y="pg pic", x="yhat", ax=axs[0, 1], 
+            ci=None, line_kws={"color": "navy"}
         )
 
-        sns.scatterplot(
-            data=d[d["phase_HET"] == 1], y="pg pic", x="yhat", ax=axs[0, 1]
+        sns.regplot(
+            data=d[d["phase_HOL"] == 1], x="volume", y="pg pic", ax=axs[1, 0], 
+            ci=None, color="firebrick"
         )
 
-        sns.scatterplot(
-            data=d[d["phase_HOL"] == 1], x="volume", y="pg pic", ax=axs[1, 0]
+        sns.regplot(
+            data=d[d["phase_HOL"] == 1], y="pg pic", x="yhat", ax=axs[1, 1], 
+            ci=None, color="firebrick"
         )
 
-        sns.scatterplot(
-            data=d[d["phase_HOL"] == 1], y="pg pic", x="yhat", ax=axs[1, 1]
-        )
+
         axs[0, 1].plot(
-            d[d["phase_HET"] == 1]["pg pic"], d[d["phase_HET"] == 1]["pg pic"]
+            d[d["phase_HET"] == 1]["pg pic"], d[d["phase_HET"] == 1]["pg pic"],
+            color="black"#, linestyle="dotted"
         )
         axs[1, 1].plot(
-            d[d["phase_HOL"] == 1]["pg pic"], d[d["phase_HOL"] == 1]["pg pic"]
+            d[d["phase_HET"] == 1]["pg pic"], d[d["phase_HET"] == 1]["pg pic"],
+            color="black"#, linestyle="dotted"
         )
-
-        if log_trans == True:
-            axs[0, 0].set_yscale("log")
-            axs[0, 0].set_xscale("log")
-            axs[0, 1].set_yscale("log")
-            axs[0, 1].set_xscale("log")
-            axs[1, 0].set_yscale("log")
-            axs[1, 0].set_xscale("log")
-            axs[1, 1].set_yscale("log")
-            axs[1, 1].set_xscale("log")
 
         axs[0, 0].set_title("Scaling (diploid)")
         axs[0, 0].set_ylabel("C content (pg C)")
@@ -383,6 +386,18 @@ class regression_simulation:
         axs[1, 1].set_ylabel("Observed (pg C)")
         axs[1, 1].set_xlabel("Predicted (pg C)")
 
+        axs[0, 1].set_xlim(0, 
+                           np.max(d[d["phase_HET"] == 1]['pg pic']))
+        
+        axs[0, 1].set_ylim(0, 
+                           np.max(d[d["phase_HET"] == 1]['yhat']))
+
+        axs[1, 1].set_xlim(0, 
+                           np.max(d[d["phase_HET"] == 1]['pg pic']))
+        
+        axs[1, 1].set_ylim(0, 
+                           np.max(d[d["phase_HET"] == 1]['yhat']))
+               
         axs[0, 0].text(
             0.05,
             0.95,
