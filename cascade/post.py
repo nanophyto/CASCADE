@@ -24,73 +24,95 @@ class cellular_dataset_table:
 
         size_ci_lo = np.percentile(size, 2.5)
         size_ci_up = np.percentile(size, 97.5)
-        size_mean = np.percentile(size, 50)
+        size_median = np.percentile(size, 50)
 
         size_ci_lo = self.round_sig_fig(size_ci_lo, N=3)
         size_ci_up = self.round_sig_fig(size_ci_up, N=3)
-        size_mean = self.round_sig_fig(size_mean, N=3)
+        size_median = self.round_sig_fig(size_median, N=3)
 
         pic_ci_lo =  np.percentile(pic, 2.5) 
         pic_ci_up = np.percentile(pic, 97.5) 
-        pic_mean = np.percentile(pic, 50) 
+        pic_median = np.percentile(pic, 50) 
 
         pic_ci_lo = self.round_sig_fig(pic_ci_lo, N=3)
         pic_ci_up = self.round_sig_fig(pic_ci_up, N=3)
-        pic_mean = self.round_sig_fig(pic_mean, N=3)
+        pic_median = self.round_sig_fig(pic_median, N=3)
 
 
         poc_ci_lo =  np.percentile(poc, 2.5) 
         poc_ci_up = np.percentile(poc, 97.5) 
-        poc_mean = np.percentile(poc, 50) 
+        poc_median = np.percentile(poc, 50) 
 
 
         poc_ci_lo = self.round_sig_fig(poc_ci_lo, N=3)
         poc_ci_up = self.round_sig_fig(poc_ci_up, N=3)
-        poc_mean = self.round_sig_fig(poc_mean, N=3)
+        poc_median = self.round_sig_fig(poc_median, N=3)
 
         pic_poc = ratio_bootstrap(pic, poc)
-        pic_poc_mean = np.percentile(pic_poc, 50) 
+        pic_poc_median = np.percentile(pic_poc, 50) 
         pic_poc_ci_up = np.percentile(pic_poc, 97.5) 
         pic_poc_ci_lo = np.percentile(pic_poc, 2.5)
         pic_poc_ci_lo = self.round_sig_fig(pic_poc_ci_lo, N=3)
         pic_poc_ci_up = self.round_sig_fig(pic_poc_ci_up, N=3)
-        pic_poc_mean = self.round_sig_fig(pic_poc_mean, N=3)   
+        pic_poc_median = self.round_sig_fig(pic_poc_median, N=3)   
 
 
         counts = pd.read_csv("./data/output/counts.csv")
         n_samples = counts[counts['species']==species]['count']
 
+        # d = pd.DataFrame({'species': [species], 
+        #                 'size (med, [95% CI])':str(size_median) + " " + str([size_ci_lo, size_ci_up]),
+        #                 'POC (med, [95% CI])':str(poc_median) + " " + str([poc_ci_lo, poc_ci_up]),
+        #                 'PIC (med, [95% CI])':str(pic_median) + " " + str([pic_ci_lo, pic_ci_up]),
+        #                 'PIC:POC (med, [95% CI])':str(pic_poc_median) + " " + str([pic_poc_ci_lo, pic_poc_ci_up]),
+
+
+        #                 #, 'abundance obs':n_samples
+        #                 })
+    
         d = pd.DataFrame({'species': [species], 
-                        'size (med, [95% CI])':str(size_mean) + " " + str([size_ci_lo, size_ci_up]),
-                        'POC (med, [95% CI])':str(poc_mean) + " " + str([poc_ci_lo, poc_ci_up]),
-                        'PIC (med, [95% CI])':str(pic_mean) + " " + str([pic_ci_lo, pic_ci_up]),
-                        'PIC:POC (med, [95% CI])':str(pic_poc_mean) + " " + str([pic_poc_ci_lo, pic_poc_ci_up]),
+                        'diameter (um) [median]':size_median,
+                        'diameter (um) [95 CI lower]': size_ci_lo,
+                        'diameter (um) [95 CI upper]': size_ci_up,
 
+                        'POC (pg poc) [median]':poc_median,
+                        'POC (pg poc) [95 CI lower]': poc_ci_lo,
+                        'POC (pg poc) [95 CI upper]': poc_ci_up,
 
-                        #, 'abundance obs':n_samples
+                        'PIC (pg pic) [median]':pic_median,
+                        'PIC (pg pic) [95 CI lower]': pic_ci_lo,
+                        'PIC (pg pic) [95 CI upper]': pic_ci_up,
+
+                        'PIC:POC (pg pic: pg poc) [median]':pic_poc_median,
+                        'PIC:POC (pg pic: pg poc) [95 CI lower]': pic_poc_ci_lo,
+                        'PIC:POC (pg pic: pg poc) [95 CI upper]': pic_poc_ci_up,
                         })
-        
 
         return(d)
 
-    def concat_estimates(self):
+    def concat_estimates(self, print_output=False):
 
         df = []
         species_list = self.d['species'].unique()
         for i in range(len(species_list)):
-            print(species_list[i])
+            if print_output:
+                print(species_list[i])
             df.append(self.merge_results(species_list[i]))
-            print("finished appending species #" + str(i+1) + 
-                  " out of " + str(len(species_list)) + " species")
+            if print_output:
+                print("finished appending species #" + str(i+1) + 
+                    " out of " + str(len(species_list)) + " species")
 
         df = pd.concat(df)
 
         df = df.sort_values(by=['species'])
         
-        print(df.to_latex(index=False,
-                        formatters={"name": str.upper},
-                        float_format="{:.1f}".format,
-        )) 
+        if print_output:
+            print(df.to_latex(index=False,
+                            formatters={"name": str.upper},
+                            float_format="{:.1f}".format,
+            )) 
+
+        return(df)
 
 
 class gridded_datasets():
@@ -145,9 +167,7 @@ class gridded_datasets():
 def split_resampled_cellular_dataset(data_path = "./data/output/cellular_dataset.csv", 
                                      export_path = "./data/Zenodo/resampled_cellular_dataset/"):
     d = pd.read_csv(data_path)
-    print(d)
     diameter = d[d['variable']=='diameter (um)']
-    print(diameter)
     volume = d[d['variable']=='volume (um3)']
     pic = d[d['variable']=='pg pic']
     poc = d[d['variable']=='pg poc']
