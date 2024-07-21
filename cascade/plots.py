@@ -123,8 +123,8 @@ def LM_SEM_size(log=True, figsize=(12, 12)):
         ax.set_xlim(0, np.nanmax([x, y])+100)
         ax.set_ylim(0, np.nanmax([x, y])+100)
     else:
-        ax.set_xlim(1.5, np.nanmax([x, y])+1)
-        ax.set_ylim(1.5, np.nanmax([x, y])+1)
+        ax.set_xlim(0.5, np.nanmax([x, y])+1)
+        ax.set_ylim(0.5, np.nanmax([x, y])+1)
 
     fig.suptitle('Cell size estimates SEM vs LM', weight='bold')
 
@@ -221,8 +221,8 @@ def depth_time_samples_plot(d):
     # Add labels and title
     g.set_axis_labels('Months Since Winter Solstice', 'Depth (m)')
 
-    g.fig.set_figwidth(12)
-    g.fig.set_figheight(4)
+    g.fig.set_figwidth(24)
+    g.fig.set_figheight(8)
     #g.savefig("filename.png", dpi=300)
 
     # Show the plot
