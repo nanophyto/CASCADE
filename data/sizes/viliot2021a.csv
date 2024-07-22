@@ -1,8 +1,8 @@
 species,mean,sd,reference,method,n
-Calcidiscus leptoporus,914.7066474866923,329.16852444804266,villiot2021a,light microscopy,100
-Coccolithus pelagicus,1936.1,23.2,villiot2021a,light microscopy,100
-Emiliania huxleyi,40.78049583481581,7.672933211203944,villiot2021a,light microscopy,100
-Gephyrocapsa muellerae,65.0,3.7,villiot2021a,light microscopy,100
-Gephyrocapsa oceanica,234.6,3.9,villiot2021a,light microscopy,100
-Gephyrocapsa parvula,14.4,1.4,villiot2021a,light microscopy,100
-Syracosphaera pulchra,779.6,31.4,villiot2021a,light microscopy,100
+Calcidiscus leptoporus HET,914.7066474866923,329.16852444804266,villiot2021a,light microscopy,100
+Coccolithus pelagicus HET,1936.1,23.2,villiot2021a,light microscopy,100
+Emiliania huxleyi HET,40.78049583481581,7.672933211203944,villiot2021a,light microscopy,100
+Gephyrocapsa muellerae HET,65.0,3.7,villiot2021a,light microscopy,100
+Gephyrocapsa oceanica HET,234.6,3.9,villiot2021a,light microscopy,100
+Gephyrocapsa parvula HET,14.4,1.4,villiot2021a,light microscopy,100
+Syracosphaera pulchra HET,779.6,31.4,villiot2021a,light microscopy,100

@@ -1,20 +1,20 @@
 species,mean,sd,method,reference,n
 Alisphaera gaudii POL,133.40772100020658,0.0,literature morphometrics,devries2024,1
-Calciopappus caudatus,23.245953786540262,0.0,literature morphometrics,devries2024,1
-Calicasphaera blokii,33.510321638291124,0.0,literature morphometrics,devries2024,1
-Calicasphaera concava,20.579526276115534,0.0,literature morphometrics,devries2024,1
+Calciopappus caudatus HET,23.245953786540262,0.0,literature morphometrics,devries2024,1
+Calicasphaera blokii HOL,33.510321638291124,0.0,literature morphometrics,devries2024,1
+Calicasphaera concava HOL,20.579526276115534,0.0,literature morphometrics,devries2024,1
 Calyptrosphaera sphaeroidea HOL,186.74319070119137,0.0,literature morphometrics,devries2024,1
 Ceratolithus cristatus HET,1147.2769915104475,0.0,literature morphometrics,devries2024,1
 Helicosphaera HOL confusus type,464.34113015324925,0.0,literature morphometrics,devries2024,1
-Helladosphaera pienaarii,169.5908135726393,0.0,literature morphometrics,devries2024,1
-Ophiaster formosus,51.297452611961994,0.0,literature morphometrics,devries2024,1
-Ophiaster hydroideus,44.74027352250442,0.0,literature morphometrics,devries2024,1
-Pappomonas sp. type 5,48.42336351873221,0.0,literature morphometrics,devries2024,1
-Sphaerocalyptra adenensis,69.11514884376759,0.0,literature morphometrics,devries2024,1
-Syracosphaera aurisinae,948.5557088631483,0.0,literature morphometrics,devries2024,1
-Syracosphaera borealis,81.92086828688424,0.0,literature morphometrics,devries2024,1
-Syracosphaera reniformis,59.287319302356906,0.0,literature morphometrics,devries2024,1
-Syracosphaera squamosa,28.80308502505283,0.0,literature morphometrics,devries2024,1
-Syracosphaera strigilis,91.54488702485105,0.0,literature morphometrics,devries2024,1
-Wigwamma antarctica,65.44984694978736,,literature morphometrics,devries2024,1
-Zygosphaera marsilii,175.39533960998614,0.0,literature morphometrics,devries2024,1
+Helladosphaera pienaarii HOL,169.5908135726393,0.0,literature morphometrics,devries2024,1
+Ophiaster formosus HET,51.297452611961994,0.0,literature morphometrics,devries2024,1
+Ophiaster hydroideus HET,44.74027352250442,0.0,literature morphometrics,devries2024,1
+Pappomonas sp. type 5 HET,48.42336351873221,0.0,literature morphometrics,devries2024,1
+Sphaerocalyptra adenensis HOL,69.11514884376759,0.0,literature morphometrics,devries2024,1
+Syracosphaera aurisinae HET,948.5557088631483,0.0,literature morphometrics,devries2024,1
+Syracosphaera borealis HET,81.92086828688424,0.0,literature morphometrics,devries2024,1
+Syracosphaera reniformis HET,59.287319302356906,0.0,literature morphometrics,devries2024,1
+Syracosphaera squamosa HET,28.80308502505283,0.0,literature morphometrics,devries2024,1
+Syracosphaera strigilis HET,91.54488702485105,0.0,literature morphometrics,devries2024,1
+Wigwamma antarctica HET,65.44984694978736,,literature morphometrics,devries2024,1
+Zygosphaera marsilii HOL,175.39533960998614,0.0,literature morphometrics,devries2024,1

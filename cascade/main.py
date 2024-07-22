@@ -916,7 +916,7 @@ class pipeline:
 
         return(d)
     
-    def export_all(self, export_path, species = None, loop_range = None):
+    def export_all(self, export_path, species = None, loop_range = None, print_output=False):
 
         species_list = self.return_species_list()
 
@@ -926,9 +926,11 @@ class pipeline:
         if species == None:
             estimates = []
             for i in loop_range: #
-                print(species_list[i])
+                if print_output:
+                    print(species_list[i])
                 estimates.append(self.resample_measurements(species_list[i]))
-                print("finished estimating species #" + str(i+1) + " out of " + str(len(species_list)) + " species")
+                if print_output:
+                    print("finished estimating species #" + str(i+1) + " out of " + str(len(species_list)) + " species")
             estimates = pd.concat(estimates)
             estimates.to_csv(export_path, index=False)
 
@@ -978,7 +980,7 @@ class merge_abundances():
 
         self.references = d['Reference'].unique()
 
-        print(self.references)
+        #print(self.references)
         #d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).agg('mean')
         #d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).mean()
 
@@ -1043,7 +1045,6 @@ class merge_abundances():
 
     def export_ungridded_abundances(self):
         df = self.d #[self.non_zero_spp]
-    
         df.to_csv(self.export_path +"ungridded_abundances.csv")
         print("ungridded abundances exported to: " + self.export_path +"ungridded_abundances.csv")
 
