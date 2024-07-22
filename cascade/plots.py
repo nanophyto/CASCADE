@@ -36,8 +36,10 @@ def LM_SEM_size_plot(d_path):
 
     d['ratio'] = (d['LM']-d['SEM'])/(d['SEM'])*100
 
+    fig, ax = plt.subplots()
+
     x = bayes_bootstrap(d['ratio'])
-    sns.histplot(x)
+    sns.histplot(x, ax=ax)
 
     plt.title("LM vs SEM abundances (mean % difference)")
     plt.xlabel("mean % difference")
@@ -50,6 +52,7 @@ def LM_SEM_size_plot(d_path):
     print(np.round(np.percentile(x, 50) , 2))
 
     print("fin")
+    return(fig)
 
 
 
@@ -131,7 +134,8 @@ def LM_SEM_size(log=True, figsize=(12, 12)):
     plt.ylabel("SEM size (um, log10)")
     plt.xlabel("LM size (um, log10)")
 
-    plt.show()
+    return(fig)
+#    plt.show()
 
 
 
@@ -187,7 +191,7 @@ class sd_simulations:
 
         #f.autofmt_xdate(rotation=90)
         #ax.legend(ncol=2, title='Sample Size')
-        plt.show()
+        return(g)
 
 
 def depth_time_samples_plot(d):
@@ -227,10 +231,10 @@ def depth_time_samples_plot(d):
     g.fig.set_figwidth(24)
     g.fig.set_figheight(8)
     #g.savefig("filename.png", dpi=300)
-
+    return(g)
     # Show the plot
-    plt.show()
-    plt.rcParams.update({'font.size':20})
+#    plt.show()
+#    plt.rcParams.update({'font.size':20})
 
 
 

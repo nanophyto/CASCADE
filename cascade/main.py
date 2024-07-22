@@ -333,6 +333,7 @@ class regression_simulation:
         fig.suptitle(title, weight="bold")
 
         plt.show()
+        return(fig)
 
 
 
@@ -452,6 +453,8 @@ class regression_simulation:
         fig.suptitle(title, weight="bold")
         plt.tight_layout()
         plt.show()
+
+        return(fig)
 
 
 class library:
