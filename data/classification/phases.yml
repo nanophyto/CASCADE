@@ -1,149 +1,157 @@
 ---
 Syracosphaera pulchra HOL galea type:
   phase: HOL
-  alternate_phase: Syracosphaera pulchra 
+  alternate_phase: Syracosphaera pulchra HET
 Syracosphaera pulchra HOL oblonga type:
   phase: HOL
-  alternate_phase: Syracosphaera pulchra 
-
+  alternate_phase: Syracosphaera pulchra HET 
 Syracosphaera histrica HOL:
   phase: HOL
-  alternate_phase: Syracosphaera histrica 
+  alternate_phase: Syracosphaera histrica HET 
 Syracosphaera arethusae HOL:
   phase: HOL
-  alternate_phase: Syracosphaera arethusae 
-Holococcolithophora dentata:
+  alternate_phase: Syracosphaera arethusae HET 
+Holococcolithophora dentata HOL:
   phase: HOL
   alternate_phase: unknown
-Syracolithus sp. type A:
+Syracolithus sp. type A HOL:
   phase: HOL
   alternate_phase: unknown
 Alisphaera unicornis POL:
   phase: POL
-  alternate_phase: Alisphaera unicornis
-Poritectolithus maximus:
+  alternate_phase: Alisphaera unicornis HET
+Poritectolithus maximus HOL:
   phase: HOL
   alternate_phase: unknown
 Calcidiscus leptoporus HOL:
   phase: HOL
-  alternate_phase: Calcidiscus leptoporus
+  alternate_phase: Calcidiscus leptoporus HET
 Syracosphaera anthos HOL:
   phase: HOL
-  alternate_phase: Syracosphaera anthos
+  alternate_phase: Syracosphaera anthos HET
 Acanthoica quattrospina HOL:
   phase: HOL
-  alternate_phase: Acanthoica quattrospina
+  alternate_phase: Acanthoica quattrospina HET
 Syracosphaera lafourcadii HOL:
   phase: HOL
 Syracosphaera molischii HOL:
   phase: HOL
-  alternate_phase: Syracosphaera molischii 
-Pappomonas sp. type 3:
+  alternate_phase: Syracosphaera molischii HET 
+Pappomonas sp. type 3 HOL:
   phase: HOL
-Formonsella pyramidosa:
+Formonsella pyramidosa HET:
   phase: HET
-Turrilithus latericioides:
+Turrilithus latericioides HET:
   phase: HET
-Syracosphaera strigilis:
+Syracosphaera strigilis HET:
   phase: HET
 Helicosphaera HOL confusus type:
   phase: HOL
 Alisphaera gaudii POL:
   phase: POL
-Acanthoica acanthos:
+Acanthoica acanthos HET:
   phase: HET
 Syracosphaera nana HOL:
   phase: HOL
-  alternate_phase: Syracosphaera nana
-Braarudosphaera bigelowii:
+  alternate_phase: Syracosphaera nana HET
+Braarudosphaera bigelowii NANO:
   phase: NANO
-Pappomonas sp. type 5:
+Pappomonas sp. type 5 HET:
   phase: HET
 Syracosphaera bannockii HOL:
   phase: HOL
-  alternate_phase: Syracosphaera bannockii 
+  alternate_phase: Syracosphaera bannockii HET 
 Syracosphaera mediterranea HOL wettsteinii type:
   phase: HOL
-  alternate_phase: Syracosphaera mediterranea 
+  alternate_phase: Syracosphaera mediterranea HET 
+Syracosphaera mediterranea HOL hellenica type:
+  phase: HOL
+  alternate_phase: Syracosphaera mediterranea HET 
 Syracosphaera strigilis HOL:
   phase: HOL
-  alternate_phase: Syracosphaera strigilis
+  alternate_phase: Syracosphaera strigilis HET
+Algirosphaera cucullata HET:
+  phase: HET
 Helicosphaera pavimentum HOL:
   phase: HOL
-  alternate_phase: Helicosphaera pavimentum
+  alternate_phase: Helicosphaera pavimentum HET
 Syracosphaera aurisinae HOL:
   phase: HOL
-  alternate_phase: Syracosphaera aurisinae 
+  alternate_phase: Syracosphaera aurisinae HET 
 Syracosphaera periperforata HOL:
   phase: HOL
-  alternate_phase: Syracosphaera periperforata
+  alternate_phase: Syracosphaera periperforata HET
 Syracosphaera magnaghii HOL:
   phase: HOL
-  alternate_phase: Syracosphaera magnaghii 
-Sphaerocalyptra youngii:
+  alternate_phase: Syracosphaera magnaghii HET 
+Sphaerocalyptra sp. 1 HOL:
+  phase: HOL
+Pappomonas sp. type 3 HET:
+  phase: HET
+Sphaerocalyptra youngii HOL:
   phase: HOL
   alternate_phase: unknown
-Helladosphaera vavilovii:
+Helladosphaera vavilovii HOL:
   phase: HOL
   alternate_phase: unknown
 Calyptrosphaera sphaeroidea HOL:
   phase: HOL
-  alternate_phase: Calyptrosphaera sphaeroidea
+  alternate_phase: Calyptrosphaera sphaeroidea HET
 Ceratolithus cristatus CER:
   phase: CER
-  alternate_phase: Ceratolithus cristatus
+  alternate_phase: Ceratolithus cristatus HET
 Syracosphaera mediterranea HOL gracillima type:
   phase: HOL
-  alternate_phase: Syracosphaera mediterranea
+  alternate_phase: Syracosphaera mediterranea HET
 Syracosphaera isselii HOL:
   phase: HOL
-  alternate_phase: Syracosphaera isselii 
+  alternate_phase: Syracosphaera isselii HET 
 Coccolithus pelagicus HOL:
   phase: HOL
-  alternate_phase: Coccolithus pelagicus 
-Poritectolithus poritectus:
+  alternate_phase: Coccolithus pelagicus HET 
+Poritectolithus poritectus HOL:
   phase: HOL
   alternate_phase: unknown
 Syracosphaera mediterranea HOL marisrubri type:
   phase: HOL
-  alternate_phase: Syracosphaera mediterranea
+  alternate_phase: Syracosphaera mediterranea HET
 Syracosphaera gaarderae HOL:
   phase: HOL
-  alternate_phase: Syracosphaera gaarderae
-Sphaerocalyptra adenensis:
+  alternate_phase: Syracosphaera gaarderae HET
+Sphaerocalyptra adenensis HOL:
   phase: HOL
   alternate_phase: unknown
-Calicasphaera concava:
+Calicasphaera concava HOL:
   phase: HOL
   alternate_phase: unknown
-Calicasphaera blokii:
+Calicasphaera blokii HOL:
   phase: HOL
   alternate_phase: unknown
-Calyptrolithina multipora:
+Calyptrolithina multipora HOL:
   phase: HOL
   alternate_phase: unknown
-Flosculosphaera calceolariopsis:
+Flosculosphaera calceolariopsis HOL:
   phase: HOL
   alternate_phase: unknown
-Calicasphaera diconstricta:
+Calicasphaera diconstricta HOL:
   phase: HOL
   alternate_phase: unknown
-Zygosphaera marsilii:
+Zygosphaera marsilii HOL:
   phase: HOL
   alternate_phase: unknown
-Corisphaera tyrrheniensis:
+Corisphaera tyrrheniensis HOL:
   phase: HOL
   alternate_phase: unknown
-Homozygosphaera triarcha:
+Homozygosphaera triarcha HOL:
   phase: HOL
   alternate_phase: unknown
-Zygosphaera amoena:
+Zygosphaera amoena HOL:
   phase: HOL
   alternate_phase: unknown
-Homozygosphaera spinosa:
+Homozygosphaera spinosa HOL:
   phase: HOL
   alternate_phase: unknown
-Sphaerocalyptra quadridentata:
+Sphaerocalyptra quadridentata HOL:
   phase: HOL
   alternate_phase: 
   - Algirosphaera robusta
@@ -155,203 +163,203 @@ Sphaerocalyptra quadridentata:
   - Cros2002
 Helicosphaera HOL ponticuliferus type:
   phase: HOL
-  alternate_phase:  Helicosphaera wallichii
+  alternate_phase:  Helicosphaera wallichii HET
   ref: Couapel2009
-Calyptrosphaera heimdaliae:
+Calyptrosphaera heimdaliae HOL:
   phase: HOL
-  alternate_phase: Cyrtosphaera aculeata
+  alternate_phase: Cyrtosphaera aculeata HET
   ref: Triantaphyllou2016
 Helicosphaera HOL catilliferus type:
   phase: HOL
-  alternate_phase:  Helicosphaera carteri 
+  alternate_phase:  Helicosphaera carteri HET 
   ref:
   - Cros2002
   - Cros2000
-Gliscolithus amitakareniae:
+Gliscolithus amitakareniae HOL:
   phase: HOL
-  alternate_phase: Syracosphaera molischii type 3
+  alternate_phase: Syracosphaera molischii type 3 HET
   ref: 
   - Malinverno2008
-Corisphaera gracilis:
+Corisphaera gracilis HOL:
   phase: HOL
-  alternate_phase: Rhabdosphaera xiphos
+  alternate_phase: Rhabdosphaera xiphos HET
   ref: 
   - Supraha2018
   - NannoTax3
-Helladosphaera cornifera:
+Helladosphaera cornifera HOL:
   phase: HOL
   alternate_phase: 
-  - Syracosphaera nodosa
-  - Syracosphaera noroitica 
+  - Syracosphaera nodosa HET
+  - Syracosphaera noroitica HET 
   ref: 
   - Cros2000
   - Young2002
-Helladosphaera pienaarii:
+Helladosphaera pienaarii HOL:
   phase: HOL
   alternate_phase: unknown
-Calyptrolithina divergens:
+Calyptrolithina divergens HOL:
   phase: HOL
-  alternate_phase: Syracosphaera halldalii 
+  alternate_phase: Syracosphaera halldalii HET 
   ref: Triantaphyllou2004
-Emiliania huxleyi:
+Emiliania huxleyi HET:
   phase: HET
-Umbellosphaera irregularis:
+Umbellosphaera irregularis HET:
   phase: HET
-Umbellosphaera tenuis:
+Umbellosphaera tenuis HET:
   phase: HET
-Syracosphaera pulchra:
+Syracosphaera pulchra HET:
   phase: HET
-Rhabdosphaera clavigera:
+Rhabdosphaera clavigera HET:
   phase: HET
-Discosphaera tubifera:
+Discosphaera tubifera HET:
   phase: HET
-Gephyrocapsa ericsonii:
+Gephyrocapsa ericsonii HET:
   phase: HET
-Algirosphaera robusta:
+Algirosphaera robusta HET:
   phase: HET
-Calcidiscus leptoporus:
+Calcidiscus leptoporus HET:
   phase: HET
-Syracosphaera molischii:
+Syracosphaera molischii HET:
   phase: HET
-Gephyrocapsa oceanica:
+Gephyrocapsa oceanica HET:
   phase: HET
-Acanthoica quattrospina:
+Acanthoica quattrospina HET:
   phase: HET
-Umbilicosphaera sibogae:
+Umbilicosphaera sibogae HET:
   phase: HET
-Calciosolenia brasiliensis:
+Calciosolenia brasiliensis HET:
   phase: HET
-Florisphaera profunda:
+Florisphaera profunda NANO:
+  phase: NANO
+Helicosphaera carteri HET:
   phase: HET
-Helicosphaera carteri:
+Ophiaster hydroideus HET:
   phase: HET
-Ophiaster hydroideus:
+Syracosphaera mediterranea HET:
   phase: HET
-Syracosphaera mediterranea:
+Syracosphaera ossa HET:
   phase: HET
-Syracosphaera ossa:
+Calciosolenia murrayi HET:
   phase: HET
-Calciosolenia murrayi:
+Syracosphaera histrica HET:
   phase: HET
-Syracosphaera histrica:
+Rhabdosphaera xiphos HET:
   phase: HET
-Rhabdosphaera xiphos:
+Palusphaera vandelii HET:
   phase: HET
-Palusphaera vandelii:
+Syracosphaera anthos HET:
   phase: HET
-Syracosphaera anthos:
+Oolithotus antillarum HET:
   phase: HET
-Oolithotus antillarum:
+Michaelsarsia elegans HET:
   phase: HET
-Michaelsarsia elegans:
+Michaelsarsia adriaticus HET:
   phase: HET
-Michaelsarsia adriaticus:
+Syracosphaera nodosa HET:
   phase: HET
-Syracosphaera nodosa:
+Syracosphaera prolongata HET:
   phase: HET
-Syracosphaera prolongata:
+Umbilicosphaera hulburtiana HET:
   phase: HET
-Umbilicosphaera hulburtiana:
+Syracosphaera corolla HET:
   phase: HET
-Syracosphaera corolla:
+Coccolithus pelagicus HET:
   phase: HET
-Coccolithus pelagicus:
+Gephyrocapsa muellerae HET:
   phase: HET
-Gephyrocapsa muellerae:
+Syracosphaera halldalli HET:
   phase: HET
-Syracosphaera halldalli:
-  phase: HET
-Gladiolithus flabellatus:
+Gladiolithus flabellatus HET:
   phase: HET
 Ceratolithus cristatus HET:
   phase: HET
-Ophiaster formosus:
+Ophiaster formosus HET:
   phase: HET
-Oolithotus fragilis:
+Oolithotus fragilis HET:
   phase: HET
-Cyrtosphaera aculeata:
+Cyrtosphaera aculeata HET:
   phase: HET
-Syracosphaera neapolitana:
+Syracosphaera neapolitana HET:
   phase: HET
-Acanthoica acanthifera:
+Acanthoica acanthifera HET:
   phase: HET
-Calciopappus caudatus:
+Calciopappus caudatus HET:
   phase: HET
-Alisphaera unicornis:
+Alisphaera unicornis HET:
   phase: HET
-Syracosphaera marginiporata:
+Syracosphaera marginiporata HET:
   phase: HET
-Calciopappus rigidus:
+Calciopappus rigidus HET:
   phase: HET
-Syracosphaera protrudens:
+Syracosphaera protrudens HET:
   phase: HET
-Papposphaera lepida:
+Papposphaera lepida HET:
   phase: HET
-Syracosphaera rotula:
+Syracosphaera rotula HET:
   phase: HET
-Syracosphaera hastata:
+Syracosphaera hastata HET:
   phase: HET
-Umbilicosphaera anulus:
+Umbilicosphaera anulus HET:
   phase: HET
-Umbilicosphaera foliosa:
+Umbilicosphaera foliosa HET:
   phase: HET
-Syracosphaera dilatata:
+Syracosphaera dilatata HET:
   phase: HET
-Syracosphaera orbiculus:
+Syracosphaera orbiculus HET:
   phase: HET
-Alisphaera gaudii:
+Alisphaera gaudii HET:
   phase: HET
-Helicosphaera pavimentum:
+Helicosphaera pavimentum HET:
   phase: HET
-Syracosphaera epigrosa:
+Syracosphaera epigrosa HET:
   phase: HET
-Alisphaera extenta:
+Alisphaera extenta HET:
   phase: HET
-Gephyrocapsa ornata:
+Gephyrocapsa ornata HET:
   phase: HET
-Scyphosphaera apsteinii:
+Scyphosphaera apsteinii HET:
   phase: HET
-Syracosphaera bannockii:
+Syracosphaera bannockii HET:
   phase: HET
-Helicosphaera wallichii:
+Helicosphaera wallichii HET:
   phase: HET
-Reticulofenestra sessilis:
+Reticulofenestra sessilis HET:
   phase: HET
-Picarola margalefii:
+Picarola margalefii HET:
   phase: HET
-Gephyrocapsa parvula:
+Gephyrocapsa parvula HET:
   phase: HET
-Syracosphaera arethusae:
+Syracosphaera arethusae HET:
   phase: HET
-Syracosphaera tumularis:
+Syracosphaera tumularis HET:
   phase: HET
-Syracosphaera ampliora:
+Syracosphaera ampliora HET:
   phase: HET
-Syracosphaera gaarderae:
+Syracosphaera gaarderae HET:
   phase: HET
-Syracosphaera noroitica:
+Syracosphaera noroitica HET:
   phase: HET
-Syracosphaera exigua:
+Syracosphaera exigua HET:
   phase: HET
-Helicosphaera hyalina:
+Helicosphaera hyalina HET:
   phase: HET
-Alisphaera pinnigera:
+Alisphaera pinnigera HET:
   phase: HET
-Syracosphaera squamosa:
+Syracosphaera squamosa HET:
   phase: HET
-Syracosphaera borealis:
+Syracosphaera borealis HET:
   phase: HET
-Wigwamma antarctica:
+Wigwamma antarctica HET:
   phase: HET
-Syracosphaera reniformis:
+Syracosphaera reniformis HET:
   phase: HET
-Pontosphaera syracusana:
+Pontosphaera syracusana HET:
   phase: HET
-Pappomonas type 3:
+Pappomonas type 3 HET:
   phase: HET
-Pappomonas type 5:
+Pappomonas type 5 HET:
   phase: HET
-Syracosphaera aurisinae:
+Syracosphaera aurisinae HET:
   phase: HET
-Hayaster perplexus:
+Hayaster perplexus HET:
   phase: HET

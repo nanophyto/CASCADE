@@ -1,16 +1,16 @@
 species,mean,sd,method,reference,n
-Algirosphaera robusta,78.0,,light microscopy,obrien2013a,3
-Calcidiscus leptoporus,576.0,,light microscopy,obrien2013a,3
-Coccolithus pelagicus,1468.0,,light microscopy,obrien2013a,3
-Discosphaera tubifera,54.0,,light microscopy,obrien2013a,3
-Emiliania huxleyi,22.0,,light microscopy,obrien2013a,3
-Florisphaera profunda,31.0,,light microscopy,obrien2013a,3
-Gephyrocapsa oceanica,65.0,,light microscopy,obrien2013a,3
-Oolithotus antillarum,54.0,,light microscopy,obrien2013a,3
-Oolithotus fragilis,1376.0,,light microscopy,obrien2013a,3
-Rhabdosphaera clavigera,131.0,,light microscopy,obrien2013a,3
-Syracosphaera tumularis,2026.0,,light microscopy,obrien2013a,3
-Umbellosphaera irregularis,131.0,,light microscopy,obrien2013a,3
-Umbellosphaera tenuis,97.0,,light microscopy,obrien2013a,3
-Umbilicosphaera foliosa,395.0,,light microscopy,obrien2013a,3
-Umbilicosphaera sibogae,3315.0,,light microscopy,obrien2013a,3
+Algirosphaera robusta HET,78.0,,light microscopy,obrien2013a,3
+Calcidiscus leptoporus HET,576.0,,light microscopy,obrien2013a,3
+Coccolithus pelagicus HET,1468.0,,light microscopy,obrien2013a,3
+Discosphaera tubifera HET,54.0,,light microscopy,obrien2013a,3
+Emiliania huxleyi HET,22.0,,light microscopy,obrien2013a,3
+Florisphaera profunda NANO,31.0,,light microscopy,obrien2013a,3
+Gephyrocapsa oceanica HET,65.0,,light microscopy,obrien2013a,3
+Oolithotus antillarum HET,54.0,,light microscopy,obrien2013a,3
+Oolithotus fragilis HET,1376.0,,light microscopy,obrien2013a,3
+Rhabdosphaera clavigera HET,131.0,,light microscopy,obrien2013a,3
+Syracosphaera tumularis HET,2026.0,,light microscopy,obrien2013a,3
+Umbellosphaera irregularis HET,131.0,,light microscopy,obrien2013a,3
+Umbellosphaera tenuis HET,97.0,,light microscopy,obrien2013a,3
+Umbilicosphaera foliosa HET,395.0,,light microscopy,obrien2013a,3
+Umbilicosphaera sibogae HET,3315.0,,light microscopy,obrien2013a,3

@@ -4,11 +4,8 @@ import statsmodels.api as sm
 import seaborn as sns
 import matplotlib.pyplot as plt
 import glob, os, warnings
-from joblib import parallel_backend, Parallel, delayed
-from statsmodels.graphics.api import abline_plot
-from sklearn.metrics import r2_score, mean_squared_error
+from joblib import Parallel, delayed
 from scipy import stats
-from statsmodels.tools.tools import add_constant 
 plt.rcParams.update({"font.size": 14})
 from functions import rename_synonyms, bayes_bootstrap
 from yaml import load, Loader
@@ -264,11 +261,39 @@ class regression_simulation:
         
         fig, axs = plt.subplots(1, 2, figsize=figsize)
 
-        sns.scatterplot(
-            x=d["x"], y=d["y"],  ax=axs[0])
+        # if log_trans == True:
+        #     d['x'] = np.log10(d['x'])
+        #     d['y'] = np.log10(d['y'])
+        #     d['yhat'] = np.log10(d['yhat'])
 
+        # sns.regplot(x=d["x"], y=d["y"],  ax=axs[0], ci=None)
+        # sns.regplot(x=d["yhat"], y=d["y"], ax=axs[1], ci=None)
+        # axs[1].axline(slope=1, xy1=[np.min(y), np.min(y)], color="black", linestyle="dashed")
+
+        #plotting axs[0]:
+        #points:
+        sns.scatterplot(x=d["x"], y=d["y"],  ax=axs[0])
+        #slope:
+        slope = self.results.params['volume']
+
+        # Define the line function
+        def line(x, slope, intercept):
+            return slope * x + intercept
+        # # Generate a range of x values for the line
+        x_range = np.linspace(min(d["x"]), max(d["x"]), 100)
+        y_range = line(x_range, slope, 0)
+        axs[0].plot(x_range, y_range, color='steelblue')
+
+
+        #plotting axs[1]
         sns.scatterplot(x=d["yhat"], y=d["y"], ax=axs[1])
-        axs[1].plot(d["y"], d["y"])
+        #fit log model for plotting:
+        model = sm.OLS(np.log(d['y']), np.log(d['yhat'])).fit()
+        slope = model.params[0]
+        axs[1].axline(slope=slope, xy1=[np.min(y), np.min(y)], color="blue")
+        #1:1 line
+        axs[1].axline(slope=1, xy1=[np.min(y), np.min(y)], color="black", linestyle="dashed")
+
 
         if log_trans == True:
             axs[0].set_yscale("log")
@@ -278,21 +303,37 @@ class regression_simulation:
 
 
         axs[0].set_title("Allometric scaling")
-        axs[0].set_ylabel(ylab)
+        axs[0].set_ylabel("Carbon content (pg C, log10)")
         axs[0].set_xlabel("Cell size (um3, log10)")
 
         axs[1].set_title("Observed vs Predicted")
         axs[1].set_ylabel("Observed values (pg C, log10)")
         axs[1].set_xlabel("Predicted values (pg C, log10)")
 
-        fig.suptitle(title, size=24, weight="bold")
+        axs[0].text(
+            0.05,
+            0.95,
+            "a)",
+            transform=axs[0].transAxes,
+            fontsize=20,
+            fontweight="bold",
+            va="top",
+        )
+
+        axs[1].text(
+            0.05,
+            0.95,
+            "b)",
+            transform=axs[1].transAxes,
+            fontsize=20,
+            fontweight="bold",
+            va="top",
+        )
+
+        fig.suptitle(title, weight="bold")
 
         plt.show()
-
-        slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)
-        print("slope :" + str(slope))
-        print("intercept: " + str(intercept))
-        print("r_value: " + str(r_value))
+        return(fig)
 
 
 
@@ -313,98 +354,107 @@ class regression_simulation:
 
         d = pd.concat([x, y, yhat], axis=1)
         d.dropna(inplace=True)
-        print(d)
 
         fig, axs = plt.subplots(2, 2, figsize=figsize)
 
-        sns.scatterplot(
-            data=d[d["phase_HET"] == 1], x="volume", y="pg pic", ax=axs[0, 0]
-        )
-
-        sns.scatterplot(
-            data=d[d["phase_HET"] == 1], y="pg pic", x="yhat", ax=axs[0, 1]
-        )
-
-        sns.scatterplot(
-            data=d[d["phase_HOL"] == 1], x="volume", y="pg pic", ax=axs[1, 0]
-        )
-
-        sns.scatterplot(
-            data=d[d["phase_HOL"] == 1], y="pg pic", x="yhat", ax=axs[1, 1]
-        )
-        axs[0, 1].plot(
-            d[d["phase_HET"] == 1]["pg pic"], d[d["phase_HET"] == 1]["pg pic"]
-        )
-        axs[1, 1].plot(
-            d[d["phase_HOL"] == 1]["pg pic"], d[d["phase_HOL"] == 1]["pg pic"]
-        )
-
         if log_trans == True:
-            axs[0, 0].set_yscale("log")
-            axs[0, 0].set_xscale("log")
-            axs[0, 1].set_yscale("log")
-            axs[0, 1].set_xscale("log")
-            axs[1, 0].set_yscale("log")
-            axs[1, 0].set_xscale("log")
-            axs[1, 1].set_yscale("log")
-            axs[1, 1].set_xscale("log")
+            d['volume'] = np.log10(d['volume'])
+            d['pg pic'] = np.log10(d['pg pic'])
+            d['yhat'] = np.log10(d['yhat'])
+
+
+        sns.regplot(
+            data=d[d["phase_HET"] == 1], x="volume", y="pg pic", ax=axs[0, 0], 
+            ci=None, color="firebrick", line_kws={"color": "maroon"}
+        )
+        sns.regplot(
+            data=d[d["phase_HET"] == 1], y="pg pic", x="yhat", ax=axs[0, 1], 
+            ci=None, color="firebrick", line_kws={"color": "maroon"}
+        )
+
+        sns.regplot(
+            data=d[d["phase_HOL"] == 1], x="volume", y="pg pic", ax=axs[1, 0], 
+            ci=None, color="steelblue", line_kws={"color": "navy"}
+        )
+
+        sns.regplot(
+            data=d[d["phase_HOL"] == 1], y="pg pic", x="yhat", ax=axs[1, 1], 
+            ci=None, color="steelblue", line_kws={"color": "navy"}
+        )
+
+        axs[0, 1].axline(slope=1, xy1=[0, 0], color="black", linestyle="dashed")
+        axs[1, 1].axline(slope=1, xy1=[0, 0], color="black", linestyle="dashed")
 
         axs[0, 0].set_title("Scaling (diploid)")
-        axs[0, 0].set_ylabel("C content (pg C)")
-        axs[0, 0].set_xlabel("Cell size (um3)")
+        axs[0, 0].set_ylabel("Carbon content (pg C, log10)")
+        axs[0, 0].set_xlabel("Cell size (um3, log10)")
 
         axs[0, 1].set_title("Fit (diploid)")
-        axs[0, 1].set_ylabel("Observed (pg C)")
-        axs[0, 1].set_xlabel("Predicted (pg C)")
+        axs[0, 1].set_ylabel("Observed values (pg C, log10)")
+        axs[0, 1].set_xlabel("Predicted values (pg C, log10)")
 
         axs[1, 0].set_title("Scaling (haploid)")
-        axs[1, 0].set_ylabel("C content (pg C)")
-        axs[1, 0].set_xlabel("Cell size (um3)")
+        axs[1, 0].set_ylabel("Carbon content (pg C, log10)")
+        axs[1, 0].set_xlabel("Cell size (um3, log10)")
 
         axs[1, 1].set_title("Fit (haploid)")
-        axs[1, 1].set_ylabel("Observed (pg C)")
-        axs[1, 1].set_xlabel("Predicted (pg C)")
+        axs[1, 1].set_ylabel("Observed values (pg C, log10)")
+        axs[1, 1].set_xlabel("Predicted values (pg C, log10)")
 
+        axs[0, 1].set_xlim(0, 
+                           np.max(d[d["phase_HET"] == 1]['pg pic']))
+        
+        axs[0, 1].set_ylim(0, 
+                           np.max(d[d["phase_HET"] == 1]['yhat']))
+
+        axs[1, 1].set_xlim(0, 
+                           np.max(d[d["phase_HET"] == 1]['pg pic']))
+        
+        axs[1, 1].set_ylim(0, 
+                           np.max(d[d["phase_HET"] == 1]['yhat']))
+               
         axs[0, 0].text(
             0.05,
             0.95,
-            "A)",
+            "a)",
             transform=axs[0, 0].transAxes,
-            fontsize=16,
+            fontsize=20,
             fontweight="bold",
             va="top",
         )
         axs[0, 1].text(
             0.05,
             0.95,
-            "B)",
+            "b)",
             transform=axs[0, 1].transAxes,
-            fontsize=16,
+            fontsize=20,
             fontweight="bold",
             va="top",
         )
         axs[1, 0].text(
             0.05,
             0.95,
-            "C)",
+            "c)",
             transform=axs[1, 0].transAxes,
-            fontsize=16,
+            fontsize=20,
             fontweight="bold",
             va="top",
         )
         axs[1, 1].text(
             0.05,
             0.95,
-            "D)",
+            "d)",
             transform=axs[1, 1].transAxes,
-            fontsize=16,
+            fontsize=20,
             fontweight="bold",
             va="top",
         )
 
-        fig.suptitle(title)
+        fig.suptitle(title, weight="bold")
         plt.tight_layout()
         plt.show()
+
+        return(fig)
 
 
 class library:
@@ -618,6 +668,7 @@ class pipeline:
 
         d = pd.read_csv(root + "output/abundant_species.csv")
         self.species_list = d['species']
+        self.root = root
 
         m = library(root + 'classification/phases.yml',
                     root + 'classification/family.yml',
@@ -727,7 +778,7 @@ class pipeline:
     def c_regression(self, name, measurement, X_predict):
         #function to estimate carbon based on size distribution
         if measurement == "pic":
-            d = pd.read_csv("/home/phyto/CoccoData/data/allometry/sheward2024.csv")
+            d = pd.read_csv(self.root + "/allometry/sheward2024.csv")
 
             phase = [t.phase for t in self.ntpl  if t.species == name][0]
 
@@ -758,14 +809,15 @@ class pipeline:
             c_simulation = r.simulate_predictions(X_predict_oh, boot=True, n_replicates=1)
 
         elif measurement == "poc":
-            d = pd.read_csv("/home/phyto/CoccoData/data/unprocessed/poulton2024.csv")
+            d = pd.read_csv(self.root + "/allometry/poulton2024.csv")
             Y_train = d['pg poc']
             X_train = d['volume']
 
-            X_train = np.log(X_train)
-            X_predict = np.log(X_predict)
+            #X_train = np.log(X_train)
+            #X_predict = np.log(X_predict)
 
-            r = regression_simulation(X_train, Y_train)
+            #r = regression_simulation(X_train, Y_train)
+            r = regression_simulation(X_train, Y_train=Y_train, link= sm.families.links.Identity())
             c_simulation = r.simulate_predictions(X_predict, boot=True, n_replicates=1)
 
         else:
@@ -854,9 +906,9 @@ class pipeline:
         pic_simulation = self.resample_carbon_species(species_name, size_simulation, "pic")
         poc_simulation = self.resample_carbon_species(species_name, size_simulation, "poc")
 
-        d_vol = pd.DataFrame({'species': species_name, 'value': size_simulation, 'variable':'volume'})
+        d_vol = pd.DataFrame({'species': species_name, 'value': size_simulation, 'variable':'volume (um3)'})
         d_poc = pd.DataFrame({'species': species_name, 'value': poc_simulation, 'variable':'pg poc'})
-        d_dia = pd.DataFrame({'species': species_name, 'value': diameter_simulation, 'variable':'diameter'})
+        d_dia = pd.DataFrame({'species': species_name, 'value': diameter_simulation, 'variable':'diameter (um)'})
         d_pic = pd.DataFrame({'species': species_name, 'value': pic_simulation, 'variable':'pg pic'})
 
         d = pd.concat([d_dia, d_vol, d_poc, d_pic])
@@ -864,7 +916,7 @@ class pipeline:
 
         return(d)
     
-    def export_all(self, export_path, species = None, loop_range = None):
+    def export_all(self, export_path, species = None, loop_range = None, print_output=False):
 
         species_list = self.return_species_list()
 
@@ -874,9 +926,11 @@ class pipeline:
         if species == None:
             estimates = []
             for i in loop_range: #
-                print(species_list[i])
+                if print_output:
+                    print(species_list[i])
                 estimates.append(self.resample_measurements(species_list[i]))
-                print("finished estimating species #" + str(i+1) + " out of " + str(len(species_list)) + " species")
+                if print_output:
+                    print("finished estimating species #" + str(i+1) + " out of " + str(len(species_list)) + " species")
             estimates = pd.concat(estimates)
             estimates.to_csv(export_path, index=False)
 
@@ -886,13 +940,11 @@ class pipeline:
 
 class merge_abundances():
 
-    def __init__(self, import_path, export_path):
+    def __init__(self, import_path, export_path, synonym_path):
         self.export_path = export_path
         all_files = glob.glob(os.path.join(import_path, "*.csv"))
 
         d = pd.concat((pd.read_csv(f) for f in all_files), ignore_index=True)
-
-        d = d.replace({0:pd.NA})
 
         d.reset_index(drop=False, inplace=True)
 
@@ -901,12 +953,13 @@ class merge_abundances():
 
         d.set_index(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'], inplace=True)
 
+        d = d.replace({0:pd.NA})
+
         d.rename(columns=lambda x: x.strip(), inplace=True)
 
-        with open('/home/phyto/CoccoData/data/classification/synonyms.yml', 'r') as f:
+        with open(synonym_path, 'r') as f:
             groupings = load(f, Loader=Loader)
 
-        species = d.reset_index().drop(columns=['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).columns
 
         dict = {species:k
             for k, v in groupings.items()
@@ -920,17 +973,28 @@ class merge_abundances():
         except:
             None
 
-
         d = d[d.sum(axis=1)>0]
-
 
         d = (d.rename(columns=dict)
             .groupby(level=0, axis=1, dropna=False)).sum( min_count=1).reset_index()
 
         self.references = d['Reference'].unique()
-        d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).agg('mean')
+
+        #print(self.references)
+        #d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).agg('mean')
+        #d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).mean()
+
+        #species = d.drop(columns=['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).columns
+        #d = d.groupby(['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Reference', 'Method'])[species].agg('mean') #.reset_index()
+        d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'], inplace=True)
+        print("groupby")
+        #print(d.reset_index()['Reference'].unique())
+
 
         d = d.drop(columns=['index'])
+
+        print("drop index")
+        #print(d.reset_index()['Reference'].unique())
 
         #check if final species are in species library
         species_library = {v: k for k, v in dict.items()}
@@ -945,16 +1009,16 @@ class merge_abundances():
         #drop any columns that contain "undefined"
         d = d[d.columns.drop(list(d.filter(regex='undefined')))]
 
-        #drop any rows that sum to zero:
-        d = d[d.sum(axis=1)>0]
         try: #make new dir if needed
             os.makedirs(self.export_path)
         except:
             None
 
+        print("dropped columns that contained undefined")
+        #print(d.reset_index()['Reference'].unique())
 
         counts =pd.DataFrame({'count': np.count_nonzero(d.fillna(0), axis=0), 'species': d.columns})
-        counts = counts[counts['species']!="Reticulofenestra sessilis"]
+        counts = counts[counts['species']!="Reticulofenestra sessilis HET"]
         filter = counts['species'].str.contains('undefined')
         counts = counts[~filter]
         counts = counts[counts['count']>0]
@@ -962,6 +1026,7 @@ class merge_abundances():
         non_zero_spp = counts[counts['count']>0]['species']
 
         d = d[non_zero_spp]
+        #print(d['Reference'].unique())
 
         self.counts = counts
         self.abundant = counts[counts['count']>=20]
@@ -980,9 +1045,8 @@ class merge_abundances():
 
     def export_ungridded_abundances(self):
         df = self.d #[self.non_zero_spp]
-    
-        df.to_csv(self.export_path +"ungridded_observations.csv")
-        print("ungridded abundances exported to: " + self.export_path +"ungridded_observations.csv")
+        df.to_csv(self.export_path +"ungridded_abundances.csv")
+        print("ungridded abundances exported to: " + self.export_path +"ungridded_abundances.csv")
 
     def gridding(self):
         d = self.d[self.abundant['species']]
@@ -995,11 +1059,11 @@ class merge_abundances():
         d['Depth'] = pd.cut(d['Depth'], bins=depth_bins, labels=depth_labels).astype(np.int64) 
 
         lat_bins = np.linspace(-90, 90, 181)
-        lat_labels = np.linspace(-89.5, 89.5, 180)
+        lat_labels = np.linspace(-90, 89, 180)
         d['Latitude'] = pd.cut(d['Latitude'].astype(np.float64), bins=lat_bins, labels=lat_labels).astype(np.float64) 
 
         lon_bins = np.linspace(-180, 180, 361)
-        lon_labels = np.linspace(-179.5, 179.5, 360)
+        lon_labels = np.linspace(-180, 179, 360)
         d['Longitude'] = pd.cut(d['Longitude'].astype(np.float64), bins=lon_bins, labels=lon_labels).astype(np.float64) 
 
         species = d.drop(columns=['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method']).columns
@@ -1015,9 +1079,9 @@ class merge_abundances():
     def export_gridded_abundances(self):
         d = self.gridding()
 
-        d.to_csv(self.export_path +"gridded_observations.csv")
+        d.to_csv(self.export_path +"gridded_abundances.csv", index=False)
         
-        print("gridded abundances exported to: " + self.export_path +"gridded_observations.csv")
+        print("gridded abundances exported to: " + self.export_path +"gridded_abundances.csv")
 
 
 

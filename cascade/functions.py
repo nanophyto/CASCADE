@@ -7,7 +7,25 @@ from joblib import Parallel, delayed
 np.random.seed(2)
 import math
 
-def rename_synonyms(d, classification_path='../data/classification/synonyms.yml',
+def rename_synonyms_wide(d, classification_path='./data/classification/synonyms.yml'):
+    with open(classification_path, 'r') as f:
+        groupings = load(f, Loader=Loader)
+
+    synonym_dict = {species:k
+        for k, v in groupings.items()
+        for species in v}
+
+    # Function to replace column names based on synonym_dict
+    def replace_column_names(col):
+        return synonym_dict.get(col, col)
+
+    d = d.rename(columns=lambda x: replace_column_names(x))
+    
+    d = d.groupby(level=0, axis=1).sum()
+
+    return(d)
+
+def rename_synonyms(d, classification_path='./data/classification/synonyms.yml',
                     verbose=0, index='species', 
                     remove_duplicate=True, take_sum = False, 
                     check_synonyms = True):
@@ -93,8 +111,39 @@ def diameter_to_volume(d):
 
 
 
-def abundance_refs_table(path, tex=False):
-    d = pd.read_csv(path)
+def abundance_refs_table(path, tex=False, method=None):
+
+
+    d = pd.read_csv("./data/output/ungridded_abundances.csv") 
+    ref_1 = d['Reference'].unique()
+
+    d = pd.melt(d, id_vars=['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Day', 'Reference', 'Method'], 
+                value_name='cells L-1', var_name="Species")
+    d.dropna(inplace=True)
+
+    # Convert d back to wide format
+    d = d.pivot_table(index=['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Day', 'Reference', 'Method'], 
+                        columns='Species', 
+                        values='cells L-1').reset_index()
+
+    # If you want the column names to be back to a flat structure (optional)
+    d.columns.name = None
+
+
+    # ref_2 = d['Reference'].unique()
+
+    # empty_refs = np.setdiff1d(ref_1, ref_2)
+
+#    d = pd.read_csv(path)
+
+    if method=="SEM":
+        d = d[d['Method']=="SEM"]
+    elif method=="LM":
+        d = d[d['Method']=="LM"]
+    else:
+        None
+
+    # d = d[~d['Reference'].isin(empty_refs)]
 
     refs = d['Reference'].unique()
 
@@ -229,3 +278,20 @@ def morphometric_size_estimate(
     return(d)
 
 
+def months_since_winter_solstice_df(df):
+    """
+    replaces time dimension with months since winter solstice occurs
+
+    for Latitudes > 0, winter solstice is defined as December (12).
+    For Latitudes < 0, winter solstices is defined as June (6).
+ 
+    """
+    north = df[df['Latitude']>0]
+    north['months_since_winter_solstice'] = abs(np.where(north['Month'] <= 11, north['Month'], 0))
+
+    south = df[df['Latitude']<0]
+    south['months_since_winter_solstice'] = abs(np.where(south['Month'] < 6, south['Month'] + 6, south['Month']-6))
+
+    ds = pd.concat([north, south])
+
+    return(ds)

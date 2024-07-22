@@ -1,141 +1,141 @@
 species,mean,sd,method,reference
-Acanthoica acanthos,180.0,,literature morphometrics,villiot2021b
-Acanthoica maxima,2572.0,,literature morphometrics,villiot2021b
-Acanthoica quattrospina,95.0,,literature morphometrics,villiot2021b
+Acanthoica acanthos HET,180.0,,literature morphometrics,villiot2021b
+Acanthoica maxima HET,2572.0,,literature morphometrics,villiot2021b
+Acanthoica quattrospina HET,95.0,,literature morphometrics,villiot2021b
 Acanthoica quattrospina HOL,903.0,,literature morphometrics,villiot2021b
-Algirosphaera cucullata,53.0,,literature morphometrics,villiot2021b
-Algirosphaera robusta,78.0,,literature morphometrics,villiot2021b
-Alisphaera capulata,186.0,,literature morphometrics,villiot2021b
-Alisphaera extenta,190.0,,literature morphometrics,villiot2021b
-Alisphaera gaudii,167.0,,literature morphometrics,villiot2021b
-Alisphaera ordinata,162.0,,literature morphometrics,villiot2021b
-Alisphaera pinnigera,485.0,,literature morphometrics,villiot2021b
-Alisphaera quadrilatera,284.0,,literature morphometrics,villiot2021b
-Alisphaera unicornis,596.0,,literature morphometrics,villiot2021b
+Algirosphaera cucullata HET,53.0,,literature morphometrics,villiot2021b
+Algirosphaera robusta HET,78.0,,literature morphometrics,villiot2021b
+Alisphaera capulata HET,186.0,,literature morphometrics,villiot2021b
+Alisphaera extenta HET,190.0,,literature morphometrics,villiot2021b
+Alisphaera gaudii HET,167.0,,literature morphometrics,villiot2021b
+Alisphaera ordinata HET,162.0,,literature morphometrics,villiot2021b
+Alisphaera pinnigera HET,485.0,,literature morphometrics,villiot2021b
+Alisphaera quadrilatera HET,284.0,,literature morphometrics,villiot2021b
+Alisphaera unicornis HET,596.0,,literature morphometrics,villiot2021b
 Alisphaera unicornis POL,1468.0,,literature morphometrics,villiot2021b
-Calcidiscus leptoporus,598.0,,literature morphometrics,villiot2021b
+Calcidiscus leptoporus HET,598.0,,literature morphometrics,villiot2021b
 Calcidiscus leptoporus HOL,858.0,,literature morphometrics,villiot2021b
-Calciopappus rigidus,65.0,,literature morphometrics,villiot2021b
-Calciosolenia brasiliensis,462.0,,literature morphometrics,villiot2021b
-Calciosolenia murrayi,67.0,,literature morphometrics,villiot2021b
-Calicasphaera diconstricta,180.0,,literature morphometrics,villiot2021b
-Calyptrolithina divergens,69.0,,literature morphometrics,villiot2021b
-Calyptrolithina multipora,1653.0,,literature morphometrics,villiot2021b
-Calyptrosphaera heimdaliae,144.0,,literature morphometrics,villiot2021b
-Calyptrosphaera sphaeroidea,96.0,,literature morphometrics,villiot2021b
-Chrysotila carterae,1499.0,,literature morphometrics,villiot2021b
-Chrysotila roscoffensis,736.0,,literature morphometrics,villiot2021b
-Coccolithus pelagicus,1468.0,,literature morphometrics,villiot2021b
+Calciopappus rigidus HET,65.0,,literature morphometrics,villiot2021b
+Calciosolenia brasiliensis HET,462.0,,literature morphometrics,villiot2021b
+Calciosolenia murrayi HET,67.0,,literature morphometrics,villiot2021b
+Calicasphaera diconstricta HOL,180.0,,literature morphometrics,villiot2021b
+Calyptrolithina divergens HOL,69.0,,literature morphometrics,villiot2021b
+Calyptrolithina multipora HOL,1653.0,,literature morphometrics,villiot2021b
+Calyptrosphaera heimdaliae HOL,144.0,,literature morphometrics,villiot2021b
+Calyptrosphaera sphaeroidea HET,96.0,,literature morphometrics,villiot2021b
+Chrysotila carterae HET,1499.0,,literature morphometrics,villiot2021b
+Chrysotila roscoffensis HET,736.0,,literature morphometrics,villiot2021b
+Coccolithus pelagicus HET,1468.0,,literature morphometrics,villiot2021b
 Coccolithus pelagicus HOL,817.0,,literature morphometrics,villiot2021b
-Corisphaera gracilis,155.0,,literature morphometrics,villiot2021b
-Corisphaera tyrrheniensis,128.0,,literature morphometrics,villiot2021b
-Cyrtosphaera aculeata,124.0,,literature morphometrics,villiot2021b
-Discosphaera tubifera,108.0,,literature morphometrics,villiot2021b
-Emiliania huxleyi,48.0,,literature morphometrics,villiot2021b
-Florisphaera profunda,34.0,,literature morphometrics,villiot2021b
-Formonsella pyramidosa,10.0,,literature morphometrics,villiot2021b
-Gephyrocapsa ericsonii,10.0,,literature morphometrics,villiot2021b
-Gephyrocapsa muellerae,41.0,,literature morphometrics,villiot2021b
-Gephyrocapsa oceanica,58.0,,literature morphometrics,villiot2021b
-Gephyrocapsa ornata,18.0,,literature morphometrics,villiot2021b
-Gephyrocapsa parvula,19.0,,literature morphometrics,villiot2021b
-Gladiolithus flabellatus,137.0,,literature morphometrics,villiot2021b
-Gliscolithus amitakareniae,249.0,,literature morphometrics,villiot2021b
+Corisphaera gracilis HOL,155.0,,literature morphometrics,villiot2021b
+Corisphaera tyrrheniensis HOL,128.0,,literature morphometrics,villiot2021b
+Cyrtosphaera aculeata HET,124.0,,literature morphometrics,villiot2021b
+Discosphaera tubifera HET,108.0,,literature morphometrics,villiot2021b
+Emiliania huxleyi HET,48.0,,literature morphometrics,villiot2021b
+Florisphaera profunda NANO,34.0,,literature morphometrics,villiot2021b
+Formonsella pyramidosa HET,10.0,,literature morphometrics,villiot2021b
+Gephyrocapsa ericsonii HET,10.0,,literature morphometrics,villiot2021b
+Gephyrocapsa muellerae HET,41.0,,literature morphometrics,villiot2021b
+Gephyrocapsa oceanica HET,58.0,,literature morphometrics,villiot2021b
+Gephyrocapsa ornata HET,18.0,,literature morphometrics,villiot2021b
+Gephyrocapsa parvula HET,19.0,,literature morphometrics,villiot2021b
+Gladiolithus flabellatus HET,137.0,,literature morphometrics,villiot2021b
+Gliscolithus amitakareniae HOL,249.0,,literature morphometrics,villiot2021b
 Helicosphaera HOL ponticuliferus type,382.0,,literature morphometrics,villiot2021b
-Helicosphaera carteri,190.0,,literature morphometrics,villiot2021b
-Helicosphaera hyalina,754.0,,literature morphometrics,villiot2021b
-Helicosphaera pavimentum,756.0,,literature morphometrics,villiot2021b
-Helicosphaera wallichii,34.0,,literature morphometrics,villiot2021b
-Helladosphaera cornifera,72.0,,literature morphometrics,villiot2021b
-Helladosphaera pienaarii,1015.0,,literature morphometrics,villiot2021b
-Helladosphaera vavilovii,52.0,,literature morphometrics,villiot2021b
-Holococcolithophora dentata,1541.0,,literature morphometrics,villiot2021b
-Homozygosphaera spinosa,31.0,,literature morphometrics,villiot2021b
-Homozygosphaera triarcha,82.0,,literature morphometrics,villiot2021b
-Hymenomonas lacuna,1767.0,,literature morphometrics,villiot2021b
-Michaelsarsia adriaticus,894.0,,literature morphometrics,villiot2021b
-Michaelsarsia elegans,180.0,,literature morphometrics,villiot2021b
-Ochrosphaera neapolitana,450.0,,literature morphometrics,villiot2021b
-Oolithotus antillarum,230.0,,literature morphometrics,villiot2021b
-Oolithotus fragilis,1376.0,,literature morphometrics,villiot2021b
-Palusphaera vandelii,523.0,,literature morphometrics,villiot2021b
-Pappomonas borealis,113.0,,literature morphometrics,villiot2021b
-Pappomonas sp. type 3,410.0,,literature morphometrics,villiot2021b
-Papposphaera arctica,180.0,,literature morphometrics,villiot2021b
-Papposphaera lepida,100.0,,literature morphometrics,villiot2021b
-Papposphaera sp. type 1,22.0,,literature morphometrics,villiot2021b
-Papposphaera sp. type 2,22.0,,literature morphometrics,villiot2021b
-Papposphaera sp. type 4,36.0,,literature morphometrics,villiot2021b
-Picarola margalefii,37.0,,literature morphometrics,villiot2021b
-Placorhombus ziveriae,375.0,,literature morphometrics,villiot2021b
-Polycrater sp. ladle-like,575.0,,literature morphometrics,villiot2021b
-Pontosphaera syracusana,2855.0,,literature morphometrics,villiot2021b
-Poritectolithus maximus,443.0,,literature morphometrics,villiot2021b
-Poritectolithus poritectus,410.0,,literature morphometrics,villiot2021b
-Rhabdosphaera clavigera,131.0,,literature morphometrics,villiot2021b
-Rhabdosphaera xiphos,170.0,,literature morphometrics,villiot2021b
-Scyphosphaera apsteinii,4511.0,,literature morphometrics,villiot2021b
+Helicosphaera carteri HET,190.0,,literature morphometrics,villiot2021b
+Helicosphaera hyalina HET,754.0,,literature morphometrics,villiot2021b
+Helicosphaera pavimentum HET,756.0,,literature morphometrics,villiot2021b
+Helicosphaera wallichii HET,34.0,,literature morphometrics,villiot2021b
+Helladosphaera cornifera HOL,72.0,,literature morphometrics,villiot2021b
+Helladosphaera pienaarii HOL,1015.0,,literature morphometrics,villiot2021b
+Helladosphaera vavilovii HOL,52.0,,literature morphometrics,villiot2021b
+Holococcolithophora dentata HOL,1541.0,,literature morphometrics,villiot2021b
+Homozygosphaera spinosa HOL,31.0,,literature morphometrics,villiot2021b
+Homozygosphaera triarcha HOL,82.0,,literature morphometrics,villiot2021b
+Hymenomonas lacuna HET,1767.0,,literature morphometrics,villiot2021b
+Michaelsarsia adriaticus HET,894.0,,literature morphometrics,villiot2021b
+Michaelsarsia elegans HET,180.0,,literature morphometrics,villiot2021b
+Ochrosphaera neapolitana HET,450.0,,literature morphometrics,villiot2021b
+Oolithotus antillarum HET,230.0,,literature morphometrics,villiot2021b
+Oolithotus fragilis HET,1376.0,,literature morphometrics,villiot2021b
+Palusphaera vandelii HET,523.0,,literature morphometrics,villiot2021b
+Pappomonas borealis HET,113.0,,literature morphometrics,villiot2021b
+Pappomonas sp. type 3 HET,410.0,,literature morphometrics,villiot2021b
+Papposphaera arctica HET,180.0,,literature morphometrics,villiot2021b
+Papposphaera lepida HET,100.0,,literature morphometrics,villiot2021b
+Papposphaera sp. type 1 HET,22.0,,literature morphometrics,villiot2021b
+Papposphaera sp. type 2 HET,22.0,,literature morphometrics,villiot2021b
+Papposphaera sp. type 4 HET,36.0,,literature morphometrics,villiot2021b
+Picarola margalefii HET,37.0,,literature morphometrics,villiot2021b
+Placorhombus ziveriae HET,375.0,,literature morphometrics,villiot2021b
+Polycrater sp. ladle-like POL,575.0,,literature morphometrics,villiot2021b
+Pontosphaera syracusana HET,2855.0,,literature morphometrics,villiot2021b
+Poritectolithus maximus HOL,443.0,,literature morphometrics,villiot2021b
+Poritectolithus poritectus HOL,410.0,,literature morphometrics,villiot2021b
+Rhabdosphaera clavigera HET,131.0,,literature morphometrics,villiot2021b
+Rhabdosphaera xiphos HET,170.0,,literature morphometrics,villiot2021b
+Scyphosphaera apsteinii HET,4511.0,,literature morphometrics,villiot2021b
 Scyphosphaera apsteinii HOL,3882.0,,literature morphometrics,villiot2021b
-Sphaerocalyptra quadridentata,4.0,,literature morphometrics,villiot2021b
-Sphaerocalyptra sp. 1,131.0,,literature morphometrics,villiot2021b
-Syracolithus sp. type A,116.0,,literature morphometrics,villiot2021b
-Syracosphaera ampliora,248.0,,literature morphometrics,villiot2021b
-Syracosphaera anthos,485.0,,literature morphometrics,villiot2021b
+Sphaerocalyptra quadridentata HOL,4.0,,literature morphometrics,villiot2021b
+Sphaerocalyptra sp. 1 HOL,131.0,,literature morphometrics,villiot2021b
+Syracolithus sp. type A HOL,116.0,,literature morphometrics,villiot2021b
+Syracosphaera ampliora HET,248.0,,literature morphometrics,villiot2021b
+Syracosphaera anthos HET,485.0,,literature morphometrics,villiot2021b
 Syracosphaera anthos HOL,425.0,,literature morphometrics,villiot2021b
-Syracosphaera arethusae,395.0,,literature morphometrics,villiot2021b
+Syracosphaera arethusae HET,395.0,,literature morphometrics,villiot2021b
 Syracosphaera arethusae HOL,207.0,,literature morphometrics,villiot2021b
-Syracosphaera aurisinae,250.0,,literature morphometrics,villiot2021b
+Syracosphaera aurisinae HET,250.0,,literature morphometrics,villiot2021b
 Syracosphaera aurisinae HOL,151.0,,literature morphometrics,villiot2021b
-Syracosphaera bannockii,457.0,,literature morphometrics,villiot2021b
+Syracosphaera bannockii HET,457.0,,literature morphometrics,villiot2021b
 Syracosphaera bannockii HOL,145.0,,literature morphometrics,villiot2021b
-Syracosphaera borealis,217.0,,literature morphometrics,villiot2021b
-Syracosphaera castellata,360.0,,literature morphometrics,villiot2021b
-Syracosphaera corolla,432.0,,literature morphometrics,villiot2021b
-Syracosphaera dilatata,200.0,,literature morphometrics,villiot2021b
-Syracosphaera epigrosa,572.0,,literature morphometrics,villiot2021b
-Syracosphaera exigua,395.0,,literature morphometrics,villiot2021b
-Syracosphaera florida,885.0,,literature morphometrics,villiot2021b
-Syracosphaera gaarderae,323.0,,literature morphometrics,villiot2021b
+Syracosphaera borealis HET,217.0,,literature morphometrics,villiot2021b
+Syracosphaera castellata HET,360.0,,literature morphometrics,villiot2021b
+Syracosphaera corolla HET,432.0,,literature morphometrics,villiot2021b
+Syracosphaera dilatata HET,200.0,,literature morphometrics,villiot2021b
+Syracosphaera epigrosa HET,572.0,,literature morphometrics,villiot2021b
+Syracosphaera exigua HET,395.0,,literature morphometrics,villiot2021b
+Syracosphaera florida HET,885.0,,literature morphometrics,villiot2021b
+Syracosphaera gaarderae HET,323.0,,literature morphometrics,villiot2021b
 Syracosphaera gaarderae HOL,239.0,,literature morphometrics,villiot2021b
-Syracosphaera halldalii,796.0,,literature morphometrics,villiot2021b
-Syracosphaera hastata,116.0,,literature morphometrics,villiot2021b
-Syracosphaera histrica,1596.0,,literature morphometrics,villiot2021b
+Syracosphaera halldalii HET,796.0,,literature morphometrics,villiot2021b
+Syracosphaera hastata HET,116.0,,literature morphometrics,villiot2021b
+Syracosphaera histrica HET,1596.0,,literature morphometrics,villiot2021b
 Syracosphaera histrica HOL,1050.0,,literature morphometrics,villiot2021b
 Syracosphaera isselii HOL,151.0,,literature morphometrics,villiot2021b
 Syracosphaera lafourcadii HOL,19.0,,literature morphometrics,villiot2021b
-Syracosphaera leptolepsis,165.0,,literature morphometrics,villiot2021b
+Syracosphaera leptolepsis HET,165.0,,literature morphometrics,villiot2021b
 Syracosphaera magnaghii HOL,82.0,,literature morphometrics,villiot2021b
-Syracosphaera marginiporata,124.0,,literature morphometrics,villiot2021b
-Syracosphaera maxima,16366.0,,literature morphometrics,villiot2021b
-Syracosphaera mediterranea,1048.0,,literature morphometrics,villiot2021b
+Syracosphaera marginiporata HET,124.0,,literature morphometrics,villiot2021b
+Syracosphaera maxima HET,16366.0,,literature morphometrics,villiot2021b
+Syracosphaera mediterranea HET,1048.0,,literature morphometrics,villiot2021b
 Syracosphaera mediterranea HOL hellenica type,1224.0,,literature morphometrics,villiot2021b
 Syracosphaera mediterranea HOL wettsteinii type,462.0,,literature morphometrics,villiot2021b
-Syracosphaera molischii,213.0,,literature morphometrics,villiot2021b
+Syracosphaera molischii HET,213.0,,literature morphometrics,villiot2021b
 Syracosphaera molischii HOL,82.0,,literature morphometrics,villiot2021b
 Syracosphaera nana HOL,180.0,,literature morphometrics,villiot2021b
-Syracosphaera neapolitana,76.0,,literature morphometrics,villiot2021b
-Syracosphaera nodosa,97.0,,literature morphometrics,villiot2021b
-Syracosphaera noroitica,796.0,,literature morphometrics,villiot2021b
-Syracosphaera orbiculus,212.0,,literature morphometrics,villiot2021b
-Syracosphaera ossa,87.0,,literature morphometrics,villiot2021b
+Syracosphaera neapolitana HET,76.0,,literature morphometrics,villiot2021b
+Syracosphaera nodosa HET,97.0,,literature morphometrics,villiot2021b
+Syracosphaera noroitica HET,796.0,,literature morphometrics,villiot2021b
+Syracosphaera orbiculus HET,212.0,,literature morphometrics,villiot2021b
+Syracosphaera ossa HET,87.0,,literature morphometrics,villiot2021b
 Syracosphaera periperforata HOL,78.0,,literature morphometrics,villiot2021b
-Syracosphaera prolongata,23.0,,literature morphometrics,villiot2021b
-Syracosphaera protrudens,442.0,,literature morphometrics,villiot2021b
-Syracosphaera pulchra,17.0,,literature morphometrics,villiot2021b
+Syracosphaera prolongata HET,23.0,,literature morphometrics,villiot2021b
+Syracosphaera protrudens HET,442.0,,literature morphometrics,villiot2021b
+Syracosphaera pulchra HET,17.0,,literature morphometrics,villiot2021b
 Syracosphaera pulchra HOL oblonga type,1767.0,,literature morphometrics,villiot2021b
 Syracosphaera pulchra HOL pirus type,54.0,,literature morphometrics,villiot2021b
-Syracosphaera reniformis,29.0,,literature morphometrics,villiot2021b
-Syracosphaera rotula,64.0,,literature morphometrics,villiot2021b
+Syracosphaera reniformis HET,29.0,,literature morphometrics,villiot2021b
+Syracosphaera rotula HET,64.0,,literature morphometrics,villiot2021b
 Syracosphaera strigilis HOL,43.0,,literature morphometrics,villiot2021b
-Syracosphaera tumularis,2026.0,,literature morphometrics,villiot2021b
-Tetralithoides quadrilaminata,3942.0,,literature morphometrics,villiot2021b
-Turrilithus latericioides,268.0,,literature morphometrics,villiot2021b
-Umbellosphaera irregularis,200.0,,literature morphometrics,villiot2021b
-Umbellosphaera tenuis,322.0,,literature morphometrics,villiot2021b
-Umbilicosphaera anulus,2226.0,,literature morphometrics,villiot2021b
-Umbilicosphaera hulburtiana,168.0,,literature morphometrics,villiot2021b
-Umbilicosphaera sibogae,7421.0,,literature morphometrics,villiot2021b
-Zygosphaera amoena,60.0,,literature morphometrics,villiot2021b
+Syracosphaera tumularis HET,2026.0,,literature morphometrics,villiot2021b
+Tetralithoides quadrilaminata HET,3942.0,,literature morphometrics,villiot2021b
+Turrilithus latericioides HET,268.0,,literature morphometrics,villiot2021b
+Umbellosphaera irregularis HET,200.0,,literature morphometrics,villiot2021b
+Umbellosphaera tenuis HET,322.0,,literature morphometrics,villiot2021b
+Umbilicosphaera anulus HET,2226.0,,literature morphometrics,villiot2021b
+Umbilicosphaera hulburtiana HET,168.0,,literature morphometrics,villiot2021b
+Umbilicosphaera sibogae HET,7421.0,,literature morphometrics,villiot2021b
+Zygosphaera amoena HOL,60.0,,literature morphometrics,villiot2021b
 undefined Acanthoica,40.0,,literature morphometrics,villiot2021b
 undefined Alisphaera,150.0,,literature morphometrics,villiot2021b
 undefined Calciopappus,817.0,,literature morphometrics,villiot2021b

@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from yaml import load, Loader
 import glob, os
-from functions import rename_synonyms, morphometric_size_estimate, volume_sphere
+from functions import rename_synonyms, rename_synonyms_wide, morphometric_size_estimate, volume_sphere
 import math 
 
 class pre_allometry():
@@ -11,6 +11,7 @@ class pre_allometry():
                  export_path = "../data/allometry/",
                  classification_path = "../data/classification/"):
         self.import_path = import_path
+        print(self.import_path)
         self.export_path = export_path
         self.classification_path = classification_path
 
@@ -582,7 +583,7 @@ class pre_pic():
         self.pre_sheward2024()
         self.pre_sheward2016()
         self.pre_sheward2014()
-        self.pre_devries2024()
+    #    self.pre_devries2024()
 
         print("finished processing:")
         print("sheward2014")
@@ -593,13 +594,18 @@ class pre_pic():
 
 class pre_abundances():
 
-    def __init__(self, import_path = "../data/unprocessed/allometry/", 
+    def __init__(self, root,
+                    import_path = "../data/unprocessed/allometry/", 
                     export_path = "../data/allometry/",
-                    reference_path = "../data/references/"):
+                    reference_path = "../data/references/",
+                    classification_path = '../data/classification/synonyms.yml'):
         
+        self.root = root
+        print(root)
         self.import_path = import_path
         self.export_path = export_path
         self.yaml_path = reference_path
+        self.classification_path = classification_path
 
     def clean_hagino200(self): 
         d = pd.read_csv(self.import_path + "Hagino2006.csv", 
@@ -633,6 +639,8 @@ class pre_abundances():
         d.fillna(0, inplace=True)
 
         d = d.reset_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        
+        d = rename_synonyms_wide(d, classification_path=self.classification_path)
         d.to_csv(self.export_path + "Hagino2006.csv", index=False)
 
 
@@ -662,7 +670,7 @@ class pre_abundances():
 
         d.insert(0, 'Method', 'SEM')
 
-        with open('/home/phyto/CoccoData/data/unprocessed/references/refs_devries.yml', 'r') as f:
+        with open(self.root + '/data/references/refs_devries.yml', 'r') as f:
             short_refs = load(f, Loader=Loader)
 
         d=d.replace({"Reference": short_refs})
@@ -676,7 +684,7 @@ class pre_abundances():
 
 
 
-    def clean_johnson(self):
+    def clean_johnson2023(self):
         d = pd.read_csv(self.import_path + "johnson2023.csv")
 
         with open(self.yaml_path + 'johnson2023.yml', 'r') as f:
@@ -691,12 +699,14 @@ class pre_abundances():
         
         d = d.replace(["Light microscopy" 
                 ], "LM")
-        d.columns = [col.replace(' [#/l]', '') for col in d.columns]
-        print(d.head())
-        
+        d.columns = [col.replace(' [#/l]', '') for col in d.columns]        
         d.drop(columns=['Date/Time'], inplace=True)
         d.rename(columns = {'Sample method':'Method'}, inplace = True)
         d.columns = [col.strip() for col in d.columns]
+
+        d = d[d['Reference']!="Estrada1985"] #unpublished data (did not reach out for permission)
+
+#        d = rename_synonyms_wide(d, classification_path=self.classification_path)
 
         for i in range(len(d['Reference'].unique())):
             reference_to_export = d['Reference'].unique()[i]
@@ -929,6 +939,22 @@ class pre_abundances():
         d = d.reset_index()
         d.to_csv(self.export_path + "Keuter2022.csv", index=False)
 
+    def clean_guerreiro2023(self):
+        d = pd.read_csv(self.import_path + "guerreiro2023.csv")
+
+        d['Month'] = pd.DatetimeIndex(d['Date']).month
+        d['Year'] = pd.DatetimeIndex(d['Date']).year
+        d['Day'] = pd.DatetimeIndex(d['Date']).day
+
+        d.drop(columns=['Date'], inplace=True)
+
+        d['Method'] = "LM"
+
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
+        d.to_csv(self.export_path + "Guerreiro2023.csv", index=False)
+
+
     def preprocess_all(self):
         self.clean_estrada2016()
         self.clean_hagino200()
@@ -943,4 +969,5 @@ class pre_abundances():
         self.clean_kleijne1984()
         self.clean_keuter2023()
         self.clean_keuter2022()
+        self.clean_guerreiro2023()
         print("finished processing abundances")

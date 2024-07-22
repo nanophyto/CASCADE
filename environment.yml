@@ -1,0 +1,13 @@
+name: cascade-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - numpy==1.26.4
+  - pandas==2.2.2
+  - pyyaml==6.0.1
+  - ipykernel==6.28.0
+  - joblib==1.4.2
+  - statsmodels==0.14.2
+  - seaborn==0.13.2
+  - matplotlib==3.8.4
