@@ -939,6 +939,22 @@ class pre_abundances():
         d = d.reset_index()
         d.to_csv(self.export_path + "Keuter2022.csv", index=False)
 
+    def clean_guerreiro2023(self):
+        d = pd.read_csv(self.import_path + "guerreiro2023.csv")
+
+        d['Month'] = pd.DatetimeIndex(d['Date']).month
+        d['Year'] = pd.DatetimeIndex(d['Date']).year
+        d['Day'] = pd.DatetimeIndex(d['Date']).day
+
+        d.drop(columns=['Date'], inplace=True)
+
+        d['Method'] = "LM"
+
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
+        d.to_csv(self.export_path + "Guerreiro2023.csv", index=False)
+
+
     def preprocess_all(self):
         self.clean_estrada2016()
         self.clean_hagino200()
@@ -953,4 +969,5 @@ class pre_abundances():
         self.clean_kleijne1984()
         self.clean_keuter2023()
         self.clean_keuter2022()
+        self.clean_guerreiro2023()
         print("finished processing abundances")

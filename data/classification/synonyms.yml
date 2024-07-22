@@ -292,6 +292,7 @@ Gephyrocapsa muellerae HET:
 - G. muellerae
 - Gephyrocapsa muellerae
 - Gephyrocapsa mullerae
+- G.muellerae
 Gephyrocapsa oceanica HET:
 - Geophyrocapsa oceanica
 - Geophyrocapsa oceanica(deformed)
@@ -313,6 +314,7 @@ Gladiolithus flabellatus HET:
 - G. flabellatus
 - Gladiolithus flabellata
 - Gladiolithus flabellatus
+- G- flabellatus
 Gliscolithus amitakareniae HOL:
 - G. amitakareniae
 - Gliscolithus amitakareniae
@@ -359,9 +361,11 @@ Helicosphaera carteri HET:
 - Helicosphaera.carteri
 - Helicosphaera carterii
 - Helicosphaera carteri
+- H.carteri
 Helicosphaera hyalina HET:
 - H. hyalina
 - Helicosphaera hyalina
+- H.hyalina
 Helicosphaera pavimentum HET:
 - Helicopontosphaera sp.A
 - H. pavimentum
@@ -376,6 +380,7 @@ Helicosphaera wallichii HET:
 - H. wallichii
 - Helicosphera wallichi
 - Helicosphaera wallichii
+- H.wallichii
 Helladosphaera cornifera HOL:
 - H. cornifera (Including H. spinosa)
 - H. cornifera
@@ -441,12 +446,14 @@ Oolithotus antillarum HET:
 - O. antillarum
 - Oolithotus antillarium
 - Oolithotus antillarum
+- O.antillarum
 Oolithotus fragilis HET:
 - Oolithotus fragilis
 - Cyclococcolithina fragilis
 - Cyclococcolithina fragilis var.A
 - O. fragilis
 - Cyclococcolithus fragilis
+- O.fragilis
 Ophiaster formosus HET:
 - O. formosus
 - Ophiaster formosus
@@ -592,10 +599,13 @@ Rhabdosphaera clavigera HET:
 - Rhabdosphaera claviger
 - R. clavigera var stylifera
 - R. clavigera var clavigera
+- R.stylifera
+- R.clavigera
 Rhabdosphaera xiphos HET:
 - R. xiphos
 - Rhadbosphaera xiphos
 - Rhabdosphaera xiphos
+- R.xiphos
 Rhabdosphaera xiphos COMB:
 - R. xiphos (COMB)
 Scyphosphaera apsteinii HET:
@@ -652,6 +662,8 @@ Sphaerocalyptra sp. 6 HOL:
 - Sphaerocalyptra sp. (sp. 6 ( from Cros and Fortuno...)
 Sphaerocalyptra sp. Y HOL:
 - Sphaerocalyptra sp. Y
+Syracosphaera sp. Y HET:
+- Coronosphaera Sp Y
 Sphaerocalyptra youngii HOL:
 - Sphaerocalyptra youngii
 - S. youngii
@@ -824,11 +836,13 @@ Syracosphaera marginiporata HOL:
 Syracosphaera maxima HET:
 - Coronosphaera maxima
 - C. maxima
+- C.maxima
 Syracosphaera mediterranea HET:
 - Coronosphaera mediterranea
 - Coronosphaera spp.
 - S. mediterranea
 - Coronosphaera binodata
+- C.binodata
 - C. binodata [#l]
 - Syracosphaera pulchroides
 - Coronosphaera mediterranea
@@ -1065,6 +1079,7 @@ Umbilicosphaera angustiforamen HET:
 Umbilicosphaera anulus HET:
 - U. anulus
 - Umbilicosphaera anulus
+- U.anulus
 Umbilicosphaera foliosa HET:
 - Umbilicosphaera foliosa
 - Umbilicosphaera sibogae var.A
@@ -1073,6 +1088,7 @@ Umbilicosphaera foliosa HET:
 Umbilicosphaera hulburtiana HET:
 - U. hulburtiana
 - Umbilicosphaera hulburtiana
+- U.hulburtiana
 Umbilicosphaera sibogae HET:
 - Umbilicosphaera sibogae var.B
 - Umbellosphaera sibogae
@@ -1082,6 +1098,7 @@ Umbilicosphaera sibogae HET:
 - Umbilicosphaera mirabilis
 - U. sibogae var siboage
 - Umbilicosphaera sibogae
+- U.sibogae
 Vexillarius cancellifer HET:
 - V. cancellifer
 - Vexillarius cancellifer
@@ -1234,6 +1251,7 @@ undefined Reticulafenestra:
 undefined Rhabdosphaera:
 - Rhabdosphaera spp.
 - Rhabdosphaera sp.
+- Rhabdosphaera sp
 undefined Rhabdosphaeraceae:
 - Rhabdosphaeraceae
 undefined Scyphosphaera:
@@ -1308,6 +1326,7 @@ undefined hetero:
 Scyphosphaera porosa HET:
 - S. porosa
 undefined holo:
+- Holococcolithophores s.l.
 - HOL unknown
 - Holococcolithophore spp.
 - HOL spp.
