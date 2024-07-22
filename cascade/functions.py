@@ -112,7 +112,29 @@ def diameter_to_volume(d):
 
 
 def abundance_refs_table(path, tex=False, method=None):
-    d = pd.read_csv(path)
+
+
+    d = pd.read_csv("./data/output/ungridded_abundances.csv") 
+    ref_1 = d['Reference'].unique()
+
+    d = pd.melt(d, id_vars=['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Day', 'Reference', 'Method'], 
+                value_name='cells L-1', var_name="Species")
+    d.dropna(inplace=True)
+
+    # Convert d back to wide format
+    d = d.pivot_table(index=['Latitude', 'Longitude', 'Depth', 'Month', 'Year', 'Day', 'Reference', 'Method'], 
+                        columns='Species', 
+                        values='cells L-1').reset_index()
+
+    # If you want the column names to be back to a flat structure (optional)
+    d.columns.name = None
+
+
+    # ref_2 = d['Reference'].unique()
+
+    # empty_refs = np.setdiff1d(ref_1, ref_2)
+
+#    d = pd.read_csv(path)
 
     if method=="SEM":
         d = d[d['Method']=="SEM"]
@@ -120,6 +142,8 @@ def abundance_refs_table(path, tex=False, method=None):
         d = d[d['Method']=="LM"]
     else:
         None
+
+    # d = d[~d['Reference'].isin(empty_refs)]
 
     refs = d['Reference'].unique()
 

@@ -128,6 +128,9 @@ def LM_SEM_size(log=True, figsize=(12, 12)):
 
     fig.suptitle('Cell size estimates SEM vs LM', weight='bold')
 
+    plt.ylabel("SEM size (um, log10)")
+    plt.xlabel("LM size (um, log10)")
+
     plt.show()
 
 

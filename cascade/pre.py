@@ -583,7 +583,7 @@ class pre_pic():
         self.pre_sheward2024()
         self.pre_sheward2016()
         self.pre_sheward2014()
-        self.pre_devries2024()
+    #    self.pre_devries2024()
 
         print("finished processing:")
         print("sheward2014")
@@ -705,6 +705,8 @@ class pre_abundances():
         d.columns = [col.strip() for col in d.columns]
 
         d = d[d['Reference']!="Estrada1985"] #unpublished data (did not reach out for permission)
+
+#        d = rename_synonyms_wide(d, classification_path=self.classification_path)
 
         for i in range(len(d['Reference'].unique())):
             reference_to_export = d['Reference'].unique()[i]
