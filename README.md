@@ -1,4 +1,4 @@
-# CASCADE
+# CASCADE [![DOI](https://zenodo.org/badge/708030048.svg)](https://zenodo.org/doi/10.5281/zenodo.12797197)
 
 CASCADE is a global dataset for 139 extant coccolithophore taxonomic units. CASCADE includes a trait database (size and cellular organic and inorganic carbon contents) and taxonomic-specific global spatiotemporal distributions (Latitude/Longitude/Depth/Month/Year) of coccolithophore abundance and organic and inorganic carbon stocks. CASCADE covers all ocean basins over the upper 275 meters, spans the years 1964-2019 and includes 33,119 taxonomic-specific abundance observations. Within CASCADE, we characterise the underlying uncertainties due to measurement errors by propagating error estimates between the different studies. 
 
