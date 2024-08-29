@@ -819,6 +819,8 @@ class pre_abundances():
         d = d[d['Day'].notna()]
 
         d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        d = d*1000 #to convert from cells/ml to cells/L
+
         d = d.reset_index()
         d.to_csv(self.export_path + "Sal2013.csv", index=False)
 
