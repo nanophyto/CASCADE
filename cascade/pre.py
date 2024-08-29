@@ -651,6 +651,7 @@ class pre_abundances():
         d['Date/Time'] = pd.to_datetime(d['Date/Time'])
 
         d = d[d.Reference != 'Takahashi & Okada (2000)'] #wrong data
+        d = d[d.Reference != 'Dimiza et al. (2015)'] #double entry in database
 
         d.rename(columns = {'Depth water [m]':'Depth'}, inplace = True)
 
@@ -689,6 +690,8 @@ class pre_abundances():
 
         with open(self.yaml_path + 'johnson2023.yml', 'r') as f:
             references = load(f, Loader=Loader)
+
+        d = d[d.Reference != 'Dimiza et al. 2016'] #double entry in database
 
         d=d.replace({"Reference": references})
 
@@ -954,6 +957,18 @@ class pre_abundances():
         d = d.reset_index()
         d.to_csv(self.export_path + "Guerreiro2023.csv", index=False)
 
+    def clean_dimiza2015(self):
+        d1 = pd.read_csv(self.import_path + "Dimiza2015.csv")
+        d2 = pd.read_csv(self.import_path + "Dimiza2016.csv")
+        d = pd.concat([d1, d2])
+
+        d = d.assign(Reference='Dimiza2015')
+
+        d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
+        d.to_csv(self.export_path + "Dimiza2015.csv", index=False)
+
+
 
     def preprocess_all(self):
         self.clean_estrada2016()
@@ -970,4 +985,5 @@ class pre_abundances():
         self.clean_keuter2023()
         self.clean_keuter2022()
         self.clean_guerreiro2023()
+        self.clean_dimiza2015()
         print("finished processing abundances")
