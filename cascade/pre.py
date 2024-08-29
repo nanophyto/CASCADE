@@ -799,8 +799,47 @@ class pre_abundances():
 
 
     def clean_sal2013(self):
+        #data as downloaded from:
+        #https://www.esapubs.org/archive/ecol/E094/149/
 
-        d = pd.read_csv(self.import_path + "sal2013.csv")
+        d1 = pd.read_csv(self.import_path + "/sal2013/Table1.csv")
+        d2 = pd.read_csv(self.import_path + "/sal2013/Table3.csv")
+
+        d2.columns.values[0] = 'SampleID'
+
+
+        # Create a DataFrame to hold the consolidated columns
+        df_consolidated = pd.DataFrame()
+
+        # Iterate over columns and group them
+        for col in d2.columns:
+            base_name = col.split('.')[0]  # Extract base name (e.g., 'A' from 'A.1')
+            if base_name not in df_consolidated.columns:
+                df_consolidated[base_name] = d2.filter(like=base_name).sum(axis=1)
+        
+        d2 = df_consolidated
+        d = pd.merge(d1, d2, on='SampleID', how='inner')
+        d.columns = d.columns.str.strip()
+
+        env_vars = ["Cruise", "Original_SampleNo", "Original_StationNo", "Daylength", "Chl", "QFChl",
+        "Temperature", "QFTemp", "SurfacePAR", "QFPAR", "Kd490", "QFKd490", "PARz", "Nitrate",	
+        "QFNO3", "Nitrite",	"QFNO2", "Ammonium", "QFNH4", "Phosphate", "QFPO4",	"Silicate", "QFSil", "MLD", "QFMLD"]
+        d = d.drop(columns=env_vars)
+
+        #subset only coccos from dataset:
+        # Load the YAML content
+        with open(self.import_path + "/sal2013/sal2013_species.yml", 'r') as file:
+            data = load(file, Loader=Loader)
+        # Convert to list:
+        df = pd.DataFrame(list(data.items()), columns=['Species', 'Group'])
+        # Create list of non-coccos:
+        filtered_df = df[df['Group'] != 'coccolithophore']
+        species_list = filtered_df['Species'].to_list()
+        # drop any species not found in column names
+        species_list = [col for col in d.columns if col in species_list]
+        
+        d = d.drop(columns=species_list)
+
         d.rename(columns = {'Lat':'Latitude'}, inplace = True)
         d.rename(columns = {'Lon':'Longitude'}, inplace = True)
         d['Method'] = "LM"
@@ -817,6 +856,9 @@ class pre_abundances():
         d = d[d['Month'].notna()]
         d = d[d['Year'].notna()]
         d = d[d['Day'].notna()]
+        d['Reference'] = "Sal2013"
+
+        d = d.drop(columns=["SampleID"])
 
         d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
         d = d*1000 #to convert from cells/ml to cells/L
