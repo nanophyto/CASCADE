@@ -938,7 +938,7 @@ class pre_abundances():
         d.drop(columns=['Date'], inplace=True)
         d.insert(0, 'Reference', "Baumann2000")
         d.insert(0, 'Method', 'SEM')
-
+        d.drop_duplicates(inplace=True)
         d = d.set_index(['Latitude', 'Longitude', 'Depth', 'Day', 'Month', 'Year', 'Reference', 'Method'])
         d = d.reset_index()
         d.to_csv(self.export_path + "Baumann2000.csv", index=False)
