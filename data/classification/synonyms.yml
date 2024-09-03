@@ -118,6 +118,7 @@ undefined Calciopappus:
 - Calciopappus sp.
 - Calciopappus spp.
 - Calciopappus sp. curved
+- Calciopappus
 Calciosolenia brasiliensis HET:
 - Anoplosolenia brasiliensis
 - C. brasiliensis
@@ -1274,6 +1275,8 @@ undefined Syracosphaera:
 - Coronosphaera
 - Coronosphaera sp.
 - Coronosphaera spp.
+- Syracosphaera sp
+- Syracosphaera
 undefined Syracosphaera dilata type:
 - Syracosphaera dilatata or arethusae
 undefined Syracosphaera noroitica type:
@@ -1324,6 +1327,11 @@ undefined hetero:
 Scyphosphaera porosa HET:
 - S. porosa
 undefined holo:
+- Coccolithophorid 14μm Holococcolithophorid
+- Coccolithophorid 5μm Holococcolithophorid
+- Coccolithophorid 10μm Holococcolithophorid
+- Coccolithophorid 8μm Holococcolithophorid
+- Coccolithophorid 15μm Holococcolithophorid
 - Holococcolithophores s.l.
 - HOL unknown
 - Holococcolithophore spp.
@@ -1347,6 +1355,7 @@ undefined holo:
 - HOL others
 - Corisphaera sp. Type A (from Kleijne 1991)
 undefined:
+- Coccolithophorid
 - 'Coccolithophorids <10 um (5 - 10)'
 - Unknown Unknown
 - COCCOLITHOPHORES
