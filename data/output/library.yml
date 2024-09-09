@@ -1357,157 +1357,6 @@
         mean: null
         method: null
         sd: null
-- Helicosphaera carteri HET:
-    alternate_phase: null
-    family: Helicosphaeraceae
-    genera: Helicosphaera
-    phase: HET
-    pic:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: 186.3
-        method: lab morphometrics
-        sd: 58.8
-      sheward2024:
-        mean: 196.5
-        method: AMT morphometrics
-        sd: 0.0
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: null
-        method: null
-        sd: null
-      young2024:
-        mean: null
-        method: null
-        sd: null
-    size:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: 1863.0
-        method: light microscopy
-        sd: 0.0
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: 704.5
-        method: AMT morphometrics
-        sd: 0.0
-      supraha2015:
-        mean: 1016.5
-        method: light microscopy
-        sd: 97.5
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: 190.0
-        method: literature morphometrics
-        sd: 0.0
-      young2024:
-        mean: 1092.4
-        method: light microscopy
-        sd: 403.3
 - Calcidiscus leptoporus HET:
     alternate_phase: null
     family: Calcidiscaceae
@@ -1810,6 +1659,157 @@
         mean: null
         method: null
         sd: null
+- Helicosphaera carteri HET:
+    alternate_phase: null
+    family: Helicosphaeraceae
+    genera: Helicosphaera
+    phase: HET
+    pic:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: 186.3
+        method: lab morphometrics
+        sd: 58.8
+      sheward2024:
+        mean: 196.5
+        method: AMT morphometrics
+        sd: 0.0
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
+    size:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: 1863.0
+        method: light microscopy
+        sd: 0.0
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: 704.5
+        method: AMT morphometrics
+        sd: 0.0
+      supraha2015:
+        mean: 1016.5
+        method: light microscopy
+        sd: 97.5
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: 190.0
+        method: literature morphometrics
+        sd: 0.0
+      young2024:
+        mean: 1092.4
+        method: light microscopy
+        sd: 403.3
 - Acanthoica quattrospina HET:
     alternate_phase: null
     family: Rhabdosphaeraceae
@@ -3471,6 +3471,157 @@
         mean: 35.8
         method: light microscopy
         sd: 11.0
+- Syracosphaera anthos HET:
+    alternate_phase: null
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    pic:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: 5.2
+        method: AMT morphometrics
+        sd: 2.4
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
+    size:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: 332.6
+        method: AMT morphometrics
+        sd: 194.4
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: 485.0
+        method: literature morphometrics
+        sd: 0.0
+      young2024:
+        mean: 236.2
+        method: light microscopy
+        sd: 95.6
 - Palusphaera vandelii HET:
     alternate_phase: null
     family: Rhabdosphaeraceae
@@ -3773,157 +3924,6 @@
         mean: 206.9
         method: light microscopy
         sd: 88.7
-- Syracosphaera anthos HET:
-    alternate_phase: null
-    family: Syracosphaeraceae
-    genera: Syracosphaera
-    phase: HET
-    pic:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: 5.2
-        method: AMT morphometrics
-        sd: 2.4
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: null
-        method: null
-        sd: null
-      young2024:
-        mean: null
-        method: null
-        sd: null
-    size:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: 332.6
-        method: AMT morphometrics
-        sd: 194.4
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: 485.0
-        method: literature morphometrics
-        sd: 0.0
-      young2024:
-        mean: 236.2
-        method: light microscopy
-        sd: 95.6
 - Helladosphaera cornifera HOL:
     alternate_phase:
     - Syracosphaera nodosa HET
@@ -4832,6 +4832,157 @@
         mean: 276.5
         method: light microscopy
         sd: 152.6
+- Coccolithus pelagicus HET:
+    alternate_phase: null
+    family: Coccolithaceae
+    genera: Coccolithus
+    phase: HET
+    pic:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: 418.2
+        method: lab morphometrics
+        sd: 283.8
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: null
+        method: null
+        sd: null
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
+    size:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: 2145.0
+        method: light microscopy
+        sd: 891.0
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: 1295.0
+        method: 0
+        sd: 0.0
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: 1468.0
+        method: light microscopy
+        sd: 0.0
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: null
+        method: null
+        sd: null
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: 1936.1
+        method: light microscopy
+        sd: 23.2
+      villiot2021b:
+        mean: 1468.0
+        method: literature morphometrics
+        sd: 0.0
+      young2024:
+        mean: 408.2
+        method: light microscopy
+        sd: 163.4
 - Michaelsarsia adriaticus HET:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -5889,157 +6040,6 @@
         mean: null
         method: null
         sd: null
-- Coccolithus pelagicus HET:
-    alternate_phase: null
-    family: Coccolithaceae
-    genera: Coccolithus
-    phase: HET
-    pic:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: 418.2
-        method: lab morphometrics
-        sd: 283.8
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: null
-        method: null
-        sd: null
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: null
-        method: null
-        sd: null
-      young2024:
-        mean: null
-        method: null
-        sd: null
-    size:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: 2145.0
-        method: light microscopy
-        sd: 891.0
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: 1295.0
-        method: 0
-        sd: 0.0
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: 1468.0
-        method: light microscopy
-        sd: 0.0
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: null
-        method: null
-        sd: null
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: 1936.1
-        method: light microscopy
-        sd: 23.2
-      villiot2021b:
-        mean: 1468.0
-        method: literature morphometrics
-        sd: 0.0
-      young2024:
-        mean: 408.2
-        method: light microscopy
-        sd: 163.4
 - Calcidiscus leptoporus HOL:
     alternate_phase: Calcidiscus leptoporus HET
     family: Calcidiscaceae
@@ -6493,157 +6493,6 @@
         mean: 1159.6
         method: light microscopy
         sd: 713.7
-- Calciopappus caudatus HET:
-    alternate_phase: null
-    family: Syracosphaeraceae
-    genera: Calciopappus
-    phase: HET
-    pic:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: null
-        method: null
-        sd: null
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: null
-        method: null
-        sd: null
-      young2024:
-        mean: null
-        method: null
-        sd: null
-    size:
-      devries2024:
-        mean: 23.245953786540262
-        method: literature morphometrics
-        sd: 0.0
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: null
-        method: null
-        sd: null
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: null
-        method: null
-        sd: null
-      young2024:
-        mean: null
-        method: null
-        sd: null
 - Syracosphaera anthos HOL:
     alternate_phase: Syracosphaera anthos HET
     family: Syracosphaeraceae
@@ -7399,6 +7248,157 @@
         mean: null
         method: null
         sd: null
+- Calciopappus caudatus HET:
+    alternate_phase: null
+    family: Syracosphaeraceae
+    genera: Calciopappus
+    phase: HET
+    pic:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: null
+        method: null
+        sd: null
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
+    size:
+      devries2024:
+        mean: 23.245953786540262
+        method: literature morphometrics
+        sd: 0.0
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: null
+        method: null
+        sd: null
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera protrudens HET:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -7550,157 +7550,6 @@
         mean: null
         method: null
         sd: null
-- Syracosphaera marginiporata HET:
-    alternate_phase: null
-    family: Syracosphaeraceae
-    genera: Syracosphaera
-    phase: HET
-    pic:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: null
-        method: null
-        sd: null
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: null
-        method: null
-        sd: null
-      young2024:
-        mean: null
-        method: null
-        sd: null
-    size:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: null
-        method: null
-        sd: null
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: 124.0
-        method: literature morphometrics
-        sd: 0.0
-      young2024:
-        mean: 89.2
-        method: light microscopy
-        sd: 0.0
 - Oolithotus fragilis HET:
     alternate_phase: null
     family: Calcidiscaceae
@@ -7852,6 +7701,157 @@
         mean: 712.2
         method: light microscopy
         sd: 179.6
+- Syracosphaera marginiporata HET:
+    alternate_phase: null
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    pic:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: null
+        method: null
+        sd: null
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
+    size:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: null
+        method: null
+        sd: null
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: 124.0
+        method: literature morphometrics
+        sd: 0.0
+      young2024:
+        mean: 89.2
+        method: light microscopy
+        sd: 0.0
 - Cyrtosphaera aculeata HET:
     alternate_phase: null
     family: Rhabdosphaeraceae
@@ -8305,6 +8305,308 @@
         mean: null
         method: null
         sd: null
+- Syracosphaera rotula HET:
+    alternate_phase: null
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    pic:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: null
+        method: null
+        sd: null
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
+    size:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: 101.7
+        method: AMT morphometrics
+        sd: 0.0
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: 64.0
+        method: literature morphometrics
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
+- Syracosphaera nana HET:
+    alternate_phase: Syracosphaera nana HOL
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    pic:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: null
+        method: null
+        sd: null
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
+    size:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: 151.8
+        method: AMT morphometrics
+        sd: 88.1
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: 76.0
+        method: literature morphometrics
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Sphaerocalyptra quadridentata HOL:
     alternate_phase:
     - Algirosphaera robusta
@@ -8609,10 +8911,10 @@
         mean: 1605.4
         method: light microscopy
         sd: 0.0
-- Syracosphaera neapolitana HET:
+- Helicosphaera hyalina HET:
     alternate_phase: null
-    family: Syracosphaeraceae
-    genera: Syracosphaera
+    family: Helicosphaeraceae
+    genera: Helicosphaera
     phase: HET
     pic:
       devries2024:
@@ -8664,9 +8966,9 @@
         method: null
         sd: null
       sheward2024:
-        mean: null
-        method: null
-        sd: null
+        mean: 102.0
+        method: AMT morphometrics
+        sd: 65.8
       supraha2015:
         mean: null
         method: null
@@ -8737,9 +9039,9 @@
         method: null
         sd: null
       sheward2024:
-        mean: 151.8
+        mean: 785.3
         method: AMT morphometrics
-        sd: 88.1
+        sd: 271.1
       supraha2015:
         mean: null
         method: null
@@ -8753,7 +9055,7 @@
         method: null
         sd: null
       villiot2021b:
-        mean: 76.0
+        mean: 754.0
         method: literature morphometrics
         sd: 0.0
       young2024:
@@ -9515,157 +9817,6 @@
         mean: 724.4
         method: light microscopy
         sd: 101.7
-- Syracosphaera rotula HET:
-    alternate_phase: null
-    family: Syracosphaeraceae
-    genera: Syracosphaera
-    phase: HET
-    pic:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: null
-        method: null
-        sd: null
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: null
-        method: null
-        sd: null
-      young2024:
-        mean: null
-        method: null
-        sd: null
-    size:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: 101.7
-        method: AMT morphometrics
-        sd: 0.0
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: 64.0
-        method: literature morphometrics
-        sd: 0.0
-      young2024:
-        mean: null
-        method: null
-        sd: null
 - Papposphaera lepida HET:
     alternate_phase: null
     family: Papposphaeraceae
@@ -11176,6 +11327,157 @@
         mean: null
         method: null
         sd: null
+- Syracosphaera orbiculus HET:
+    alternate_phase: null
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HET
+    pic:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: 0.5
+        method: AMT morphometrics
+        sd: 0.0
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
+    size:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: 119.6
+        method: AMT morphometrics
+        sd: 110.7
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: 212.0
+        method: literature morphometrics
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Gephyrocapsa ornata HET:
     alternate_phase: null
     family: Noelaerhabdaceae
@@ -11474,157 +11776,6 @@
         mean: null
         method: null
         sd: null
-      young2024:
-        mean: null
-        method: null
-        sd: null
-- Syracosphaera orbiculus HET:
-    alternate_phase: null
-    family: Syracosphaeraceae
-    genera: Syracosphaera
-    phase: HET
-    pic:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: 0.5
-        method: AMT morphometrics
-        sd: 0.0
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: null
-        method: null
-        sd: null
-      young2024:
-        mean: null
-        method: null
-        sd: null
-    size:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: 119.6
-        method: AMT morphometrics
-        sd: 110.7
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: 212.0
-        method: literature morphometrics
-        sd: 0.0
       young2024:
         mean: null
         method: null
@@ -12680,157 +12831,6 @@
         sd: null
       villiot2021b:
         mean: 151.0
-        method: literature morphometrics
-        sd: 0.0
-      young2024:
-        mean: null
-        method: null
-        sd: null
-- Helicosphaera hyalina HET:
-    alternate_phase: null
-    family: Helicosphaeraceae
-    genera: Helicosphaera
-    phase: HET
-    pic:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: 102.0
-        method: AMT morphometrics
-        sd: 65.8
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: null
-        method: null
-        sd: null
-      young2024:
-        mean: null
-        method: null
-        sd: null
-    size:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: 785.3
-        method: AMT morphometrics
-        sd: 271.1
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: 754.0
         method: literature morphometrics
         sd: 0.0
       young2024:
@@ -14800,157 +14800,6 @@
         mean: null
         method: null
         sd: null
-- Acanthoica quattrospina HOL:
-    alternate_phase: Acanthoica quattrospina HET
-    family: Rhabdosphaeraceae
-    genera: Acanthoica
-    phase: HOL
-    pic:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: null
-        method: null
-        sd: null
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: null
-        method: null
-        sd: null
-      young2024:
-        mean: null
-        method: null
-        sd: null
-    size:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: null
-        method: null
-        sd: null
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: 903.0
-        method: literature morphometrics
-        sd: 0.0
-      young2024:
-        mean: null
-        method: null
-        sd: null
 - Braarudosphaera bigelowii NANO:
     alternate_phase: null
     family: null
@@ -15102,6 +14951,157 @@
         mean: 478.4
         method: light microscopy
         sd: 123.5
+- Acanthoica quattrospina HOL:
+    alternate_phase: Acanthoica quattrospina HET
+    family: Rhabdosphaeraceae
+    genera: Acanthoica
+    phase: HOL
+    pic:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: null
+        method: null
+        sd: null
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
+    size:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: null
+        method: null
+        sd: null
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: 903.0
+        method: literature morphometrics
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
 - Syracosphaera borealis HET:
     alternate_phase: null
     family: Syracosphaeraceae
@@ -16763,157 +16763,6 @@
         mean: null
         method: null
         sd: null
-- Syracosphaera nana HOL:
-    alternate_phase: Syracosphaera nana HET
-    family: Syracosphaeraceae
-    genera: Syracosphaera
-    phase: HOL
-    pic:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: null
-        method: null
-        sd: null
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: null
-        method: null
-        sd: null
-      young2024:
-        mean: null
-        method: null
-        sd: null
-    size:
-      devries2024:
-        mean: null
-        method: null
-        sd: null
-      fiorini2011:
-        mean: null
-        method: null
-        sd: null
-      gafar2019:
-        mean: null
-        method: null
-        sd: null
-      gerecht2018:
-        mean: null
-        method: null
-        sd: null
-      langer2006:
-        mean: null
-        method: null
-        sd: null
-      llewellyn2000:
-        mean: null
-        method: null
-        sd: null
-      mullin1966:
-        mean: null
-        method: null
-        sd: null
-      obrien2013a:
-        mean: null
-        method: null
-        sd: null
-      oviedo2014:
-        mean: null
-        method: null
-        sd: null
-      sett2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2014:
-        mean: null
-        method: null
-        sd: null
-      sheward2016:
-        mean: null
-        method: null
-        sd: null
-      sheward2024:
-        mean: null
-        method: null
-        sd: null
-      supraha2015:
-        mean: null
-        method: null
-        sd: null
-      verity1992:
-        mean: null
-        method: null
-        sd: null
-      villiot2021a:
-        mean: null
-        method: null
-        sd: null
-      villiot2021b:
-        mean: 180.0
-        method: literature morphometrics
-        sd: 0.0
-      young2024:
-        mean: null
-        method: null
-        sd: null
 - Alisphaera pinnigera HET:
     alternate_phase: null
     family: Alisphaeraceae
@@ -17059,6 +16908,157 @@
         sd: null
       villiot2021b:
         mean: 485.0
+        method: literature morphometrics
+        sd: 0.0
+      young2024:
+        mean: null
+        method: null
+        sd: null
+- Syracosphaera nana HOL:
+    alternate_phase: Syracosphaera nana HET
+    family: Syracosphaeraceae
+    genera: Syracosphaera
+    phase: HOL
+    pic:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: null
+        method: null
+        sd: null
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: null
+        method: null
+        sd: null
+      young2024:
+        mean: null
+        method: null
+        sd: null
+    size:
+      devries2024:
+        mean: null
+        method: null
+        sd: null
+      fiorini2011:
+        mean: null
+        method: null
+        sd: null
+      gafar2019:
+        mean: null
+        method: null
+        sd: null
+      gerecht2018:
+        mean: null
+        method: null
+        sd: null
+      langer2006:
+        mean: null
+        method: null
+        sd: null
+      llewellyn2000:
+        mean: null
+        method: null
+        sd: null
+      mullin1966:
+        mean: null
+        method: null
+        sd: null
+      obrien2013a:
+        mean: null
+        method: null
+        sd: null
+      oviedo2014:
+        mean: null
+        method: null
+        sd: null
+      sett2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2014:
+        mean: null
+        method: null
+        sd: null
+      sheward2016:
+        mean: null
+        method: null
+        sd: null
+      sheward2024:
+        mean: null
+        method: null
+        sd: null
+      supraha2015:
+        mean: null
+        method: null
+        sd: null
+      verity1992:
+        mean: null
+        method: null
+        sd: null
+      villiot2021a:
+        mean: null
+        method: null
+        sd: null
+      villiot2021b:
+        mean: 180.0
         method: literature morphometrics
         sd: 0.0
       young2024:

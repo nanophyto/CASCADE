@@ -51,6 +51,9 @@ Alisphaera gaudii POL:
   phase: POL
 Acanthoica acanthos HET:
   phase: HET
+Syracosphaera nana HET:
+  phase: HET
+  alternate_phase: Syracosphaera nana HOL
 Syracosphaera nana HOL:
   phase: HOL
   alternate_phase: Syracosphaera nana HET
