@@ -622,7 +622,8 @@ class pre_abundances():
 
         date = pd.to_datetime(d['Date'], format="%d/%m/%Y")
 
-        d = d.groupby(by=d.columns, axis=1).sum()
+        #d = d.groupby(by=d.columns, axis=1).sum()
+        d = d.T.groupby(level=0).sum().T
 
         d.insert(0, 'Reference', 'Hagino2006')
 

@@ -21,7 +21,9 @@ def rename_synonyms_wide(d, classification_path='./data/classification/synonyms.
 
     d = d.rename(columns=lambda x: replace_column_names(x))
     
-    d = d.groupby(level=0, axis=1).sum()
+#    d = d.groupby(level=0, axis=1).sum()
+    d = d.T.groupby(level=0).sum().T
+
 
     return(d)
 
