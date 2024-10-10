@@ -946,7 +946,7 @@ class merge_abundances():
 
         d = pd.concat((pd.read_csv(f) for f in all_files), ignore_index=True)
 
-        d.reset_index(drop=False, inplace=True)
+        d = d.reset_index(drop=False)
 
         d['Month'] = d['Month'].astype('int64')
         d['Year'] = d['Year'].astype('int64')
@@ -975,8 +975,11 @@ class merge_abundances():
 
         d = d[d.sum(axis=1)>0]
 
-        d = (d.rename(columns=dict)
-            .groupby(level=0, axis=1, dropna=False)).sum( min_count=1).reset_index()
+        # d = (d.rename(columns=dict)
+        #     .groupby(level=0, axis=1, dropna=False)).sum( min_count=1).reset_index()
+        d = d.rename(columns=dict)
+        d = d.T.groupby(level=0).sum(min_count=1).T.reset_index()
+
 
         self.references = d['Reference'].unique()
 
