@@ -30,14 +30,6 @@ class cellular_dataset_table:
         size_ci_up = self.round_sig_fig(size_ci_up, N=3)
         size_median = self.round_sig_fig(size_median, N=3)
 
-        pic_ci_lo =  np.percentile(pic, 2.5) 
-        pic_ci_up = np.percentile(pic, 97.5) 
-        pic_median = np.percentile(pic, 50) 
-
-        pic_ci_lo = self.round_sig_fig(pic_ci_lo, N=3)
-        pic_ci_up = self.round_sig_fig(pic_ci_up, N=3)
-        pic_median = self.round_sig_fig(pic_median, N=3)
-
 
         poc_ci_lo =  np.percentile(poc, 2.5) 
         poc_ci_up = np.percentile(poc, 97.5) 
@@ -48,14 +40,30 @@ class cellular_dataset_table:
         poc_ci_up = self.round_sig_fig(poc_ci_up, N=3)
         poc_median = self.round_sig_fig(poc_median, N=3)
 
-        pic_poc = ratio_bootstrap(pic, poc)
-        pic_poc_median = np.percentile(pic_poc, 50) 
-        pic_poc_ci_up = np.percentile(pic_poc, 97.5) 
-        pic_poc_ci_lo = np.percentile(pic_poc, 2.5)
-        pic_poc_ci_lo = self.round_sig_fig(pic_poc_ci_lo, N=3)
-        pic_poc_ci_up = self.round_sig_fig(pic_poc_ci_up, N=3)
-        pic_poc_median = self.round_sig_fig(pic_poc_median, N=3)   
+        try:
+            pic_ci_lo =  np.percentile(pic, 2.5) 
+            pic_ci_up = np.percentile(pic, 97.5) 
+            pic_median = np.percentile(pic, 50) 
+            pic_ci_lo = self.round_sig_fig(pic_ci_lo, N=3)
+            pic_ci_up = self.round_sig_fig(pic_ci_up, N=3)
+            pic_median = self.round_sig_fig(pic_median, N=3)
 
+            pic_poc = ratio_bootstrap(pic, poc)
+            pic_poc_median = np.percentile(pic_poc, 50) 
+            pic_poc_ci_up = np.percentile(pic_poc, 97.5) 
+            pic_poc_ci_lo = np.percentile(pic_poc, 2.5)
+            pic_poc_ci_lo = self.round_sig_fig(pic_poc_ci_lo, N=3)
+            pic_poc_ci_up = self.round_sig_fig(pic_poc_ci_up, N=3)
+            pic_poc_median = self.round_sig_fig(pic_poc_median, N=3)   
+
+        except:
+            print("warning: PIC and PIC:POC for: " + species +  " is NA")
+            pic_ci_lo =  np.nan
+            pic_ci_up = np.nan
+            pic_median = np.nan   
+            pic_poc_median = np.nan   
+            pic_poc_ci_up = np.nan   
+            pic_poc_ci_lo = np.nan   
 
         counts = pd.read_csv("./data/output/counts.csv")
         n_samples = counts[counts['species']==species]['count']
