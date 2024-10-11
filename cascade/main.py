@@ -217,6 +217,10 @@ class regression_simulation:
             simulated_data = np.column_stack(
                 [self.results.model.family.fitted(lin_pred) for lin_pred in lin_preds.T]
             )
+        if np.any(simulated_data < 0):
+            print("Warning: Negative C values found and replaced with NA.")
+            simulated_data[simulated_data < 0] = np.nan
+
         return simulated_data  # [simulated_data>0]
 
     def return_performance(self):
@@ -1018,9 +1022,13 @@ class merge_abundances():
             None
 
         print("dropped columns that contained undefined")
-        #print(d.reset_index()['Reference'].unique())
 
-        counts =pd.DataFrame({'count': np.count_nonzero(d.fillna(0), axis=0), 'species': d.columns})
+        with pd.option_context("future.no_silent_downcasting", True):
+            df = d.fillna(0).infer_objects(copy=False)
+
+        counts = pd.DataFrame({'count': np.count_nonzero(df, axis=0), 'species': df.columns})
+
+        # counts =pd.DataFrame({'count': np.count_nonzero(d.fillna(0), axis=0), 'species': d.columns})
         counts = counts[counts['species']!="Reticulofenestra sessilis HET"]
         filter = counts['species'].str.contains('undefined')
         counts = counts[~filter]
