@@ -622,7 +622,8 @@ class pre_abundances():
 
         date = pd.to_datetime(d['Date'], format="%d/%m/%Y")
 
-        d = d.groupby(by=d.columns, axis=1).sum()
+        #d = d.groupby(by=d.columns, axis=1).sum()
+        d = d.T.groupby(level=0).sum().T
 
         d.insert(0, 'Reference', 'Hagino2006')
 
@@ -807,16 +808,22 @@ class pre_abundances():
 
         d2.columns.values[0] = 'SampleID'
 
-
         # Create a DataFrame to hold the consolidated columns
         df_consolidated = pd.DataFrame()
+        # Initialize an empty dictionary to store the new columns to be added
+        new_columns_dict = {}
 
         # Iterate over columns and group them
         for col in d2.columns:
             base_name = col.split('.')[0]  # Extract base name (e.g., 'A' from 'A.1')
-            if base_name not in df_consolidated.columns:
-                df_consolidated[base_name] = d2.filter(like=base_name).sum(axis=1)
-        
+            
+            # If the base_name is not already in the dictionary, calculate the sum for this group
+            if base_name not in new_columns_dict:
+                new_columns_dict[base_name] = d2.filter(like=base_name).sum(axis=1)
+
+        # Convert the dictionary to a DataFrame and concatenate it with df_consolidated
+        df_consolidated = pd.concat([df_consolidated, pd.DataFrame(new_columns_dict)], axis=1)
+
         d2 = df_consolidated
         d = pd.merge(d1, d2, on='SampleID', how='inner')
         d.columns = d.columns.str.strip()

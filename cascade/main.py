@@ -217,6 +217,10 @@ class regression_simulation:
             simulated_data = np.column_stack(
                 [self.results.model.family.fitted(lin_pred) for lin_pred in lin_preds.T]
             )
+        if np.any(simulated_data < 0):
+            print("Warning: Negative C values found and replaced with NA.")
+            simulated_data[simulated_data < 0] = np.nan
+
         return simulated_data  # [simulated_data>0]
 
     def return_performance(self):
@@ -946,7 +950,7 @@ class merge_abundances():
 
         d = pd.concat((pd.read_csv(f) for f in all_files), ignore_index=True)
 
-        d.reset_index(drop=False, inplace=True)
+        d = d.reset_index(drop=False)
 
         d['Month'] = d['Month'].astype('int64')
         d['Year'] = d['Year'].astype('int64')
@@ -975,8 +979,11 @@ class merge_abundances():
 
         d = d[d.sum(axis=1)>0]
 
-        d = (d.rename(columns=dict)
-            .groupby(level=0, axis=1, dropna=False)).sum( min_count=1).reset_index()
+        # d = (d.rename(columns=dict)
+        #     .groupby(level=0, axis=1, dropna=False)).sum( min_count=1).reset_index()
+        d = d.rename(columns=dict)
+        d = d.T.groupby(level=0).sum(min_count=1).T.reset_index()
+
 
         self.references = d['Reference'].unique()
 
@@ -1015,9 +1022,13 @@ class merge_abundances():
             None
 
         print("dropped columns that contained undefined")
-        #print(d.reset_index()['Reference'].unique())
 
-        counts =pd.DataFrame({'count': np.count_nonzero(d.fillna(0), axis=0), 'species': d.columns})
+        with pd.option_context("future.no_silent_downcasting", True):
+            df = d.fillna(0).infer_objects(copy=False)
+
+        counts = pd.DataFrame({'count': np.count_nonzero(df, axis=0), 'species': df.columns})
+
+        # counts =pd.DataFrame({'count': np.count_nonzero(d.fillna(0), axis=0), 'species': d.columns})
         counts = counts[counts['species']!="Reticulofenestra sessilis HET"]
         filter = counts['species'].str.contains('undefined')
         counts = counts[~filter]

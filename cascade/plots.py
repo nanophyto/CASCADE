@@ -263,7 +263,8 @@ def plot_samples_latlon(d, fill=None, ax=None, fig=None, log=False, title=""):
                 c=color,
                 s=100,
                 alpha=0.75,
-                transform=ccrs.PlateCarree()) ## Important
+                transform=ccrs.PlateCarree(),
+                zorder=101) 
 
 #    cax = fig.add_axes([ax.get_position().x1+0.01,ax.get_position().y0,0.02,ax.get_position().height])#
     ax.set_title(title)
