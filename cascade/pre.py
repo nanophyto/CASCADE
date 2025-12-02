@@ -1020,6 +1020,22 @@ class pre_abundances():
         d.to_csv(self.export_path + "Dimiza2015.csv", index=False)
 
 
+    def clean_lipsen2007(self):
+        d = pd.read_csv(self.import_path + "Lipsen2007.csv")
+        d['Method'] = "LM"
+        d['Reference'] = "Lipsen2007"
+
+        d['Month'] = pd.DatetimeIndex(d['Date']).month
+        d['Year'] = pd.DatetimeIndex(d['Date']).year
+        d['Day'] = pd.DatetimeIndex(d['Date']).day
+
+        d.drop(columns=['Date'], inplace=True)
+
+        d = d[d['Emiliania huxleyi HET']> 0] 
+        d = d.set_index(['Latitude', 'Longitude', 'Depth','Day', 'Month', 'Year', 'Reference', 'Method'])
+        d = d.reset_index()
+        d.to_csv(self.export_path + "Lipsen2007.csv", index=False)
+
 
     def preprocess_all(self):
         self.clean_estrada2016()
@@ -1037,4 +1053,5 @@ class pre_abundances():
         self.clean_keuter2022()
         self.clean_guerreiro2023()
         self.clean_dimiza2015()
+        self.clean_lipsen2007()
         print("finished processing abundances")
